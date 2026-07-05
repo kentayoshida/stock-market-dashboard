@@ -1,7 +1,7 @@
 {
   "as_of": "2026-07-03",
-  "generated_at": "2026-07-05T18:44:36+00:00",
-  "data_source": "fixture",
+  "generated_at": "2026-07-05T23:08:26+00:00",
+  "data_source": "jquants",
   "currency": "JPY",
   "market": "JP",
   "lag_note": "J-Quants は翌営業日更新のため、最新値は前営業日ぶん（1営業日ラグ）です。",
@@ -19,8 +19,8 @@
     "default": "code_order"
   },
   "coverage": {
-    "ok": 33,
-    "no_data": 0,
+    "ok": 22,
+    "no_data": 11,
     "total": 33
   },
   "disclaimer": "情報提供目的であり投資助言ではありません。",
@@ -39,31 +39,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": 0.14,
+            "price": 0.41,
             "total": null
           },
           "1W": {
-            "price": 0.67,
+            "price": 0.57,
             "total": null
           },
           "1M": {
-            "price": 2.78,
+            "price": 2.48,
             "total": null
           },
           "3M": {
-            "price": 3.33,
+            "price": -7.25,
             "total": null
           },
           "6M": {
-            "price": 8.75,
+            "price": 3.93,
             "total": null
           },
           "YTD": {
-            "price": 8.66,
+            "price": 3.93,
             "total": null
           },
           "1Y": {
-            "price": 18.36,
+            "price": 27.79,
             "total": null
           }
         }
@@ -77,31 +77,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": 0.07,
+            "price": 1.23,
             "total": null
           },
           "1W": {
-            "price": 0.47,
+            "price": -2.6,
             "total": null
           },
           "1M": {
-            "price": 2.06,
+            "price": -11.87,
             "total": null
           },
           "3M": {
-            "price": 0.48,
+            "price": -30.58,
             "total": null
           },
           "6M": {
-            "price": 2.2,
+            "price": 3.76,
             "total": null
           },
           "YTD": {
-            "price": 2.06,
+            "price": 3.76,
             "total": null
           },
           "1Y": {
-            "price": 1.69,
+            "price": 57.46,
             "total": null
           }
         }
@@ -115,31 +115,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": -0.1,
+            "price": 0.94,
             "total": null
           },
           "1W": {
-            "price": -0.32,
+            "price": 1.52,
             "total": null
           },
           "1M": {
-            "price": 0.8,
+            "price": 7.48,
             "total": null
           },
           "3M": {
-            "price": -2.05,
+            "price": -3.26,
             "total": null
           },
           "6M": {
-            "price": -4.22,
+            "price": 2.65,
             "total": null
           },
           "YTD": {
-            "price": -4.46,
+            "price": 2.65,
             "total": null
           },
           "1Y": {
-            "price": -13.41,
+            "price": 40.17,
             "total": null
           }
         }
@@ -153,31 +153,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": -0.16,
+            "price": 0.7,
             "total": null
           },
           "1W": {
-            "price": -0.79,
+            "price": 1.55,
             "total": null
           },
           "1M": {
-            "price": -2.38,
+            "price": 6.68,
             "total": null
           },
           "3M": {
-            "price": -6.8,
+            "price": 5.29,
             "total": null
           },
           "6M": {
-            "price": -13.39,
+            "price": 16.43,
             "total": null
           },
           "YTD": {
-            "price": -13.62,
+            "price": 16.43,
             "total": null
           },
           "1Y": {
-            "price": -26.88,
+            "price": 25.0,
             "total": null
           }
         }
@@ -191,31 +191,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": 0.06,
+            "price": 2.6,
             "total": null
           },
           "1W": {
-            "price": 0.32,
+            "price": 3.28,
             "total": null
           },
           "1M": {
-            "price": 1.68,
+            "price": 2.98,
             "total": null
           },
           "3M": {
-            "price": 6.71,
+            "price": 4.36,
             "total": null
           },
           "6M": {
-            "price": 13.32,
+            "price": 12.06,
             "total": null
           },
           "YTD": {
-            "price": 13.59,
+            "price": 12.06,
             "total": null
           },
           "1Y": {
-            "price": 25.89,
+            "price": 22.21,
             "total": null
           }
         }
@@ -229,31 +229,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": -0.04,
+            "price": 0.35,
             "total": null
           },
           "1W": {
-            "price": -0.13,
+            "price": 1.77,
             "total": null
           },
           "1M": {
-            "price": -0.3,
+            "price": 3.85,
             "total": null
           },
           "3M": {
-            "price": 2.91,
+            "price": 0.58,
             "total": null
           },
           "6M": {
-            "price": 4.3,
+            "price": 2.93,
             "total": null
           },
           "YTD": {
-            "price": 4.53,
+            "price": 2.93,
             "total": null
           },
           "1Y": {
-            "price": 7.27,
+            "price": 21.58,
             "total": null
           }
         }
@@ -267,31 +267,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": -0.14,
+            "price": 0.91,
             "total": null
           },
           "1W": {
-            "price": -0.71,
+            "price": 1.94,
             "total": null
           },
           "1M": {
-            "price": -2.44,
+            "price": -0.45,
             "total": null
           },
           "3M": {
-            "price": -1.57,
+            "price": 13.43,
             "total": null
           },
           "6M": {
-            "price": -4.83,
+            "price": 26.19,
             "total": null
           },
           "YTD": {
-            "price": -4.73,
+            "price": 26.19,
             "total": null
           },
           "1Y": {
-            "price": -8.94,
+            "price": 38.63,
             "total": null
           }
         }
@@ -305,31 +305,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": -0.13,
+            "price": 0.91,
             "total": null
           },
           "1W": {
-            "price": -0.85,
+            "price": 3.72,
             "total": null
           },
           "1M": {
-            "price": -4.49,
+            "price": 6.13,
             "total": null
           },
           "3M": {
-            "price": -6.64,
+            "price": -9.09,
             "total": null
           },
           "6M": {
-            "price": -13.44,
+            "price": 0.85,
             "total": null
           },
           "YTD": {
-            "price": -13.47,
+            "price": 0.85,
             "total": null
           },
           "1Y": {
-            "price": -22.46,
+            "price": 18.01,
             "total": null
           }
         }
@@ -343,31 +343,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": 0.15,
+            "price": 0.32,
             "total": null
           },
           "1W": {
-            "price": 0.72,
+            "price": 0.52,
             "total": null
           },
           "1M": {
-            "price": 1.57,
+            "price": -8.41,
             "total": null
           },
           "3M": {
-            "price": 7.16,
+            "price": -17.82,
             "total": null
           },
           "6M": {
-            "price": 14.39,
+            "price": 6.57,
             "total": null
           },
           "YTD": {
-            "price": 14.82,
+            "price": 6.57,
             "total": null
           },
           "1Y": {
-            "price": 36.53,
+            "price": 54.43,
             "total": null
           }
         }
@@ -381,31 +381,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": 0.08,
+            "price": 1.04,
             "total": null
           },
           "1W": {
-            "price": 0.38,
+            "price": 1.99,
             "total": null
           },
           "1M": {
-            "price": 1.27,
+            "price": 3.72,
             "total": null
           },
           "3M": {
-            "price": 3.51,
+            "price": 8.47,
             "total": null
           },
           "6M": {
-            "price": 7.24,
+            "price": 2.5,
             "total": null
           },
           "YTD": {
-            "price": 7.37,
+            "price": 2.5,
             "total": null
           },
           "1Y": {
-            "price": 17.12,
+            "price": 25.81,
             "total": null
           }
         }
@@ -419,31 +419,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": 0.07,
+            "price": 1.43,
             "total": null
           },
           "1W": {
-            "price": 0.47,
+            "price": 3.04,
             "total": null
           },
           "1M": {
-            "price": 2.06,
+            "price": -0.35,
             "total": null
           },
           "3M": {
-            "price": 0.48,
+            "price": -5.22,
             "total": null
           },
           "6M": {
-            "price": 2.2,
+            "price": -9.8,
             "total": null
           },
           "YTD": {
-            "price": 2.06,
+            "price": -9.8,
             "total": null
           },
           "1Y": {
-            "price": 1.69,
+            "price": 11.61,
             "total": null
           }
         }
@@ -457,31 +457,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": -0.1,
+            "price": 1.53,
             "total": null
           },
           "1W": {
-            "price": -0.32,
+            "price": 1.6,
             "total": null
           },
           "1M": {
-            "price": 0.8,
+            "price": -2.1,
             "total": null
           },
           "3M": {
-            "price": -2.05,
+            "price": 2.7,
             "total": null
           },
           "6M": {
-            "price": -4.22,
+            "price": 11.78,
             "total": null
           },
           "YTD": {
-            "price": -4.46,
+            "price": 11.78,
             "total": null
           },
           "1Y": {
-            "price": -13.41,
+            "price": 36.82,
             "total": null
           }
         }
@@ -495,31 +495,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": -0.16,
+            "price": 1.08,
             "total": null
           },
           "1W": {
-            "price": -0.79,
+            "price": 5.59,
             "total": null
           },
           "1M": {
-            "price": -2.38,
+            "price": 1.6,
             "total": null
           },
           "3M": {
-            "price": -6.8,
+            "price": -5.17,
             "total": null
           },
           "6M": {
-            "price": -13.39,
+            "price": -12.63,
             "total": null
           },
           "YTD": {
-            "price": -13.62,
+            "price": -12.63,
             "total": null
           },
           "1Y": {
-            "price": -26.88,
+            "price": -21.33,
             "total": null
           }
         }
@@ -533,31 +533,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": 0.06,
+            "price": 0.91,
             "total": null
           },
           "1W": {
-            "price": 0.32,
+            "price": 1.5,
             "total": null
           },
           "1M": {
-            "price": 1.68,
+            "price": -0.76,
             "total": null
           },
           "3M": {
-            "price": 6.71,
+            "price": -12.14,
             "total": null
           },
           "6M": {
-            "price": 13.32,
+            "price": -0.43,
             "total": null
           },
           "YTD": {
-            "price": 13.59,
+            "price": -0.43,
             "total": null
           },
           "1Y": {
-            "price": 25.89,
+            "price": 29.95,
             "total": null
           }
         }
@@ -571,31 +571,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": -0.04,
+            "price": 1.63,
             "total": null
           },
           "1W": {
-            "price": -0.13,
+            "price": 3.03,
             "total": null
           },
           "1M": {
-            "price": -0.3,
+            "price": 4.21,
             "total": null
           },
           "3M": {
-            "price": 2.91,
+            "price": -5.41,
             "total": null
           },
           "6M": {
-            "price": 4.3,
+            "price": -5.4,
             "total": null
           },
           "YTD": {
-            "price": 4.53,
+            "price": -5.4,
             "total": null
           },
           "1Y": {
-            "price": 7.27,
+            "price": 6.74,
             "total": null
           }
         }
@@ -609,31 +609,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": -0.14,
+            "price": 1.35,
             "total": null
           },
           "1W": {
-            "price": -0.71,
+            "price": 0.16,
             "total": null
           },
           "1M": {
-            "price": -2.44,
+            "price": -3.41,
             "total": null
           },
           "3M": {
-            "price": -1.57,
+            "price": -16.8,
             "total": null
           },
           "6M": {
-            "price": -4.83,
+            "price": 7.99,
             "total": null
           },
           "YTD": {
-            "price": -4.73,
+            "price": 7.99,
             "total": null
           },
           "1Y": {
-            "price": -8.94,
+            "price": 7.93,
             "total": null
           }
         }
@@ -647,31 +647,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": -0.13,
+            "price": 1.6,
             "total": null
           },
           "1W": {
-            "price": -0.85,
+            "price": 5.78,
             "total": null
           },
           "1M": {
-            "price": -4.49,
+            "price": 13.53,
             "total": null
           },
           "3M": {
-            "price": -6.64,
+            "price": 10.7,
             "total": null
           },
           "6M": {
-            "price": -13.44,
+            "price": 5.22,
             "total": null
           },
           "YTD": {
-            "price": -13.47,
+            "price": 5.22,
             "total": null
           },
           "1Y": {
-            "price": -22.46,
+            "price": 6.13,
             "total": null
           }
         }
@@ -685,31 +685,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": 0.15,
+            "price": 0.96,
             "total": null
           },
           "1W": {
-            "price": 0.72,
+            "price": 5.24,
             "total": null
           },
           "1M": {
-            "price": 1.57,
+            "price": 4.1,
             "total": null
           },
           "3M": {
-            "price": 7.16,
+            "price": -2.38,
             "total": null
           },
           "6M": {
-            "price": 14.39,
+            "price": 9.92,
             "total": null
           },
           "YTD": {
-            "price": 14.82,
+            "price": 9.92,
             "total": null
           },
           "1Y": {
-            "price": 36.53,
+            "price": 23.28,
             "total": null
           }
         }
@@ -723,31 +723,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": 0.08,
+            "price": 0.16,
             "total": null
           },
           "1W": {
-            "price": 0.38,
+            "price": 2.74,
             "total": null
           },
           "1M": {
-            "price": 1.27,
+            "price": -10.7,
             "total": null
           },
           "3M": {
-            "price": 3.51,
+            "price": 14.22,
             "total": null
           },
           "6M": {
-            "price": 7.24,
+            "price": 3.27,
             "total": null
           },
           "YTD": {
-            "price": 7.37,
+            "price": 3.27,
             "total": null
           },
           "1Y": {
-            "price": 17.12,
+            "price": 15.35,
             "total": null
           }
         }
@@ -761,31 +761,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": 0.04,
+            "price": 1.06,
             "total": null
           },
           "1W": {
-            "price": 0.17,
+            "price": 2.45,
             "total": null
           },
           "1M": {
-            "price": 0.46,
+            "price": -4.42,
             "total": null
           },
           "3M": {
-            "price": -0.91,
+            "price": -12.69,
             "total": null
           },
           "6M": {
-            "price": -0.86,
+            "price": 9.05,
             "total": null
           },
           "YTD": {
-            "price": -0.95,
+            "price": 9.05,
             "total": null
           },
           "1Y": {
-            "price": 0.39,
+            "price": 44.02,
             "total": null
           }
         }
@@ -799,31 +799,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": -0.1,
+            "price": 1.84,
             "total": null
           },
           "1W": {
-            "price": -0.32,
+            "price": 6.49,
             "total": null
           },
           "1M": {
-            "price": 0.8,
+            "price": 7.76,
             "total": null
           },
           "3M": {
-            "price": -2.05,
+            "price": 28.49,
             "total": null
           },
           "6M": {
-            "price": -4.22,
+            "price": 14.44,
             "total": null
           },
           "YTD": {
-            "price": -4.46,
+            "price": 14.44,
             "total": null
           },
           "1Y": {
-            "price": -13.41,
+            "price": 21.66,
             "total": null
           }
         }
@@ -833,35 +833,35 @@
         "ticker": "5100",
         "index_code": "0061",
         "review": false,
-        "status": "ok",
-        "as_of": "2026-07-03",
+        "status": "no_data",
+        "as_of": null,
         "returns": {
           "1D": {
-            "price": -0.16,
+            "price": null,
             "total": null
           },
           "1W": {
-            "price": -0.79,
+            "price": null,
             "total": null
           },
           "1M": {
-            "price": -2.38,
+            "price": null,
             "total": null
           },
           "3M": {
-            "price": -6.8,
+            "price": null,
             "total": null
           },
           "6M": {
-            "price": -13.39,
+            "price": null,
             "total": null
           },
           "YTD": {
-            "price": -13.62,
+            "price": null,
             "total": null
           },
           "1Y": {
-            "price": -26.88,
+            "price": null,
             "total": null
           }
         }
@@ -871,35 +871,35 @@
         "ticker": "5150",
         "index_code": "0062",
         "review": false,
-        "status": "ok",
-        "as_of": "2026-07-03",
+        "status": "no_data",
+        "as_of": null,
         "returns": {
           "1D": {
-            "price": 0.06,
+            "price": null,
             "total": null
           },
           "1W": {
-            "price": 0.32,
+            "price": null,
             "total": null
           },
           "1M": {
-            "price": 1.68,
+            "price": null,
             "total": null
           },
           "3M": {
-            "price": 6.71,
+            "price": null,
             "total": null
           },
           "6M": {
-            "price": 13.32,
+            "price": null,
             "total": null
           },
           "YTD": {
-            "price": 13.59,
+            "price": null,
             "total": null
           },
           "1Y": {
-            "price": 25.89,
+            "price": null,
             "total": null
           }
         }
@@ -909,35 +909,35 @@
         "ticker": "5200",
         "index_code": "0063",
         "review": false,
-        "status": "ok",
-        "as_of": "2026-07-03",
+        "status": "no_data",
+        "as_of": null,
         "returns": {
           "1D": {
-            "price": -0.04,
+            "price": null,
             "total": null
           },
           "1W": {
-            "price": -0.13,
+            "price": null,
             "total": null
           },
           "1M": {
-            "price": -0.3,
+            "price": null,
             "total": null
           },
           "3M": {
-            "price": 2.91,
+            "price": null,
             "total": null
           },
           "6M": {
-            "price": 4.3,
+            "price": null,
             "total": null
           },
           "YTD": {
-            "price": 4.53,
+            "price": null,
             "total": null
           },
           "1Y": {
-            "price": 7.27,
+            "price": null,
             "total": null
           }
         }
@@ -947,35 +947,35 @@
         "ticker": "5250",
         "index_code": "0064",
         "review": false,
-        "status": "ok",
-        "as_of": "2026-07-03",
+        "status": "no_data",
+        "as_of": null,
         "returns": {
           "1D": {
-            "price": -0.14,
+            "price": null,
             "total": null
           },
           "1W": {
-            "price": -0.71,
+            "price": null,
             "total": null
           },
           "1M": {
-            "price": -2.44,
+            "price": null,
             "total": null
           },
           "3M": {
-            "price": -1.57,
+            "price": null,
             "total": null
           },
           "6M": {
-            "price": -4.83,
+            "price": null,
             "total": null
           },
           "YTD": {
-            "price": -4.73,
+            "price": null,
             "total": null
           },
           "1Y": {
-            "price": -8.94,
+            "price": null,
             "total": null
           }
         }
@@ -985,35 +985,35 @@
         "ticker": "6050",
         "index_code": "0065",
         "review": false,
-        "status": "ok",
-        "as_of": "2026-07-03",
+        "status": "no_data",
+        "as_of": null,
         "returns": {
           "1D": {
-            "price": -0.13,
+            "price": null,
             "total": null
           },
           "1W": {
-            "price": -0.85,
+            "price": null,
             "total": null
           },
           "1M": {
-            "price": -4.49,
+            "price": null,
             "total": null
           },
           "3M": {
-            "price": -6.64,
+            "price": null,
             "total": null
           },
           "6M": {
-            "price": -13.44,
+            "price": null,
             "total": null
           },
           "YTD": {
-            "price": -13.47,
+            "price": null,
             "total": null
           },
           "1Y": {
-            "price": -22.46,
+            "price": null,
             "total": null
           }
         }
@@ -1023,35 +1023,35 @@
         "ticker": "6100",
         "index_code": "0066",
         "review": false,
-        "status": "ok",
-        "as_of": "2026-07-03",
+        "status": "no_data",
+        "as_of": null,
         "returns": {
           "1D": {
-            "price": 0.15,
+            "price": null,
             "total": null
           },
           "1W": {
-            "price": 0.72,
+            "price": null,
             "total": null
           },
           "1M": {
-            "price": 1.57,
+            "price": null,
             "total": null
           },
           "3M": {
-            "price": 7.16,
+            "price": null,
             "total": null
           },
           "6M": {
-            "price": 14.39,
+            "price": null,
             "total": null
           },
           "YTD": {
-            "price": 14.82,
+            "price": null,
             "total": null
           },
           "1Y": {
-            "price": 36.53,
+            "price": null,
             "total": null
           }
         }
@@ -1061,35 +1061,35 @@
         "ticker": "7050",
         "index_code": "0067",
         "review": false,
-        "status": "ok",
-        "as_of": "2026-07-03",
+        "status": "no_data",
+        "as_of": null,
         "returns": {
           "1D": {
-            "price": 0.08,
+            "price": null,
             "total": null
           },
           "1W": {
-            "price": 0.38,
+            "price": null,
             "total": null
           },
           "1M": {
-            "price": 1.27,
+            "price": null,
             "total": null
           },
           "3M": {
-            "price": 3.51,
+            "price": null,
             "total": null
           },
           "6M": {
-            "price": 7.24,
+            "price": null,
             "total": null
           },
           "YTD": {
-            "price": 7.37,
+            "price": null,
             "total": null
           },
           "1Y": {
-            "price": 17.12,
+            "price": null,
             "total": null
           }
         }
@@ -1099,35 +1099,35 @@
         "ticker": "7100",
         "index_code": "0068",
         "review": false,
-        "status": "ok",
-        "as_of": "2026-07-03",
+        "status": "no_data",
+        "as_of": null,
         "returns": {
           "1D": {
-            "price": 0.04,
+            "price": null,
             "total": null
           },
           "1W": {
-            "price": 0.17,
+            "price": null,
             "total": null
           },
           "1M": {
-            "price": 0.46,
+            "price": null,
             "total": null
           },
           "3M": {
-            "price": -0.91,
+            "price": null,
             "total": null
           },
           "6M": {
-            "price": -0.86,
+            "price": null,
             "total": null
           },
           "YTD": {
-            "price": -0.95,
+            "price": null,
             "total": null
           },
           "1Y": {
-            "price": 0.39,
+            "price": null,
             "total": null
           }
         }
@@ -1137,35 +1137,35 @@
         "ticker": "7150",
         "index_code": "0069",
         "review": false,
-        "status": "ok",
-        "as_of": "2026-07-03",
+        "status": "no_data",
+        "as_of": null,
         "returns": {
           "1D": {
-            "price": 0.05,
+            "price": null,
             "total": null
           },
           "1W": {
-            "price": 0.19,
+            "price": null,
             "total": null
           },
           "1M": {
-            "price": -0.02,
+            "price": null,
             "total": null
           },
           "3M": {
-            "price": -4.73,
+            "price": null,
             "total": null
           },
           "6M": {
-            "price": -7.54,
+            "price": null,
             "total": null
           },
           "YTD": {
-            "price": -7.79,
+            "price": null,
             "total": null
           },
           "1Y": {
-            "price": -13.59,
+            "price": null,
             "total": null
           }
         }
@@ -1179,31 +1179,31 @@
         "as_of": "2026-07-03",
         "returns": {
           "1D": {
-            "price": -0.16,
+            "price": 2.9,
             "total": null
           },
           "1W": {
-            "price": -0.79,
+            "price": 7.42,
             "total": null
           },
           "1M": {
-            "price": -2.38,
+            "price": -4.04,
             "total": null
           },
           "3M": {
-            "price": -6.8,
+            "price": 0.0,
             "total": null
           },
           "6M": {
-            "price": -13.39,
+            "price": 8.59,
             "total": null
           },
           "YTD": {
-            "price": -13.62,
+            "price": 8.59,
             "total": null
           },
           "1Y": {
-            "price": -26.88,
+            "price": 3.31,
             "total": null
           }
         }
@@ -1213,35 +1213,35 @@
         "ticker": "8050",
         "index_code": "0071",
         "review": false,
-        "status": "ok",
-        "as_of": "2026-07-03",
+        "status": "no_data",
+        "as_of": null,
         "returns": {
           "1D": {
-            "price": 0.06,
+            "price": null,
             "total": null
           },
           "1W": {
-            "price": 0.32,
+            "price": null,
             "total": null
           },
           "1M": {
-            "price": 1.68,
+            "price": null,
             "total": null
           },
           "3M": {
-            "price": 6.71,
+            "price": null,
             "total": null
           },
           "6M": {
-            "price": 13.32,
+            "price": null,
             "total": null
           },
           "YTD": {
-            "price": 13.59,
+            "price": null,
             "total": null
           },
           "1Y": {
-            "price": 25.89,
+            "price": null,
             "total": null
           }
         }
@@ -1251,35 +1251,35 @@
         "ticker": "9050",
         "index_code": "0072",
         "review": false,
-        "status": "ok",
-        "as_of": "2026-07-03",
+        "status": "no_data",
+        "as_of": null,
         "returns": {
           "1D": {
-            "price": -0.04,
+            "price": null,
             "total": null
           },
           "1W": {
-            "price": -0.13,
+            "price": null,
             "total": null
           },
           "1M": {
-            "price": -0.3,
+            "price": null,
             "total": null
           },
           "3M": {
-            "price": 2.91,
+            "price": null,
             "total": null
           },
           "6M": {
-            "price": 4.3,
+            "price": null,
             "total": null
           },
           "YTD": {
-            "price": 4.53,
+            "price": null,
             "total": null
           },
           "1Y": {
-            "price": 7.27,
+            "price": null,
             "total": null
           }
         }
