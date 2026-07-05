@@ -19,6 +19,7 @@ jobs:
       - run: pip install -r pipeline/requirements.txt
       - name: Validate tickers
         run: |
+          set -o pipefail
           python pipeline/src/validate_tickers.py | tee report.txt
       - name: Publish to job summary
         if: always()

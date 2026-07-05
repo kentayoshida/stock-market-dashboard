@@ -53,7 +53,7 @@ blocks:
       - { label: 豪州,     ticker: EWA }
       - { label: ブラジル,  ticker: EWZ }
       - { label: カナダ,    ticker: EWC }
-      - { label: 中国,      ticker: MCHI, review: true }   # 要確認: MCHI(広範) or FXI(大型50)
+      - { label: 中国,      ticker: MCHI }   # 確定（広範・本土含む）。代替 FXI(大型50)
       - { label: フランス,  ticker: EWQ }
       - { label: ドイツ,    ticker: EWG }
       - { label: 香港,      ticker: EWH }
@@ -64,14 +64,14 @@ blocks:
       - { label: スペイン,  ticker: EWP }
       - { label: 南アフリカ, ticker: EZA }
       - { label: 英国,      ticker: EWU }
-      - { label: 中東,      ticker: GULF, review: true }   # 要確認: GULF(湾岸) or MES(中東広域)
-      - { label: 新興国,    ticker: EEM,  review: true }   # 要確認: EEM(高流動) or IEMG(低コスト)
+      - { label: 中東,      ticker: MES, review: true }   # GULF は取得不可 → MES(中東広域)を採用・要検証
+      - { label: 新興国,    ticker: EEM }   # 確定（高流動）。代替 IEMG(低コスト)
 
   # ---- §2.4 コモディティ ETF ----
   - id: commodities
     title: コモディティ ETF
     items:
-      - { label: コモディティ全般, ticker: DBC, review: true }  # 要確認: DBC or PDBC(K-1回避)
+      - { label: コモディティ全般, ticker: DBC }  # 確定。代替 PDBC(K-1回避)
       - { label: エネルギー,      ticker: DBE }
       - { label: 天然ガス,        ticker: UNG }
       - { label: ゴールド,        ticker: GLD }
@@ -86,8 +86,7 @@ blocks:
       - { label: 短期債,      ticker: SHY }   # 1-3年米国債
       - { label: 中期債,      ticker: IEF }   # 7-10年米国債
       - { label: 20年超債券,   ticker: TLT }
-      - { label: 債券合計,     ticker: AGG }   # 米国総合債券
-      - { label: 債券全般,     ticker: BND, review: true }  # 要確認: AGG と重複。片方に統合可
+      - { label: 債券合計,     ticker: AGG }   # 米国総合債券（BND と重複のため AGG に一本化）
       - { label: TIPS,       ticker: TIP }   # 物価連動債
       - { label: ハイイールド債, ticker: HYG }
 
@@ -95,6 +94,6 @@ blocks:
   - id: others
     title: その他 ETF
     items:
-      - { label: 半導体株, ticker: SOXX, review: true }  # 要確認: SOXX or SMH
+      - { label: 半導体株, ticker: SOXX }  # 確定。代替 SMH
       - { label: 金鉱山株, ticker: GDX }
       - { label: 銀鉱山株, ticker: SIL }
