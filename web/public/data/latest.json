@@ -1,0 +1,380 @@
+{
+  "as_of": "2026-07-03",
+  "generated_at": "2026-07-05T05:20:35+00:00",
+  "data_source": "fixture",
+  "currency": "USD",
+  "periods": [
+    "1D",
+    "1M",
+    "1Y"
+  ],
+  "total_return_periods": [
+    "1Y"
+  ],
+  "coverage": {
+    "ok": 16,
+    "no_data": 0,
+    "total": 16
+  },
+  "disclaimer": "情報提供目的であり投資助言ではありません。",
+  "blocks": [
+    {
+      "id": "us_index",
+      "title": "主要米国株価指数 ETF",
+      "items": [
+        {
+          "label": "ダウ平均",
+          "ticker": "DIA",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-03",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.01,
+              "total": null
+            },
+            "1M": {
+              "price": 0.28,
+              "total": null
+            },
+            "1Y": {
+              "price": 0.02,
+              "total": 1.3
+            }
+          }
+        },
+        {
+          "label": "S&P500",
+          "ticker": "SPY",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-03",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.06,
+              "total": null
+            },
+            "1M": {
+              "price": -1.48,
+              "total": null
+            },
+            "1Y": {
+              "price": -18.93,
+              "total": -17.9
+            }
+          }
+        },
+        {
+          "label": "ナスダック100",
+          "ticker": "QQQ",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-03",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.01,
+              "total": null
+            },
+            "1M": {
+              "price": -0.05,
+              "total": null
+            },
+            "1Y": {
+              "price": -0.13,
+              "total": 1.14
+            }
+          }
+        },
+        {
+          "label": "コアS&P中型株",
+          "ticker": "IJH",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-03",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.01,
+              "total": null
+            },
+            "1M": {
+              "price": 0.04,
+              "total": null
+            },
+            "1Y": {
+              "price": 0.16,
+              "total": 1.43
+            }
+          }
+        },
+        {
+          "label": "コアS&P小型株",
+          "ticker": "IJR",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-03",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.06,
+              "total": null
+            },
+            "1M": {
+              "price": -1.18,
+              "total": null
+            },
+            "1Y": {
+              "price": -9.79,
+              "total": -8.64
+            }
+          }
+        },
+        {
+          "label": "ラッセル1000",
+          "ticker": "IWB",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-03",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.03,
+              "total": null
+            },
+            "1M": {
+              "price": 0.72,
+              "total": null
+            },
+            "1Y": {
+              "price": 11.07,
+              "total": 12.49
+            }
+          }
+        },
+        {
+          "label": "ラッセル2000",
+          "ticker": "IWM",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-03",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.03,
+              "total": null
+            },
+            "1M": {
+              "price": -1.11,
+              "total": null
+            },
+            "1Y": {
+              "price": -10.07,
+              "total": -8.93
+            }
+          }
+        },
+        {
+          "label": "ラッセル3000",
+          "ticker": "IWV",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-03",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.09,
+              "total": null
+            },
+            "1M": {
+              "price": 1.76,
+              "total": null
+            },
+            "1Y": {
+              "price": 22.99,
+              "total": 24.56
+            }
+          }
+        },
+        {
+          "label": "S&P500グロース",
+          "ticker": "IVW",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-03",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.03,
+              "total": null
+            },
+            "1M": {
+              "price": -1.02,
+              "total": null
+            },
+            "1Y": {
+              "price": -10.17,
+              "total": -9.03
+            }
+          }
+        },
+        {
+          "label": "中型株400グロース",
+          "ticker": "IJK",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-03",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.09,
+              "total": null
+            },
+            "1M": {
+              "price": -1.79,
+              "total": null
+            },
+            "1Y": {
+              "price": -18.73,
+              "total": -17.69
+            }
+          }
+        },
+        {
+          "label": "小型株600グロース",
+          "ticker": "IJT",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-03",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.11,
+              "total": null
+            },
+            "1M": {
+              "price": 2.46,
+              "total": null
+            },
+            "1Y": {
+              "price": 36.85,
+              "total": 38.59
+            }
+          }
+        },
+        {
+          "label": "S&P500バリュー",
+          "ticker": "IVE",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-03",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.03,
+              "total": null
+            },
+            "1M": {
+              "price": 0.72,
+              "total": null
+            },
+            "1Y": {
+              "price": 11.07,
+              "total": 12.49
+            }
+          }
+        },
+        {
+          "label": "中型株400バリュー",
+          "ticker": "IJJ",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-03",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.11,
+              "total": null
+            },
+            "1M": {
+              "price": 2.67,
+              "total": null
+            },
+            "1Y": {
+              "price": 37.05,
+              "total": 38.79
+            }
+          }
+        },
+        {
+          "label": "小型株600バリュー",
+          "ticker": "IJS",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-03",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.03,
+              "total": null
+            },
+            "1M": {
+              "price": 0.72,
+              "total": null
+            },
+            "1Y": {
+              "price": 11.07,
+              "total": 12.49
+            }
+          }
+        },
+        {
+          "label": "ダウ配当株100",
+          "ticker": "SCHD",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-03",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.01,
+              "total": null
+            },
+            "1M": {
+              "price": -0.27,
+              "total": null
+            },
+            "1Y": {
+              "price": 0.08,
+              "total": 1.35
+            }
+          }
+        },
+        {
+          "label": "S&P均等ウェイト",
+          "ticker": "RSP",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-03",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.13,
+              "total": null
+            },
+            "1M": {
+              "price": 2.68,
+              "total": null
+            },
+            "1Y": {
+              "price": 36.48,
+              "total": 38.22
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

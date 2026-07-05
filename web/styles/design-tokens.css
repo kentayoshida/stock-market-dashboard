@@ -1,0 +1,131 @@
+/*
+ * design-tokens.css — 共有デザイントークン
+ * =========================================================================
+ * 姉妹プロジェクト（日本版 Fear & Greed 指数）とブランドを揃えるための共有
+ * トークン（market-dashboard-spec.md §4.3 / §6）。
+ *
+ * ⚠ 再構築版（要確認）: F&G リポジトリはこのセッションから到達できないため、
+ * この design-tokens.css は F&G 仕様書 §6.5 に文書化されたゾーン配色から
+ * 再構築したもの。実ファイルが入手でき次第、値を突き合わせて統一すること。
+ *
+ * F&G ゾーン配色（§6.5）:
+ *   極度の恐怖 #c0392b / 恐怖 #e07020 / 中立 #e6c200〜#9aa0a6 /
+ *   貪欲 #70bb50 / 極度の貪欲 #1a9850
+ * 本ダッシュボードの gain/loss（プラス/マイナス）はこのゾーン色相を流用:
+ *   gain = 極度の貪欲(緑)系, loss = 極度の恐怖(赤)系（§4.3）。
+ * =========================================================================
+ */
+
+:root {
+  /* ---- F&G ゾーン配色（共有） ---- */
+  --fg-extreme-fear: #c0392b;
+  --fg-fear:         #e07020;
+  --fg-neutral:      #9aa0a6;
+  --fg-neutral-warm: #e6c200;
+  --fg-greed:        #70bb50;
+  --fg-extreme-greed:#1a9850;
+
+  /* ---- タイポグラフィ ---- */
+  --font-sans: system-ui, -apple-system, "Segoe UI", "Helvetica Neue",
+               "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", "Roboto Mono",
+               Menlo, Consolas, monospace;
+
+  --fs-hero: clamp(1.6rem, 1.2rem + 1.6vw, 2.3rem);
+  --fs-title: 1.05rem;
+  --fs-body: 0.9rem;
+  --fs-num: 0.9rem;
+  --fs-small: 0.78rem;
+  --fs-micro: 0.7rem;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* ---- スペーシング / 半径 ---- */
+  --sp-1: 4px;  --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 24px; --sp-6: 32px; --sp-7: 48px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  --maxw: 1180px;
+}
+
+/* ===== ライト（既定） ===== */
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --plane:        #f3f1ec;   /* ページ背景 */
+  --surface:      #fbfaf7;   /* カード面 */
+  --surface-2:    #f1efe9;   /* 沈んだ面（トラック等） */
+  --border:       rgba(20, 20, 18, 0.10);
+  --border-strong:rgba(20, 20, 18, 0.18);
+
+  --ink:          #14140f;   /* 一次テキスト */
+  --ink-2:        #52514b;   /* 二次テキスト */
+  --ink-muted:    #86847c;   /* ミュート（ラベル/軸） */
+
+  --accent:       #9a7b1f;   /* アクセント（中立ゾーン由来のゴールド） */
+  --accent-ink:   #fbfaf7;
+
+  /* gain/loss（F&G ゾーン色相を流用）。near-zero は面へ退色（§4.1） */
+  --gain:         #1a8f4c;   /* 極度の貪欲系（緑） */
+  --gain-strong:  #0f6d38;
+  --loss:         #c0392b;   /* 極度の恐怖系（赤） */
+  --loss-strong:  #97281c;
+  --zero:         #9aa0a6;   /* 中立（ゼロ近傍） */
+}
+
+/* ===== ダーク ===== */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
+    --plane:        #0e0f0d;
+    --surface:      #16181500;  /* overridden below to opaque */
+    --surface:      #171814;
+    --surface-2:    #1f211c;
+    --border:       rgba(255, 255, 255, 0.10);
+    --border-strong:rgba(255, 255, 255, 0.18);
+
+    --ink:          #f5f4ee;
+    --ink-2:        #c3c2b7;
+    --ink-muted:    #8b8a80;
+
+    --accent:       #e6c200;
+    --accent-ink:   #14140f;
+
+    --gain:         #2bb968;
+    --gain-strong:  #45d07e;
+    --loss:         #e05646;
+    --loss-strong:  #ef6f60;
+    --zero:         #6d726f;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --plane:        #0e0f0d;
+  --surface:      #171814;
+  --surface-2:    #1f211c;
+  --border:       rgba(255, 255, 255, 0.10);
+  --border-strong:rgba(255, 255, 255, 0.18);
+
+  --ink:          #f5f4ee;
+  --ink-2:        #c3c2b7;
+  --ink-muted:    #8b8a80;
+
+  --accent:       #e6c200;
+  --accent-ink:   #14140f;
+
+  --gain:         #2bb968;
+  --gain-strong:  #45d07e;
+  --loss:         #e05646;
+  --loss-strong:  #ef6f60;
+  --zero:         #6d726f;
+}
