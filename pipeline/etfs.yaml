@@ -1,25 +1,23 @@
 # ETF マッピング定義 — コード非依存で銘柄を追加/差替できる（Ken が調整可能）。
 # すべて米国上場・ドル建てで統一（market-dashboard-spec.md §1-5, §2）。
 #
-# Phase 1 スコープ: 主要米国株価指数ブロック（§2.1）のみ、期間 1D/1M/1Y。
-# Phase 2 以降で §2.2〜2.6 のブロックと全期間トグルを追加する。
+# Phase 2: 全期間トグル（1D〜1Y）＋全ブロック（§2.1〜2.6）。
+# 「review: true」= 代表ETFの選定に幅がある「要確認」銘柄（§2 の印）。暫定ティッカーを
+# 置きつつフラグで明示し、CI 検証（validate-tickers.yml）で候補を出して Ken が最終決定する。
 
-# 期間トグルで出す期間（build.py がこの順序で算出する）。
-# Phase 1 は 1D/1M/1Y のみ。Phase 2 で [1D, 1W, 1M, 3M, 6M, YTD, 1Y] に拡張。
-periods: [1D, 1M, 1Y]
-
-# 配当込み（トータルリターン, Adj Close）トグルを出す期間（§3.2）。1Y のみ。
-total_return_periods: [1Y]
+periods: [1D, 1W, 1M, 3M, 6M, YTD, 1Y]
+total_return_periods: [1Y]   # 配当込み(Adj Close)トグルを出す期間（1Y のみ・§3.2）
 
 blocks:
+  # ---- §2.1 主要米国株価指数 ETF ----
   - id: us_index
     title: 主要米国株価指数 ETF
     items:
       - { label: ダウ平均,          ticker: DIA }
       - { label: S&P500,            ticker: SPY }
       - { label: ナスダック100,      ticker: QQQ }
-      - { label: コアS&P中型株,      ticker: IJH }   # S&P MidCap 400
-      - { label: コアS&P小型株,      ticker: IJR }   # S&P SmallCap 600
+      - { label: コアS&P中型株,      ticker: IJH }
+      - { label: コアS&P小型株,      ticker: IJR }
       - { label: ラッセル1000,       ticker: IWB }
       - { label: ラッセル2000,       ticker: IWM }
       - { label: ラッセル3000,       ticker: IWV }
@@ -29,7 +27,74 @@ blocks:
       - { label: S&P500バリュー,     ticker: IVE }
       - { label: 中型株400バリュー,   ticker: IJJ }
       - { label: 小型株600バリュー,   ticker: IJS }
-      # 「ダウ平均配当株」= SCHD に確定（Ken 判断・AUM 最大）。
-      # SCHD は Dow Jones U.S. Dividend 100 指数に連動。候補だった DVY / SDY は不採用。
-      - { label: ダウ配当株100,      ticker: SCHD }
+      - { label: ダウ配当株100,      ticker: SCHD }   # Dow Jones U.S. Dividend 100（確定）
       - { label: S&P均等ウェイト,     ticker: RSP }
+
+  # ---- §2.2 S&P500 セクター ETF（SPDR Select Sector）----
+  - id: sectors
+    title: S&P500 セクター ETF
+    items:
+      - { label: 一般消費財,   ticker: XLY }
+      - { label: 生活必需品,   ticker: XLP }
+      - { label: エネルギー,   ticker: XLE }
+      - { label: 金融,        ticker: XLF }
+      - { label: ヘルスケア,   ticker: XLV }
+      - { label: 工業,        ticker: XLI }
+      - { label: 素材,        ticker: XLB }
+      - { label: テクノロジー, ticker: XLK }
+      - { label: 通信サービス, ticker: XLC }
+      - { label: 公益,        ticker: XLU }
+      - { label: 不動産,      ticker: XLRE }
+
+  # ---- §2.3 主要国株式 ETF（iShares MSCI 単一国シリーズ）----
+  - id: countries
+    title: 主要国株式 ETF
+    items:
+      - { label: 豪州,     ticker: EWA }
+      - { label: ブラジル,  ticker: EWZ }
+      - { label: カナダ,    ticker: EWC }
+      - { label: 中国,      ticker: MCHI, review: true }   # 要確認: MCHI(広範) or FXI(大型50)
+      - { label: フランス,  ticker: EWQ }
+      - { label: ドイツ,    ticker: EWG }
+      - { label: 香港,      ticker: EWH }
+      - { label: インド,    ticker: INDA }
+      - { label: イタリア,  ticker: EWI }
+      - { label: 日本,      ticker: EWJ }
+      - { label: メキシコ,  ticker: EWW }
+      - { label: スペイン,  ticker: EWP }
+      - { label: 南アフリカ, ticker: EZA }
+      - { label: 英国,      ticker: EWU }
+      - { label: 中東,      ticker: GULF, review: true }   # 要確認: GULF(湾岸) or MES(中東広域)
+      - { label: 新興国,    ticker: EEM,  review: true }   # 要確認: EEM(高流動) or IEMG(低コスト)
+
+  # ---- §2.4 コモディティ ETF ----
+  - id: commodities
+    title: コモディティ ETF
+    items:
+      - { label: コモディティ全般, ticker: DBC, review: true }  # 要確認: DBC or PDBC(K-1回避)
+      - { label: エネルギー,      ticker: DBE }
+      - { label: 天然ガス,        ticker: UNG }
+      - { label: ゴールド,        ticker: GLD }
+      - { label: シルバー,        ticker: SLV }
+      - { label: ベースメタル,     ticker: DBB }
+      - { label: 農産物,          ticker: DBA }
+
+  # ---- §2.5 債券 ETF ----
+  - id: bonds
+    title: 債券 ETF
+    items:
+      - { label: 短期債,      ticker: SHY }   # 1-3年米国債
+      - { label: 中期債,      ticker: IEF }   # 7-10年米国債
+      - { label: 20年超債券,   ticker: TLT }
+      - { label: 債券合計,     ticker: AGG }   # 米国総合債券
+      - { label: 債券全般,     ticker: BND, review: true }  # 要確認: AGG と重複。片方に統合可
+      - { label: TIPS,       ticker: TIP }   # 物価連動債
+      - { label: ハイイールド債, ticker: HYG }
+
+  # ---- §2.6 その他 ETF ----
+  - id: others
+    title: その他 ETF
+    items:
+      - { label: 半導体株, ticker: SOXX, review: true }  # 要確認: SOXX or SMH
+      - { label: 金鉱山株, ticker: GDX }
+      - { label: 銀鉱山株, ticker: SIL }

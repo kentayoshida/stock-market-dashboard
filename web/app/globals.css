@@ -34,7 +34,7 @@
   --radius-md: var(--fg-radius);
   --radius-lg: var(--fg-radius-lg);
   --radius-pill: 999px;
-  --maxw: 1180px;
+  --maxw: 1320px;
 
   /* 地の色・テキスト（共有トークンから・ライト） */
   --plane:        var(--fg-surface-alt);
@@ -319,48 +319,45 @@ body {
 }
 
 /* ===================== ブロック / ヒートマップ ===================== */
+/* 各ブロックを1つのカラムとして多カラムに流す（画像準拠・§4.1）。
+   デスクトップで最大4カラム、狭くなるほど 3→2→1 に自動で減る。 */
 .blocks-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--sp-4);
+  column-width: 300px;
+  column-gap: var(--sp-4);
 }
 
 .block {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: var(--sp-4) var(--sp-5) var(--sp-5);
+  padding: var(--sp-4) var(--sp-3) var(--sp-3);
+  margin: 0 0 var(--sp-4);
+  break-inside: avoid;
 }
 
 .block-title {
   font-size: var(--fs-title);
   font-weight: var(--fw-semibold);
-  margin: 0 0 var(--sp-3);
-  padding-bottom: var(--sp-3);
+  margin: 0 0 var(--sp-2);
+  padding-bottom: var(--sp-2);
   border-bottom: 1px solid var(--border);
   letter-spacing: 0.01em;
 }
 
+/* 各ブロック内は1カラムの行リスト（ブロック自体がカラムになる）。 */
 .block-rows {
-  display: grid;
-  grid-template-columns: 1fr;
-  column-gap: var(--sp-6);
-  row-gap: 2px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1px;
 }
 
-@media (min-width: 760px) {
-  .block-rows {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-/* ---- 行 ---- */
+/* ---- 行: ラベル / 数値 / 中心0%の diverging バー ---- */
 .row {
   display: grid;
-  grid-template-columns: minmax(120px, 1.4fr) minmax(70px, 2fr) auto;
+  grid-template-columns: minmax(0, 1fr) 58px 82px;
   align-items: center;
-  gap: var(--sp-3);
-  padding: 7px var(--sp-2);
+  gap: var(--sp-2);
+  padding: 5px 6px;
   border-radius: var(--radius-sm);
 }
 
@@ -401,23 +398,44 @@ body {
   flex: none;
 }
 
+/* 中心0%の diverging バー。中心に軸線、プラス=右/緑・マイナス=左/赤。 */
 .row-bar {
   position: relative;
-  height: 12px;
+  height: 20px;
   background: var(--surface-2);
-  border-radius: var(--radius-pill);
+  border-radius: var(--radius-sm);
   overflow: hidden;
+}
+
+.row-bar-axis {
+  position: absolute;
+  left: 50%;
+  top: 2px;
+  bottom: 2px;
+  width: 1px;
+  background: var(--border-strong);
+  transform: translateX(-0.5px);
+  z-index: 1;
 }
 
 .row-bar-fill {
   position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  border-radius: var(--radius-pill);
+  top: 2px;
+  bottom: 2px;
   min-width: 2px;
+  border-radius: 3px;
   transition: width 0.35s cubic-bezier(0.22, 1, 0.36, 1),
     background 0.2s ease;
+}
+
+.row-bar-fill.is-pos {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.row-bar-fill.is-neg {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .row-value {
@@ -425,8 +443,15 @@ body {
   font-variant-numeric: tabular-nums;
   font-size: var(--fs-num);
   font-weight: var(--fw-semibold);
-  min-width: 72px;
   letter-spacing: 0.01em;
+}
+
+/* 欠損行: 数値+バー列をまたいで「データなし」を表示 */
+.row-nodata-msg {
+  grid-column: 2 / 4;
+  text-align: right;
+  font-size: var(--fs-small);
+  color: var(--ink-muted);
 }
 
 .row-value.is-gain {
