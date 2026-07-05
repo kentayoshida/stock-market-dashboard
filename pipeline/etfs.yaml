@@ -64,7 +64,8 @@ blocks:
       - { label: スペイン,  ticker: EWP }
       - { label: 南アフリカ, ticker: EZA }
       - { label: 英国,      ticker: EWU }
-      - { label: 中東,      ticker: MES, review: true }   # GULF は取得不可 → MES(中東広域)を採用・要検証
+      # 中東: GULF・MES とも yfinance/stooq で取得不可（中東ETFは無料ソースで薄い）。
+      # 仕様の想定どおり代表銘柄が確保できないため、当ダッシュボードでは中東を除外（Ken 了承）。
       - { label: 新興国,    ticker: EEM }   # 確定（高流動）。代替 IEMG(低コスト)
 
   # ---- §2.4 コモディティ ETF ----
