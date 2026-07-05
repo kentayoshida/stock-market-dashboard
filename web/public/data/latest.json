@@ -1,7 +1,7 @@
 {
   "as_of": "2026-07-02",
-  "generated_at": "2026-07-05T09:17:45+00:00",
-  "data_source": "yfinance+stooq",
+  "generated_at": "2026-07-05T09:35:02+00:00",
+  "data_source": "yfinance",
   "currency": "USD",
   "periods": [
     "1D",
@@ -16,9 +16,9 @@
     "1Y"
   ],
   "coverage": {
-    "ok": 59,
-    "no_data": 1,
-    "total": 60
+    "ok": 58,
+    "no_data": 0,
+    "total": 58
   },
   "disclaimer": "情報提供目的であり投資助言ではありません。",
   "blocks": [
@@ -1181,7 +1181,7 @@
         {
           "label": "中国",
           "ticker": "MCHI",
-          "review": true,
+          "review": false,
           "status": "ok",
           "as_of": "2026-07-02",
           "stale": false,
@@ -1597,46 +1597,9 @@
           }
         },
         {
-          "label": "中東",
-          "ticker": "GULF",
-          "review": true,
-          "status": "no_data",
-          "as_of": null,
-          "returns": {
-            "1D": {
-              "price": null,
-              "total": null
-            },
-            "1W": {
-              "price": null,
-              "total": null
-            },
-            "1M": {
-              "price": null,
-              "total": null
-            },
-            "3M": {
-              "price": null,
-              "total": null
-            },
-            "6M": {
-              "price": null,
-              "total": null
-            },
-            "YTD": {
-              "price": null,
-              "total": null
-            },
-            "1Y": {
-              "price": null,
-              "total": null
-            }
-          }
-        },
-        {
           "label": "新興国",
           "ticker": "EEM",
-          "review": true,
+          "review": false,
           "status": "ok",
           "as_of": "2026-07-02",
           "stale": false,
@@ -1680,7 +1643,7 @@
         {
           "label": "コモディティ全般",
           "ticker": "DBC",
-          "review": true,
+          "review": false,
           "status": "ok",
           "as_of": "2026-07-02",
           "stale": false,
@@ -2102,44 +2065,6 @@
           }
         },
         {
-          "label": "債券全般",
-          "ticker": "BND",
-          "review": true,
-          "status": "ok",
-          "as_of": "2026-07-02",
-          "stale": false,
-          "returns": {
-            "1D": {
-              "price": 0.07,
-              "total": null
-            },
-            "1W": {
-              "price": -0.67,
-              "total": null
-            },
-            "1M": {
-              "price": -0.12,
-              "total": null
-            },
-            "3M": {
-              "price": -0.64,
-              "total": null
-            },
-            "6M": {
-              "price": -1.26,
-              "total": null
-            },
-            "YTD": {
-              "price": -1.3,
-              "total": null
-            },
-            "1Y": {
-              "price": -0.2,
-              "total": 3.45
-            }
-          }
-        },
-        {
           "label": "TIPS",
           "ticker": "TIP",
           "review": false,
@@ -2224,7 +2149,7 @@
         {
           "label": "半導体株",
           "ticker": "SOXX",
-          "review": true,
+          "review": false,
           "status": "ok",
           "as_of": "2026-07-02",
           "stale": false,
