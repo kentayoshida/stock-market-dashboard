@@ -1,0 +1,31 @@
+name: Validate ETF tickers
+
+# etfs.yaml の各ティッカーの実在・データ取得可否を yfinance で検証する
+# （market-dashboard-spec.md §2, §9）。開発サンドボックスからは Yahoo/stooq が
+# egress ポリシーでブロックされるため、この検証は Actions 側で走らせる。
+# 手動実行し、Summary に結果表を出す。「要確認」印の銘柄もここで確認する。
+on:
+  workflow_dispatch: {}
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r pipeline/requirements.txt
+      - name: Validate tickers
+        run: |
+          python pipeline/src/validate_tickers.py | tee report.txt
+      - name: Publish to job summary
+        if: always()
+        run: |
+          {
+            echo '## ETF ティッカー検証結果'
+            echo '```'
+            cat report.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
