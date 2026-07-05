@@ -1,20 +1,24 @@
 {
   "as_of": "2026-07-02",
-  "generated_at": "2026-07-05T05:37:28+00:00",
+  "generated_at": "2026-07-05T09:17:45+00:00",
   "data_source": "yfinance+stooq",
   "currency": "USD",
   "periods": [
     "1D",
+    "1W",
     "1M",
+    "3M",
+    "6M",
+    "YTD",
     "1Y"
   ],
   "total_return_periods": [
     "1Y"
   ],
   "coverage": {
-    "ok": 15,
+    "ok": 59,
     "no_data": 1,
-    "total": 16
+    "total": 60
   },
   "disclaimer": "情報提供目的であり投資助言ではありません。",
   "blocks": [
@@ -34,8 +38,24 @@
               "price": 1.05,
               "total": null
             },
+            "1W": {
+              "price": 1.66,
+              "total": null
+            },
             "1M": {
               "price": 2.69,
+              "total": null
+            },
+            "3M": {
+              "price": 13.51,
+              "total": null
+            },
+            "6M": {
+              "price": 9.15,
+              "total": null
+            },
+            "YTD": {
+              "price": 9.84,
               "total": null
             },
             "1Y": {
@@ -56,8 +76,24 @@
               "price": -0.13,
               "total": null
             },
+            "1W": {
+              "price": 1.43,
+              "total": null
+            },
             "1M": {
               "price": -1.95,
+              "total": null
+            },
+            "3M": {
+              "price": 13.56,
+              "total": null
+            },
+            "6M": {
+              "price": 9.02,
+              "total": null
+            },
+            "YTD": {
+              "price": 9.22,
               "total": null
             },
             "1Y": {
@@ -78,8 +114,24 @@
               "price": -1.73,
               "total": null
             },
+            "1W": {
+              "price": -0.53,
+              "total": null
+            },
             "1M": {
               "price": -4.5,
+              "total": null
+            },
+            "3M": {
+              "price": 21.82,
+              "total": null
+            },
+            "6M": {
+              "price": 16.23,
+              "total": null
+            },
+            "YTD": {
+              "price": 16.0,
               "total": null
             },
             "1Y": {
@@ -100,8 +152,24 @@
               "price": -0.46,
               "total": null
             },
+            "1W": {
+              "price": -0.48,
+              "total": null
+            },
             "1M": {
               "price": 1.16,
+              "total": null
+            },
+            "3M": {
+              "price": 11.6,
+              "total": null
+            },
+            "6M": {
+              "price": 13.72,
+              "total": null
+            },
+            "YTD": {
+              "price": 15.29,
               "total": null
             },
             "1Y": {
@@ -122,8 +190,24 @@
               "price": -0.72,
               "total": null
             },
+            "1W": {
+              "price": 0.14,
+              "total": null
+            },
             "1M": {
               "price": 4.86,
+              "total": null
+            },
+            "3M": {
+              "price": 16.78,
+              "total": null
+            },
+            "6M": {
+              "price": 20.69,
+              "total": null
+            },
+            "YTD": {
+              "price": 21.88,
               "total": null
             },
             "1Y": {
@@ -144,8 +228,24 @@
               "price": -0.03,
               "total": null
             },
+            "1W": {
+              "price": 1.83,
+              "total": null
+            },
             "1M": {
               "price": -1.45,
+              "total": null
+            },
+            "3M": {
+              "price": 13.59,
+              "total": null
+            },
+            "6M": {
+              "price": 9.2,
+              "total": null
+            },
+            "YTD": {
+              "price": 9.46,
               "total": null
             },
             "1Y": {
@@ -166,8 +266,24 @@
               "price": -0.58,
               "total": null
             },
+            "1W": {
+              "price": -0.44,
+              "total": null
+            },
             "1M": {
               "price": 2.03,
+              "total": null
+            },
+            "3M": {
+              "price": 18.42,
+              "total": null
+            },
+            "6M": {
+              "price": 19.62,
+              "total": null
+            },
+            "YTD": {
+              "price": 20.89,
               "total": null
             },
             "1Y": {
@@ -188,8 +304,24 @@
               "price": -0.08,
               "total": null
             },
+            "1W": {
+              "price": 1.7,
+              "total": null
+            },
             "1M": {
               "price": -1.33,
+              "total": null
+            },
+            "3M": {
+              "price": 13.77,
+              "total": null
+            },
+            "6M": {
+              "price": 9.64,
+              "total": null
+            },
+            "YTD": {
+              "price": 9.93,
               "total": null
             },
             "1Y": {
@@ -210,8 +342,24 @@
               "price": -1.07,
               "total": null
             },
+            "1W": {
+              "price": 1.46,
+              "total": null
+            },
             "1M": {
               "price": -4.22,
+              "total": null
+            },
+            "3M": {
+              "price": 18.1,
+              "total": null
+            },
+            "6M": {
+              "price": 9.79,
+              "total": null
+            },
+            "YTD": {
+              "price": 9.86,
               "total": null
             },
             "1Y": {
@@ -232,8 +380,24 @@
               "price": -0.81,
               "total": null
             },
+            "1W": {
+              "price": -0.77,
+              "total": null
+            },
             "1M": {
               "price": 0.1,
+              "total": null
+            },
+            "3M": {
+              "price": 13.02,
+              "total": null
+            },
+            "6M": {
+              "price": 17.01,
+              "total": null
+            },
+            "YTD": {
+              "price": 18.84,
               "total": null
             },
             "1Y": {
@@ -254,8 +418,24 @@
               "price": -0.76,
               "total": null
             },
+            "1W": {
+              "price": 0.41,
+              "total": null
+            },
             "1M": {
               "price": 7.55,
+              "total": null
+            },
+            "3M": {
+              "price": 19.77,
+              "total": null
+            },
+            "6M": {
+              "price": 23.29,
+              "total": null
+            },
+            "YTD": {
+              "price": 24.6,
               "total": null
             },
             "1Y": {
@@ -276,8 +456,24 @@
               "price": 1.06,
               "total": null
             },
+            "1W": {
+              "price": 1.82,
+              "total": null
+            },
             "1M": {
               "price": 1.03,
+              "total": null
+            },
+            "3M": {
+              "price": 8.66,
+              "total": null
+            },
+            "6M": {
+              "price": 8.19,
+              "total": null
+            },
+            "YTD": {
+              "price": 8.55,
               "total": null
             },
             "1Y": {
@@ -290,20 +486,37 @@
           "label": "中型株400バリュー",
           "ticker": "IJJ",
           "review": false,
-          "status": "no_data",
-          "as_of": null,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
           "returns": {
             "1D": {
-              "price": null,
+              "price": -0.01,
+              "total": null
+            },
+            "1W": {
+              "price": -0.18,
               "total": null
             },
             "1M": {
-              "price": null,
+              "price": 2.34,
+              "total": null
+            },
+            "3M": {
+              "price": 10.11,
+              "total": null
+            },
+            "6M": {
+              "price": 10.29,
+              "total": null
+            },
+            "YTD": {
+              "price": 11.53,
               "total": null
             },
             "1Y": {
-              "price": null,
-              "total": null
+              "price": 15.15,
+              "total": 17.17
             }
           }
         },
@@ -319,8 +532,24 @@
               "price": -0.77,
               "total": null
             },
+            "1W": {
+              "price": -0.12,
+              "total": null
+            },
             "1M": {
               "price": 2.38,
+              "total": null
+            },
+            "3M": {
+              "price": 13.89,
+              "total": null
+            },
+            "6M": {
+              "price": 18.11,
+              "total": null
+            },
+            "YTD": {
+              "price": 19.11,
               "total": null
             },
             "1Y": {
@@ -341,8 +570,24 @@
               "price": 1.7,
               "total": null
             },
+            "1W": {
+              "price": 1.35,
+              "total": null
+            },
             "1M": {
               "price": 0.06,
+              "total": null
+            },
+            "3M": {
+              "price": 5.99,
+              "total": null
+            },
+            "6M": {
+              "price": 16.8,
+              "total": null
+            },
+            "YTD": {
+              "price": 18.08,
               "total": null
             },
             "1Y": {
@@ -363,13 +608,1730 @@
               "price": 0.7,
               "total": null
             },
+            "1W": {
+              "price": 1.49,
+              "total": null
+            },
             "1M": {
               "price": 2.32,
+              "total": null
+            },
+            "3M": {
+              "price": 11.3,
+              "total": null
+            },
+            "6M": {
+              "price": 11.43,
+              "total": null
+            },
+            "YTD": {
+              "price": 12.19,
               "total": null
             },
             "1Y": {
               "price": 16.62,
               "total": 18.55
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "sectors",
+      "title": "S&P500 セクター ETF",
+      "items": [
+        {
+          "label": "一般消費財",
+          "ticker": "XLY",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.82,
+              "total": null
+            },
+            "1W": {
+              "price": 3.33,
+              "total": null
+            },
+            "1M": {
+              "price": -0.4,
+              "total": null
+            },
+            "3M": {
+              "price": 8.29,
+              "total": null
+            },
+            "6M": {
+              "price": -1.04,
+              "total": null
+            },
+            "YTD": {
+              "price": -1.92,
+              "total": null
+            },
+            "1Y": {
+              "price": 6.47,
+              "total": 7.3
+            }
+          }
+        },
+        {
+          "label": "生活必需品",
+          "ticker": "XLP",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 2.03,
+              "total": null
+            },
+            "1W": {
+              "price": 1.25,
+              "total": null
+            },
+            "1M": {
+              "price": 3.86,
+              "total": null
+            },
+            "3M": {
+              "price": 3.79,
+              "total": null
+            },
+            "6M": {
+              "price": 9.4,
+              "total": null
+            },
+            "YTD": {
+              "price": 9.41,
+              "total": null
+            },
+            "1Y": {
+              "price": 3.37,
+              "total": 6.24
+            }
+          }
+        },
+        {
+          "label": "エネルギー",
+          "ticker": "XLE",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.78,
+              "total": null
+            },
+            "1W": {
+              "price": -1.61,
+              "total": null
+            },
+            "1M": {
+              "price": -8.18,
+              "total": null
+            },
+            "3M": {
+              "price": -10.18,
+              "total": null
+            },
+            "6M": {
+              "price": 16.58,
+              "total": null
+            },
+            "YTD": {
+              "price": 19.03,
+              "total": null
+            },
+            "1Y": {
+              "price": 22.44,
+              "total": 26.26
+            }
+          }
+        },
+        {
+          "label": "金融",
+          "ticker": "XLF",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 1.53,
+              "total": null
+            },
+            "1W": {
+              "price": 4.06,
+              "total": null
+            },
+            "1M": {
+              "price": 8.08,
+              "total": null
+            },
+            "3M": {
+              "price": 12.3,
+              "total": null
+            },
+            "6M": {
+              "price": 1.26,
+              "total": null
+            },
+            "YTD": {
+              "price": 1.55,
+              "total": null
+            },
+            "1Y": {
+              "price": 5.7,
+              "total": 7.34
+            }
+          }
+        },
+        {
+          "label": "ヘルスケア",
+          "ticker": "XLV",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 2.63,
+              "total": null
+            },
+            "1W": {
+              "price": 5.21,
+              "total": null
+            },
+            "1M": {
+              "price": 11.84,
+              "total": null
+            },
+            "3M": {
+              "price": 11.53,
+              "total": null
+            },
+            "6M": {
+              "price": 5.29,
+              "total": null
+            },
+            "YTD": {
+              "price": 5.78,
+              "total": null
+            },
+            "1Y": {
+              "price": 20.97,
+              "total": 23.08
+            }
+          }
+        },
+        {
+          "label": "工業",
+          "ticker": "XLI",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.3,
+              "total": null
+            },
+            "1W": {
+              "price": -0.11,
+              "total": null
+            },
+            "1M": {
+              "price": 5.58,
+              "total": null
+            },
+            "3M": {
+              "price": 12.3,
+              "total": null
+            },
+            "6M": {
+              "price": 16.41,
+              "total": null
+            },
+            "YTD": {
+              "price": 18.56,
+              "total": null
+            },
+            "1Y": {
+              "price": 24.13,
+              "total": 25.73
+            }
+          }
+        },
+        {
+          "label": "素材",
+          "ticker": "XLB",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 1.94,
+              "total": null
+            },
+            "1W": {
+              "price": 0.33,
+              "total": null
+            },
+            "1M": {
+              "price": 0.95,
+              "total": null
+            },
+            "3M": {
+              "price": 3.17,
+              "total": null
+            },
+            "6M": {
+              "price": 12.77,
+              "total": null
+            },
+            "YTD": {
+              "price": 14.69,
+              "total": null
+            },
+            "1Y": {
+              "price": 13.77,
+              "total": 15.84
+            }
+          }
+        },
+        {
+          "label": "テクノロジー",
+          "ticker": "XLK",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -2.71,
+              "total": null
+            },
+            "1W": {
+              "price": -2.16,
+              "total": null
+            },
+            "1M": {
+              "price": -8.89,
+              "total": null
+            },
+            "3M": {
+              "price": 32.8,
+              "total": null
+            },
+            "6M": {
+              "price": 25.15,
+              "total": null
+            },
+            "YTD": {
+              "price": 25.44,
+              "total": null
+            },
+            "1Y": {
+              "price": 42.41,
+              "total": 43.16
+            }
+          }
+        },
+        {
+          "label": "通信サービス",
+          "ticker": "XLC",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.13,
+              "total": null
+            },
+            "1W": {
+              "price": 3.81,
+              "total": null
+            },
+            "1M": {
+              "price": -3.5,
+              "total": null
+            },
+            "3M": {
+              "price": -1.88,
+              "total": null
+            },
+            "6M": {
+              "price": -6.24,
+              "total": null
+            },
+            "YTD": {
+              "price": -6.9,
+              "total": null
+            },
+            "1Y": {
+              "price": 2.0,
+              "total": 3.28
+            }
+          }
+        },
+        {
+          "label": "公益",
+          "ticker": "XLU",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 2.21,
+              "total": null
+            },
+            "1W": {
+              "price": -0.2,
+              "total": null
+            },
+            "1M": {
+              "price": 4.24,
+              "total": null
+            },
+            "3M": {
+              "price": -1.25,
+              "total": null
+            },
+            "6M": {
+              "price": 5.97,
+              "total": null
+            },
+            "YTD": {
+              "price": 7.19,
+              "total": null
+            },
+            "1Y": {
+              "price": 12.67,
+              "total": 15.81
+            }
+          }
+        },
+        {
+          "label": "不動産",
+          "ticker": "XLRE",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 1.13,
+              "total": null
+            },
+            "1W": {
+              "price": 0.2,
+              "total": null
+            },
+            "1M": {
+              "price": 2.74,
+              "total": null
+            },
+            "3M": {
+              "price": 7.38,
+              "total": null
+            },
+            "6M": {
+              "price": 10.65,
+              "total": null
+            },
+            "YTD": {
+              "price": 10.73,
+              "total": null
+            },
+            "1Y": {
+              "price": 6.94,
+              "total": 10.63
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "countries",
+      "title": "主要国株式 ETF",
+      "items": [
+        {
+          "label": "豪州",
+          "ticker": "EWA",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 1.41,
+              "total": null
+            },
+            "1W": {
+              "price": 0.57,
+              "total": null
+            },
+            "1M": {
+              "price": -4.68,
+              "total": null
+            },
+            "3M": {
+              "price": -0.04,
+              "total": null
+            },
+            "6M": {
+              "price": 6.12,
+              "total": null
+            },
+            "YTD": {
+              "price": 7.25,
+              "total": null
+            },
+            "1Y": {
+              "price": 5.84,
+              "total": 9.16
+            }
+          }
+        },
+        {
+          "label": "ブラジル",
+          "ticker": "EWZ",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.73,
+              "total": null
+            },
+            "1W": {
+              "price": 0.73,
+              "total": null
+            },
+            "1M": {
+              "price": -3.77,
+              "total": null
+            },
+            "3M": {
+              "price": -10.22,
+              "total": null
+            },
+            "6M": {
+              "price": 6.93,
+              "total": null
+            },
+            "YTD": {
+              "price": 8.37,
+              "total": null
+            },
+            "1Y": {
+              "price": 19.09,
+              "total": 24.44
+            }
+          }
+        },
+        {
+          "label": "カナダ",
+          "ticker": "EWC",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.17,
+              "total": null
+            },
+            "1W": {
+              "price": 0.26,
+              "total": null
+            },
+            "1M": {
+              "price": -2.84,
+              "total": null
+            },
+            "3M": {
+              "price": 4.43,
+              "total": null
+            },
+            "6M": {
+              "price": 6.61,
+              "total": null
+            },
+            "YTD": {
+              "price": 7.12,
+              "total": null
+            },
+            "1Y": {
+              "price": 24.69,
+              "total": 26.39
+            }
+          }
+        },
+        {
+          "label": "中国",
+          "ticker": "MCHI",
+          "review": true,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -1.2,
+              "total": null
+            },
+            "1W": {
+              "price": 0.26,
+              "total": null
+            },
+            "1M": {
+              "price": -10.98,
+              "total": null
+            },
+            "3M": {
+              "price": -8.83,
+              "total": null
+            },
+            "6M": {
+              "price": -18.2,
+              "total": null
+            },
+            "YTD": {
+              "price": -15.25,
+              "total": null
+            },
+            "1Y": {
+              "price": -7.44,
+              "total": -5.68
+            }
+          }
+        },
+        {
+          "label": "フランス",
+          "ticker": "EWQ",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 2.14,
+              "total": null
+            },
+            "1W": {
+              "price": 1.73,
+              "total": null
+            },
+            "1M": {
+              "price": -0.35,
+              "total": null
+            },
+            "3M": {
+              "price": 4.96,
+              "total": null
+            },
+            "6M": {
+              "price": 1.35,
+              "total": null
+            },
+            "YTD": {
+              "price": 2.07,
+              "total": null
+            },
+            "1Y": {
+              "price": 6.12,
+              "total": 9.21
+            }
+          }
+        },
+        {
+          "label": "ドイツ",
+          "ticker": "EWG",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 2.67,
+              "total": null
+            },
+            "1W": {
+              "price": 3.02,
+              "total": null
+            },
+            "1M": {
+              "price": -2.89,
+              "total": null
+            },
+            "3M": {
+              "price": 6.04,
+              "total": null
+            },
+            "6M": {
+              "price": -0.59,
+              "total": null
+            },
+            "YTD": {
+              "price": -0.45,
+              "total": null
+            },
+            "1Y": {
+              "price": 0.33,
+              "total": 2.34
+            }
+          }
+        },
+        {
+          "label": "香港",
+          "ticker": "EWH",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.62,
+              "total": null
+            },
+            "1W": {
+              "price": -0.9,
+              "total": null
+            },
+            "1M": {
+              "price": -9.67,
+              "total": null
+            },
+            "3M": {
+              "price": -9.63,
+              "total": null
+            },
+            "6M": {
+              "price": -4.3,
+              "total": null
+            },
+            "YTD": {
+              "price": -1.51,
+              "total": null
+            },
+            "1Y": {
+              "price": 4.08,
+              "total": 9.16
+            }
+          }
+        },
+        {
+          "label": "インド",
+          "ticker": "INDA",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.71,
+              "total": null
+            },
+            "1W": {
+              "price": 0.26,
+              "total": null
+            },
+            "1M": {
+              "price": 3.19,
+              "total": null
+            },
+            "3M": {
+              "price": 6.24,
+              "total": null
+            },
+            "6M": {
+              "price": -9.16,
+              "total": null
+            },
+            "YTD": {
+              "price": -8.31,
+              "total": null
+            },
+            "1Y": {
+              "price": -10.86,
+              "total": -10.86
+            }
+          }
+        },
+        {
+          "label": "イタリア",
+          "ticker": "EWI",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 2.54,
+              "total": null
+            },
+            "1W": {
+              "price": 2.85,
+              "total": null
+            },
+            "1M": {
+              "price": 1.92,
+              "total": null
+            },
+            "3M": {
+              "price": 11.64,
+              "total": null
+            },
+            "6M": {
+              "price": 9.92,
+              "total": null
+            },
+            "YTD": {
+              "price": 11.6,
+              "total": null
+            },
+            "1Y": {
+              "price": 25.55,
+              "total": 29.71
+            }
+          }
+        },
+        {
+          "label": "日本",
+          "ticker": "EWJ",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.1,
+              "total": null
+            },
+            "1W": {
+              "price": -0.27,
+              "total": null
+            },
+            "1M": {
+              "price": -0.47,
+              "total": null
+            },
+            "3M": {
+              "price": 9.2,
+              "total": null
+            },
+            "6M": {
+              "price": 14.52,
+              "total": null
+            },
+            "YTD": {
+              "price": 15.36,
+              "total": null
+            },
+            "1Y": {
+              "price": 25.09,
+              "total": 30.47
+            }
+          }
+        },
+        {
+          "label": "メキシコ",
+          "ticker": "EWW",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.31,
+              "total": null
+            },
+            "1W": {
+              "price": -0.04,
+              "total": null
+            },
+            "1M": {
+              "price": -4.53,
+              "total": null
+            },
+            "3M": {
+              "price": -0.8,
+              "total": null
+            },
+            "6M": {
+              "price": 8.38,
+              "total": null
+            },
+            "YTD": {
+              "price": 8.9,
+              "total": null
+            },
+            "1Y": {
+              "price": 22.58,
+              "total": 26.78
+            }
+          }
+        },
+        {
+          "label": "スペイン",
+          "ticker": "EWP",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 1.17,
+              "total": null
+            },
+            "1W": {
+              "price": 1.46,
+              "total": null
+            },
+            "1M": {
+              "price": 3.79,
+              "total": null
+            },
+            "3M": {
+              "price": 8.75,
+              "total": null
+            },
+            "6M": {
+              "price": 9.07,
+              "total": null
+            },
+            "YTD": {
+              "price": 10.67,
+              "total": null
+            },
+            "1Y": {
+              "price": 33.77,
+              "total": 37.79
+            }
+          }
+        },
+        {
+          "label": "南アフリカ",
+          "ticker": "EZA",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 2.02,
+              "total": null
+            },
+            "1W": {
+              "price": 1.31,
+              "total": null
+            },
+            "1M": {
+              "price": -6.64,
+              "total": null
+            },
+            "3M": {
+              "price": -5.9,
+              "total": null
+            },
+            "6M": {
+              "price": -7.78,
+              "total": null
+            },
+            "YTD": {
+              "price": -6.98,
+              "total": null
+            },
+            "1Y": {
+              "price": 17.84,
+              "total": 27.01
+            }
+          }
+        },
+        {
+          "label": "英国",
+          "ticker": "EWU",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 2.66,
+              "total": null
+            },
+            "1W": {
+              "price": 2.79,
+              "total": null
+            },
+            "1M": {
+              "price": 0.49,
+              "total": null
+            },
+            "3M": {
+              "price": 2.01,
+              "total": null
+            },
+            "6M": {
+              "price": 6.07,
+              "total": null
+            },
+            "YTD": {
+              "price": 7.23,
+              "total": null
+            },
+            "1Y": {
+              "price": 19.06,
+              "total": 23.1
+            }
+          }
+        },
+        {
+          "label": "中東",
+          "ticker": "GULF",
+          "review": true,
+          "status": "no_data",
+          "as_of": null,
+          "returns": {
+            "1D": {
+              "price": null,
+              "total": null
+            },
+            "1W": {
+              "price": null,
+              "total": null
+            },
+            "1M": {
+              "price": null,
+              "total": null
+            },
+            "3M": {
+              "price": null,
+              "total": null
+            },
+            "6M": {
+              "price": null,
+              "total": null
+            },
+            "YTD": {
+              "price": null,
+              "total": null
+            },
+            "1Y": {
+              "price": null,
+              "total": null
+            }
+          }
+        },
+        {
+          "label": "新興国",
+          "ticker": "EEM",
+          "review": true,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -1.17,
+              "total": null
+            },
+            "1W": {
+              "price": -3.33,
+              "total": null
+            },
+            "1M": {
+              "price": -7.2,
+              "total": null
+            },
+            "3M": {
+              "price": 16.1,
+              "total": null
+            },
+            "6M": {
+              "price": 16.82,
+              "total": null
+            },
+            "YTD": {
+              "price": 20.09,
+              "total": null
+            },
+            "1Y": {
+              "price": 35.35,
+              "total": 38.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "commodities",
+      "title": "コモディティ ETF",
+      "items": [
+        {
+          "label": "コモディティ全般",
+          "ticker": "DBC",
+          "review": true,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.45,
+              "total": null
+            },
+            "1W": {
+              "price": -1.34,
+              "total": null
+            },
+            "1M": {
+              "price": -11.79,
+              "total": null
+            },
+            "3M": {
+              "price": -9.41,
+              "total": null
+            },
+            "6M": {
+              "price": 18.67,
+              "total": null
+            },
+            "YTD": {
+              "price": 18.83,
+              "total": null
+            },
+            "1Y": {
+              "price": 19.2,
+              "total": 23.21
+            }
+          }
+        },
+        {
+          "label": "エネルギー",
+          "ticker": "DBE",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.31,
+              "total": null
+            },
+            "1W": {
+              "price": -3.26,
+              "total": null
+            },
+            "1M": {
+              "price": -17.74,
+              "total": null
+            },
+            "3M": {
+              "price": -15.11,
+              "total": null
+            },
+            "6M": {
+              "price": 48.22,
+              "total": null
+            },
+            "YTD": {
+              "price": 47.62,
+              "total": null
+            },
+            "1Y": {
+              "price": 34.11,
+              "total": 39.35
+            }
+          }
+        },
+        {
+          "label": "天然ガス",
+          "ticker": "UNG",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.52,
+              "total": null
+            },
+            "1W": {
+              "price": -1.45,
+              "total": null
+            },
+            "1M": {
+              "price": 0.96,
+              "total": null
+            },
+            "3M": {
+              "price": 2.03,
+              "total": null
+            },
+            "6M": {
+              "price": -3.98,
+              "total": null
+            },
+            "YTD": {
+              "price": -5.55,
+              "total": null
+            },
+            "1Y": {
+              "price": -24.9,
+              "total": -24.9
+            }
+          }
+        },
+        {
+          "label": "ゴールド",
+          "ticker": "GLD",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 2.03,
+              "total": null
+            },
+            "1W": {
+              "price": 2.35,
+              "total": null
+            },
+            "1M": {
+              "price": -8.21,
+              "total": null
+            },
+            "3M": {
+              "price": -11.94,
+              "total": null
+            },
+            "6M": {
+              "price": -5.06,
+              "total": null
+            },
+            "YTD": {
+              "price": -4.59,
+              "total": null
+            },
+            "1Y": {
+              "price": 22.27,
+              "total": 22.27
+            }
+          }
+        },
+        {
+          "label": "シルバー",
+          "ticker": "SLV",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 2.69,
+              "total": null
+            },
+            "1W": {
+              "price": 5.08,
+              "total": null
+            },
+            "1M": {
+              "price": -19.08,
+              "total": null
+            },
+            "3M": {
+              "price": -16.37,
+              "total": null
+            },
+            "6M": {
+              "price": -16.32,
+              "total": null
+            },
+            "YTD": {
+              "price": -14.59,
+              "total": null
+            },
+            "1Y": {
+              "price": 65.52,
+              "total": 65.52
+            }
+          }
+        },
+        {
+          "label": "ベースメタル",
+          "ticker": "DBB",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.08,
+              "total": null
+            },
+            "1W": {
+              "price": -0.83,
+              "total": null
+            },
+            "1M": {
+              "price": -10.03,
+              "total": null
+            },
+            "3M": {
+              "price": 1.74,
+              "total": null
+            },
+            "6M": {
+              "price": 4.13,
+              "total": null
+            },
+            "YTD": {
+              "price": 4.45,
+              "total": null
+            },
+            "1Y": {
+              "price": 23.06,
+              "total": 26.41
+            }
+          }
+        },
+        {
+          "label": "農産物",
+          "ticker": "DBA",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.45,
+              "total": null
+            },
+            "1W": {
+              "price": -0.67,
+              "total": null
+            },
+            "1M": {
+              "price": -1.4,
+              "total": null
+            },
+            "3M": {
+              "price": -1.55,
+              "total": null
+            },
+            "6M": {
+              "price": 4.62,
+              "total": null
+            },
+            "YTD": {
+              "price": 4.78,
+              "total": null
+            },
+            "1Y": {
+              "price": 3.36,
+              "total": 7.09
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "bonds",
+      "title": "債券 ETF",
+      "items": [
+        {
+          "label": "短期債",
+          "ticker": "SHY",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.12,
+              "total": null
+            },
+            "1W": {
+              "price": -0.18,
+              "total": null
+            },
+            "1M": {
+              "price": -0.09,
+              "total": null
+            },
+            "3M": {
+              "price": -0.51,
+              "total": null
+            },
+            "6M": {
+              "price": -1.11,
+              "total": null
+            },
+            "YTD": {
+              "price": -1.06,
+              "total": null
+            },
+            "1Y": {
+              "price": -0.68,
+              "total": 2.68
+            }
+          }
+        },
+        {
+          "label": "中期債",
+          "ticker": "IEF",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.1,
+              "total": null
+            },
+            "1W": {
+              "price": -0.71,
+              "total": null
+            },
+            "1M": {
+              "price": -0.13,
+              "total": null
+            },
+            "3M": {
+              "price": -1.2,
+              "total": null
+            },
+            "6M": {
+              "price": -2.04,
+              "total": null
+            },
+            "YTD": {
+              "price": -2.12,
+              "total": null
+            },
+            "1Y": {
+              "price": -1.02,
+              "total": 2.5
+            }
+          }
+        },
+        {
+          "label": "20年超債券",
+          "ticker": "TLT",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.01,
+              "total": null
+            },
+            "1W": {
+              "price": -2.11,
+              "total": null
+            },
+            "1M": {
+              "price": -0.16,
+              "total": null
+            },
+            "3M": {
+              "price": -1.47,
+              "total": null
+            },
+            "6M": {
+              "price": -1.75,
+              "total": null
+            },
+            "YTD": {
+              "price": -1.89,
+              "total": null
+            },
+            "1Y": {
+              "price": -2.36,
+              "total": 1.69
+            }
+          }
+        },
+        {
+          "label": "債券合計",
+          "ticker": "AGG",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.11,
+              "total": null
+            },
+            "1W": {
+              "price": -0.64,
+              "total": null
+            },
+            "1M": {
+              "price": -0.1,
+              "total": null
+            },
+            "3M": {
+              "price": -0.62,
+              "total": null
+            },
+            "6M": {
+              "price": -1.24,
+              "total": null
+            },
+            "YTD": {
+              "price": -1.27,
+              "total": null
+            },
+            "1Y": {
+              "price": -0.06,
+              "total": 3.62
+            }
+          }
+        },
+        {
+          "label": "債券全般",
+          "ticker": "BND",
+          "review": true,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.07,
+              "total": null
+            },
+            "1W": {
+              "price": -0.67,
+              "total": null
+            },
+            "1M": {
+              "price": -0.12,
+              "total": null
+            },
+            "3M": {
+              "price": -0.64,
+              "total": null
+            },
+            "6M": {
+              "price": -1.26,
+              "total": null
+            },
+            "YTD": {
+              "price": -1.3,
+              "total": null
+            },
+            "1Y": {
+              "price": -0.2,
+              "total": 3.45
+            }
+          }
+        },
+        {
+          "label": "TIPS",
+          "ticker": "TIP",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.15,
+              "total": null
+            },
+            "1W": {
+              "price": -1.07,
+              "total": null
+            },
+            "1M": {
+              "price": -1.49,
+              "total": null
+            },
+            "3M": {
+              "price": -2.24,
+              "total": null
+            },
+            "6M": {
+              "price": -1.39,
+              "total": null
+            },
+            "YTD": {
+              "price": -1.44,
+              "total": null
+            },
+            "1Y": {
+              "price": -1.11,
+              "total": 2.1
+            }
+          }
+        },
+        {
+          "label": "ハイイールド債",
+          "ticker": "HYG",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.15,
+              "total": null
+            },
+            "1W": {
+              "price": -0.21,
+              "total": null
+            },
+            "1M": {
+              "price": -0.24,
+              "total": null
+            },
+            "3M": {
+              "price": 0.19,
+              "total": null
+            },
+            "6M": {
+              "price": -1.19,
+              "total": null
+            },
+            "YTD": {
+              "price": -1.14,
+              "total": null
+            },
+            "1Y": {
+              "price": -0.76,
+              "total": 4.69
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "others",
+      "title": "その他 ETF",
+      "items": [
+        {
+          "label": "半導体株",
+          "ticker": "SOXX",
+          "review": true,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -5.57,
+              "total": null
+            },
+            "1W": {
+              "price": -9.42,
+              "total": null
+            },
+            "1M": {
+              "price": -6.4,
+              "total": null
+            },
+            "3M": {
+              "price": 66.76,
+              "total": null
+            },
+            "6M": {
+              "price": 80.53,
+              "total": null
+            },
+            "YTD": {
+              "price": 88.05,
+              "total": null
+            },
+            "1Y": {
+              "price": 133.88,
+              "total": 134.97
+            }
+          }
+        },
+        {
+          "label": "金鉱山株",
+          "ticker": "GDX",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 4.48,
+              "total": null
+            },
+            "1W": {
+              "price": 3.65,
+              "total": null
+            },
+            "1M": {
+              "price": -10.93,
+              "total": null
+            },
+            "3M": {
+              "price": -17.08,
+              "total": null
+            },
+            "6M": {
+              "price": -8.52,
+              "total": null
+            },
+            "YTD": {
+              "price": -8.56,
+              "total": null
+            },
+            "1Y": {
+              "price": 48.94,
+              "total": 50.02
+            }
+          }
+        },
+        {
+          "label": "銀鉱山株",
+          "ticker": "SIL",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-02",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 3.9,
+              "total": null
+            },
+            "1W": {
+              "price": 4.03,
+              "total": null
+            },
+            "1M": {
+              "price": -12.88,
+              "total": null
+            },
+            "3M": {
+              "price": -13.44,
+              "total": null
+            },
+            "6M": {
+              "price": -3.39,
+              "total": null
+            },
+            "YTD": {
+              "price": -3.98,
+              "total": null
+            },
+            "1Y": {
+              "price": 64.65,
+              "total": 66.65
             }
           }
         }
