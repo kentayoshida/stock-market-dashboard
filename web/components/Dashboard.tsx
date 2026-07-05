@@ -4,6 +4,7 @@ import { useState } from "react";
 import type { Dataset } from "@/lib/types";
 import PeriodToggle from "./PeriodToggle";
 import HeatmapBlock from "./HeatmapBlock";
+import SiteHeader from "./SiteHeader";
 
 function fmtDate(iso: string | null): string {
   if (!iso) return "—";
@@ -25,21 +26,7 @@ export default function Dashboard({ data }: { data: Dataset }) {
 
   return (
     <div className="page">
-      <header className="site-header">
-        <div className="brand">
-          <span className="brand-mark" aria-hidden="true" />
-          <div>
-            <div className="brand-title">市場パフォーマンス</div>
-            <div className="brand-sub">Market Performance Dashboard</div>
-          </div>
-        </div>
-        <nav className="site-nav" aria-label="ダッシュボード切替">
-          <span className="nav-link is-active">米国 US</span>
-          <span className="nav-link is-disabled" title="Phase 2 以降で追加予定">
-            日本業種別 JP
-          </span>
-        </nav>
-      </header>
+      <SiteHeader active="us" />
 
       <main className="main">
         <div className="hero">

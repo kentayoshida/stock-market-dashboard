@@ -1,0 +1,1289 @@
+{
+  "as_of": "2026-07-03",
+  "generated_at": "2026-07-05T18:44:36+00:00",
+  "data_source": "fixture",
+  "currency": "JPY",
+  "market": "JP",
+  "lag_note": "J-Quants は翌営業日更新のため、最新値は前営業日ぶん（1営業日ラグ）です。",
+  "periods": [
+    "1D",
+    "1W",
+    "1M",
+    "3M",
+    "6M",
+    "YTD",
+    "1Y"
+  ],
+  "total_return": false,
+  "sort": {
+    "default": "code_order"
+  },
+  "coverage": {
+    "ok": 33,
+    "no_data": 0,
+    "total": 33
+  },
+  "disclaimer": "情報提供目的であり投資助言ではありません。",
+  "attribution": "TOPIX 等の指数値・商標は株式会社JPX総研またはその関連会社の知的財産です。",
+  "block": {
+    "id": "jp_sectors_33",
+    "title": "東証33業種",
+    "columns": 3,
+    "items": [
+      {
+        "label": "水産・農林業",
+        "ticker": "0050",
+        "index_code": "0040",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": 0.14,
+            "total": null
+          },
+          "1W": {
+            "price": 0.67,
+            "total": null
+          },
+          "1M": {
+            "price": 2.78,
+            "total": null
+          },
+          "3M": {
+            "price": 3.33,
+            "total": null
+          },
+          "6M": {
+            "price": 8.75,
+            "total": null
+          },
+          "YTD": {
+            "price": 8.66,
+            "total": null
+          },
+          "1Y": {
+            "price": 18.36,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "鉱業",
+        "ticker": "1050",
+        "index_code": "0041",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": 0.07,
+            "total": null
+          },
+          "1W": {
+            "price": 0.47,
+            "total": null
+          },
+          "1M": {
+            "price": 2.06,
+            "total": null
+          },
+          "3M": {
+            "price": 0.48,
+            "total": null
+          },
+          "6M": {
+            "price": 2.2,
+            "total": null
+          },
+          "YTD": {
+            "price": 2.06,
+            "total": null
+          },
+          "1Y": {
+            "price": 1.69,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "建設業",
+        "ticker": "2050",
+        "index_code": "0042",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": -0.1,
+            "total": null
+          },
+          "1W": {
+            "price": -0.32,
+            "total": null
+          },
+          "1M": {
+            "price": 0.8,
+            "total": null
+          },
+          "3M": {
+            "price": -2.05,
+            "total": null
+          },
+          "6M": {
+            "price": -4.22,
+            "total": null
+          },
+          "YTD": {
+            "price": -4.46,
+            "total": null
+          },
+          "1Y": {
+            "price": -13.41,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "食料品",
+        "ticker": "3050",
+        "index_code": "0043",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": -0.16,
+            "total": null
+          },
+          "1W": {
+            "price": -0.79,
+            "total": null
+          },
+          "1M": {
+            "price": -2.38,
+            "total": null
+          },
+          "3M": {
+            "price": -6.8,
+            "total": null
+          },
+          "6M": {
+            "price": -13.39,
+            "total": null
+          },
+          "YTD": {
+            "price": -13.62,
+            "total": null
+          },
+          "1Y": {
+            "price": -26.88,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "繊維製品",
+        "ticker": "3100",
+        "index_code": "0044",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": 0.06,
+            "total": null
+          },
+          "1W": {
+            "price": 0.32,
+            "total": null
+          },
+          "1M": {
+            "price": 1.68,
+            "total": null
+          },
+          "3M": {
+            "price": 6.71,
+            "total": null
+          },
+          "6M": {
+            "price": 13.32,
+            "total": null
+          },
+          "YTD": {
+            "price": 13.59,
+            "total": null
+          },
+          "1Y": {
+            "price": 25.89,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "パルプ・紙",
+        "ticker": "3150",
+        "index_code": "0045",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": -0.04,
+            "total": null
+          },
+          "1W": {
+            "price": -0.13,
+            "total": null
+          },
+          "1M": {
+            "price": -0.3,
+            "total": null
+          },
+          "3M": {
+            "price": 2.91,
+            "total": null
+          },
+          "6M": {
+            "price": 4.3,
+            "total": null
+          },
+          "YTD": {
+            "price": 4.53,
+            "total": null
+          },
+          "1Y": {
+            "price": 7.27,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "化学",
+        "ticker": "3200",
+        "index_code": "0046",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": -0.14,
+            "total": null
+          },
+          "1W": {
+            "price": -0.71,
+            "total": null
+          },
+          "1M": {
+            "price": -2.44,
+            "total": null
+          },
+          "3M": {
+            "price": -1.57,
+            "total": null
+          },
+          "6M": {
+            "price": -4.83,
+            "total": null
+          },
+          "YTD": {
+            "price": -4.73,
+            "total": null
+          },
+          "1Y": {
+            "price": -8.94,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "医薬品",
+        "ticker": "3250",
+        "index_code": "0047",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": -0.13,
+            "total": null
+          },
+          "1W": {
+            "price": -0.85,
+            "total": null
+          },
+          "1M": {
+            "price": -4.49,
+            "total": null
+          },
+          "3M": {
+            "price": -6.64,
+            "total": null
+          },
+          "6M": {
+            "price": -13.44,
+            "total": null
+          },
+          "YTD": {
+            "price": -13.47,
+            "total": null
+          },
+          "1Y": {
+            "price": -22.46,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "石油・石炭製品",
+        "ticker": "3300",
+        "index_code": "0048",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": 0.15,
+            "total": null
+          },
+          "1W": {
+            "price": 0.72,
+            "total": null
+          },
+          "1M": {
+            "price": 1.57,
+            "total": null
+          },
+          "3M": {
+            "price": 7.16,
+            "total": null
+          },
+          "6M": {
+            "price": 14.39,
+            "total": null
+          },
+          "YTD": {
+            "price": 14.82,
+            "total": null
+          },
+          "1Y": {
+            "price": 36.53,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "ゴム製品",
+        "ticker": "3350",
+        "index_code": "0049",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": 0.08,
+            "total": null
+          },
+          "1W": {
+            "price": 0.38,
+            "total": null
+          },
+          "1M": {
+            "price": 1.27,
+            "total": null
+          },
+          "3M": {
+            "price": 3.51,
+            "total": null
+          },
+          "6M": {
+            "price": 7.24,
+            "total": null
+          },
+          "YTD": {
+            "price": 7.37,
+            "total": null
+          },
+          "1Y": {
+            "price": 17.12,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "ガラス・土石製品",
+        "ticker": "3400",
+        "index_code": "0050",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": 0.07,
+            "total": null
+          },
+          "1W": {
+            "price": 0.47,
+            "total": null
+          },
+          "1M": {
+            "price": 2.06,
+            "total": null
+          },
+          "3M": {
+            "price": 0.48,
+            "total": null
+          },
+          "6M": {
+            "price": 2.2,
+            "total": null
+          },
+          "YTD": {
+            "price": 2.06,
+            "total": null
+          },
+          "1Y": {
+            "price": 1.69,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "鉄鋼",
+        "ticker": "3450",
+        "index_code": "0051",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": -0.1,
+            "total": null
+          },
+          "1W": {
+            "price": -0.32,
+            "total": null
+          },
+          "1M": {
+            "price": 0.8,
+            "total": null
+          },
+          "3M": {
+            "price": -2.05,
+            "total": null
+          },
+          "6M": {
+            "price": -4.22,
+            "total": null
+          },
+          "YTD": {
+            "price": -4.46,
+            "total": null
+          },
+          "1Y": {
+            "price": -13.41,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "非鉄金属",
+        "ticker": "3500",
+        "index_code": "0052",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": -0.16,
+            "total": null
+          },
+          "1W": {
+            "price": -0.79,
+            "total": null
+          },
+          "1M": {
+            "price": -2.38,
+            "total": null
+          },
+          "3M": {
+            "price": -6.8,
+            "total": null
+          },
+          "6M": {
+            "price": -13.39,
+            "total": null
+          },
+          "YTD": {
+            "price": -13.62,
+            "total": null
+          },
+          "1Y": {
+            "price": -26.88,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "金属製品",
+        "ticker": "3550",
+        "index_code": "0053",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": 0.06,
+            "total": null
+          },
+          "1W": {
+            "price": 0.32,
+            "total": null
+          },
+          "1M": {
+            "price": 1.68,
+            "total": null
+          },
+          "3M": {
+            "price": 6.71,
+            "total": null
+          },
+          "6M": {
+            "price": 13.32,
+            "total": null
+          },
+          "YTD": {
+            "price": 13.59,
+            "total": null
+          },
+          "1Y": {
+            "price": 25.89,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "機械",
+        "ticker": "3600",
+        "index_code": "0054",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": -0.04,
+            "total": null
+          },
+          "1W": {
+            "price": -0.13,
+            "total": null
+          },
+          "1M": {
+            "price": -0.3,
+            "total": null
+          },
+          "3M": {
+            "price": 2.91,
+            "total": null
+          },
+          "6M": {
+            "price": 4.3,
+            "total": null
+          },
+          "YTD": {
+            "price": 4.53,
+            "total": null
+          },
+          "1Y": {
+            "price": 7.27,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "電気機器",
+        "ticker": "3650",
+        "index_code": "0055",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": -0.14,
+            "total": null
+          },
+          "1W": {
+            "price": -0.71,
+            "total": null
+          },
+          "1M": {
+            "price": -2.44,
+            "total": null
+          },
+          "3M": {
+            "price": -1.57,
+            "total": null
+          },
+          "6M": {
+            "price": -4.83,
+            "total": null
+          },
+          "YTD": {
+            "price": -4.73,
+            "total": null
+          },
+          "1Y": {
+            "price": -8.94,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "輸送用機器",
+        "ticker": "3700",
+        "index_code": "0056",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": -0.13,
+            "total": null
+          },
+          "1W": {
+            "price": -0.85,
+            "total": null
+          },
+          "1M": {
+            "price": -4.49,
+            "total": null
+          },
+          "3M": {
+            "price": -6.64,
+            "total": null
+          },
+          "6M": {
+            "price": -13.44,
+            "total": null
+          },
+          "YTD": {
+            "price": -13.47,
+            "total": null
+          },
+          "1Y": {
+            "price": -22.46,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "精密機器",
+        "ticker": "3750",
+        "index_code": "0057",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": 0.15,
+            "total": null
+          },
+          "1W": {
+            "price": 0.72,
+            "total": null
+          },
+          "1M": {
+            "price": 1.57,
+            "total": null
+          },
+          "3M": {
+            "price": 7.16,
+            "total": null
+          },
+          "6M": {
+            "price": 14.39,
+            "total": null
+          },
+          "YTD": {
+            "price": 14.82,
+            "total": null
+          },
+          "1Y": {
+            "price": 36.53,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "その他製品",
+        "ticker": "3800",
+        "index_code": "0058",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": 0.08,
+            "total": null
+          },
+          "1W": {
+            "price": 0.38,
+            "total": null
+          },
+          "1M": {
+            "price": 1.27,
+            "total": null
+          },
+          "3M": {
+            "price": 3.51,
+            "total": null
+          },
+          "6M": {
+            "price": 7.24,
+            "total": null
+          },
+          "YTD": {
+            "price": 7.37,
+            "total": null
+          },
+          "1Y": {
+            "price": 17.12,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "電気・ガス業",
+        "ticker": "4050",
+        "index_code": "0059",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": 0.04,
+            "total": null
+          },
+          "1W": {
+            "price": 0.17,
+            "total": null
+          },
+          "1M": {
+            "price": 0.46,
+            "total": null
+          },
+          "3M": {
+            "price": -0.91,
+            "total": null
+          },
+          "6M": {
+            "price": -0.86,
+            "total": null
+          },
+          "YTD": {
+            "price": -0.95,
+            "total": null
+          },
+          "1Y": {
+            "price": 0.39,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "陸運業",
+        "ticker": "5050",
+        "index_code": "0060",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": -0.1,
+            "total": null
+          },
+          "1W": {
+            "price": -0.32,
+            "total": null
+          },
+          "1M": {
+            "price": 0.8,
+            "total": null
+          },
+          "3M": {
+            "price": -2.05,
+            "total": null
+          },
+          "6M": {
+            "price": -4.22,
+            "total": null
+          },
+          "YTD": {
+            "price": -4.46,
+            "total": null
+          },
+          "1Y": {
+            "price": -13.41,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "海運業",
+        "ticker": "5100",
+        "index_code": "0061",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": -0.16,
+            "total": null
+          },
+          "1W": {
+            "price": -0.79,
+            "total": null
+          },
+          "1M": {
+            "price": -2.38,
+            "total": null
+          },
+          "3M": {
+            "price": -6.8,
+            "total": null
+          },
+          "6M": {
+            "price": -13.39,
+            "total": null
+          },
+          "YTD": {
+            "price": -13.62,
+            "total": null
+          },
+          "1Y": {
+            "price": -26.88,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "空運業",
+        "ticker": "5150",
+        "index_code": "0062",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": 0.06,
+            "total": null
+          },
+          "1W": {
+            "price": 0.32,
+            "total": null
+          },
+          "1M": {
+            "price": 1.68,
+            "total": null
+          },
+          "3M": {
+            "price": 6.71,
+            "total": null
+          },
+          "6M": {
+            "price": 13.32,
+            "total": null
+          },
+          "YTD": {
+            "price": 13.59,
+            "total": null
+          },
+          "1Y": {
+            "price": 25.89,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "倉庫・運輸関連業",
+        "ticker": "5200",
+        "index_code": "0063",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": -0.04,
+            "total": null
+          },
+          "1W": {
+            "price": -0.13,
+            "total": null
+          },
+          "1M": {
+            "price": -0.3,
+            "total": null
+          },
+          "3M": {
+            "price": 2.91,
+            "total": null
+          },
+          "6M": {
+            "price": 4.3,
+            "total": null
+          },
+          "YTD": {
+            "price": 4.53,
+            "total": null
+          },
+          "1Y": {
+            "price": 7.27,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "情報・通信業",
+        "ticker": "5250",
+        "index_code": "0064",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": -0.14,
+            "total": null
+          },
+          "1W": {
+            "price": -0.71,
+            "total": null
+          },
+          "1M": {
+            "price": -2.44,
+            "total": null
+          },
+          "3M": {
+            "price": -1.57,
+            "total": null
+          },
+          "6M": {
+            "price": -4.83,
+            "total": null
+          },
+          "YTD": {
+            "price": -4.73,
+            "total": null
+          },
+          "1Y": {
+            "price": -8.94,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "卸売業",
+        "ticker": "6050",
+        "index_code": "0065",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": -0.13,
+            "total": null
+          },
+          "1W": {
+            "price": -0.85,
+            "total": null
+          },
+          "1M": {
+            "price": -4.49,
+            "total": null
+          },
+          "3M": {
+            "price": -6.64,
+            "total": null
+          },
+          "6M": {
+            "price": -13.44,
+            "total": null
+          },
+          "YTD": {
+            "price": -13.47,
+            "total": null
+          },
+          "1Y": {
+            "price": -22.46,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "小売業",
+        "ticker": "6100",
+        "index_code": "0066",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": 0.15,
+            "total": null
+          },
+          "1W": {
+            "price": 0.72,
+            "total": null
+          },
+          "1M": {
+            "price": 1.57,
+            "total": null
+          },
+          "3M": {
+            "price": 7.16,
+            "total": null
+          },
+          "6M": {
+            "price": 14.39,
+            "total": null
+          },
+          "YTD": {
+            "price": 14.82,
+            "total": null
+          },
+          "1Y": {
+            "price": 36.53,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "銀行業",
+        "ticker": "7050",
+        "index_code": "0067",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": 0.08,
+            "total": null
+          },
+          "1W": {
+            "price": 0.38,
+            "total": null
+          },
+          "1M": {
+            "price": 1.27,
+            "total": null
+          },
+          "3M": {
+            "price": 3.51,
+            "total": null
+          },
+          "6M": {
+            "price": 7.24,
+            "total": null
+          },
+          "YTD": {
+            "price": 7.37,
+            "total": null
+          },
+          "1Y": {
+            "price": 17.12,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "証券、商品先物取引業",
+        "ticker": "7100",
+        "index_code": "0068",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": 0.04,
+            "total": null
+          },
+          "1W": {
+            "price": 0.17,
+            "total": null
+          },
+          "1M": {
+            "price": 0.46,
+            "total": null
+          },
+          "3M": {
+            "price": -0.91,
+            "total": null
+          },
+          "6M": {
+            "price": -0.86,
+            "total": null
+          },
+          "YTD": {
+            "price": -0.95,
+            "total": null
+          },
+          "1Y": {
+            "price": 0.39,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "保険業",
+        "ticker": "7150",
+        "index_code": "0069",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": 0.05,
+            "total": null
+          },
+          "1W": {
+            "price": 0.19,
+            "total": null
+          },
+          "1M": {
+            "price": -0.02,
+            "total": null
+          },
+          "3M": {
+            "price": -4.73,
+            "total": null
+          },
+          "6M": {
+            "price": -7.54,
+            "total": null
+          },
+          "YTD": {
+            "price": -7.79,
+            "total": null
+          },
+          "1Y": {
+            "price": -13.59,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "その他金融業",
+        "ticker": "7200",
+        "index_code": "0070",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": -0.16,
+            "total": null
+          },
+          "1W": {
+            "price": -0.79,
+            "total": null
+          },
+          "1M": {
+            "price": -2.38,
+            "total": null
+          },
+          "3M": {
+            "price": -6.8,
+            "total": null
+          },
+          "6M": {
+            "price": -13.39,
+            "total": null
+          },
+          "YTD": {
+            "price": -13.62,
+            "total": null
+          },
+          "1Y": {
+            "price": -26.88,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "不動産業",
+        "ticker": "8050",
+        "index_code": "0071",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": 0.06,
+            "total": null
+          },
+          "1W": {
+            "price": 0.32,
+            "total": null
+          },
+          "1M": {
+            "price": 1.68,
+            "total": null
+          },
+          "3M": {
+            "price": 6.71,
+            "total": null
+          },
+          "6M": {
+            "price": 13.32,
+            "total": null
+          },
+          "YTD": {
+            "price": 13.59,
+            "total": null
+          },
+          "1Y": {
+            "price": 25.89,
+            "total": null
+          }
+        }
+      },
+      {
+        "label": "サービス業",
+        "ticker": "9050",
+        "index_code": "0072",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-03",
+        "returns": {
+          "1D": {
+            "price": -0.04,
+            "total": null
+          },
+          "1W": {
+            "price": -0.13,
+            "total": null
+          },
+          "1M": {
+            "price": -0.3,
+            "total": null
+          },
+          "3M": {
+            "price": 2.91,
+            "total": null
+          },
+          "6M": {
+            "price": 4.3,
+            "total": null
+          },
+          "YTD": {
+            "price": 4.53,
+            "total": null
+          },
+          "1Y": {
+            "price": 7.27,
+            "total": null
+          }
+        }
+      }
+    ]
+  }
+}

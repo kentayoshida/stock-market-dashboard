@@ -140,6 +140,12 @@ body {
   display: flex;
   align-items: center;
   gap: var(--sp-3);
+  text-decoration: none;
+  color: inherit;
+}
+
+a.nav-link {
+  text-decoration: none;
 }
 
 .brand-mark {
@@ -479,6 +485,26 @@ body {
   margin: var(--sp-4) 0 0;
   font-size: var(--fs-small);
   color: var(--ink-muted);
+}
+
+/* ---- 日本業種別（/jp-sectors） ---- */
+.meta-pill--lag {
+  color: var(--fg-fear);
+  border-color: color-mix(in srgb, var(--fg-fear) 35%, var(--border));
+  cursor: help;
+}
+
+.sort-toggle {
+  padding: 3px;
+}
+
+/* 33業種を N カラムに流す（columnCount はインラインで指定）。行はカラム内で分割しない。 */
+.jp-grid {
+  column-gap: var(--sp-6);
+}
+
+.jp-grid .row {
+  break-inside: avoid;
 }
 
 /* ===================== フッター ===================== */

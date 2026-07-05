@@ -1,0 +1,32 @@
+name: Validate JP sector index codes
+
+# sectors_jp.yaml の 33業種 index_code を J-Quants で検証する
+# （jp-sector-dashboard-spec.md §3）。手動実行。結果を Summary に表出力。
+on:
+  workflow_dispatch: {}
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r pipeline/requirements.txt
+      - name: Validate index codes
+        env:
+          JQUANTS_API_KEY: ${{ secrets.JQUANTS_API_KEY }}
+        run: |
+          set -o pipefail
+          python pipeline/src/validate_jp.py | tee report_jp.txt
+      - name: Publish to job summary
+        if: always()
+        run: |
+          {
+            echo '## 33業種 指数コード検証結果'
+            echo '```'
+            cat report_jp.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"

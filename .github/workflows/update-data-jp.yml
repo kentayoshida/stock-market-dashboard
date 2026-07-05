@@ -1,0 +1,43 @@
+name: Update JP sector data
+
+# 日本業種別の日次バッチ（jp-sector-dashboard-spec.md §6）。
+# J-Quants は翌営業日更新のため、JST 早朝〜午前（前営業日データ確定後）に実行する。
+# 米国版（米国引け後）とは実行タイミングが異なる。
+on:
+  schedule:
+    # 22:00 UTC = 翌 07:00 JST（前営業日の J-Quants データ確定後）。
+    - cron: "0 22 * * 0-4"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data-jp
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r pipeline/requirements.txt
+      - name: Generate jp_sectors.json (J-Quants)
+        env:
+          JQUANTS_API_KEY: ${{ secrets.JQUANTS_API_KEY }}
+        run: python pipeline/src/build_jp.py --source jquants
+      - name: Commit if changed
+        run: |
+          git config user.name  "market-dashboard-bot"
+          git config user.email "actions@github.com"
+          git add web/public/data/jp_sectors.json
+          if git diff --staged --quiet; then
+            echo "No data change."
+          else
+            git commit -m "chore(data): refresh JP sector performance $(date -u +%F)"
+            git push
+          fi
