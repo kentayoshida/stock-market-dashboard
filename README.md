@@ -66,18 +66,18 @@ npm run dev        # http://localhost:3000
 
 ---
 
-## 設計上の要確認事項（Ken 判断待ち）
+## 設計判断の記録
 
-1. **`ダウ平均配当株` の代表 ETF**（§2.1 要確認）: 初期案 `DVY`
-   (iShares Select Dividend)。候補 `DVY` / `SDY` (SPDR S&P Dividend) /
-   `SCHD` (Schwab US Dividend Equity)。UI・`etfs.yaml` では `DVY` を暫定表示し
-   `review: true` で明示。最終決定を仰ぐ。
-2. **`design-tokens.css` の突合**: 姉妹 F&G リポジトリが本セッションから到達
-   不可のため、F&G 仕様書 §6.5 のゾーン配色から**再構築**した。実ファイル入手後に
-   値を統一すること。
+1. ✅ **`ダウ配当株` の代表 ETF = `SCHD`** に確定（AUM 最大／Dow Jones U.S.
+   Dividend 100 連動）。候補だった DVY・SDY は不採用。
+2. ✅ **`design-tokens.css` を実ファイルに統一済み**。`web/app/design-tokens.css`
+   が姉妹 F&G プロジェクトの実トークン（正）。ダッシュボードは `globals.css` の
+   アプリ層エイリアスで `--fg-*` を参照し、配色・型・余白を F&G と一致させている
+   （gain/loss は F&G ゾーン配色を流用・§4.3）。ダークテーマはアプリ層の拡張。
 3. **市場データの egress**: 開発サンドボックスから Yahoo Finance / stooq が
-   403 ブロック。取得は GitHub Actions 側で実行する設計（本番影響なし）。
-   ティッカー検証は `validate-tickers.yml`（手動実行）で行う。
+   403 ブロック。取得は GitHub Actions 側で実行する（本番影響なし）。ティッカー
+   検証は `validate-tickers.yml`（手動実行）で行う。CI 実行で全16銘柄の取得可否を
+   確認済み。
 
 ## 免責
 
