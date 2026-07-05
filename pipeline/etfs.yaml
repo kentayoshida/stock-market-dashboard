@@ -29,8 +29,7 @@ blocks:
       - { label: S&P500バリュー,     ticker: IVE }
       - { label: 中型株400バリュー,   ticker: IJJ }
       - { label: 小型株600バリュー,   ticker: IJS }
-      # 要確認（§2.1）: 「ダウ平均配当株」は代表ETFの選定に幅がある。
-      # 初期案は DVY (iShares Select Dividend)。Ken の最終決定待ち。
-      # 候補: DVY / SDY (SPDR S&P Dividend) / SCHD (Schwab US Dividend Equity)
-      - { label: ダウ平均配当株,      ticker: DVY, review: true }
+      # 「ダウ平均配当株」= SCHD に確定（Ken 判断・AUM 最大）。
+      # SCHD は Dow Jones U.S. Dividend 100 指数に連動。候補だった DVY / SDY は不採用。
+      - { label: ダウ配当株100,      ticker: SCHD }
       - { label: S&P均等ウェイト,     ticker: RSP }
