@@ -1,7 +1,11 @@
 import Link from "next/link";
 
-// 米国版 / 日本業種別 を切り替える共有ヘッダー（両ページで共有）。
-export default function SiteHeader({ active }: { active: "us" | "jp" }) {
+// 米国 / 世界 / 日本業種別 を切り替える共有ヘッダー（全ページ共有）。
+export default function SiteHeader({
+  active,
+}: {
+  active: "us" | "global" | "jp";
+}) {
   return (
     <header className="site-header">
       <Link href="/" className="brand" aria-label="市場パフォーマンス ホーム">
@@ -14,6 +18,12 @@ export default function SiteHeader({ active }: { active: "us" | "jp" }) {
       <nav className="site-nav" aria-label="ダッシュボード切替">
         <Link href="/" className={"nav-link" + (active === "us" ? " is-active" : "")}>
           米国 US
+        </Link>
+        <Link
+          href="/global"
+          className={"nav-link" + (active === "global" ? " is-active" : "")}
+        >
+          世界 Global
         </Link>
         <Link
           href="/jp-sectors"

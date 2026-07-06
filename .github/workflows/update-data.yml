@@ -30,14 +30,17 @@ jobs:
       - name: Install deps
         run: pip install -r pipeline/requirements.txt
 
-      - name: Generate latest.json (yfinance → stooq fallback)
-        run: python pipeline/src/build.py --source auto
+      - name: Generate latest.json (US, yfinance → stooq fallback)
+        run: python pipeline/src/build.py --source auto --config pipeline/etfs.yaml --out web/public/data/latest.json
+
+      - name: Generate global.json (世界 Global)
+        run: python pipeline/src/build.py --source auto --config pipeline/etfs_global.yaml --out web/public/data/global.json
 
       - name: Commit if changed
         run: |
           git config user.name  "market-dashboard-bot"
           git config user.email "actions@github.com"
-          git add web/public/data/latest.json
+          git add web/public/data/latest.json web/public/data/global.json
           if git diff --staged --quiet; then
             echo "No data change."
           else

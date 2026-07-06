@@ -1,0 +1,820 @@
+{
+  "as_of": "2026-07-06",
+  "generated_at": "2026-07-06T03:43:48+00:00",
+  "data_source": "fixture",
+  "currency": "USD",
+  "periods": [
+    "1D",
+    "1W",
+    "1M",
+    "3M",
+    "6M",
+    "YTD",
+    "1Y"
+  ],
+  "total_return_periods": [
+    "1Y"
+  ],
+  "coverage": {
+    "ok": 17,
+    "no_data": 0,
+    "total": 17
+  },
+  "disclaimer": "情報提供目的であり投資助言ではありません。",
+  "blocks": [
+    {
+      "id": "developed",
+      "title": "先進国株式 ETF",
+      "items": [
+        {
+          "label": "日本",
+          "ticker": "EWJ",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-06",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.01,
+              "total": null
+            },
+            "1W": {
+              "price": 0.03,
+              "total": null
+            },
+            "1M": {
+              "price": 0.31,
+              "total": null
+            },
+            "3M": {
+              "price": 0.07,
+              "total": null
+            },
+            "6M": {
+              "price": 0.11,
+              "total": null
+            },
+            "YTD": {
+              "price": 0.21,
+              "total": null
+            },
+            "1Y": {
+              "price": 0.4,
+              "total": 1.67
+            }
+          },
+          "momentum": {
+            "cross": "golden",
+            "days_since_cross": 6,
+            "sma25": 286.6,
+            "sma75": 286.4,
+            "rsi": 80.1,
+            "rsi_state": "overbought"
+          }
+        },
+        {
+          "label": "英国",
+          "ticker": "EWU",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-06",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.03,
+              "total": null
+            },
+            "1W": {
+              "price": 0.19,
+              "total": null
+            },
+            "1M": {
+              "price": 0.84,
+              "total": null
+            },
+            "3M": {
+              "price": 4.59,
+              "total": null
+            },
+            "6M": {
+              "price": 20.84,
+              "total": null
+            },
+            "YTD": {
+              "price": 22.53,
+              "total": null
+            },
+            "1Y": {
+              "price": 164.28,
+              "total": 167.64
+            }
+          },
+          "momentum": {
+            "cross": "golden",
+            "days_since_cross": null,
+            "sma25": 1153.84,
+            "sma75": 1134.41,
+            "rsi": 100.0,
+            "rsi_state": "overbought"
+          }
+        },
+        {
+          "label": "ドイツ",
+          "ticker": "EWG",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-06",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 1.09,
+              "total": null
+            },
+            "1W": {
+              "price": 5.56,
+              "total": null
+            },
+            "1M": {
+              "price": 25.44,
+              "total": null
+            },
+            "3M": {
+              "price": 96.89,
+              "total": null
+            },
+            "6M": {
+              "price": 235.78,
+              "total": null
+            },
+            "YTD": {
+              "price": 245.07,
+              "total": null
+            },
+            "1Y": {
+              "price": 427.87,
+              "total": 434.57
+            }
+          },
+          "momentum": {
+            "cross": "golden",
+            "days_since_cross": null,
+            "sma25": 1321.52,
+            "sma75": 1040.51,
+            "rsi": 100.0,
+            "rsi_state": "overbought"
+          }
+        },
+        {
+          "label": "フランス",
+          "ticker": "EWQ",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-06",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.4,
+              "total": null
+            },
+            "1W": {
+              "price": -2.02,
+              "total": null
+            },
+            "1M": {
+              "price": -7.79,
+              "total": null
+            },
+            "3M": {
+              "price": -21.27,
+              "total": null
+            },
+            "6M": {
+              "price": -35.15,
+              "total": null
+            },
+            "YTD": {
+              "price": -35.77,
+              "total": null
+            },
+            "1Y": {
+              "price": -47.36,
+              "total": -46.69
+            }
+          },
+          "momentum": {
+            "cross": "dead",
+            "days_since_cross": null,
+            "sma25": 157.42,
+            "sma75": 172.68,
+            "rsi": 0.0,
+            "rsi_state": "oversold"
+          }
+        },
+        {
+          "label": "カナダ",
+          "ticker": "EWC",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-06",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.0,
+              "total": null
+            },
+            "1W": {
+              "price": 0.04,
+              "total": null
+            },
+            "1M": {
+              "price": 0.27,
+              "total": null
+            },
+            "3M": {
+              "price": 0.12,
+              "total": null
+            },
+            "6M": {
+              "price": 0.25,
+              "total": null
+            },
+            "YTD": {
+              "price": 0.25,
+              "total": null
+            },
+            "1Y": {
+              "price": 0.15,
+              "total": 1.42
+            }
+          },
+          "momentum": {
+            "cross": "dead",
+            "days_since_cross": 23,
+            "sma25": 275.25,
+            "sma75": 275.35,
+            "rsi": 84.9,
+            "rsi_state": "overbought"
+          }
+        },
+        {
+          "label": "豪州",
+          "ticker": "EWA",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-06",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.11,
+              "total": null
+            },
+            "1W": {
+              "price": -0.29,
+              "total": null
+            },
+            "1M": {
+              "price": -2.13,
+              "total": null
+            },
+            "3M": {
+              "price": -10.42,
+              "total": null
+            },
+            "6M": {
+              "price": -23.34,
+              "total": null
+            },
+            "YTD": {
+              "price": -24.21,
+              "total": null
+            },
+            "1Y": {
+              "price": -54.57,
+              "total": -53.99
+            }
+          },
+          "momentum": {
+            "cross": "dead",
+            "days_since_cross": null,
+            "sma25": 100.35,
+            "sma75": 105.47,
+            "rsi": 0.0,
+            "rsi_state": "oversold"
+          }
+        },
+        {
+          "label": "イタリア",
+          "ticker": "EWI",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-06",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.23,
+              "total": null
+            },
+            "1W": {
+              "price": -1.01,
+              "total": null
+            },
+            "1M": {
+              "price": -3.39,
+              "total": null
+            },
+            "3M": {
+              "price": -13.11,
+              "total": null
+            },
+            "6M": {
+              "price": -24.24,
+              "total": null
+            },
+            "YTD": {
+              "price": -24.65,
+              "total": null
+            },
+            "1Y": {
+              "price": -43.02,
+              "total": -42.3
+            }
+          },
+          "momentum": {
+            "cross": "dead",
+            "days_since_cross": null,
+            "sma25": 149.25,
+            "sma75": 157.56,
+            "rsi": 0.0,
+            "rsi_state": "oversold"
+          }
+        },
+        {
+          "label": "スペイン",
+          "ticker": "EWP",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-06",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -1.02,
+              "total": null
+            },
+            "1W": {
+              "price": -5.12,
+              "total": null
+            },
+            "1M": {
+              "price": -17.41,
+              "total": null
+            },
+            "3M": {
+              "price": -42.6,
+              "total": null
+            },
+            "6M": {
+              "price": -62.51,
+              "total": null
+            },
+            "YTD": {
+              "price": -63.27,
+              "total": null
+            },
+            "1Y": {
+              "price": -73.72,
+              "total": -73.38
+            }
+          },
+          "momentum": {
+            "cross": "dead",
+            "days_since_cross": null,
+            "sma25": 85.07,
+            "sma75": 105.85,
+            "rsi": 0.0,
+            "rsi_state": "oversold"
+          }
+        },
+        {
+          "label": "香港",
+          "ticker": "EWH",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-06",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.71,
+              "total": null
+            },
+            "1W": {
+              "price": -3.52,
+              "total": null
+            },
+            "1M": {
+              "price": -13.19,
+              "total": null
+            },
+            "3M": {
+              "price": -37.42,
+              "total": null
+            },
+            "6M": {
+              "price": -57.36,
+              "total": null
+            },
+            "YTD": {
+              "price": -58.12,
+              "total": null
+            },
+            "1Y": {
+              "price": -72.0,
+              "total": -71.65
+            }
+          },
+          "momentum": {
+            "cross": "dead",
+            "days_since_cross": null,
+            "sma25": 80.46,
+            "sma75": 97.49,
+            "rsi": 0.0,
+            "rsi_state": "oversold"
+          }
+        }
+      ]
+    },
+    {
+      "id": "emerging",
+      "title": "新興国株式 ETF",
+      "items": [
+        {
+          "label": "中国",
+          "ticker": "MCHI",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-06",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.28,
+              "total": null
+            },
+            "1W": {
+              "price": 1.42,
+              "total": null
+            },
+            "1M": {
+              "price": 6.08,
+              "total": null
+            },
+            "3M": {
+              "price": 20.42,
+              "total": null
+            },
+            "6M": {
+              "price": 46.28,
+              "total": null
+            },
+            "YTD": {
+              "price": 48.2,
+              "total": null
+            },
+            "1Y": {
+              "price": 131.63,
+              "total": 134.58
+            }
+          },
+          "momentum": {
+            "cross": "golden",
+            "days_since_cross": null,
+            "sma25": 943.78,
+            "sma75": 879.94,
+            "rsi": 100.0,
+            "rsi_state": "overbought"
+          }
+        },
+        {
+          "label": "インド",
+          "ticker": "INDA",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-06",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.46,
+              "total": null
+            },
+            "1W": {
+              "price": -2.25,
+              "total": null
+            },
+            "1M": {
+              "price": -7.11,
+              "total": null
+            },
+            "3M": {
+              "price": -19.84,
+              "total": null
+            },
+            "6M": {
+              "price": -34.94,
+              "total": null
+            },
+            "YTD": {
+              "price": -35.75,
+              "total": null
+            },
+            "1Y": {
+              "price": -57.59,
+              "total": -57.05
+            }
+          },
+          "momentum": {
+            "cross": "dead",
+            "days_since_cross": null,
+            "sma25": 132.4,
+            "sma75": 143.42,
+            "rsi": 0.0,
+            "rsi_state": "oversold"
+          }
+        },
+        {
+          "label": "台湾",
+          "ticker": "EWT",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-06",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.02,
+              "total": null
+            },
+            "1W": {
+              "price": 0.1,
+              "total": null
+            },
+            "1M": {
+              "price": 0.52,
+              "total": null
+            },
+            "3M": {
+              "price": 3.05,
+              "total": null
+            },
+            "6M": {
+              "price": 11.19,
+              "total": null
+            },
+            "YTD": {
+              "price": 12.01,
+              "total": null
+            },
+            "1Y": {
+              "price": 63.77,
+              "total": 65.85
+            }
+          },
+          "momentum": {
+            "cross": "golden",
+            "days_since_cross": null,
+            "sma25": 584.39,
+            "sma75": 576.99,
+            "rsi": 100.0,
+            "rsi_state": "overbought"
+          }
+        },
+        {
+          "label": "韓国",
+          "ticker": "EWY",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-06",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.23,
+              "total": null
+            },
+            "1W": {
+              "price": -1.27,
+              "total": null
+            },
+            "1M": {
+              "price": -5.15,
+              "total": null
+            },
+            "3M": {
+              "price": -12.94,
+              "total": null
+            },
+            "6M": {
+              "price": -21.85,
+              "total": null
+            },
+            "YTD": {
+              "price": -22.37,
+              "total": null
+            },
+            "1Y": {
+              "price": -28.72,
+              "total": -27.81
+            }
+          },
+          "momentum": {
+            "cross": "dead",
+            "days_since_cross": null,
+            "sma25": 224.36,
+            "sma75": 236.5,
+            "rsi": 0.0,
+            "rsi_state": "oversold"
+          }
+        },
+        {
+          "label": "ブラジル",
+          "ticker": "EWZ",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-06",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.14,
+              "total": null
+            },
+            "1W": {
+              "price": 0.66,
+              "total": null
+            },
+            "1M": {
+              "price": 2.49,
+              "total": null
+            },
+            "3M": {
+              "price": 9.28,
+              "total": null
+            },
+            "6M": {
+              "price": 18.21,
+              "total": null
+            },
+            "YTD": {
+              "price": 18.62,
+              "total": null
+            },
+            "1Y": {
+              "price": 34.29,
+              "total": 36.0
+            }
+          },
+          "momentum": {
+            "cross": "golden",
+            "days_since_cross": null,
+            "sma25": 424.09,
+            "sma75": 409.86,
+            "rsi": 100.0,
+            "rsi_state": "overbought"
+          }
+        },
+        {
+          "label": "メキシコ",
+          "ticker": "EWW",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-06",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": -0.75,
+              "total": null
+            },
+            "1W": {
+              "price": -3.67,
+              "total": null
+            },
+            "1M": {
+              "price": -14.1,
+              "total": null
+            },
+            "3M": {
+              "price": -32.48,
+              "total": null
+            },
+            "6M": {
+              "price": -51.97,
+              "total": null
+            },
+            "YTD": {
+              "price": -53.0,
+              "total": null
+            },
+            "1Y": {
+              "price": -70.87,
+              "total": -70.5
+            }
+          },
+          "momentum": {
+            "cross": "dead",
+            "days_since_cross": null,
+            "sma25": 84.39,
+            "sma75": 98.09,
+            "rsi": 0.0,
+            "rsi_state": "oversold"
+          }
+        },
+        {
+          "label": "南アフリカ",
+          "ticker": "EZA",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-06",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.0,
+              "total": null
+            },
+            "1W": {
+              "price": 0.05,
+              "total": null
+            },
+            "1M": {
+              "price": 0.58,
+              "total": null
+            },
+            "3M": {
+              "price": 2.23,
+              "total": null
+            },
+            "6M": {
+              "price": 10.0,
+              "total": null
+            },
+            "YTD": {
+              "price": 10.85,
+              "total": null
+            },
+            "1Y": {
+              "price": 63.36,
+              "total": 65.44
+            }
+          },
+          "momentum": {
+            "cross": "golden",
+            "days_since_cross": null,
+            "sma25": 566.17,
+            "sma75": 561.01,
+            "rsi": 100.0,
+            "rsi_state": "overbought"
+          }
+        },
+        {
+          "label": "新興国(広範)",
+          "ticker": "EEM",
+          "review": false,
+          "status": "ok",
+          "as_of": "2026-07-06",
+          "stale": false,
+          "returns": {
+            "1D": {
+              "price": 0.17,
+              "total": null
+            },
+            "1W": {
+              "price": 0.77,
+              "total": null
+            },
+            "1M": {
+              "price": 3.15,
+              "total": null
+            },
+            "3M": {
+              "price": 9.96,
+              "total": null
+            },
+            "6M": {
+              "price": 19.62,
+              "total": null
+            },
+            "YTD": {
+              "price": 20.16,
+              "total": null
+            },
+            "1Y": {
+              "price": 35.31,
+              "total": 37.03
+            }
+          },
+          "momentum": {
+            "cross": "golden",
+            "days_since_cross": null,
+            "sma25": 364.67,
+            "sma75": 351.98,
+            "rsi": 100.0,
+            "rsi_state": "overbought"
+          }
+        }
+      ]
+    }
+  ]
+}

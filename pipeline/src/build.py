@@ -21,6 +21,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from fetch import fetch_prices  # noqa: E402
+from momentum import compute_momentum  # noqa: E402
 from returns import compute_returns, latest_date  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -88,11 +89,13 @@ def build(cfg: dict, source: str, lookback_days: int) -> dict:
             rets = compute_returns(df, periods, tr_periods)
             item_as_of = latest_date(df)
             stale = bool(global_as_of and item_as_of and is_stale(item_as_of, global_as_of))
+            # ETF ベース銘柄はモメンタム（SMA クロス / RSI）を算出してバッジ表示に使う。
+            momentum = compute_momentum(df["close"])
             n_ok += 1
             items.append({
                 "label": label, "ticker": ticker, "review": review,
                 "status": "ok", "as_of": item_as_of.isoformat() if item_as_of else None,
-                "stale": stale, "returns": rets,
+                "stale": stale, "returns": rets, "momentum": momentum,
             })
         out_blocks.append({"id": block["id"], "title": block["title"], "items": items})
 

@@ -14,17 +14,28 @@ from datetime import date, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from build import all_tickers, load_config, DEFAULT_CONFIG  # noqa: E402
+from build import all_tickers, load_config, DEFAULT_CONFIG, ROOT  # noqa: E402
 from fetch import fetch_prices  # noqa: E402
+
+GLOBAL_CONFIG = ROOT / "pipeline" / "etfs_global.yaml"
 
 
 def main() -> int:
-    cfg = load_config(DEFAULT_CONFIG)
+    # 米国版 + 世界版（/global）の両 config を検証対象にする。
+    cfgs = [load_config(DEFAULT_CONFIG)]
+    if GLOBAL_CONFIG.exists():
+        cfgs.append(load_config(GLOBAL_CONFIG))
     review_flags = {
         item["ticker"]: bool(item.get("review", False))
-        for b in cfg.get("blocks", []) for item in b.get("items", [])
+        for cfg in cfgs for b in cfg.get("blocks", []) for item in b.get("items", [])
     }
-    tickers = all_tickers(cfg)
+    seen: set[str] = set()
+    tickers: list[str] = []
+    for cfg in cfgs:
+        for t in all_tickers(cfg):
+            if t not in seen:
+                seen.add(t)
+                tickers.append(t)
     end = date.today()
     start = end - timedelta(days=430)
 

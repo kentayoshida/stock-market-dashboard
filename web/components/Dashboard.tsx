@@ -12,7 +12,15 @@ function fmtDate(iso: string | null): string {
   return `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日`;
 }
 
-export default function Dashboard({ data }: { data: Dataset }) {
+export default function Dashboard({
+  data,
+  active = "us",
+  heroTitle = "主要米国株価指数",
+}: {
+  data: Dataset;
+  active?: "us" | "global";
+  heroTitle?: string;
+}) {
   const [period, setPeriod] = useState<string>(
     data.periods.includes("1M") ? "1M" : data.periods[0]
   );
@@ -26,11 +34,11 @@ export default function Dashboard({ data }: { data: Dataset }) {
 
   return (
     <div className="page">
-      <SiteHeader active="us" />
+      <SiteHeader active={active} />
 
       <main className="main">
         <div className="hero">
-          <h1 className="hero-title">主要米国株価指数</h1>
+          <h1 className="hero-title">{heroTitle}</h1>
           <p className="hero-meta">
             <span className="meta-pill">
               基準日 <b>{fmtDate(data.as_of)}</b>
