@@ -1,8 +1,8 @@
 """33業種別TOPIX の指数コード検証（jp-sector-dashboard-spec.md §3）。
 
-sectors_jp.yaml の各 index_code について J-Quants /indices/bars/daily で取得可否・
-行数・最新日を検証する。開発サンドボックスからは J-Quants に到達できないため、
-GitHub Actions（JQUANTS_API_KEY あり）で実行して指数コードを確定する。
+sectors_jp.yaml の各 index_code（16進 0040〜0060）について J-Quants
+/indices/bars/daily で取得可否・行数・最新日を検証する。開発サンドボックスからは
+J-Quants に到達できないため、GitHub Actions（JQUANTS_API_KEY あり）で実行する。
 
 使い方（CI）:  python validate_jp.py
 """

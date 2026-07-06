@@ -1,13 +1,14 @@
 # 東証33業種マッピング（jp-sector-dashboard-spec.md §2, §6）。
 # コード非依存で調整可能。表示順は業種コード順（JPX ファクトシート準拠）。
 #
-# index_code = J-Quants /indices/bars/daily の指数コード（33業種別TOPIX の指数値取得に使用）。
-#   ⚠ 0040〜0072 は「TOPIX-33業種別」の指数コード候補。CI（validate_jp.py）で各コードの
-#     取得可否を検証してから確定する（未確認のものは build 時 no_data＝「データなし」表示）。
+# index_code = J-Quants /indices/bars/daily の指数コード。
+#   ⚠ 重要: 33業種別TOPIX の指数コードは **16進** で 0040〜0060（= 0x40〜0x60・計33）。
+#   非 Premium の「東証業種別（価格指数）」を使用（配当込み 6040〜6060 は Premium のため不可）。
+#   ※ CI（validate_jp.py）で全コードの取得可否を確認済み。
 # sector33_code = 証券コード協議会の33業種区分コード（参考・空売り比率等との突合用）。
 
 source_mode: index_direct    # J-Quants で33業種別TOPIX指数値を直接取得（分岐A・確定）
-total_return: false          # Premium 未契約のため配当込みは無効。Premium 契約後に true
+total_return: false          # 配当込みは Premium のため無効。Premium 契約後に 6040〜6060 で true
 
 sort:
   default: code_order        # code_order（業種コード順） | return_desc（選択期間のリターン降順）
@@ -29,26 +30,26 @@ block:
     - { label: 医薬品,             sector33_code: "3250", index_code: "0047" }
     - { label: 石油・石炭製品,       sector33_code: "3300", index_code: "0048" }
     - { label: ゴム製品,           sector33_code: "3350", index_code: "0049" }
-    - { label: ガラス・土石製品,      sector33_code: "3400", index_code: "0050" }
-    - { label: 鉄鋼,               sector33_code: "3450", index_code: "0051" }
-    - { label: 非鉄金属,           sector33_code: "3500", index_code: "0052" }
-    - { label: 金属製品,           sector33_code: "3550", index_code: "0053" }
-    - { label: 機械,               sector33_code: "3600", index_code: "0054" }
-    - { label: 電気機器,           sector33_code: "3650", index_code: "0055" }
-    - { label: 輸送用機器,          sector33_code: "3700", index_code: "0056" }
-    - { label: 精密機器,           sector33_code: "3750", index_code: "0057" }
-    - { label: その他製品,          sector33_code: "3800", index_code: "0058" }
-    - { label: 電気・ガス業,         sector33_code: "4050", index_code: "0059" }
-    - { label: 陸運業,             sector33_code: "5050", index_code: "0060" }
-    - { label: 海運業,             sector33_code: "5100", index_code: "0061" }
-    - { label: 空運業,             sector33_code: "5150", index_code: "0062" }
-    - { label: 倉庫・運輸関連業,      sector33_code: "5200", index_code: "0063" }
-    - { label: 情報・通信業,         sector33_code: "5250", index_code: "0064" }
-    - { label: 卸売業,             sector33_code: "6050", index_code: "0065" }
-    - { label: 小売業,             sector33_code: "6100", index_code: "0066" }
-    - { label: 銀行業,             sector33_code: "7050", index_code: "0067" }
-    - { label: 証券、商品先物取引業,   sector33_code: "7100", index_code: "0068" }
-    - { label: 保険業,             sector33_code: "7150", index_code: "0069" }
-    - { label: その他金融業,         sector33_code: "7200", index_code: "0070" }
-    - { label: 不動産業,           sector33_code: "8050", index_code: "0071" }
-    - { label: サービス業,          sector33_code: "9050", index_code: "0072" }
+    - { label: ガラス・土石製品,      sector33_code: "3400", index_code: "004A" }
+    - { label: 鉄鋼,               sector33_code: "3450", index_code: "004B" }
+    - { label: 非鉄金属,           sector33_code: "3500", index_code: "004C" }
+    - { label: 金属製品,           sector33_code: "3550", index_code: "004D" }
+    - { label: 機械,               sector33_code: "3600", index_code: "004E" }
+    - { label: 電気機器,           sector33_code: "3650", index_code: "004F" }
+    - { label: 輸送用機器,          sector33_code: "3700", index_code: "0050" }
+    - { label: 精密機器,           sector33_code: "3750", index_code: "0051" }
+    - { label: その他製品,          sector33_code: "3800", index_code: "0052" }
+    - { label: 電気・ガス業,         sector33_code: "4050", index_code: "0053" }
+    - { label: 陸運業,             sector33_code: "5050", index_code: "0054" }
+    - { label: 海運業,             sector33_code: "5100", index_code: "0055" }
+    - { label: 空運業,             sector33_code: "5150", index_code: "0056" }
+    - { label: 倉庫・運輸関連業,      sector33_code: "5200", index_code: "0057" }
+    - { label: 情報・通信業,         sector33_code: "5250", index_code: "0058" }
+    - { label: 卸売業,             sector33_code: "6050", index_code: "0059" }
+    - { label: 小売業,             sector33_code: "6100", index_code: "005A" }
+    - { label: 銀行業,             sector33_code: "7050", index_code: "005B" }
+    - { label: 証券、商品先物取引業,   sector33_code: "7100", index_code: "005C" }
+    - { label: 保険業,             sector33_code: "7150", index_code: "005D" }
+    - { label: その他金融業,         sector33_code: "7200", index_code: "005E" }
+    - { label: 不動産業,           sector33_code: "8050", index_code: "005F" }
+    - { label: サービス業,          sector33_code: "9050", index_code: "0060" }
