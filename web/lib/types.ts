@@ -5,6 +5,15 @@ export type PeriodReturn = {
   total: number | null;
 };
 
+export type Momentum = {
+  cross: "golden" | "dead" | null;
+  days_since_cross: number | null;
+  sma25: number;
+  sma75: number;
+  rsi: number | null;
+  rsi_state: "overbought" | "oversold" | "neutral";
+};
+
 export type Item = {
   label: string;
   ticker: string;
@@ -13,6 +22,7 @@ export type Item = {
   as_of: string | null;
   stale?: boolean;
   returns: Record<string, PeriodReturn>;
+  momentum?: Momentum | null;
 };
 
 export type Block = {

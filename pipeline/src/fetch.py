@@ -107,15 +107,20 @@ def fetch_fixture(tickers: list[str], start: date, end: date) -> dict[str, pd.Da
     for i, t in enumerate(sorted(tickers)):
         seed = (sum(ord(c) for c in t) + i) % 997
         base = 50.0 + (seed % 400)
-        drift = ((seed % 7) - 3) * 0.0004          # 銘柄ごとに異なる緩やかなトレンド
-        amp = 0.6 + (seed % 5) * 0.15
+        # 銘柄ごとにトレンドの向き・強さ・ボラを散らし、SMA クロスや RSI が
+        # ばらつくようにする（バッジ表示の検証用）。
+        drift = ((seed % 11) - 5) * 0.0011          # 強い上昇〜強い下落
+        regime = math.sin((seed % 13) / 2.0)        # 中盤でトレンド反転する銘柄も
+        amp = 0.8 + (seed % 5) * 0.35
+        vol = 0.4 + (seed % 7) * 0.12
         closes, adj = [], []
         price = base
         for n in range(len(bdays)):
-            wave = math.sin((n + seed) / 11.0) * amp + math.sin((n + seed) / 3.0) * amp * 0.3
-            price = max(1.0, price * (1 + drift) + wave * 0.05)
+            phase = n / max(1, len(bdays))
+            local_drift = drift * (1 + regime * math.cos(phase * math.pi))
+            wave = math.sin((n + seed) / 9.0) * amp + math.sin((n + seed) / 2.3) * vol
+            price = max(1.0, price * (1 + local_drift) + wave * 0.06)
             closes.append(round(price, 2))
-            # 配当込みは価格を僅かに上回る（1Y で ~+1.5% の分配金効果を近似）
             adj.append(round(price * (1 + 0.015 * n / max(1, len(bdays))), 2))
         out[t] = pd.DataFrame({"close": closes, "adj_close": adj}, index=bdays)
     return out

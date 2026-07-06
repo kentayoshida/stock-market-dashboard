@@ -39,6 +39,7 @@ export default function HeatmapBlock({ block, period, totalReturn }: Props) {
             period={period}
             totalReturn={totalReturn}
             maxAbs={maxAbs}
+            linkable
           />
         ))}
       </div>

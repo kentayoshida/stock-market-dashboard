@@ -1,13 +1,19 @@
 "use client";
 
 import type { Item } from "@/lib/types";
+import MomentumBadge from "./MomentumBadge";
 
 type Props = {
   item: Item;
   period: string;
   totalReturn: boolean;
   maxAbs: number; // ブロック内正規化の基準（§4.1）
+  linkable?: boolean; // ETF ベース: ETF名を Yahoo Finance にリンク＋モメンタムバッジ表示
 };
+
+function yahooUrl(ticker: string): string {
+  return `https://finance.yahoo.com/quote/${encodeURIComponent(ticker)}`;
+}
 
 function fmtPct(v: number): string {
   const sign = v > 0 ? "+" : v < 0 ? "−" : "±"; // + / − / ±
@@ -16,7 +22,13 @@ function fmtPct(v: number): string {
 
 // 1行 = ラベル（左）＋ リターン％ ＋ 中心0%の diverging バー（プラス=右/緑・
 // マイナス=左/赤）。数値が一次情報、バーは二次情報（§4.1）。
-export default function PerfRow({ item, period, totalReturn, maxAbs }: Props) {
+export default function PerfRow({
+  item,
+  period,
+  totalReturn,
+  maxAbs,
+  linkable = false,
+}: Props) {
   const r = item.returns[period];
   const value =
     item.status === "ok" && r
@@ -48,12 +60,24 @@ export default function PerfRow({ item, period, totalReturn, maxAbs }: Props) {
   return (
     <div className={"row" + (item.stale ? " row--stale" : "")}>
       <span className="row-label" title={`${item.label}（${item.ticker}）`}>
-        <span className="row-name">{item.label}</span>
+        {linkable ? (
+          <a
+            className="row-name row-name--link"
+            href={yahooUrl(item.ticker)}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {item.label}
+          </a>
+        ) : (
+          <span className="row-name">{item.label}</span>
+        )}
         {item.review && (
           <span className="row-flag" title="要確認: 代表ETFの選定に幅あり（Ken 判断待ち）">
             要確認
           </span>
         )}
+        {linkable && <MomentumBadge m={item.momentum} />}
       </span>
       <span className={"row-value " + (pos ? "is-gain" : "is-loss")}>
         {fmtPct(value)}

@@ -29,6 +29,8 @@ blocks:
       - { label: 小型株600バリュー,   ticker: IJS }
       - { label: ダウ配当株100,      ticker: SCHD }   # Dow Jones U.S. Dividend 100（確定）
       - { label: S&P均等ウェイト,     ticker: RSP }
+      - { label: モメンタム株,        ticker: MTUM }   # iShares MSCI USA Momentum Factor（確定）
+      - { label: 低ボラティリティ株,   ticker: USMV }   # iShares MSCI USA Min Vol Factor（確定）
 
   # ---- §2.2 S&P500 セクター ETF（SPDR Select Sector）----
   - id: sectors
@@ -46,27 +48,8 @@ blocks:
       - { label: 公益,        ticker: XLU }
       - { label: 不動産,      ticker: XLRE }
 
-  # ---- §2.3 主要国株式 ETF（iShares MSCI 単一国シリーズ）----
-  - id: countries
-    title: 主要国株式 ETF
-    items:
-      - { label: 豪州,     ticker: EWA }
-      - { label: ブラジル,  ticker: EWZ }
-      - { label: カナダ,    ticker: EWC }
-      - { label: 中国,      ticker: MCHI }   # 確定（広範・本土含む）。代替 FXI(大型50)
-      - { label: フランス,  ticker: EWQ }
-      - { label: ドイツ,    ticker: EWG }
-      - { label: 香港,      ticker: EWH }
-      - { label: インド,    ticker: INDA }
-      - { label: イタリア,  ticker: EWI }
-      - { label: 日本,      ticker: EWJ }
-      - { label: メキシコ,  ticker: EWW }
-      - { label: スペイン,  ticker: EWP }
-      - { label: 南アフリカ, ticker: EZA }
-      - { label: 英国,      ticker: EWU }
-      # 中東: GULF・MES とも yfinance/stooq で取得不可（中東ETFは無料ソースで薄い）。
-      # 仕様の想定どおり代表銘柄が確保できないため、当ダッシュボードでは中東を除外（Ken 了承）。
-      - { label: 新興国,    ticker: EEM }   # 確定（高流動）。代替 IEMG(低コスト)
+  # ※ 主要国株式（先進国/新興国）は別ページ「世界 Global」(/global) に分離。
+  #    定義は etfs_global.yaml を参照。
 
   # ---- §2.4 コモディティ ETF ----
   - id: commodities
