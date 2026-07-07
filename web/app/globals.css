@@ -34,7 +34,7 @@
   --radius-md: var(--fg-radius);
   --radius-lg: var(--fg-radius-lg);
   --radius-pill: 999px;
-  --maxw: 1320px;
+  --maxw: 1680px;
 
   /* 地の色・テキスト（共有トークンから・ライト） */
   --plane:        var(--fg-surface-alt);
@@ -327,19 +327,25 @@ a.nav-link {
 /* ===================== ブロック / ヒートマップ ===================== */
 /* 各ブロックを1つのカラムとして多カラムに流す（画像準拠・§4.1）。
    デスクトップで最大4カラム、狭くなるほど 3→2→1 に自動で減る。 */
+/* ブロックは画面幅いっぱいに自動でタイル配置（レスポンシブに列数が増減し、
+   各ブロックは 1fr で余白なく横に広がる）。align-items:start で高さは各自維持。 */
 .blocks-grid {
-  /* ETF名リンク＋モメンタムバッジを収めるためやや広めのカラム。 */
-  column-width: 380px;
-  column-gap: var(--sp-4);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: var(--sp-4);
+  align-items: start;
+}
+
+/* コモディティ/債券/その他ブロックを収める下段セクション。 */
+.blocks-grid--secondary {
+  margin-top: var(--sp-4);
 }
 
 .block {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: var(--sp-4) var(--sp-3) var(--sp-3);
-  margin: 0 0 var(--sp-4);
-  break-inside: avoid;
+  padding: var(--sp-4) var(--sp-4) var(--sp-3);
 }
 
 .block-title {
@@ -361,7 +367,9 @@ a.nav-link {
 /* ---- 行: ラベル / 数値 / 中心0%の diverging バー ---- */
 .row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 58px 82px;
+  /* ラベル(可変・広め)／数値(内容幅)／バー(可変・最小90px)。ブロック幅に応じて
+     ラベルもバーも伸縮し、広いブロックでも余白なく埋まる。 */
+  grid-template-columns: minmax(0, 2.4fr) auto minmax(90px, 1fr);
   align-items: center;
   gap: var(--sp-2);
   padding: 5px 6px;

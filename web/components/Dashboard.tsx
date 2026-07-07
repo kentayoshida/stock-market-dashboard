@@ -32,6 +32,11 @@ export default function Dashboard({
 
   const isFixture = data.data_source === "fixture";
 
+  // コモディティ/債券/その他はページ下部の別セクションへ分離（ユーザー要望）。
+  const BOTTOM_IDS = new Set(["commodities", "bonds", "others"]);
+  const topBlocks = data.blocks.filter((b) => !BOTTOM_IDS.has(b.id));
+  const bottomBlocks = data.blocks.filter((b) => BOTTOM_IDS.has(b.id));
+
   return (
     <div className="page">
       <SiteHeader active={active} />
@@ -68,7 +73,7 @@ export default function Dashboard({
         />
 
         <div className="blocks-grid">
-          {data.blocks.map((block) => (
+          {topBlocks.map((block) => (
             <HeatmapBlock
               key={block.id}
               block={block}
@@ -77,6 +82,19 @@ export default function Dashboard({
             />
           ))}
         </div>
+
+        {bottomBlocks.length > 0 && (
+          <div className="blocks-grid blocks-grid--secondary">
+            {bottomBlocks.map((block) => (
+              <HeatmapBlock
+                key={block.id}
+                block={block}
+                period={period}
+                totalReturn={effectiveTR}
+              />
+            ))}
+          </div>
+        )}
 
         {effectiveTR && (
           <p className="tr-note">
