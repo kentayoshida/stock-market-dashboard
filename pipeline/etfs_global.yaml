@@ -5,7 +5,8 @@
 # すべて米国上場・ドル建て。build_global.py が処理して global.json を出力。
 #
 # lead = ティア全体のブロードETF（先進国=VEA / 新興国=EEM）。
-# 一部は流動性の薄いフロンティア系（PAK/NGE/KWT 等）を含む。取得不可なら「データなし」表示。
+# 一部は流動性の薄いフロンティア系（KWT 等）を含む。取得不可なら「データなし」表示。
+# ※ NGE(ナイジェリア)・PAK(パキスタン) は 2025 年に上場廃止・償還されたため除外。
 
 periods: [1D, 1W, 1M, 3M, 6M, YTD, 1Y]
 total_return_periods: [1Y]
@@ -71,7 +72,6 @@ tiers:
         - { label: カタール, ticker: QAT }
         - { label: クウェート, ticker: KWT }
         - { label: アフリカ, ticker: AFK }
-        - { label: ナイジェリア, ticker: NGE }
         - { label: 南アフリカ, ticker: EZA }
       apac:
         - { label: アジア新興国, ticker: EEMA }
@@ -85,4 +85,3 @@ tiers:
         - { label: フィリピン, ticker: EPHE }
         - { label: インドネシア, ticker: EIDO }
         - { label: インド, ticker: INDA }
-        - { label: パキスタン, ticker: PAK }

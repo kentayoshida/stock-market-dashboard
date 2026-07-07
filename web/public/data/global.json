@@ -29,9 +29,9 @@
     "apac": "Asia Pacific"
   },
   "coverage": {
-    "ok": 49,
-    "no_data": 1,
-    "total": 50
+    "ok": 48,
+    "no_data": 0,
+    "total": 48
   },
   "disclaimer": "情報提供目的であり投資助言ではありません。",
   "tiers": [
@@ -1706,44 +1706,6 @@
               }
             },
             {
-              "label": "ナイジェリア",
-              "ticker": "NGE",
-              "review": false,
-              "status": "no_data",
-              "as_of": null,
-              "momentum": null,
-              "returns": {
-                "1D": {
-                  "price": null,
-                  "total": null
-                },
-                "1W": {
-                  "price": null,
-                  "total": null
-                },
-                "1M": {
-                  "price": null,
-                  "total": null
-                },
-                "3M": {
-                  "price": null,
-                  "total": null
-                },
-                "6M": {
-                  "price": null,
-                  "total": null
-                },
-                "YTD": {
-                  "price": null,
-                  "total": null
-                },
-                "1Y": {
-                  "price": null,
-                  "total": null
-                }
-              }
-            },
-            {
               "label": "南アフリカ",
               "ticker": "EZA",
               "review": false,
@@ -2288,44 +2250,6 @@
                 "rsi": 57.0,
                 "rsi_state": "neutral"
               }
-            },
-            {
-              "label": "パキスタン",
-              "ticker": "PAK",
-              "review": false,
-              "status": "ok",
-              "as_of": "2025-06-11",
-              "returns": {
-                "1D": {
-                  "price": null,
-                  "total": null
-                },
-                "1W": {
-                  "price": null,
-                  "total": null
-                },
-                "1M": {
-                  "price": null,
-                  "total": null
-                },
-                "3M": {
-                  "price": null,
-                  "total": null
-                },
-                "6M": {
-                  "price": null,
-                  "total": null
-                },
-                "YTD": {
-                  "price": null,
-                  "total": null
-                },
-                "1Y": {
-                  "price": null,
-                  "total": null
-                }
-              },
-              "momentum": null
             }
           ]
         }
