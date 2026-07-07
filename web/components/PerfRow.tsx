@@ -2,6 +2,8 @@
 
 import type { Item } from "@/lib/types";
 import MomentumBadge from "./MomentumBadge";
+import { useLang } from "./LangProvider";
+import { ui } from "@/lib/i18n";
 
 type Props = {
   item: Item;
@@ -9,6 +11,7 @@ type Props = {
   totalReturn: boolean;
   maxAbs: number; // ブロック内正規化の基準（§4.1）
   linkable?: boolean; // ETF ベース: ETF名を Yahoo Finance にリンク＋モメンタムバッジ表示
+  displayLabel?: string; // 言語に応じてローカライズ済みの表示名（未指定なら item.label）
 };
 
 function yahooUrl(ticker: string): string {
@@ -28,7 +31,11 @@ export default function PerfRow({
   totalReturn,
   maxAbs,
   linkable = false,
+  displayLabel,
 }: Props) {
+  const { lang } = useLang();
+  const t = ui[lang];
+  const name = displayLabel ?? item.label;
   const r = item.returns[period];
   const value =
     item.status === "ok" && r
@@ -40,10 +47,10 @@ export default function PerfRow({
   if (item.status === "no_data" || value === null) {
     return (
       <div className="row row--nodata">
-        <span className="row-label" title={`${item.label}（${item.ticker}）`}>
-          <span className="row-name">{item.label}</span>
+        <span className="row-label" title={`${name}（${item.ticker}）`}>
+          <span className="row-name">{name}</span>
         </span>
-        <span className="row-nodata-msg">データなし</span>
+        <span className="row-nodata-msg">{t.noData}</span>
       </div>
     );
   }
@@ -59,7 +66,7 @@ export default function PerfRow({
 
   return (
     <div className={"row" + (item.stale ? " row--stale" : "")}>
-      <span className="row-label" title={`${item.label}（${item.ticker}）`}>
+      <span className="row-label" title={`${name}（${item.ticker}）`}>
         {linkable ? (
           <a
             className="row-name row-name--link"
@@ -67,14 +74,14 @@ export default function PerfRow({
             target="_blank"
             rel="noopener noreferrer"
           >
-            {item.label}
+            {name}
           </a>
         ) : (
-          <span className="row-name">{item.label}</span>
+          <span className="row-name">{name}</span>
         )}
         {item.review && (
-          <span className="row-flag" title="要確認: 代表ETFの選定に幅あり（Ken 判断待ち）">
-            要確認
+          <span className="row-flag" title={t.reviewTitle}>
+            {t.review}
           </span>
         )}
         {linkable && <MomentumBadge m={item.momentum} />}

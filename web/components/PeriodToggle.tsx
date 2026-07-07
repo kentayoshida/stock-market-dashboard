@@ -1,5 +1,8 @@
 "use client";
 
+import { useLang } from "./LangProvider";
+import { ui } from "@/lib/i18n";
+
 type Props = {
   periods: string[];
   value: string;
@@ -18,9 +21,11 @@ export default function PeriodToggle({
   totalReturn,
   onToggleTotalReturn,
 }: Props) {
+  const { lang } = useLang();
+  const t = ui[lang];
   return (
     <div className="toggle-bar">
-      <div className="segmented" role="tablist" aria-label="期間">
+      <div className="segmented" role="tablist" aria-label={t.periodAria}>
         {periods.map((p) => (
           <button
             key={p}
@@ -35,13 +40,13 @@ export default function PeriodToggle({
       </div>
 
       {showTotalReturn && (
-        <label className="tr-toggle" title="配当込み（トータルリターン, Adj Close）">
+        <label className="tr-toggle" title={t.totalReturnTitle}>
           <input
             type="checkbox"
             checked={totalReturn}
             onChange={(e) => onToggleTotalReturn(e.target.checked)}
           />
-          <span>配当込み</span>
+          <span>{t.totalReturn}</span>
         </label>
       )}
     </div>

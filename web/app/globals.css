@@ -204,6 +204,20 @@ a.nav-link {
   cursor: not-allowed;
 }
 
+/* ヘッダー右側: ナビ + 言語トグル */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.lang-toggle .segment {
+  padding: 5px 12px;
+  font-size: var(--fs-small);
+}
+
 /* ===================== メイン ===================== */
 .main {
   max-width: var(--maxw);

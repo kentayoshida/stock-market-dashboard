@@ -5,12 +5,8 @@ import type { JpDataset, JpItem } from "@/lib/types";
 import PeriodToggle from "./PeriodToggle";
 import PerfRow from "./PerfRow";
 import SiteHeader from "./SiteHeader";
-
-function fmtDate(iso: string | null): string {
-  if (!iso) return "—";
-  const d = new Date(iso + "T00:00:00");
-  return `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日`;
-}
+import { useLang } from "./LangProvider";
+import { ui, fmtDate, fmtDateTime, sectorLabel, blockTitle } from "@/lib/i18n";
 
 function returnFor(item: JpItem, period: string): number | null {
   if (item.status !== "ok") return null;
@@ -19,6 +15,8 @@ function returnFor(item: JpItem, period: string): number | null {
 }
 
 export default function JpDashboard({ data }: { data: JpDataset }) {
+  const { lang } = useLang();
+  const t = ui[lang];
   const [period, setPeriod] = useState<string>(
     data.periods.includes("1M") ? "1M" : data.periods[0]
   );
@@ -56,25 +54,22 @@ export default function JpDashboard({ data }: { data: JpDataset }) {
 
       <main className="main">
         <div className="hero">
-          <h1 className="hero-title">東証33業種</h1>
+          <h1 className="hero-title">{t.heroJp}</h1>
           <p className="hero-meta">
             <span className="meta-pill">
-              基準日 <b>{fmtDate(data.as_of)}</b>
+              {t.asOf} <b>{fmtDate(lang, data.as_of)}</b>
             </span>
-            <span className="meta-pill meta-pill--muted">{data.currency} 建て</span>
             <span className="meta-pill meta-pill--muted">
-              採用 {data.coverage.ok}/{data.coverage.total} 業種
+              {t.denom(data.currency)}
             </span>
-            <span className="meta-pill meta-pill--lag" title={data.lag_note}>
-              1営業日ラグ
+            <span className="meta-pill meta-pill--muted">
+              {t.coverSectors(data.coverage.ok, data.coverage.total)}
+            </span>
+            <span className="meta-pill meta-pill--lag" title={t.jpLagNote}>
+              {t.oneDayLag}
             </span>
           </p>
-          {isFixture && (
-            <p className="sample-banner">
-              ⚠ 現在表示中はサンプルデータ（fixture）です。実データは日次バッチ
-              （J-Quants）が生成します。
-            </p>
-          )}
+          {isFixture && <p className="sample-banner">{t.sampleJp}</p>}
         </div>
 
         <div className="toggle-bar">
@@ -86,25 +81,31 @@ export default function JpDashboard({ data }: { data: JpDataset }) {
             totalReturn={false}
             onToggleTotalReturn={() => {}}
           />
-          <div className="segmented sort-toggle" role="group" aria-label="並び替え">
+          <div
+            className="segmented sort-toggle"
+            role="group"
+            aria-label={t.sortAria}
+          >
             <button
               className={"segment" + (!sortDesc ? " is-active" : "")}
               onClick={() => setSortDesc(false)}
             >
-              業種コード順
+              {t.sortByCode}
             </button>
             <button
               className={"segment" + (sortDesc ? " is-active" : "")}
               onClick={() => setSortDesc(true)}
-              title="選択中の期間のリターンが高い順"
+              title={t.sortByReturnTitle}
             >
-              リターン降順
+              {t.sortByReturn}
             </button>
           </div>
         </div>
 
         <section className="block">
-          <h2 className="block-title">{block.title}</h2>
+          <h2 className="block-title">
+            {blockTitle(lang, block.id, block.title)}
+          </h2>
           <div
             className="jp-grid"
             style={{ columnCount: block.columns }}
@@ -116,6 +117,7 @@ export default function JpDashboard({ data }: { data: JpDataset }) {
                 period={period}
                 totalReturn={false}
                 maxAbs={maxAbs}
+                displayLabel={sectorLabel(lang, item.index_code, item.label)}
               />
             ))}
           </div>
@@ -123,12 +125,12 @@ export default function JpDashboard({ data }: { data: JpDataset }) {
       </main>
 
       <footer className="site-footer">
-        <p>{data.disclaimer}</p>
+        <p>{t.disclaimer}</p>
         <p className="footer-meta">
-          {data.attribution}
+          {t.jpAttribution}
           <br />
-          データ更新: {new Date(data.generated_at).toLocaleString("ja-JP")}／出所:{" "}
-          {data.data_source}／{data.lag_note}
+          {t.updatedAt}: {fmtDateTime(lang, data.generated_at)}／{t.source}:{" "}
+          {data.data_source}／{t.jpLagNote}
         </p>
       </footer>
     </div>

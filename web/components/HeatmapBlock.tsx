@@ -2,6 +2,8 @@
 
 import type { Block } from "@/lib/types";
 import PerfRow from "./PerfRow";
+import { useLang } from "./LangProvider";
+import { blockTitle, equityLabel } from "@/lib/i18n";
 
 type Props = {
   block: Block;
@@ -27,10 +29,11 @@ function blockMaxAbs(
 }
 
 export default function HeatmapBlock({ block, period, totalReturn }: Props) {
+  const { lang } = useLang();
   const maxAbs = blockMaxAbs(block, period, totalReturn);
   return (
     <section className="block">
-      <h2 className="block-title">{block.title}</h2>
+      <h2 className="block-title">{blockTitle(lang, block.id, block.title)}</h2>
       <div className="block-rows">
         {block.items.map((item) => (
           <PerfRow
@@ -40,6 +43,7 @@ export default function HeatmapBlock({ block, period, totalReturn }: Props) {
             totalReturn={totalReturn}
             maxAbs={maxAbs}
             linkable
+            displayLabel={equityLabel(lang, item.ticker, item.label)}
           />
         ))}
       </div>
