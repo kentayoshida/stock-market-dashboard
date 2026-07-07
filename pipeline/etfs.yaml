@@ -78,6 +78,8 @@ blocks:
   - id: others
     title: その他 ETF
     items:
+      - { label: Mag7, ticker: MAGS }      # Roundhill Magnificent Seven ETF（Mag7 均等）
       - { label: 半導体株, ticker: SOXX }  # 確定。代替 SMH
+      - { label: メモリ株, ticker: DRAM }  # Roundhill Memory ETF（DRAM/NAND/HBM）2026-04 設定
       - { label: 金鉱山株, ticker: GDX }
       - { label: 銀鉱山株, ticker: SIL }
