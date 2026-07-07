@@ -15,24 +15,27 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build import all_tickers, load_config, DEFAULT_CONFIG, ROOT  # noqa: E402
+from build_global import _all_tickers as global_tickers  # noqa: E402
 from fetch import fetch_prices  # noqa: E402
 
 GLOBAL_CONFIG = ROOT / "pipeline" / "etfs_global.yaml"
 
 
 def main() -> int:
-    # 米国版 + 世界版（/global）の両 config を検証対象にする。
-    cfgs = [load_config(DEFAULT_CONFIG)]
-    if GLOBAL_CONFIG.exists():
-        cfgs.append(load_config(GLOBAL_CONFIG))
+    # 米国版（blocks 構造）＋ 世界版（tiers 構造）の両 config を検証対象にする。
+    us_cfg = load_config(DEFAULT_CONFIG)
     review_flags = {
         item["ticker"]: bool(item.get("review", False))
-        for cfg in cfgs for b in cfg.get("blocks", []) for item in b.get("items", [])
+        for b in us_cfg.get("blocks", []) for item in b.get("items", [])
     }
     seen: set[str] = set()
     tickers: list[str] = []
-    for cfg in cfgs:
-        for t in all_tickers(cfg):
+    for t in all_tickers(us_cfg):
+        if t not in seen:
+            seen.add(t)
+            tickers.append(t)
+    if GLOBAL_CONFIG.exists():
+        for t in global_tickers(load_config(GLOBAL_CONFIG)):
             if t not in seen:
                 seen.add(t)
                 tickers.append(t)

@@ -1,37 +1,88 @@
-# 世界の株式（主要国）ETF マッピング — 別ページ /global（世界 Global）用。
-# すべて米国上場・ドル建て。build.py が etfs.yaml と同じ形式で処理して global.json を出力。
+# 世界の株式（主要国）ETF — 別ページ /global。
+# 先進国（上段）／新興国（下段）の2ティア。各ティアを地域別の中項目に分ける。
+# 地域の並びは世界地図に対応させ、左→右に Americas → Europe → MEA → Asia Pacific。
+# 上下ティアで同じ地域列が縦に揃うため、地域横断で先進国↔新興国を対比できる。
+# すべて米国上場・ドル建て。build_global.py が処理して global.json を出力。
 #
-# 先進国 / 新興国 の2ブロックに分割（MSCI 分類ベース）。
-#   ※ 韓国(EWY)・台湾(EWT) は MSCI では新興国。韓国は FTSE では先進国のため、
-#     先進国に移したい場合は下のブロック間で行を移動すれば可（コード非依存）。
+# lead = ティア全体のブロードETF（先進国=VEA / 新興国=EEM）。
+# 一部は流動性の薄いフロンティア系（PAK/NGE/KWT 等）を含む。取得不可なら「データなし」表示。
 
 periods: [1D, 1W, 1M, 3M, 6M, YTD, 1Y]
-total_return_periods: [1Y]   # 1Y のみ配当込みトグル（米国版と共通）
+total_return_periods: [1Y]
 
-blocks:
-  # ---- 先進国株式 ----
+# 地域列の表示順（左→右）と表示ラベル
+region_order: [americas, europe, mea, apac]
+region_labels:
+  americas: Americas
+  europe: Europe
+  mea: Middle East & Africa
+  apac: Asia Pacific
+
+tiers:
+  # ===== 先進国株式（上段） =====
   - id: developed
     title: 先進国株式 ETF
-    items:
-      - { label: 日本,      ticker: EWJ }
-      - { label: 英国,      ticker: EWU }
-      - { label: ドイツ,    ticker: EWG }
-      - { label: フランス,  ticker: EWQ }
-      - { label: カナダ,    ticker: EWC }
-      - { label: 豪州,      ticker: EWA }
-      - { label: イタリア,  ticker: EWI }
-      - { label: スペイン,  ticker: EWP }
-      - { label: 香港,      ticker: EWH }
+    lead: { label: 先進国（除く米国）, ticker: VEA }
+    groups:
+      americas:
+        - { label: カナダ, ticker: EWC }
+      europe:
+        - { label: ヨーロッパ, ticker: VGK }
+        - { label: 英国, ticker: EWU }
+        - { label: ドイツ, ticker: EWG }
+        - { label: フランス, ticker: EWQ }
+        - { label: イタリア, ticker: EWI }
+        - { label: スペイン, ticker: EWP }
+        - { label: スイス, ticker: EWL }
+        - { label: オランダ, ticker: EWN }
+        - { label: ベルギー, ticker: EWK }
+        - { label: ノルウェー, ticker: ENOR }
+        - { label: スウェーデン, ticker: EWD }
+        - { label: フィンランド, ticker: EFNL }
+        - { label: デンマーク, ticker: EDEN }
+        - { label: オーストリア, ticker: EWO }
+        - { label: アイルランド, ticker: EIRL }
+      mea:
+        - { label: イスラエル, ticker: EIS }
+      apac:
+        - { label: 日本, ticker: EWJ }
+        - { label: 香港, ticker: EWH }
+        - { label: シンガポール, ticker: EWS }
+        - { label: 豪州, ticker: EWA }
+        - { label: ニュージーランド, ticker: ENZL }
 
-  # ---- 新興国株式 ----
+  # ===== 新興国株式（下段） =====
   - id: emerging
     title: 新興国株式 ETF
-    items:
-      - { label: 中国,       ticker: MCHI }   # 広範・本土含む。代替 FXI(大型50)
-      - { label: インド,     ticker: INDA }
-      - { label: 台湾,       ticker: EWT }    # 新規追加（MSCI 新興国）
-      - { label: 韓国,       ticker: EWY }    # 新規追加（MSCI 新興国／FTSE では先進国）
-      - { label: ブラジル,    ticker: EWZ }
-      - { label: メキシコ,    ticker: EWW }
-      - { label: 南アフリカ,  ticker: EZA }
-      - { label: 新興国(広範), ticker: EEM }   # 新興国全体（高流動）。代替 IEMG
+    lead: { label: 新興国, ticker: EEM }
+    groups:
+      americas:
+        - { label: メキシコ, ticker: EWW }
+        - { label: ラテンアメリカ, ticker: ILF }
+        - { label: ブラジル, ticker: EWZ }
+        - { label: アルゼンチン, ticker: ARGT }
+        - { label: チリ, ticker: ECH }
+        - { label: ペルー, ticker: EPU }
+      europe:
+        - { label: ポーランド, ticker: EPOL }
+        - { label: トルコ, ticker: TUR }
+      mea:
+        - { label: UAE, ticker: UAE }
+        - { label: カタール, ticker: QAT }
+        - { label: クウェート, ticker: KWT }
+        - { label: アフリカ, ticker: AFK }
+        - { label: ナイジェリア, ticker: NGE }
+        - { label: 南アフリカ, ticker: EZA }
+      apac:
+        - { label: アジア新興国, ticker: EEMA }
+        - { label: 韓国, ticker: EWY }
+        - { label: 台湾, ticker: EWT }
+        - { label: 中国, ticker: MCHI }
+        - { label: 中国（大型株）, ticker: FXI }
+        - { label: タイ, ticker: THD }
+        - { label: マレーシア, ticker: EWM }
+        - { label: ベトナム, ticker: VNM }
+        - { label: フィリピン, ticker: EPHE }
+        - { label: インドネシア, ticker: EIDO }
+        - { label: インド, ticker: INDA }
+        - { label: パキスタン, ticker: PAK }

@@ -33,8 +33,8 @@ jobs:
       - name: Generate latest.json (US, yfinance → stooq fallback)
         run: python pipeline/src/build.py --source auto --config pipeline/etfs.yaml --out web/public/data/latest.json
 
-      - name: Generate global.json (世界 Global)
-        run: python pipeline/src/build.py --source auto --config pipeline/etfs_global.yaml --out web/public/data/global.json
+      - name: Generate global.json (世界 Global・地域別)
+        run: python pipeline/src/build_global.py --source auto
 
       - name: Commit if changed
         run: |

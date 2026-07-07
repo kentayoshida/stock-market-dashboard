@@ -57,6 +57,35 @@ export type JpDataset = {
   block: JpBlock;
 };
 
+// ---- 世界 Global（/global・地域別ネスト構造）----
+export type GlobalGroup = {
+  region: string;
+  label: string;
+  items: Item[];
+};
+
+export type GlobalTier = {
+  id: string;
+  title: string;
+  lead: Item | null;
+  groups: GlobalGroup[];
+};
+
+export type GlobalDataset = {
+  as_of: string | null;
+  generated_at: string;
+  data_source: string;
+  currency: string;
+  market: string;
+  periods: string[];
+  total_return_periods: string[];
+  region_order: string[];
+  region_labels: Record<string, string>;
+  coverage: { ok: number; no_data: number; total: number };
+  disclaimer: string;
+  tiers: GlobalTier[];
+};
+
 export type Dataset = {
   as_of: string | null;
   generated_at: string;
