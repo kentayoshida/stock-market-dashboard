@@ -694,3 +694,174 @@ a.nav-link {
     transition: none !important;
   }
 }
+
+/* ===================== セクターローテーション（株時計） ===================== */
+.rotation {
+  margin-top: var(--sp-4);
+}
+
+.rotation-sub {
+  font-size: var(--fs-small);
+  color: var(--ink-2);
+  margin: 0 0 var(--sp-3);
+  line-height: 1.5;
+}
+
+/* 縦軸（長期）ラベル＋本体を横並び。狭い画面では縦軸ラベルは畳む。 */
+.rotation-frame {
+  display: flex;
+  align-items: stretch;
+  gap: var(--sp-2);
+}
+
+.rotation-ylabel {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: center;
+  align-self: center;
+  font-size: var(--fs-micro);
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+}
+
+.rotation-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.rotation-xlabel {
+  display: block;
+  text-align: center;
+  font-size: var(--fs-micro);
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  margin-bottom: var(--sp-2);
+}
+
+/* 2×2 象限グリッド（上段=長期＋／下段=長期− ・ 左列=短期＋／右列=短期−）。 */
+.rotation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-3);
+}
+
+.rotation-cell {
+  --phase: var(--fg-neutral);
+  background: color-mix(in srgb, var(--phase) 7%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--phase) 28%, var(--border));
+  border-top: 3px solid var(--phase);
+  border-radius: var(--radius-md);
+  padding: var(--sp-3);
+  min-width: 0;
+}
+
+.rotation-cell[data-phase="noon"]    { --phase: var(--fg-extreme-greed); }
+.rotation-cell[data-phase="morning"] { --phase: var(--fg-greed); }
+.rotation-cell[data-phase="evening"] { --phase: var(--fg-fear); }
+.rotation-cell[data-phase="night"]   { --phase: var(--fg-extreme-fear); }
+
+.rotation-cell-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-2);
+}
+
+.rotation-phase-name {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  line-height: 1.3;
+}
+
+.rotation-phase-count {
+  flex: none;
+  font-size: var(--fs-micro);
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-muted);
+}
+
+.rotation-phase-axis {
+  font-size: var(--fs-micro);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+  color: color-mix(in srgb, var(--phase) 70%, var(--ink-2));
+  margin-top: 2px;
+}
+
+.rotation-phase-desc {
+  font-size: var(--fs-small);
+  color: var(--ink-2);
+  line-height: 1.45;
+  margin: var(--sp-2) 0 var(--sp-3);
+}
+
+.rotation-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.rotation-chip {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 4px 9px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--phase) 35%, var(--border));
+  max-width: 100%;
+}
+
+.rotation-chip-name {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rotation-chip-nums {
+  font-size: var(--fs-micro);
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-muted);
+  white-space: nowrap;
+}
+
+.rotation-empty {
+  font-size: var(--fs-small);
+  color: var(--ink-muted);
+  font-style: italic;
+}
+
+.rotation-cycle {
+  margin: var(--sp-3) 0 0;
+  font-size: var(--fs-small);
+  color: var(--ink-2);
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.rotation-note {
+  margin: var(--sp-2) 0 0;
+  font-size: var(--fs-micro);
+  color: var(--ink-muted);
+}
+
+.rotation-source {
+  margin: var(--sp-2) 0 0;
+  font-size: var(--fs-micro);
+  color: var(--ink-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .rotation-grid {
+    grid-template-columns: 1fr;
+  }
+  .rotation-ylabel {
+    display: none;
+  }
+}

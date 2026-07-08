@@ -6,6 +6,23 @@
 
 export type Lang = "ja" | "en";
 
+// ---- 株時計（セクターローテーション）辞書 ----
+// 4 位相 = 長期(1Y)×短期(1M)リターンの符号。株時計の朝/昼/夕方/夜に対応。
+export type RotPhaseId = "morning" | "noon" | "evening" | "night";
+type RotPhase = { name: string; axis: string; desc: string };
+type RotDict = {
+  heading: string;
+  subtitle: string;
+  sourceNote: string;
+  cycleNote: string;
+  longAxis: string; // 縦軸ラベル（長期 1Y）
+  shortAxis: string; // 横軸ラベル（短期 1M）
+  count: (n: number) => string;
+  empty: string;
+  excluded: (n: number) => string;
+  phases: Record<RotPhaseId, RotPhase>;
+};
+
 // ---- UI チャロム辞書 ----
 type UIDict = {
   brandTitle: string;
@@ -54,6 +71,7 @@ type UIDict = {
   updatedAt: string;
   source: string;
   homeAria: string;
+  rot: RotDict;
 };
 
 export const ui: Record<Lang, UIDict> = {
@@ -103,6 +121,41 @@ export const ui: Record<Lang, UIDict> = {
     updatedAt: "データ更新",
     source: "出所",
     homeAria: "市場パフォーマンス ホーム",
+    rot: {
+      heading: "セクターローテーション（株時計）",
+      subtitle:
+        "各業種を長期（1Y）×短期（1M）リターンの符号で4象限に分類。株時計の 朝→昼→夕方→夜 の循環に対応します。",
+      sourceNote:
+        "「株時計」は山和証券・志田憲太郎氏が提唱するコンセプト。本図は価格リターンによる定量近似で、本来の業績予想ベースの位置付けとは異なる場合があります。循環は必ずしも規則的に回転しません。",
+      cycleNote: "循環：🌅 朝 → ☀️ 昼 → 🌆 夕方 → 🌙 夜",
+      longAxis: "長期トレンド（1Y）",
+      shortAxis: "短期モメンタム（1M）",
+      count: (n) => `${n}業種`,
+      empty: "該当なし",
+      excluded: (n) => `※ データ不足の ${n} 業種は非表示`,
+      phases: {
+        morning: {
+          name: "🌅 朝｜夜明け（底打ち反発）",
+          axis: "1Y − ／ 1M ＋",
+          desc: "業績好転の兆し。逆張りで底入れからの反転を狙う局面。",
+        },
+        noon: {
+          name: "☀️ 昼｜日中（上昇・牽引役）",
+          axis: "1Y ＋ ／ 1M ＋",
+          desc: "業績好調で相場の牽引役。順張りの本命。",
+        },
+        evening: {
+          name: "🌆 夕方（高値から調整）",
+          axis: "1Y ＋ ／ 1M −",
+          desc: "業績は悪くないが株価は調整局面。利益確定が優勢。",
+        },
+        night: {
+          name: "🌙 夜｜夜明け前（底ばい）",
+          axis: "1Y − ／ 1M −",
+          desc: "本格反転にはまだ時間。下落・停滞が続きやすい。",
+        },
+      },
+    },
   },
   en: {
     brandTitle: "Market Performance",
@@ -150,6 +203,41 @@ export const ui: Record<Lang, UIDict> = {
     updatedAt: "Updated",
     source: "Source",
     homeAria: "Market Performance home",
+    rot: {
+      heading: "Sector Rotation (Stock Clock)",
+      subtitle:
+        "Each sector is placed into four quadrants by the sign of its long-term (1Y) and short-term (1M) return, mapped to the stock-clock cycle: morning → midday → evening → night.",
+      sourceNote:
+        "The “Stock Clock” concept is proposed by Kentaro Shida (Yamawa Securities). This chart is a quantitative approximation based on price returns and may differ from the original earnings-outlook placement; the cycle does not necessarily rotate at a regular pace.",
+      cycleNote: "Cycle: 🌅 Morning → ☀️ Midday → 🌆 Evening → 🌙 Night",
+      longAxis: "Long-term trend (1Y)",
+      shortAxis: "Short-term momentum (1M)",
+      count: (n) => `${n} sector${n === 1 ? "" : "s"}`,
+      empty: "None",
+      excluded: (n) => `${n} sector${n === 1 ? "" : "s"} hidden (insufficient data)`,
+      phases: {
+        morning: {
+          name: "🌅 Morning — Dawn (bottoming rebound)",
+          axis: "1Y − / 1M +",
+          desc: "Signs of an earnings turnaround; a contrarian entry as the bottom forms.",
+        },
+        noon: {
+          name: "☀️ Midday — Peak (leading uptrend)",
+          axis: "1Y + / 1M +",
+          desc: "Strong earnings lead the market; the core trend-following play.",
+        },
+        evening: {
+          name: "🌆 Evening (topping / pullback)",
+          axis: "1Y + / 1M −",
+          desc: "Earnings still solid but the price is correcting; profit-taking dominates.",
+        },
+        night: {
+          name: "🌙 Night — Before dawn (bottoming out)",
+          axis: "1Y − / 1M −",
+          desc: "A genuine reversal is still some way off; weakness tends to persist.",
+        },
+      },
+    },
   },
 };
 

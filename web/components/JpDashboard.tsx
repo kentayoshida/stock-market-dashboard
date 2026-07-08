@@ -5,6 +5,7 @@ import type { JpDataset, JpItem } from "@/lib/types";
 import PeriodToggle from "./PeriodToggle";
 import PerfRow from "./PerfRow";
 import SiteHeader from "./SiteHeader";
+import SectorRotationBoard from "./SectorRotationBoard";
 import { useLang } from "./LangProvider";
 import { ui, fmtDate, fmtDateTime, sectorLabel, blockTitle } from "@/lib/i18n";
 
@@ -122,6 +123,8 @@ export default function JpDashboard({ data }: { data: JpDataset }) {
             ))}
           </div>
         </section>
+
+        <SectorRotationBoard block={block} />
       </main>
 
       <footer className="site-footer">
