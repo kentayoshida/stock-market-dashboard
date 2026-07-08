@@ -5,8 +5,9 @@ import type { Dataset } from "@/lib/types";
 import PeriodToggle from "./PeriodToggle";
 import HeatmapBlock from "./HeatmapBlock";
 import SiteHeader from "./SiteHeader";
+import SectorRotationBoard from "./SectorRotationBoard";
 import { useLang } from "./LangProvider";
-import { ui, fmtDate, fmtDateTime } from "@/lib/i18n";
+import { ui, fmtDate, fmtDateTime, equityLabel } from "@/lib/i18n";
 
 export default function Dashboard({
   data,
@@ -32,6 +33,9 @@ export default function Dashboard({
   const BOTTOM_IDS = new Set(["commodities", "bonds", "others"]);
   const topBlocks = data.blocks.filter((b) => !BOTTOM_IDS.has(b.id));
   const bottomBlocks = data.blocks.filter((b) => BOTTOM_IDS.has(b.id));
+
+  // 株時計（セクターローテーション）は S&P500 セクター ETF を使用。
+  const sectorsBlock = data.blocks.find((b) => b.id === "sectors");
 
   return (
     <div className="page">
@@ -88,6 +92,14 @@ export default function Dashboard({
         )}
 
         {effectiveTR && <p className="tr-note">{t.trNote}</p>}
+
+        {sectorsBlock && (
+          <SectorRotationBoard
+            items={sectorsBlock.items}
+            labelFor={(it) => equityLabel(lang, it.ticker, it.label)}
+            keyOf={(it) => it.ticker}
+          />
+        )}
       </main>
 
       <footer className="site-footer">

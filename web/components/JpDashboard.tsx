@@ -124,7 +124,13 @@ export default function JpDashboard({ data }: { data: JpDataset }) {
           </div>
         </section>
 
-        <SectorRotationBoard block={block} />
+        <SectorRotationBoard
+          items={block.items}
+          labelFor={(it) =>
+            sectorLabel(lang, (it as JpItem).index_code, it.label)
+          }
+          keyOf={(it) => (it as JpItem).index_code}
+        />
       </main>
 
       <footer className="site-footer">

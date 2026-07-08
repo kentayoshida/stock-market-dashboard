@@ -1,16 +1,16 @@
 "use client";
 
 import { useMemo } from "react";
-import type { JpBlock, JpItem } from "@/lib/types";
+import type { Item } from "@/lib/types";
 import { useLang } from "./LangProvider";
-import { ui, sectorLabel, type RotPhaseId } from "@/lib/i18n";
+import { ui, type RotPhaseId } from "@/lib/i18n";
 
 // 株時計の 4 位相 = 長期(1Y) × 短期(1M) リターンの符号。
 //   morning 朝  : 1Y −  / 1M ＋（底打ち反発）
 //   noon    昼  : 1Y ＋ / 1M ＋（上昇・牽引役）
 //   evening 夕方: 1Y ＋ / 1M −（高値から調整）
 //   night   夜  : 1Y −  / 1M −（夜明け前・底ばい）
-function phaseOf(item: JpItem): RotPhaseId | null {
+function phaseOf(item: Item): RotPhaseId | null {
   if (item.status !== "ok") return null;
   const y = item.returns["1Y"]?.price;
   const m = item.returns["1M"]?.price;
@@ -26,19 +26,27 @@ function fmtPct(v: number): string {
 // 2×2 グリッド配置（軸に対応）: 上段=長期＋ / 下段=長期− ・ 左列=短期＋ / 右列=短期−
 const GRID_ORDER: RotPhaseId[] = ["noon", "evening", "morning", "night"];
 
-export default function SectorRotationBoard({ block }: { block: JpBlock }) {
+// 東証33業種（index_code キー）と米国 S&P500 セクター ETF（ticker キー）で
+// 共通利用できるよう、ラベル引き・キー抽出は呼び出し側から注入する。
+type Props = {
+  items: Item[];
+  labelFor: (item: Item) => string;
+  keyOf: (item: Item) => string;
+};
+
+export default function SectorRotationBoard({ items, labelFor, keyOf }: Props) {
   const { lang } = useLang();
   const t = ui[lang].rot;
 
   const { groups, excluded } = useMemo(() => {
-    const g: Record<RotPhaseId, JpItem[]> = {
+    const g: Record<RotPhaseId, Item[]> = {
       morning: [],
       noon: [],
       evening: [],
       night: [],
     };
     let ex = 0;
-    for (const it of block.items) {
+    for (const it of items) {
       const p = phaseOf(it);
       if (p) g[p].push(it);
       else ex += 1;
@@ -50,7 +58,7 @@ export default function SectorRotationBoard({ block }: { block: JpBlock }) {
       );
     }
     return { groups: g, excluded: ex };
-  }, [block.items]);
+  }, [items]);
 
   return (
     <section className="block rotation">
@@ -64,28 +72,28 @@ export default function SectorRotationBoard({ block }: { block: JpBlock }) {
           <div className="rotation-grid">
             {GRID_ORDER.map((pid) => {
               const phase = t.phases[pid];
-              const items = groups[pid];
+              const cells = groups[pid];
               return (
                 <div key={pid} className="rotation-cell" data-phase={pid}>
                   <div className="rotation-cell-head">
                     <span className="rotation-phase-name">{phase.name}</span>
                     <span className="rotation-phase-count">
-                      {t.count(items.length)}
+                      {t.count(cells.length)}
                     </span>
                   </div>
                   <div className="rotation-phase-axis">{phase.axis}</div>
                   <p className="rotation-phase-desc">{phase.desc}</p>
                   <div className="rotation-chips">
-                    {items.length === 0 ? (
+                    {cells.length === 0 ? (
                       <span className="rotation-empty">{t.empty}</span>
                     ) : (
-                      items.map((it) => {
+                      cells.map((it) => {
                         const y = it.returns["1Y"]?.price ?? 0;
                         const m = it.returns["1M"]?.price ?? 0;
-                        const name = sectorLabel(lang, it.index_code, it.label);
+                        const name = labelFor(it);
                         return (
                           <span
-                            key={it.index_code}
+                            key={keyOf(it)}
                             className="rotation-chip"
                             title={`${name}｜1Y ${fmtPct(y)} / 1M ${fmtPct(m)}`}
                           >
