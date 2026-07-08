@@ -93,7 +93,7 @@ export const ui: Record<Lang, UIDict> = {
     rsiOversold: "・売られすぎ",
     rsiNeutral: "・中立",
     heroUs: "主要米国株価指数",
-    heroGlobal: "世界の株式（主要国）",
+    heroGlobal: "世界の株式",
     heroJp: "東証33業種",
     disclaimer: "情報提供目的であり投資助言ではありません。",
     jpAttribution:
@@ -140,7 +140,7 @@ export const ui: Record<Lang, UIDict> = {
     rsiOversold: " · oversold",
     rsiNeutral: " · neutral",
     heroUs: "U.S. Equity Markets",
-    heroGlobal: "Global Equities (Major Countries)",
+    heroGlobal: "Global Equities",
     heroJp: "TSE 33 Sectors",
     disclaimer: "For informational purposes only; not investment advice.",
     jpAttribution:
