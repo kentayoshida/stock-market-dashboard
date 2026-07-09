@@ -80,6 +80,12 @@ type UIDict = {
     jfgiTitle: string;
     jfgiDesc: string;
     visit: string;
+    funHeading: string;
+    funNote: string;
+    namaeTitle: string;
+    namaeDesc: string;
+    devilTitle: string;
+    devilDesc: string;
   };
 };
 
@@ -174,6 +180,13 @@ export const ui: Record<Lang, UIDict> = {
       jfgiTitle: "日本版 Fear & Greed 指数",
       jfgiDesc: "日本市場の投資家心理（恐怖と貪欲）を1つの指数で可視化。",
       visit: "開く →",
+      funHeading: "おまけ（趣味の個人開発）",
+      funNote:
+        "マーケットラボの本旨とは別の、趣味で作った個人開発サイトです。",
+      namaeTitle: "名前ラボ",
+      namaeDesc: "名前にまつわるツール。",
+      devilTitle: "悪魔の実メーカー",
+      devilDesc: "オリジナルの“悪魔の実”を作るジェネレーター。",
     },
   },
   en: {
@@ -267,6 +280,13 @@ export const ui: Record<Lang, UIDict> = {
       jfgiDesc:
         "Investor sentiment (fear vs. greed) for the Japanese market in a single index.",
       visit: "Open →",
+      funHeading: "Just for fun (side projects)",
+      funNote:
+        "Personal hobby projects, separate from what markets-lab is about.",
+      namaeTitle: "Namae Lab",
+      namaeDesc: "A little tool about names.",
+      devilTitle: "Devil Fruit Maker",
+      devilDesc: "Generate your own original “Devil Fruit”.",
     },
   },
 };

@@ -1001,3 +1001,90 @@ a.nav-link {
   font-size: var(--fs-micro);
   color: var(--ink-muted);
 }
+
+/* 「おまけ（趣味）」— 本旨から外れる個人開発。控えめな別建てとして区別する。 */
+.portal-fun {
+  margin-top: var(--sp-3);
+  padding-top: var(--sp-5);
+  border-top: 1px dashed var(--border-strong);
+}
+
+.portal-fun-head {
+  text-align: center;
+  margin-bottom: var(--sp-4);
+}
+
+.portal-fun-eyebrow {
+  display: block;
+  font-size: var(--fs-small);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.08em;
+  color: var(--ink-2);
+}
+
+.portal-fun-note {
+  display: block;
+  margin-top: 4px;
+  font-size: var(--fs-micro);
+  color: var(--ink-muted);
+}
+
+.portal-fun-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--sp-3);
+}
+
+.portal-fun-link {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.portal-fun-link:hover {
+  border-color: var(--border-strong);
+  background: var(--surface);
+}
+
+.portal-fun-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.portal-fun-emoji {
+  font-size: 1.35rem;
+  line-height: 1;
+  flex: none;
+  opacity: 0.9;
+}
+
+.portal-fun-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+  flex: 1;
+}
+
+.portal-fun-title {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+}
+
+.portal-fun-desc {
+  font-size: var(--fs-micro);
+  color: var(--ink-muted);
+}
+
+.portal-fun-arrow {
+  flex: none;
+  color: var(--ink-muted);
+  font-size: var(--fs-body);
+}

@@ -5,6 +5,8 @@ import { ui } from "@/lib/i18n";
 
 const DASH_URL = "https://dashboard.markets-lab.com/";
 const JFGI_URL = "https://jfgi.markets-lab.com/";
+const NAMAE_URL = "https://www.namae-lab.com/";
+const DEVIL_URL = "https://www.devil-fruit-maker.com/";
 
 export default function Portal() {
   const { lang, setLang } = useLang();
@@ -44,7 +46,12 @@ export default function Portal() {
         </header>
 
         <div className="portal-cards">
-          <a className="portal-card" href={DASH_URL}>
+          <a
+            className="portal-card"
+            href={DASH_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span className="portal-card-emoji" aria-hidden="true">
               📊
             </span>
@@ -55,7 +62,12 @@ export default function Portal() {
             </span>
           </a>
 
-          <a className="portal-card" href={JFGI_URL}>
+          <a
+            className="portal-card"
+            href={JFGI_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span className="portal-card-emoji" aria-hidden="true">
               😱
             </span>
@@ -66,6 +78,49 @@ export default function Portal() {
             </span>
           </a>
         </div>
+
+        <section className="portal-fun" aria-label={p.funHeading}>
+          <div className="portal-fun-head">
+            <span className="portal-fun-eyebrow">{p.funHeading}</span>
+            <span className="portal-fun-note">{p.funNote}</span>
+          </div>
+          <div className="portal-fun-links">
+            <a
+              className="portal-fun-link"
+              href={NAMAE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="portal-fun-emoji" aria-hidden="true">
+                🔤
+              </span>
+              <span className="portal-fun-body">
+                <span className="portal-fun-title">{p.namaeTitle}</span>
+                <span className="portal-fun-desc">{p.namaeDesc}</span>
+              </span>
+              <span className="portal-fun-arrow" aria-hidden="true">
+                ↗
+              </span>
+            </a>
+            <a
+              className="portal-fun-link"
+              href={DEVIL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="portal-fun-emoji" aria-hidden="true">
+                🍥
+              </span>
+              <span className="portal-fun-body">
+                <span className="portal-fun-title">{p.devilTitle}</span>
+                <span className="portal-fun-desc">{p.devilDesc}</span>
+              </span>
+              <span className="portal-fun-arrow" aria-hidden="true">
+                ↗
+              </span>
+            </a>
+          </div>
+        </section>
       </main>
 
       <footer className="portal-footer">
