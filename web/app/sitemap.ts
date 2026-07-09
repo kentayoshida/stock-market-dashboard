@@ -1,23 +1,43 @@
 import type { MetadataRoute } from "next";
 
-// GSC 対象は dashboard.markets-lab.com。公開3ページを絶対 URL で列挙。
-const BASE = "https://dashboard.markets-lab.com";
-
+// GSC はドメイン型プロパティ（markets-lab.com）で登録済みのため、
+// 配下サブドメイン横断で URL を列挙できる。
+// このサイトマップは dashboard.markets-lab.com/sitemap.xml で配信される。
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   return [
-    { url: `${BASE}/`, lastModified: now, changeFrequency: "daily", priority: 1 },
+    // apex ランディング（ハブ）
     {
-      url: `${BASE}/global`,
+      url: "https://markets-lab.com/",
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+    // 市場パフォーマンス・ダッシュボード（日次更新）
+    {
+      url: "https://dashboard.markets-lab.com/",
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
+      url: "https://dashboard.markets-lab.com/global",
       lastModified: now,
       changeFrequency: "daily",
       priority: 0.8,
     },
     {
-      url: `${BASE}/jp-sectors`,
+      url: "https://dashboard.markets-lab.com/jp-sectors",
       lastModified: now,
       changeFrequency: "daily",
       priority: 0.8,
+    },
+    // 日本版 Fear & Greed 指数（別サイト・日次更新）
+    {
+      url: "https://jfgi.markets-lab.com/",
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.9,
     },
   ];
 }
