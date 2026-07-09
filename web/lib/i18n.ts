@@ -184,9 +184,10 @@ export const ui: Record<Lang, UIDict> = {
       funNote:
         "マーケットラボの本旨とは別の、趣味で作った個人開発サイトです。",
       namaeTitle: "名前ラボ",
-      namaeDesc: "名前にまつわるツール。",
+      namaeDesc:
+        "あなたとパートナーが、お子さんの名前を納得して決めるためのアプリです。",
       devilTitle: "悪魔の実メーカー",
-      devilDesc: "オリジナルの“悪魔の実”を作るジェネレーター。",
+      devilDesc: "あなたの名前から、あなただけの悪魔の実が判明する。",
     },
   },
   en: {
@@ -284,9 +285,10 @@ export const ui: Record<Lang, UIDict> = {
       funNote:
         "Personal hobby projects, separate from what markets-lab is about.",
       namaeTitle: "Namae Lab",
-      namaeDesc: "A little tool about names.",
+      namaeDesc:
+        "An app to help you and your partner confidently decide on your baby's name.",
       devilTitle: "Devil Fruit Maker",
-      devilDesc: "Generate your own original “Devil Fruit”.",
+      devilDesc: "Discover your very own Devil Fruit, revealed from your name.",
     },
   },
 };
