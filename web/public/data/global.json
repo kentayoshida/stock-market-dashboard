@@ -1,6 +1,6 @@
 {
   "as_of": "2026-07-08",
-  "generated_at": "2026-07-08T22:16:08+00:00",
+  "generated_at": "2026-07-09T08:25:59+00:00",
   "data_source": "yfinance",
   "currency": "USD",
   "market": "GLOBAL",
@@ -29,12 +29,62 @@
     "apac": "Asia Pacific"
   },
   "coverage": {
-    "ok": 48,
+    "ok": 50,
     "no_data": 0,
-    "total": 48
+    "total": 50
   },
   "disclaimer": "情報提供目的であり投資助言ではありません。",
   "tiers": [
+    {
+      "id": "allcountry",
+      "title": "オールカントリー ETF",
+      "lead": {
+        "label": "全世界（オールカントリー）",
+        "ticker": "VT",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-08",
+        "returns": {
+          "1D": {
+            "price": -0.34,
+            "total": null
+          },
+          "1W": {
+            "price": -0.2,
+            "total": null
+          },
+          "1M": {
+            "price": 0.86,
+            "total": null
+          },
+          "3M": {
+            "price": 7.77,
+            "total": null
+          },
+          "6M": {
+            "price": 8.47,
+            "total": null
+          },
+          "YTD": {
+            "price": 10.46,
+            "total": null
+          },
+          "1Y": {
+            "price": 20.9,
+            "total": 23.02
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": 47,
+          "sma25": 156.12,
+          "sma75": 151.16,
+          "rsi": 50.3,
+          "rsi_state": "neutral"
+        }
+      },
+      "groups": []
+    },
     {
       "id": "developed",
       "title": "先進国株式 ETF",
@@ -88,6 +138,51 @@
           "region": "americas",
           "label": "Americas",
           "items": [
+            {
+              "label": "米国",
+              "ticker": "VTI",
+              "review": false,
+              "status": "ok",
+              "as_of": "2026-07-08",
+              "returns": {
+                "1D": {
+                  "price": -0.37,
+                  "total": null
+                },
+                "1W": {
+                  "price": -0.28,
+                  "total": null
+                },
+                "1M": {
+                  "price": 1.04,
+                  "total": null
+                },
+                "3M": {
+                  "price": 10.35,
+                  "total": null
+                },
+                "6M": {
+                  "price": 8.26,
+                  "total": null
+                },
+                "YTD": {
+                  "price": 9.84,
+                  "total": null
+                },
+                "1Y": {
+                  "price": 20.51,
+                  "total": 21.92
+                }
+              },
+              "momentum": {
+                "cross": "golden",
+                "days_since_cross": 47,
+                "sma25": 367.41,
+                "sma75": 354.32,
+                "rsi": 52.6,
+                "rsi_state": "neutral"
+              }
+            },
             {
               "label": "カナダ",
               "ticker": "EWC",
@@ -507,32 +602,32 @@
               "as_of": "2026-07-08",
               "returns": {
                 "1D": {
-                  "price": -0.7,
+                  "price": -0.71,
                   "total": null
                 },
                 "1W": {
-                  "price": -0.51,
+                  "price": -0.52,
                   "total": null
                 },
                 "1M": {
-                  "price": 0.05,
+                  "price": 0.04,
                   "total": null
                 },
                 "3M": {
-                  "price": 3.4,
+                  "price": 3.38,
                   "total": null
                 },
                 "6M": {
-                  "price": 7.28,
+                  "price": 7.26,
                   "total": null
                 },
                 "YTD": {
-                  "price": 9.4,
+                  "price": 9.38,
                   "total": null
                 },
                 "1Y": {
-                  "price": 21.16,
-                  "total": 23.45
+                  "price": 21.15,
+                  "total": 23.44
                 }
               },
               "momentum": {
@@ -540,7 +635,7 @@
                 "days_since_cross": 42,
                 "sma25": 26.87,
                 "sma75": 26.09,
-                "rsi": 46.2,
+                "rsi": 46.1,
                 "rsi_state": "neutral"
               }
             },
@@ -642,15 +737,15 @@
               "as_of": "2026-07-08",
               "returns": {
                 "1D": {
-                  "price": -0.51,
+                  "price": -0.5,
                   "total": null
                 },
                 "1W": {
-                  "price": -1.4,
+                  "price": -1.39,
                   "total": null
                 },
                 "1M": {
-                  "price": -6.63,
+                  "price": -6.62,
                   "total": null
                 },
                 "3M": {
@@ -658,16 +753,16 @@
                   "total": null
                 },
                 "6M": {
-                  "price": 6.85,
+                  "price": 6.86,
                   "total": null
                 },
                 "YTD": {
-                  "price": 8.21,
+                  "price": 8.22,
                   "total": null
                 },
                 "1Y": {
-                  "price": 25.53,
-                  "total": 26.88
+                  "price": 25.55,
+                  "total": 26.89
                 }
               },
               "momentum": {
@@ -695,7 +790,7 @@
                   "total": null
                 },
                 "1M": {
-                  "price": 5.73,
+                  "price": 5.72,
                   "total": null
                 },
                 "3M": {
@@ -707,7 +802,7 @@
                   "total": null
                 },
                 "YTD": {
-                  "price": -0.44,
+                  "price": -0.45,
                   "total": null
                 },
                 "1Y": {
@@ -785,7 +880,7 @@
                   "total": null
                 },
                 "1M": {
-                  "price": 4.22,
+                  "price": 4.21,
                   "total": null
                 },
                 "3M": {
@@ -1627,7 +1722,7 @@
                   "total": null
                 },
                 "1W": {
-                  "price": 0.39,
+                  "price": 0.38,
                   "total": null
                 },
                 "1M": {

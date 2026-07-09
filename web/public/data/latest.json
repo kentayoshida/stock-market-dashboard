@@ -1,7 +1,7 @@
 {
   "as_of": "2026-07-08",
-  "generated_at": "2026-07-08T22:16:05+00:00",
-  "data_source": "yfinance+stooq",
+  "generated_at": "2026-07-09T08:25:53+00:00",
+  "data_source": "yfinance",
   "currency": "USD",
   "periods": [
     "1D",
@@ -16,8 +16,8 @@
     "1Y"
   ],
   "coverage": {
-    "ok": 46,
-    "no_data": 1,
+    "ok": 47,
+    "no_data": 0,
     "total": 47
   },
   "disclaimer": "情報提供目的であり投資助言ではありません。",
@@ -1140,37 +1140,46 @@
           "label": "素材",
           "ticker": "XLB",
           "review": false,
-          "status": "no_data",
-          "as_of": null,
+          "status": "ok",
+          "as_of": "2026-07-08",
+          "stale": false,
           "returns": {
             "1D": {
-              "price": null,
+              "price": -2.62,
               "total": null
             },
             "1W": {
-              "price": null,
+              "price": -1.69,
               "total": null
             },
             "1M": {
-              "price": null,
+              "price": 0.4,
               "total": null
             },
             "3M": {
-              "price": null,
+              "price": -3.07,
               "total": null
             },
             "6M": {
-              "price": null,
+              "price": 5.6,
               "total": null
             },
             "YTD": {
-              "price": null,
+              "price": 10.61,
               "total": null
             },
             "1Y": {
-              "price": null,
-              "total": null
+              "price": 9.96,
+              "total": 11.97
             }
+          },
+          "momentum": {
+            "cross": "golden",
+            "days_since_cross": 49,
+            "sma25": 51.34,
+            "sma75": 51.01,
+            "rsi": 42.3,
+            "rsi_state": "neutral"
           }
         },
         {
