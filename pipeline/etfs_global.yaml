@@ -26,6 +26,7 @@ tiers:
     lead: { label: 先進国（除く米国）, ticker: VEA }
     groups:
       americas:
+        - { label: 米国, ticker: VTI }   # 米国株式市場 全体（Vanguard Total Stock Market）
         - { label: カナダ, ticker: EWC }
       europe:
         - { label: ヨーロッパ, ticker: VGK }

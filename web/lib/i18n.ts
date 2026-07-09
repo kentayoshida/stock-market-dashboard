@@ -350,6 +350,7 @@ const EQUITY_EN: Record<string, string> = {
   // ---- 世界 Global ----
   // 先進国
   VEA: "Developed ex-US",
+  VTI: "United States",
   EWC: "Canada",
   VGK: "Europe",
   EWU: "United Kingdom",
