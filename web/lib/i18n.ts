@@ -72,6 +72,15 @@ type UIDict = {
   source: string;
   homeAria: string;
   rot: RotDict;
+  portal: {
+    sub: string;
+    intro: string;
+    dashTitle: string;
+    dashDesc: string;
+    jfgiTitle: string;
+    jfgiDesc: string;
+    visit: string;
+  };
 };
 
 export const ui: Record<Lang, UIDict> = {
@@ -156,6 +165,16 @@ export const ui: Record<Lang, UIDict> = {
         },
       },
     },
+    portal: {
+      sub: "マーケットデータ・ラボ",
+      intro: "マーケットのパフォーマンスとセンチメントを、シンプルに可視化。",
+      dashTitle: "市場パフォーマンス・ダッシュボード",
+      dashDesc:
+        "米国・世界（地域別）・東証33業種の期間別パフォーマンスを、ヒートマップと株時計で表示。",
+      jfgiTitle: "日本版 Fear & Greed 指数",
+      jfgiDesc: "日本市場の投資家心理（恐怖と貪欲）を1つの指数で可視化。",
+      visit: "開く →",
+    },
   },
   en: {
     brandTitle: "Market Performance",
@@ -237,6 +256,17 @@ export const ui: Record<Lang, UIDict> = {
           desc: "A genuine reversal is still some way off; weakness tends to persist.",
         },
       },
+    },
+    portal: {
+      sub: "Markets Data Lab",
+      intro: "Market performance and sentiment, visualized simply.",
+      dashTitle: "Market Performance Dashboard",
+      dashDesc:
+        "Period returns for U.S., global (by region) and TSE 33 sectors — heatmaps and a sector-rotation clock.",
+      jfgiTitle: "Japan Fear & Greed Index",
+      jfgiDesc:
+        "Investor sentiment (fear vs. greed) for the Japanese market in a single index.",
+      visit: "Open →",
     },
   },
 };
