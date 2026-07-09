@@ -1,6 +1,6 @@
 {
   "as_of": "2026-07-08",
-  "generated_at": "2026-07-09T08:25:59+00:00",
+  "generated_at": "2026-07-09T11:15:48+00:00",
   "data_source": "yfinance",
   "currency": "USD",
   "market": "GLOBAL",
@@ -1200,46 +1200,46 @@
       "title": "新興国株式 ETF",
       "lead": {
         "label": "新興国",
-        "ticker": "EEM",
+        "ticker": "VWO",
         "review": false,
         "status": "ok",
         "as_of": "2026-07-08",
         "returns": {
           "1D": {
-            "price": 0.78,
+            "price": 0.49,
             "total": null
           },
           "1W": {
-            "price": -0.38,
+            "price": -0.08,
             "total": null
           },
           "1M": {
-            "price": 0.73,
+            "price": 1.44,
             "total": null
           },
           "3M": {
-            "price": 9.58,
+            "price": 4.73,
             "total": null
           },
           "6M": {
-            "price": 16.46,
+            "price": 6.98,
             "total": null
           },
           "YTD": {
-            "price": 21.06,
+            "price": 10.06,
             "total": null
           },
           "1Y": {
-            "price": 36.92,
-            "total": 39.61
+            "price": 19.25,
+            "total": 22.37
           }
         },
         "momentum": {
           "cross": "golden",
-          "days_since_cross": 50,
-          "sma25": 67.68,
-          "sma75": 64.4,
-          "rsi": 46.9,
+          "days_since_cross": 47,
+          "sma25": 59.47,
+          "sma75": 58.21,
+          "rsi": 48.9,
           "rsi_state": "neutral"
         }
       },
