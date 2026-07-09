@@ -20,6 +20,13 @@ region_labels:
   apac: Asia Pacific
 
 tiers:
+  # ===== オールカントリー（最上段・全世界1本） =====
+  # 地域内訳は持たず、全世界ETF（VT）のみを lead として掲げる。
+  - id: allcountry
+    title: オールカントリー ETF
+    lead: { label: 全世界（オールカントリー）, ticker: VT }
+    groups: {}
+
   # ===== 先進国株式（上段） =====
   - id: developed
     title: 先進国株式 ETF

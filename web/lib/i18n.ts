@@ -348,6 +348,8 @@ const EQUITY_EN: Record<string, string> = {
   GDX: "Gold Miners",
   SIL: "Silver Miners",
   // ---- 世界 Global ----
+  // オールカントリー
+  VT: "All-World",
   // 先進国
   VEA: "Developed ex-US",
   VTI: "United States",
@@ -449,6 +451,7 @@ const BLOCK_EN: Record<string, string> = {
 };
 
 const TIER_EN: Record<string, string> = {
+  allcountry: "All-Country ETFs",
   developed: "Developed Markets ETFs",
   emerging: "Emerging Markets ETFs",
 };

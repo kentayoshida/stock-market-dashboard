@@ -99,6 +99,9 @@ def build(cfg: dict, source: str, lookback_days: int) -> dict:
                 obj, ok = _process(it, price_map, periods, tr_periods)
                 out_items.append(obj)
                 n_ok, n_missing = (n_ok + 1, n_missing) if ok else (n_ok, n_missing + 1)
+            # 空の地域は出力しない（オールカントリー等・地域内訳を持たないティア向け）。
+            if not out_items:
+                continue
             groups_out.append({
                 "region": region,
                 "label": region_labels.get(region, region),
