@@ -376,6 +376,7 @@ const EQUITY_EN: Record<string, string> = {
   EWA: "Australia",
   ENZL: "New Zealand",
   // 新興国
+  VWO: "Emerging Markets",
   EEM: "Emerging Markets",
   EWW: "Mexico",
   ILF: "Latin America",

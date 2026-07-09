@@ -4,7 +4,7 @@
 # 上下ティアで同じ地域列が縦に揃うため、地域横断で先進国↔新興国を対比できる。
 # すべて米国上場・ドル建て。build_global.py が処理して global.json を出力。
 #
-# lead = ティア全体のブロードETF（先進国=VEA / 新興国=EEM）。
+# lead = ティア全体のブロードETF（先進国=VEA / 新興国=VWO・いずれも Vanguard）。
 # 一部は流動性の薄いフロンティア系（KWT 等）を含む。取得不可なら「データなし」表示。
 # ※ NGE(ナイジェリア)・PAK(パキスタン) は 2025 年に上場廃止・償還されたため除外。
 
@@ -63,7 +63,7 @@ tiers:
   # ===== 新興国株式（下段） =====
   - id: emerging
     title: 新興国株式 ETF
-    lead: { label: 新興国, ticker: EEM }
+    lead: { label: 新興国, ticker: VWO }
     groups:
       americas:
         - { label: メキシコ, ticker: EWW }
