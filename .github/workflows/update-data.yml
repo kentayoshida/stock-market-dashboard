@@ -1,12 +1,15 @@
 name: Update market data
 
-# 日次バッチ（market-dashboard-spec.md §1-6, §5）。
-# 米国市場引け後（JST 早朝）に yfinance で価格取得 → latest.json 再生成 →
+# 日次バッチ（market-dashboard-spec.md §1-6, §5）。米国株・世界各国ETF。
+# 米国市場引け後（JST 早朝）に yfinance で価格取得 → latest.json / global.json 再生成 →
 # 変更をコミット。Vercel が commit を検知して静的再デプロイする。
 on:
   schedule:
-    # 06:10 JST = 21:10 UTC（米国市場引け〜データ確定後）。
-    - cron: "10 21 * * 1-5"
+    # 21:05 UTC = 06:05 JST。米国引けは冬時間(EST)で 21:00 UTC（=06:00 JST）。
+    # cron は UTC 固定なので、この冬時間の引け＋確定待ちに合わせて 06:00 JST 以降とする。
+    # （夏時間 EDT の引けは 20:00 UTC=05:00 JST 相当で、こちらは十分に確定後。）
+    # ※ これ以上早めると冬場に引け前へ回り込み前日データを取得するため、実質の下限。
+    - cron: "5 21 * * 1-5"
   workflow_dispatch: {}
 
 permissions:

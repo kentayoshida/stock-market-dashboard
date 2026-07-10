@@ -1,12 +1,13 @@
 name: Update JP sector data
 
 # 日本業種別の日次バッチ（jp-sector-dashboard-spec.md §6）。
-# J-Quants は翌営業日更新のため、JST 早朝〜午前（前営業日データ確定後）に実行する。
-# 米国版（米国引け後）とは実行タイミングが異なる。
+# J-Quants は当日大引け後 16:30 JST 頃にデータ更新（公式情報）。
+# その約30分後、当日 17:00 JST に実行する。米国版（米国引け後の早朝）とは別タイミング。
 on:
   schedule:
-    # 22:00 UTC = 翌 07:00 JST（前営業日の J-Quants データ確定後）。
-    - cron: "0 22 * * 0-4"
+    # 08:00 UTC = 当日 17:00 JST（J-Quants 16:30 更新の約30分後）。
+    # 東証の立会日（月〜金）に合わせて Mon-Fri。JST と UTC の曜日は同日（08:00 UTC）。
+    - cron: "0 8 * * 1-5"
   workflow_dispatch: {}
 
 permissions:
