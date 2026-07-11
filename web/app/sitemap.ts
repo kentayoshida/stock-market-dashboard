@@ -32,6 +32,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily",
       priority: 0.8,
     },
+    {
+      url: "https://dashboard.markets-lab.com/topix17",
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.8,
+    },
     // 日本版 Fear & Greed 指数（別サイト・日次更新）
     {
       url: "https://jfgi.markets-lab.com/",

@@ -1,0 +1,39 @@
+# TOPIX-17 業種別ダッシュボード（/topix17）。
+# 33業種（J-Quants 指数）とは異なり、対応する上場 ETF（野村アセットマネジメント
+# NEXT FUNDS シリーズ）の価格を利用する。取得は yfinance（"1617.T" 形式）。
+# build_topix17.py が処理して topix17.json を出力する。
+#
+# 各業種名リンクは JPX「東証マネー部！」 https://money-bu-jpx.com/search/<code>/ 。
+# <code> は ETF の 4 桁銘柄コード（下表 code）。
+# ※ ETF 価格ベースのため配当は含まない近似（連動対象は配当込み TOPIX-17 サブ指数）。
+# ※ 1615（東証銀行業株価指数 ETF）は TOPIX-17 の 17 業種ではないため含めない。
+
+source: yfinance
+periods: [1D, 1W, 1M, 3M, 6M, YTD, 1Y]
+total_return_periods: [1Y]   # ETF の Adj Close ベース（配当込み近似）。表示は price 主軸。
+
+sort:
+  default: code_order        # code_order（コード順） | return_desc（選択期間リターン降順）
+
+block:
+  id: topix17
+  title: TOPIX-17
+  columns: 3                 # UI の表示カラム数
+  items:
+    - { label: 食品,                     code: "1617" }
+    - { label: エネルギー資源,             code: "1618" }
+    - { label: 建設・資材,                code: "1619" }
+    - { label: 素材・化学,                code: "1620" }
+    - { label: 医薬品,                    code: "1621" }
+    - { label: 自動車・輸送機,             code: "1622" }
+    - { label: 鉄鋼・非鉄,                code: "1623" }
+    - { label: 機械,                      code: "1624" }
+    - { label: 電機・精密,                code: "1625" }
+    - { label: 情報通信・サービスその他,     code: "1626" }
+    - { label: 電力・ガス,                code: "1627" }
+    - { label: 運輸・物流,                code: "1628" }
+    - { label: 商社・卸売,                code: "1629" }
+    - { label: 小売,                      code: "1630" }
+    - { label: 銀行,                      code: "1631" }
+    - { label: 金融（除く銀行）,           code: "1632" }
+    - { label: 不動産,                    code: "1633" }

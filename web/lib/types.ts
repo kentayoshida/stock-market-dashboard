@@ -57,6 +57,32 @@ export type JpDataset = {
   block: JpBlock;
 };
 
+// ---- TOPIX-17（/topix17・対応 NEXT FUNDS ETF ベース）----
+export type Topix17Item = Item & { code: string }; // code = ETF 4桁銘柄コード
+
+export type Topix17Block = {
+  id: string;
+  title: string;
+  columns: number;
+  items: Topix17Item[];
+};
+
+export type Topix17Dataset = {
+  as_of: string | null;
+  generated_at: string;
+  data_source: string;
+  currency: string;
+  market: string;
+  periods: string[];
+  total_return_periods: string[];
+  sort: { default: string };
+  coverage: { ok: number; no_data: number; total: number };
+  disclaimer: string;
+  attribution: string;
+  source_note: string;
+  block: Topix17Block;
+};
+
 // ---- 世界 Global（/global・地域別ネスト構造）----
 export type GlobalGroup = {
   region: string;

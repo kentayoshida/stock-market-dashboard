@@ -12,6 +12,8 @@ type Props = {
   maxAbs: number; // ブロック内正規化の基準（§4.1）
   linkable?: boolean; // ETF ベース: ETF名を Yahoo Finance にリンク＋モメンタムバッジ表示
   displayLabel?: string; // 言語に応じてローカライズ済みの表示名（未指定なら item.label）
+  hrefFor?: (item: Item) => string; // 業種名リンク先を差し替える（未指定＝linkable時は Yahoo）
+  showMomentum?: boolean; // モメンタムバッジ表示の明示制御（既定は linkable に追従）
 };
 
 function yahooUrl(ticker: string): string {
@@ -32,10 +34,15 @@ export default function PerfRow({
   maxAbs,
   linkable = false,
   displayLabel,
+  hrefFor,
+  showMomentum,
 }: Props) {
   const { lang } = useLang();
   const t = ui[lang];
   const name = displayLabel ?? item.label;
+  // リンク先: hrefFor 優先。未指定でも linkable なら Yahoo。どちらも無ければリンクしない。
+  const href = hrefFor ? hrefFor(item) : linkable ? yahooUrl(item.ticker) : null;
+  const withMomentum = showMomentum ?? linkable;
   const r = item.returns[period];
   const value =
     item.status === "ok" && r
@@ -67,10 +74,10 @@ export default function PerfRow({
   return (
     <div className={"row" + (item.stale ? " row--stale" : "")}>
       <span className="row-label" title={`${name}（${item.ticker}）`}>
-        {linkable ? (
+        {href ? (
           <a
             className="row-name row-name--link"
-            href={yahooUrl(item.ticker)}
+            href={href}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -84,7 +91,7 @@ export default function PerfRow({
             {t.review}
           </span>
         )}
-        {linkable && <MomentumBadge m={item.momentum} />}
+        {withMomentum && <MomentumBadge m={item.momentum} />}
       </span>
       <span className={"row-value " + (pos ? "is-gain" : "is-loss")}>
         {fmtPct(value)}
