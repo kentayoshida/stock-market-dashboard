@@ -91,6 +91,8 @@ type UIDict = {
     namaeDesc: string;
     devilTitle: string;
     devilDesc: string;
+    mansionTitle: string;
+    mansionDesc: string;
   };
 };
 
@@ -201,6 +203,9 @@ export const ui: Record<Lang, UIDict> = {
         "あなたとパートナーが、お子さんの名前を納得して決めるためのアプリです。",
       devilTitle: "悪魔の実メーカー",
       devilDesc: "あなたの名前から、あなただけの悪魔の実が判明する。",
+      mansionTitle: "マンションポエムメーカー",
+      mansionDesc:
+        "駅名を入れると、その街の空気をまとった架空の「マンションポエム」を生成します。",
     },
   },
   en: {
@@ -310,6 +315,9 @@ export const ui: Record<Lang, UIDict> = {
         "An app to help you and your partner confidently decide on your baby's name.",
       devilTitle: "Devil Fruit Maker",
       devilDesc: "Discover your very own Devil Fruit, revealed from your name.",
+      mansionTitle: "Mansion Poem Maker",
+      mansionDesc:
+        "Enter a station name and it generates a fictional Japanese condo “mansion poem” steeped in that neighborhood's atmosphere.",
     },
   },
 };

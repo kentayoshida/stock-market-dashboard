@@ -7,6 +7,7 @@ const DASH_URL = "https://dashboard.markets-lab.com/";
 const JFGI_URL = "https://jfgi.markets-lab.com/";
 const NAMAE_URL = "https://www.namae-lab.com/";
 const DEVIL_URL = "https://www.devil-fruit-maker.com/";
+const MANSION_URL = "https://mansion-poem-maker.vercel.app/";
 
 export default function Portal() {
   const { lang, setLang } = useLang();
@@ -114,6 +115,23 @@ export default function Portal() {
               <span className="portal-fun-body">
                 <span className="portal-fun-title">{p.devilTitle}</span>
                 <span className="portal-fun-desc">{p.devilDesc}</span>
+              </span>
+              <span className="portal-fun-arrow" aria-hidden="true">
+                ↗
+              </span>
+            </a>
+            <a
+              className="portal-fun-link"
+              href={MANSION_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="portal-fun-emoji" aria-hidden="true">
+                🏢
+              </span>
+              <span className="portal-fun-body">
+                <span className="portal-fun-title">{p.mansionTitle}</span>
+                <span className="portal-fun-desc">{p.mansionDesc}</span>
               </span>
               <span className="portal-fun-arrow" aria-hidden="true">
                 ↗
