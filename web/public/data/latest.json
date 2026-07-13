@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-07-10",
-  "generated_at": "2026-07-10T22:12:24+00:00",
+  "as_of": "2026-07-13",
+  "generated_at": "2026-07-13T22:03:10+00:00",
   "data_source": "yfinance",
   "currency": "USD",
   "periods": [
@@ -31,44 +31,44 @@
           "ticker": "DIA",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.3,
+              "price": -0.25,
               "total": null
             },
             "1W": {
-              "price": -0.4,
+              "price": -1.06,
               "total": null
             },
             "1M": {
-              "price": 5.1,
+              "price": 2.22,
               "total": null
             },
             "3M": {
-              "price": 9.71,
+              "price": 8.78,
               "total": null
             },
             "6M": {
-              "price": 6.21,
+              "price": 6.61,
               "total": null
             },
             "YTD": {
-              "price": 9.41,
+              "price": 9.13,
               "total": null
             },
             "1Y": {
-              "price": 17.76,
-              "total": 19.55
+              "price": 18.24,
+              "total": 20.04
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 45,
-            "sma25": 518.16,
-            "sma75": 498.62,
-            "rsi": 61.1,
+            "days_since_cross": 46,
+            "sma25": 518.47,
+            "sma75": 499.46,
+            "rsi": 59.0,
             "rsi_state": "neutral"
           }
         },
@@ -77,44 +77,44 @@
           "ticker": "SPY",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.43,
+              "price": -0.77,
               "total": null
             },
             "1W": {
-              "price": 1.37,
+              "price": -0.28,
               "total": null
             },
             "1M": {
-              "price": 4.07,
+              "price": 1.0,
               "total": null
             },
             "3M": {
-              "price": 11.11,
+              "price": 9.19,
               "total": null
             },
             "6M": {
-              "price": 8.77,
+              "price": 7.99,
               "total": null
             },
             "YTD": {
-              "price": 10.71,
+              "price": 9.86,
               "total": null
             },
             "1Y": {
-              "price": 20.63,
-              "total": 21.97
+              "price": 20.13,
+              "total": 21.46
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 49,
-            "sma25": 742.9,
-            "sma75": 720.85,
-            "rsi": 59.1,
+            "days_since_cross": 50,
+            "sma25": 742.59,
+            "sma75": 722.13,
+            "rsi": 54.2,
             "rsi_state": "neutral"
           }
         },
@@ -123,44 +123,44 @@
           "ticker": "QQQ",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.31,
+              "price": -1.9,
               "total": null
             },
             "1W": {
-              "price": 1.81,
+              "price": -1.53,
               "total": null
             },
             "1M": {
-              "price": 4.59,
+              "price": -1.33,
               "total": null
             },
             "3M": {
-              "price": 18.73,
+              "price": 15.28,
               "total": null
             },
             "6M": {
-              "price": 15.78,
+              "price": 13.65,
               "total": null
             },
             "YTD": {
-              "price": 18.1,
+              "price": 15.86,
               "total": null
             },
             "1Y": {
-              "price": 30.62,
-              "total": 31.25
+              "price": 28.43,
+              "total": 29.05
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 51,
-            "sma25": 720.58,
-            "sma75": 681.75,
-            "rsi": 52.8,
+            "days_since_cross": 52,
+            "sma25": 719.43,
+            "sma75": 683.45,
+            "rsi": 47.7,
             "rsi_state": "neutral"
           }
         },
@@ -169,44 +169,44 @@
           "ticker": "IJH",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -0.04,
+              "price": -0.57,
               "total": null
             },
             "1W": {
-              "price": -0.55,
+              "price": -1.54,
               "total": null
             },
             "1M": {
-              "price": 2.74,
+              "price": -1.05,
               "total": null
             },
             "3M": {
-              "price": 7.41,
+              "price": 5.66,
               "total": null
             },
             "6M": {
-              "price": 9.49,
+              "price": 8.48,
               "total": null
             },
             "YTD": {
-              "price": 14.65,
+              "price": 14.0,
               "total": null
             },
             "1Y": {
-              "price": 18.25,
-              "total": 19.8
+              "price": 18.6,
+              "total": 20.15
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 51,
-            "sma25": 75.61,
-            "sma75": 73.09,
-            "rsi": 51.9,
+            "days_since_cross": 52,
+            "sma25": 75.6,
+            "sma75": 73.19,
+            "rsi": 49.0,
             "rsi_state": "neutral"
           }
         },
@@ -215,44 +215,44 @@
           "ticker": "IJR",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.06,
+              "price": -0.39,
               "total": null
             },
             "1W": {
-              "price": -0.63,
+              "price": -1.24,
               "total": null
             },
             "1M": {
-              "price": 4.79,
+              "price": 0.92,
               "total": null
             },
             "3M": {
-              "price": 11.81,
+              "price": 10.0,
               "total": null
             },
             "6M": {
-              "price": 15.14,
+              "price": 14.6,
               "total": null
             },
             "YTD": {
-              "price": 21.12,
+              "price": 20.64,
               "total": null
             },
             "1Y": {
-              "price": 27.61,
-              "total": 29.27
+              "price": 28.51,
+              "total": 30.19
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 53,
-            "sma25": 143.68,
-            "sma75": 136.92,
-            "rsi": 57.1,
+            "days_since_cross": 54,
+            "sma25": 143.87,
+            "sma75": 137.2,
+            "rsi": 55.0,
             "rsi_state": "neutral"
           }
         },
@@ -261,44 +261,44 @@
           "ticker": "IWB",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.36,
+              "price": -0.75,
               "total": null
             },
             "1W": {
-              "price": 1.07,
+              "price": -0.48,
               "total": null
             },
             "1M": {
-              "price": 4.11,
+              "price": 1.08,
               "total": null
             },
             "3M": {
-              "price": 11.04,
+              "price": 9.02,
               "total": null
             },
             "6M": {
-              "price": 8.55,
+              "price": 7.78,
               "total": null
             },
             "YTD": {
-              "price": 10.62,
+              "price": 9.79,
               "total": null
             },
             "1Y": {
-              "price": 20.07,
-              "total": 21.28
+              "price": 19.65,
+              "total": 20.86
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 48,
-            "sma25": 406.52,
-            "sma75": 394.23,
-            "rsi": 59.5,
+            "days_since_cross": 49,
+            "sma25": 406.37,
+            "sma75": 394.92,
+            "rsi": 54.5,
             "rsi_state": "neutral"
           }
         },
@@ -307,44 +307,44 @@
           "ticker": "IWM",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -0.42,
+              "price": -0.85,
               "total": null
             },
             "1W": {
-              "price": -0.53,
+              "price": -1.81,
               "total": null
             },
             "1M": {
-              "price": 4.94,
+              "price": 0.18,
               "total": null
             },
             "3M": {
-              "price": 13.28,
+              "price": 10.72,
               "total": null
             },
             "6M": {
-              "price": 13.74,
+              "price": 12.29,
               "total": null
             },
             "YTD": {
-              "price": 20.24,
+              "price": 19.22,
               "total": null
             },
             "1Y": {
-              "price": 31.67,
-              "total": 33.04
+              "price": 32.38,
+              "total": 33.75
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 51,
-            "sma25": 293.9,
-            "sma75": 279.74,
-            "rsi": 53.8,
+            "days_since_cross": 52,
+            "sma25": 293.96,
+            "sma75": 280.33,
+            "rsi": 49.9,
             "rsi_state": "neutral"
           }
         },
@@ -353,44 +353,44 @@
           "ticker": "IWV",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.27,
+              "price": -0.72,
               "total": null
             },
             "1W": {
-              "price": 1.01,
+              "price": -0.46,
               "total": null
             },
             "1M": {
-              "price": 4.12,
+              "price": 1.05,
               "total": null
             },
             "3M": {
-              "price": 11.08,
+              "price": 9.09,
               "total": null
             },
             "6M": {
-              "price": 8.82,
+              "price": 8.05,
               "total": null
             },
             "YTD": {
-              "price": 11.04,
+              "price": 10.24,
               "total": null
             },
             "1Y": {
-              "price": 20.58,
-              "total": 21.74
+              "price": 20.27,
+              "total": 21.42
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 49,
-            "sma25": 422.97,
-            "sma75": 409.85,
-            "rsi": 59.5,
+            "days_since_cross": 50,
+            "sma25": 422.83,
+            "sma75": 410.57,
+            "rsi": 54.5,
             "rsi_state": "neutral"
           }
         },
@@ -399,44 +399,44 @@
           "ticker": "IVW",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.6,
+              "price": -1.54,
               "total": null
             },
             "1W": {
-              "price": 2.35,
+              "price": -0.48,
               "total": null
             },
             "1M": {
-              "price": 5.35,
+              "price": 1.08,
               "total": null
             },
             "3M": {
-              "price": 14.83,
+              "price": 11.7,
               "total": null
             },
             "6M": {
-              "price": 11.17,
+              "price": 9.28,
               "total": null
             },
             "YTD": {
-              "price": 12.44,
+              "price": 10.71,
               "total": null
             },
             "1Y": {
-              "price": 24.89,
-              "total": 25.39
+              "price": 23.27,
+              "total": 23.76
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 50,
-            "sma25": 135.86,
-            "sma75": 130.91,
-            "rsi": 57.3,
+            "days_since_cross": 51,
+            "sma25": 135.72,
+            "sma75": 131.2,
+            "rsi": 51.1,
             "rsi_state": "neutral"
           }
         },
@@ -445,44 +445,44 @@
           "ticker": "IJK",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -0.51,
+              "price": -1.06,
               "total": null
             },
             "1W": {
-              "price": -0.89,
+              "price": -2.63,
               "total": null
             },
             "1M": {
-              "price": 2.84,
+              "price": -1.77,
               "total": null
             },
             "3M": {
-              "price": 8.32,
+              "price": 5.73,
               "total": null
             },
             "6M": {
-              "price": 12.59,
+              "price": 10.3,
               "total": null
             },
             "YTD": {
-              "price": 17.78,
+              "price": 16.54,
               "total": null
             },
             "1Y": {
-              "price": 22.42,
-              "total": 23.16
+              "price": 22.38,
+              "total": 23.12
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 56,
-            "sma25": 114.73,
-            "sma75": 110.54,
-            "rsi": 49.1,
+            "days_since_cross": 57,
+            "sma25": 114.62,
+            "sma75": 110.69,
+            "rsi": 45.3,
             "rsi_state": "neutral"
           }
         },
@@ -491,44 +491,44 @@
           "ticker": "IJT",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -0.38,
+              "price": -1.0,
               "total": null
             },
             "1W": {
-              "price": -0.91,
+              "price": -2.47,
               "total": null
             },
             "1M": {
-              "price": 7.18,
+              "price": 2.08,
               "total": null
             },
             "3M": {
-              "price": 13.93,
+              "price": 11.19,
               "total": null
             },
             "6M": {
-              "price": 18.19,
+              "price": 16.36,
               "total": null
             },
             "YTD": {
-              "price": 23.47,
+              "price": 22.24,
               "total": null
             },
             "1Y": {
-              "price": 26.92,
-              "total": 27.96
+              "price": 26.96,
+              "total": 28.0
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 54,
-            "sma25": 171.13,
-            "sma75": 161.78,
-            "rsi": 57.7,
+            "days_since_cross": 55,
+            "sma25": 171.44,
+            "sma75": 162.16,
+            "rsi": 53.0,
             "rsi_state": "neutral"
           }
         },
@@ -537,44 +537,44 @@
           "ticker": "IVE",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.25,
+              "price": 0.17,
               "total": null
             },
             "1W": {
-              "price": 0.13,
+              "price": -0.01,
               "total": null
             },
             "1M": {
-              "price": 2.59,
+              "price": 0.94,
               "total": null
             },
             "3M": {
-              "price": 7.0,
+              "price": 6.34,
               "total": null
             },
             "6M": {
-              "price": 6.02,
+              "price": 6.51,
               "total": null
             },
             "YTD": {
-              "price": 8.69,
+              "price": 8.87,
               "total": null
             },
             "1Y": {
-              "price": 15.89,
-              "total": 17.82
+              "price": 16.67,
+              "total": 18.62
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 46,
-            "sma25": 227.75,
-            "sma75": 222.88,
-            "rsi": 61.5,
+            "days_since_cross": 47,
+            "sma25": 227.82,
+            "sma75": 223.15,
+            "rsi": 62.7,
             "rsi_state": "neutral"
           }
         },
@@ -583,44 +583,44 @@
           "ticker": "IJJ",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.49,
+              "price": -0.05,
               "total": null
             },
             "1W": {
-              "price": -0.2,
+              "price": -0.42,
               "total": null
             },
             "1M": {
-              "price": 2.64,
+              "price": -0.27,
               "total": null
             },
             "3M": {
-              "price": 6.46,
+              "price": 5.52,
               "total": null
             },
             "6M": {
-              "price": 6.24,
+              "price": 6.61,
               "total": null
             },
             "YTD": {
-              "price": 11.31,
+              "price": 11.25,
               "total": null
             },
             "1Y": {
-              "price": 14.05,
-              "total": 16.04
+              "price": 14.82,
+              "total": 16.82
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 48,
-            "sma25": 145.43,
-            "sma75": 141.09,
-            "rsi": 55.8,
+            "days_since_cross": 49,
+            "sma25": 145.54,
+            "sma75": 141.29,
+            "rsi": 55.5,
             "rsi_state": "neutral"
           }
         },
@@ -629,44 +629,44 @@
           "ticker": "IJS",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.49,
+              "price": 0.13,
               "total": null
             },
             "1W": {
-              "price": -0.34,
+              "price": -0.15,
               "total": null
             },
             "1M": {
-              "price": 2.54,
+              "price": -0.21,
               "total": null
             },
             "3M": {
-              "price": 9.86,
+              "price": 8.67,
               "total": null
             },
             "6M": {
-              "price": 12.09,
+              "price": 12.77,
               "total": null
             },
             "YTD": {
-              "price": 18.7,
+              "price": 18.86,
               "total": null
             },
             "1Y": {
-              "price": 28.61,
-              "total": 30.56
+              "price": 30.33,
+              "total": 32.31
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 52,
-            "sma25": 133.95,
-            "sma75": 128.64,
-            "rsi": 55.3,
+            "days_since_cross": 53,
+            "sma25": 134.05,
+            "sma75": 128.87,
+            "rsi": 55.9,
             "rsi_state": "neutral"
           }
         },
@@ -675,44 +675,44 @@
           "ticker": "SCHD",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.43,
+              "price": 0.49,
               "total": null
             },
             "1W": {
-              "price": 0.03,
+              "price": 0.99,
               "total": null
             },
             "1M": {
-              "price": 0.43,
+              "price": -0.79,
               "total": null
             },
             "3M": {
-              "price": 6.02,
+              "price": 5.92,
               "total": null
             },
             "6M": {
-              "price": 13.49,
+              "price": 13.77,
               "total": null
             },
             "YTD": {
-              "price": 18.12,
+              "price": 18.7,
               "total": null
             },
             "1Y": {
-              "price": 17.78,
-              "total": 22.1
+              "price": 19.14,
+              "total": 23.51
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 143,
+            "days_since_cross": 144,
             "sma25": 32.22,
-            "sma75": 31.68,
-            "rsi": 54.6,
+            "sma75": 31.71,
+            "rsi": 57.3,
             "rsi_state": "neutral"
           }
         },
@@ -721,44 +721,44 @@
           "ticker": "RSP",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.37,
+              "price": -0.03,
               "total": null
             },
             "1W": {
-              "price": -0.28,
+              "price": -0.36,
               "total": null
             },
             "1M": {
-              "price": 3.76,
+              "price": 1.22,
               "total": null
             },
             "3M": {
-              "price": 8.98,
+              "price": 7.75,
               "total": null
             },
             "6M": {
-              "price": 8.45,
+              "price": 8.32,
               "total": null
             },
             "YTD": {
-              "price": 11.87,
+              "price": 11.83,
               "total": null
             },
             "1Y": {
-              "price": 15.35,
-              "total": 17.26
+              "price": 16.16,
+              "total": 18.09
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 46,
-            "sma25": 211.29,
-            "sma75": 204.4,
-            "rsi": 60.0,
+            "days_since_cross": 47,
+            "sma25": 211.42,
+            "sma75": 204.7,
+            "rsi": 59.8,
             "rsi_state": "neutral"
           }
         },
@@ -767,44 +767,44 @@
           "ticker": "MTUM",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.18,
+              "price": -2.22,
               "total": null
             },
             "1W": {
-              "price": 1.66,
+              "price": -2.2,
               "total": null
             },
             "1M": {
-              "price": 5.53,
+              "price": -3.01,
               "total": null
             },
             "3M": {
-              "price": 22.14,
+              "price": 18.26,
               "total": null
             },
             "6M": {
-              "price": 25.21,
+              "price": 21.52,
               "total": null
             },
             "YTD": {
-              "price": 28.55,
+              "price": 25.7,
               "total": null
             },
             "1Y": {
-              "price": 35.42,
-              "total": 36.38
+              "price": 33.18,
+              "total": 34.12
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 55,
-            "sma25": 324.71,
-            "sma75": 295.68,
-            "rsi": 50.3,
+            "days_since_cross": 56,
+            "sma25": 324.26,
+            "sma75": 296.6,
+            "rsi": 46.7,
             "rsi_state": "neutral"
           }
         },
@@ -813,44 +813,44 @@
           "ticker": "USMV",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.16,
+              "price": 0.06,
               "total": null
             },
             "1W": {
-              "price": -0.13,
+              "price": -0.07,
               "total": null
             },
             "1M": {
-              "price": 2.67,
+              "price": 1.84,
               "total": null
             },
             "3M": {
-              "price": 5.4,
+              "price": 4.61,
               "total": null
             },
             "6M": {
-              "price": 3.3,
+              "price": 3.75,
               "total": null
             },
             "YTD": {
-              "price": 3.82,
+              "price": 3.89,
               "total": null
             },
             "1Y": {
-              "price": 4.61,
-              "total": 6.22
+              "price": 5.48,
+              "total": 7.1
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 30,
-            "sma25": 96.09,
-            "sma75": 94.94,
-            "rsi": 63.2,
+            "days_since_cross": 31,
+            "sma25": 96.14,
+            "sma75": 95.02,
+            "rsi": 63.7,
             "rsi_state": "neutral"
           }
         }
@@ -865,44 +865,44 @@
           "ticker": "XLY",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.33,
+              "price": -1.02,
               "total": null
             },
             "1W": {
-              "price": 0.1,
+              "price": -1.67,
               "total": null
             },
             "1M": {
-              "price": 3.3,
+              "price": -0.48,
               "total": null
             },
             "3M": {
-              "price": 3.85,
+              "price": 1.86,
               "total": null
             },
             "6M": {
-              "price": -5.76,
+              "price": -6.58,
               "total": null
             },
             "YTD": {
-              "price": -1.82,
+              "price": -2.82,
               "total": null
             },
             "1Y": {
-              "price": 5.92,
-              "total": 6.75
+              "price": 4.81,
+              "total": 5.62
             }
           },
           "momentum": {
-            "cross": "golden",
-            "days_since_cross": 44,
-            "sma25": 116.21,
-            "sma75": 116.09,
-            "rsi": 51.7,
+            "cross": "dead",
+            "days_since_cross": 0,
+            "sma25": 116.16,
+            "sma75": 116.17,
+            "rsi": 48.1,
             "rsi_state": "neutral"
           }
         },
@@ -911,44 +911,44 @@
           "ticker": "XLP",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 1.11,
+              "price": 0.56,
               "total": null
             },
             "1W": {
-              "price": -1.02,
+              "price": 0.58,
               "total": null
             },
             "1M": {
-              "price": -1.6,
+              "price": -1.43,
               "total": null
             },
             "3M": {
-              "price": 2.12,
+              "price": 3.73,
               "total": null
             },
             "6M": {
-              "price": 6.15,
+              "price": 4.29,
               "total": null
             },
             "YTD": {
-              "price": 8.29,
+              "price": 8.9,
               "total": null
             },
             "1Y": {
-              "price": 3.71,
-              "total": 6.59
+              "price": 4.68,
+              "total": 7.58
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 24,
-            "sma25": 84.11,
-            "sma75": 83.42,
-            "rsi": 50.4,
+            "days_since_cross": 25,
+            "sma25": 84.21,
+            "sma75": 83.47,
+            "rsi": 52.5,
             "rsi_state": "neutral"
           }
         },
@@ -957,44 +957,44 @@
           "ticker": "XLE",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.47,
+              "price": 3.01,
               "total": null
             },
             "1W": {
-              "price": 3.49,
+              "price": 6.79,
               "total": null
             },
             "1M": {
-              "price": -5.44,
+              "price": -1.41,
               "total": null
             },
             "3M": {
-              "price": -3.27,
+              "price": -0.65,
               "total": null
             },
             "6M": {
-              "price": 18.02,
+              "price": 20.72,
               "total": null
             },
             "YTD": {
-              "price": 23.19,
+              "price": 26.91,
               "total": null
             },
             "1Y": {
-              "price": 24.15,
-              "total": 28.02
+              "price": 27.32,
+              "total": 31.29
             }
           },
           "momentum": {
             "cross": "dead",
-            "days_since_cross": 15,
-            "sma25": 55.22,
-            "sma75": 57.24,
-            "rsi": 49.4,
+            "days_since_cross": 16,
+            "sma25": 55.14,
+            "sma75": 57.19,
+            "rsi": 57.8,
             "rsi_state": "neutral"
           }
         },
@@ -1003,44 +1003,44 @@
           "ticker": "XLF",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.31,
+              "price": 0.65,
               "total": null
             },
             "1W": {
-              "price": 0.16,
+              "price": -0.12,
               "total": null
             },
             "1M": {
-              "price": 6.66,
+              "price": 5.12,
               "total": null
             },
             "3M": {
-              "price": 9.73,
+              "price": 8.54,
               "total": null
             },
             "6M": {
-              "price": -0.04,
+              "price": 3.39,
               "total": null
             },
             "YTD": {
-              "price": 1.72,
+              "price": 2.37,
               "total": null
             },
             "1Y": {
-              "price": 5.69,
-              "total": 7.33
+              "price": 7.5,
+              "total": 9.16
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 44,
-            "sma25": 53.88,
-            "sma75": 52.06,
-            "rsi": 65.8,
+            "days_since_cross": 45,
+            "sma25": 54.04,
+            "sma75": 52.15,
+            "rsi": 67.9,
             "rsi_state": "neutral"
           }
         },
@@ -1049,44 +1049,44 @@
           "ticker": "XLV",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -0.82,
+              "price": 0.35,
               "total": null
             },
             "1W": {
-              "price": -1.77,
+              "price": -0.34,
               "total": null
             },
             "1M": {
-              "price": 5.23,
+              "price": 4.94,
               "total": null
             },
             "3M": {
-              "price": 9.18,
+              "price": 9.08,
               "total": null
             },
             "6M": {
-              "price": 2.24,
+              "price": 2.98,
               "total": null
             },
             "YTD": {
-              "price": 3.9,
+              "price": 4.27,
               "total": null
             },
             "1Y": {
-              "price": 17.99,
-              "total": 20.05
+              "price": 19.39,
+              "total": 21.48
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 18,
-            "sma25": 156.2,
-            "sma75": 149.72,
-            "rsi": 60.2,
+            "days_since_cross": 19,
+            "sma25": 156.57,
+            "sma75": 149.94,
+            "rsi": 61.2,
             "rsi_state": "neutral"
           }
         },
@@ -1095,44 +1095,44 @@
           "ticker": "XLI",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.45,
+              "price": -0.85,
               "total": null
             },
             "1W": {
-              "price": -1.08,
+              "price": -2.8,
               "total": null
             },
             "1M": {
-              "price": 7.23,
+              "price": 2.38,
               "total": null
             },
             "3M": {
-              "price": 6.06,
+              "price": 4.42,
               "total": null
             },
             "6M": {
-              "price": 12.34,
+              "price": 9.98,
               "total": null
             },
             "YTD": {
-              "price": 17.28,
+              "price": 16.28,
               "total": null
             },
             "1Y": {
-              "price": 20.68,
-              "total": 22.24
+              "price": 20.09,
+              "total": 21.63
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 46,
-            "sma25": 179.67,
-            "sma75": 173.61,
-            "rsi": 54.6,
+            "days_since_cross": 47,
+            "sma25": 179.84,
+            "sma75": 173.83,
+            "rsi": 51.3,
             "rsi_state": "neutral"
           }
         },
@@ -1141,44 +1141,44 @@
           "ticker": "XLB",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 1.25,
+              "price": -0.61,
               "total": null
             },
             "1W": {
-              "price": -2.15,
+              "price": -2.69,
               "total": null
             },
             "1M": {
-              "price": 2.6,
+              "price": -3.07,
               "total": null
             },
             "3M": {
-              "price": -2.06,
+              "price": -3.08,
               "total": null
             },
             "6M": {
-              "price": 5.45,
+              "price": 3.8,
               "total": null
             },
             "YTD": {
-              "price": 12.22,
+              "price": 11.53,
               "total": null
             },
             "1Y": {
-              "price": 10.31,
-              "total": 12.32
+              "price": 10.53,
+              "total": 12.55
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 51,
-            "sma25": 51.26,
-            "sma75": 51.1,
-            "rsi": 47.9,
+            "days_since_cross": 52,
+            "sma25": 51.22,
+            "sma75": 51.13,
+            "rsi": 45.8,
             "rsi_state": "neutral"
           }
         },
@@ -1187,44 +1187,44 @@
           "ticker": "XLK",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.23,
+              "price": -2.42,
               "total": null
             },
             "1W": {
-              "price": 2.87,
+              "price": -1.25,
               "total": null
             },
             "1M": {
-              "price": 5.18,
+              "price": -1.9,
               "total": null
             },
             "3M": {
-              "price": 30.26,
+              "price": 24.5,
               "total": null
             },
             "6M": {
-              "price": 27.12,
+              "price": 23.76,
               "total": null
             },
             "YTD": {
-              "price": 29.04,
+              "price": 25.92,
               "total": null
             },
             "1Y": {
-              "price": 44.59,
-              "total": 45.35
+              "price": 41.71,
+              "total": 42.45
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 53,
-            "sma25": 184.84,
-            "sma75": 168.94,
-            "rsi": 52.6,
+            "days_since_cross": 54,
+            "sma25": 184.37,
+            "sma75": 169.54,
+            "rsi": 47.9,
             "rsi_state": "neutral"
           }
         },
@@ -1233,44 +1233,44 @@
           "ticker": "XLC",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 1.02,
+              "price": -0.04,
               "total": null
             },
             "1W": {
-              "price": 1.86,
+              "price": 1.25,
               "total": null
             },
             "1M": {
-              "price": 0.57,
+              "price": -0.05,
               "total": null
             },
             "3M": {
-              "price": -2.03,
+              "price": -2.81,
               "total": null
             },
             "6M": {
-              "price": -5.32,
+              "price": -4.53,
               "total": null
             },
             "YTD": {
-              "price": -5.16,
+              "price": -5.21,
               "total": null
             },
             "1Y": {
-              "price": 4.63,
-              "total": 5.95
+              "price": 5.26,
+              "total": 6.59
             }
           },
           "momentum": {
             "cross": "dead",
-            "days_since_cross": 19,
-            "sma25": 109.8,
+            "days_since_cross": 20,
+            "sma25": 109.74,
             "sma75": 113.27,
-            "rsi": 54.3,
+            "rsi": 54.1,
             "rsi_state": "neutral"
           }
         },
@@ -1279,44 +1279,44 @@
           "ticker": "XLU",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.62,
+              "price": 0.68,
               "total": null
             },
             "1W": {
-              "price": -0.76,
+              "price": 0.93,
               "total": null
             },
             "1M": {
-              "price": 3.2,
+              "price": 2.67,
               "total": null
             },
             "3M": {
-              "price": -3.3,
+              "price": -1.44,
               "total": null
             },
             "6M": {
-              "price": 6.82,
+              "price": 6.7,
               "total": null
             },
             "YTD": {
-              "price": 6.37,
+              "price": 7.1,
               "total": null
             },
             "1Y": {
-              "price": 9.99,
-              "total": 13.06
+              "price": 10.9,
+              "total": 14.0
             }
           },
           "momentum": {
             "cross": "dead",
-            "days_since_cross": 37,
-            "sma25": 44.94,
-            "sma75": 45.31,
-            "rsi": 52.6,
+            "days_since_cross": 38,
+            "sma25": 45.01,
+            "sma75": 45.32,
+            "rsi": 55.3,
             "rsi_state": "neutral"
           }
         },
@@ -1325,44 +1325,44 @@
           "ticker": "XLRE",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.5,
+              "price": 0.56,
               "total": null
             },
             "1W": {
-              "price": -0.51,
+              "price": 0.93,
               "total": null
             },
             "1M": {
-              "price": -1.2,
+              "price": -1.46,
               "total": null
             },
             "3M": {
-              "price": 3.81,
+              "price": 3.91,
               "total": null
             },
             "6M": {
-              "price": 9.75,
+              "price": 9.21,
               "total": null
             },
             "YTD": {
-              "price": 10.16,
+              "price": 10.78,
               "total": null
             },
             "1Y": {
-              "price": 6.83,
-              "total": 10.51
+              "price": 7.53,
+              "total": 11.24
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 51,
-            "sma25": 44.56,
-            "sma75": 43.72,
-            "rsi": 50.3,
+            "days_since_cross": 52,
+            "sma25": 44.58,
+            "sma75": 43.78,
+            "rsi": 52.7,
             "rsi_state": "neutral"
           }
         }
@@ -1377,44 +1377,44 @@
           "ticker": "DBC",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -0.22,
+              "price": 2.94,
               "total": null
             },
             "1W": {
-              "price": 3.58,
+              "price": 4.93,
               "total": null
             },
             "1M": {
-              "price": -5.66,
+              "price": -0.77,
               "total": null
             },
             "3M": {
-              "price": -3.44,
+              "price": -2.18,
               "total": null
             },
             "6M": {
-              "price": 20.17,
+              "price": 21.22,
               "total": null
             },
             "YTD": {
-              "price": 23.08,
+              "price": 26.7,
               "total": null
             },
             "1Y": {
-              "price": 23.85,
-              "total": 28.02
+              "price": 25.86,
+              "total": 30.09
             }
           },
           "momentum": {
             "cross": "dead",
-            "days_since_cross": 12,
-            "sma25": 27.75,
+            "days_since_cross": 13,
+            "sma25": 27.68,
             "sma75": 29.16,
-            "rsi": 45.4,
+            "rsi": 55.3,
             "rsi_state": "neutral"
           }
         },
@@ -1423,44 +1423,44 @@
           "ticker": "DBE",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -0.15,
+              "price": 6.87,
               "total": null
             },
             "1W": {
-              "price": 5.23,
+              "price": 11.13,
               "total": null
             },
             "1M": {
-              "price": -12.9,
+              "price": -1.18,
               "total": null
             },
             "3M": {
-              "price": -4.13,
+              "price": -0.36,
               "total": null
             },
             "6M": {
-              "price": 54.2,
+              "price": 58.5,
               "total": null
             },
             "YTD": {
-              "price": 55.35,
+              "price": 66.03,
               "total": null
             },
             "1Y": {
-              "price": 40.99,
-              "total": 46.5
+              "price": 47.46,
+              "total": 53.22
             }
           },
           "momentum": {
             "cross": "dead",
-            "days_since_cross": 10,
-            "sma25": 27.89,
+            "days_since_cross": 11,
+            "sma25": 27.79,
             "sma75": 29.85,
-            "rsi": 44.7,
+            "rsi": 56.2,
             "rsi_state": "neutral"
           }
         },
@@ -1469,44 +1469,44 @@
           "ticker": "UNG",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -2.12,
+              "price": -2.17,
               "total": null
             },
             "1W": {
-              "price": -8.46,
+              "price": -11.44,
               "total": null
             },
             "1M": {
-              "price": -8.15,
+              "price": -8.63,
               "total": null
             },
             "3M": {
-              "price": -1.58,
+              "price": -2.9,
               "total": null
             },
             "6M": {
-              "price": 1.92,
+              "price": -8.39,
               "total": null
             },
             "YTD": {
-              "price": -13.54,
+              "price": -15.42,
               "total": null
             },
             "1Y": {
-              "price": -28.14,
-              "total": -28.14
+              "price": -30.5,
+              "total": -30.5
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 16,
-            "sma25": 11.54,
-            "sma75": 11.25,
-            "rsi": 36.1,
+            "days_since_cross": 17,
+            "sma25": 11.47,
+            "sma75": 11.24,
+            "rsi": 33.6,
             "rsi_state": "neutral"
           }
         },
@@ -1515,44 +1515,44 @@
           "ticker": "GLD",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -0.31,
+              "price": -2.62,
               "total": null
             },
             "1W": {
-              "price": -0.3,
+              "price": -3.93,
               "total": null
             },
             "1M": {
-              "price": 0.65,
+              "price": -5.02,
               "total": null
             },
             "3M": {
-              "price": -13.75,
+              "price": -15.67,
               "total": null
             },
             "6M": {
-              "price": -9.04,
+              "price": -12.93,
               "total": null
             },
             "YTD": {
-              "price": -4.87,
+              "price": -7.36,
               "total": null
             },
             "1Y": {
-              "price": 23.13,
-              "total": 23.13
+              "price": 18.76,
+              "total": 18.76
             }
           },
           "momentum": {
             "cross": "dead",
-            "days_since_cross": 64,
-            "sma25": 382.35,
-            "sma75": 410.71,
-            "rsi": 42.9,
+            "days_since_cross": 65,
+            "sma25": 380.59,
+            "sma75": 410.22,
+            "rsi": 36.8,
             "rsi_state": "neutral"
           }
         },
@@ -1561,44 +1561,44 @@
           "ticker": "SLV",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -0.35,
+              "price": -3.32,
               "total": null
             },
             "1W": {
-              "price": -1.94,
+              "price": -7.04,
               "total": null
             },
             "1M": {
-              "price": -6.43,
+              "price": -14.9,
               "total": null
             },
             "3M": {
-              "price": -21.9,
+              "price": -23.61,
               "total": null
             },
             "6M": {
-              "price": -25.46,
+              "price": -33.64,
               "total": null
             },
             "YTD": {
-              "price": -16.25,
+              "price": -19.03,
               "total": null
             },
             "1Y": {
-              "price": 59.85,
-              "total": 59.85
+              "price": 48.9,
+              "total": 48.9
             }
           },
           "momentum": {
             "cross": "dead",
-            "days_since_cross": 71,
-            "sma25": 57.37,
-            "sma75": 65.0,
-            "rsi": 38.9,
+            "days_since_cross": 72,
+            "sma25": 56.77,
+            "sma75": 64.85,
+            "rsi": 35.3,
             "rsi_state": "neutral"
           }
         },
@@ -1607,44 +1607,44 @@
           "ticker": "DBB",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -0.24,
+              "price": 0.12,
               "total": null
             },
             "1W": {
-              "price": 2.05,
+              "price": 0.91,
               "total": null
             },
             "1M": {
-              "price": -2.4,
+              "price": -4.86,
               "total": null
             },
             "3M": {
-              "price": 0.74,
+              "price": -1.25,
               "total": null
             },
             "6M": {
-              "price": 2.3,
+              "price": 1.41,
               "total": null
             },
             "YTD": {
-              "price": 6.58,
+              "price": 6.71,
               "total": null
             },
             "1Y": {
-              "price": 26.23,
-              "total": 29.66
+              "price": 27.7,
+              "total": 31.18
             }
           },
           "momentum": {
             "cross": "dead",
-            "days_since_cross": 0,
-            "sma25": 24.79,
-            "sma75": 24.88,
-            "rsi": 45.9,
+            "days_since_cross": 1,
+            "sma25": 24.73,
+            "sma75": 24.9,
+            "rsi": 46.5,
             "rsi_state": "neutral"
           }
         },
@@ -1653,44 +1653,44 @@
           "ticker": "DBA",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.22,
+              "price": -0.18,
               "total": null
             },
             "1W": {
-              "price": 3.85,
+              "price": 0.65,
               "total": null
             },
             "1M": {
-              "price": 5.47,
+              "price": 5.64,
               "total": null
             },
             "3M": {
-              "price": 3.27,
+              "price": 2.93,
               "total": null
             },
             "6M": {
-              "price": 7.72,
+              "price": 8.41,
               "total": null
             },
             "YTD": {
-              "price": 8.82,
+              "price": 8.62,
               "total": null
             },
             "1Y": {
-              "price": 7.76,
-              "total": 11.65
+              "price": 7.57,
+              "total": 11.45
             }
           },
           "momentum": {
             "cross": "dead",
-            "days_since_cross": 14,
-            "sma25": 26.78,
-            "sma75": 27.27,
-            "rsi": 65.5,
+            "days_since_cross": 15,
+            "sma25": 26.82,
+            "sma75": 27.28,
+            "rsi": 64.1,
             "rsi_state": "neutral"
           }
         }
@@ -1705,44 +1705,44 @@
           "ticker": "SHY",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -0.04,
+              "price": -0.11,
               "total": null
             },
             "1W": {
-              "price": -0.07,
+              "price": -0.23,
               "total": null
             },
             "1M": {
-              "price": -0.07,
+              "price": -0.34,
               "total": null
             },
             "3M": {
-              "price": -0.64,
+              "price": -0.82,
               "total": null
             },
             "6M": {
-              "price": -1.15,
+              "price": -1.28,
               "total": null
             },
             "YTD": {
-              "price": -1.13,
+              "price": -1.24,
               "total": null
             },
             "1Y": {
-              "price": -0.72,
-              "total": 2.95
+              "price": -0.8,
+              "total": 2.86
             }
           },
           "momentum": {
             "cross": "dead",
-            "days_since_cross": 78,
-            "sma25": 81.99,
-            "sma75": 82.21,
-            "rsi": 43.5,
+            "days_since_cross": 79,
+            "sma25": 81.98,
+            "sma75": 82.2,
+            "rsi": 40.0,
             "rsi_state": "neutral"
           }
         },
@@ -1751,44 +1751,44 @@
           "ticker": "IEF",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -0.09,
+              "price": -0.36,
               "total": null
             },
             "1W": {
-              "price": -0.52,
+              "price": -0.94,
               "total": null
             },
             "1M": {
-              "price": -0.06,
+              "price": -0.94,
               "total": null
             },
             "3M": {
-              "price": -1.72,
+              "price": -2.29,
               "total": null
             },
             "6M": {
-              "price": -2.77,
+              "price": -3.13,
               "total": null
             },
             "YTD": {
-              "price": -2.63,
+              "price": -2.98,
               "total": null
             },
             "1Y": {
-              "price": -1.19,
-              "total": 2.67
+              "price": -1.09,
+              "total": 2.77
             }
           },
           "momentum": {
             "cross": "dead",
-            "days_since_cross": 71,
-            "sma25": 94.14,
-            "sma75": 94.59,
-            "rsi": 41.8,
+            "days_since_cross": 72,
+            "sma25": 94.11,
+            "sma75": 94.57,
+            "rsi": 37.9,
             "rsi_state": "neutral"
           }
         },
@@ -1797,44 +1797,44 @@
           "ticker": "TLT",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -0.02,
+              "price": -0.59,
               "total": null
             },
             "1W": {
-              "price": -1.22,
+              "price": -1.73,
               "total": null
             },
             "1M": {
-              "price": -0.48,
+              "price": -2.1,
               "total": null
             },
             "3M": {
-              "price": -2.34,
+              "price": -3.2,
               "total": null
             },
             "6M": {
-              "price": -3.93,
+              "price": -4.38,
               "total": null
             },
             "YTD": {
-              "price": -3.09,
+              "price": -3.66,
               "total": null
             },
             "1Y": {
-              "price": -2.9,
-              "total": 1.53
+              "price": -2.12,
+              "total": 2.34
             }
           },
           "momentum": {
             "cross": "dead",
-            "days_since_cross": 1,
-            "sma25": 85.78,
-            "sma75": 85.82,
-            "rsi": 37.9,
+            "days_since_cross": 2,
+            "sma25": 85.72,
+            "sma75": 85.79,
+            "rsi": 34.2,
             "rsi_state": "neutral"
           }
         },
@@ -1843,44 +1843,44 @@
           "ticker": "AGG",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -0.1,
+              "price": -0.38,
               "total": null
             },
             "1W": {
-              "price": -0.54,
+              "price": -0.96,
               "total": null
             },
             "1M": {
-              "price": -0.23,
+              "price": -1.06,
               "total": null
             },
             "3M": {
-              "price": -1.25,
+              "price": -1.82,
               "total": null
             },
             "6M": {
-              "price": -2.08,
+              "price": -2.49,
               "total": null
             },
             "YTD": {
-              "price": -1.8,
+              "price": -2.17,
               "total": null
             },
             "1Y": {
-              "price": -0.39,
-              "total": 3.63
+              "price": -0.35,
+              "total": 3.67
             }
           },
           "momentum": {
             "cross": "dead",
-            "days_since_cross": 73,
-            "sma25": 98.66,
-            "sma75": 98.88,
-            "rsi": 39.8,
+            "days_since_cross": 74,
+            "sma25": 98.62,
+            "sma75": 98.87,
+            "rsi": 35.1,
             "rsi_state": "neutral"
           }
         },
@@ -1889,44 +1889,44 @@
           "ticker": "TIP",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 0.01,
+              "price": -0.2,
               "total": null
             },
             "1W": {
-              "price": -0.18,
+              "price": -0.53,
               "total": null
             },
             "1M": {
-              "price": -0.99,
+              "price": -1.55,
               "total": null
             },
             "3M": {
-              "price": -2.6,
+              "price": -3.03,
               "total": null
             },
             "6M": {
-              "price": -1.86,
+              "price": -2.15,
               "total": null
             },
             "YTD": {
-              "price": -1.62,
+              "price": -1.82,
               "total": null
             },
             "1Y": {
-              "price": -1.26,
-              "total": 3.13
+              "price": -1.3,
+              "total": 3.09
             }
           },
           "momentum": {
             "cross": "dead",
-            "days_since_cross": 27,
-            "sma25": 109.08,
-            "sma75": 110.29,
-            "rsi": 35.1,
+            "days_since_cross": 28,
+            "sma25": 109.0,
+            "sma75": 110.26,
+            "rsi": 32.9,
             "rsi_state": "neutral"
           }
         },
@@ -1935,44 +1935,44 @@
           "ticker": "HYG",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -0.05,
+              "price": -0.24,
               "total": null
             },
             "1W": {
-              "price": 0.0,
+              "price": -0.44,
               "total": null
             },
             "1M": {
-              "price": 0.3,
+              "price": -0.53,
               "total": null
             },
             "3M": {
-              "price": -0.31,
+              "price": -0.92,
               "total": null
             },
             "6M": {
-              "price": -1.59,
+              "price": -1.88,
               "total": null
             },
             "YTD": {
-              "price": -1.14,
+              "price": -1.38,
               "total": null
             },
             "1Y": {
-              "price": -0.52,
-              "total": 5.48
+              "price": -0.64,
+              "total": 5.36
             }
           },
           "momentum": {
             "cross": "dead",
-            "days_since_cross": 6,
-            "sma25": 79.8,
+            "days_since_cross": 7,
+            "sma25": 79.79,
             "sma75": 79.9,
-            "rsi": 46.8,
+            "rsi": 42.2,
             "rsi_state": "neutral"
           }
         }
@@ -1987,44 +1987,44 @@
           "ticker": "MAGS",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": 1.38,
+              "price": -1.02,
               "total": null
             },
             "1W": {
-              "price": 3.96,
+              "price": 1.07,
               "total": null
             },
             "1M": {
-              "price": 5.39,
+              "price": 3.2,
               "total": null
             },
             "3M": {
-              "price": 10.7,
+              "price": 8.47,
               "total": null
             },
             "6M": {
-              "price": 1.97,
+              "price": 1.52,
               "total": null
             },
             "YTD": {
-              "price": 2.61,
+              "price": 1.56,
               "total": null
             },
             "1Y": {
-              "price": 20.88,
-              "total": 22.65
+              "price": 19.11,
+              "total": 20.86
             }
           },
           "momentum": {
             "cross": "dead",
-            "days_since_cross": 1,
-            "sma25": 65.16,
-            "sma75": 65.32,
-            "rsi": 58.5,
+            "days_since_cross": 2,
+            "sma25": 65.07,
+            "sma75": 65.44,
+            "rsi": 55.2,
             "rsi_state": "neutral"
           }
         },
@@ -2033,44 +2033,44 @@
           "ticker": "SOXX",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -0.06,
+              "price": -4.77,
               "total": null
             },
             "1W": {
-              "price": 2.65,
+              "price": -4.8,
               "total": null
             },
             "1M": {
-              "price": 7.36,
+              "price": -7.15,
               "total": null
             },
             "3M": {
-              "price": 50.37,
+              "price": 40.75,
               "total": null
             },
             "6M": {
-              "price": 76.82,
+              "price": 66.1,
               "total": null
             },
             "YTD": {
-              "price": 93.04,
+              "price": 83.83,
               "total": null
             },
             "1Y": {
-              "price": 135.79,
-              "total": 136.89
+              "price": 124.89,
+              "total": 125.94
             }
           },
           "momentum": {
             "cross": "golden",
-            "days_since_cross": 63,
-            "sma25": 592.56,
-            "sma75": 499.72,
-            "rsi": 50.2,
+            "days_since_cross": 64,
+            "sma25": 590.6,
+            "sma75": 502.55,
+            "rsi": 45.7,
             "rsi_state": "neutral"
           }
         },
@@ -2079,23 +2079,23 @@
           "ticker": "DRAM",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -2.05,
+              "price": -9.11,
               "total": null
             },
             "1W": {
-              "price": 3.97,
+              "price": -11.52,
               "total": null
             },
             "1M": {
-              "price": 9.88,
+              "price": -11.86,
               "total": null
             },
             "3M": {
-              "price": 94.39,
+              "price": 70.79,
               "total": null
             },
             "6M": {
@@ -2118,44 +2118,44 @@
           "ticker": "GDX",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -0.33,
+              "price": -2.86,
               "total": null
             },
             "1W": {
-              "price": -3.7,
+              "price": -6.82,
               "total": null
             },
             "1M": {
-              "price": 2.33,
+              "price": -8.32,
               "total": null
             },
             "3M": {
-              "price": -24.01,
+              "price": -25.72,
               "total": null
             },
             "6M": {
-              "price": -18.4,
+              "price": -23.95,
               "total": null
             },
             "YTD": {
-              "price": -11.94,
+              "price": -14.46,
               "total": null
             },
             "1Y": {
-              "price": 45.53,
-              "total": 46.59
+              "price": 39.97,
+              "total": 40.98
             }
           },
           "momentum": {
             "cross": "dead",
-            "days_since_cross": 69,
-            "sma25": 78.51,
-            "sma75": 87.01,
-            "rsi": 42.7,
+            "days_since_cross": 70,
+            "sma25": 77.99,
+            "sma75": 86.88,
+            "rsi": 39.4,
             "rsi_state": "neutral"
           }
         },
@@ -2164,44 +2164,44 @@
           "ticker": "SIL",
           "review": false,
           "status": "ok",
-          "as_of": "2026-07-10",
+          "as_of": "2026-07-13",
           "stale": false,
           "returns": {
             "1D": {
-              "price": -0.59,
+              "price": -2.74,
               "total": null
             },
             "1W": {
-              "price": -4.8,
+              "price": -6.83,
               "total": null
             },
             "1M": {
-              "price": 2.81,
+              "price": -9.08,
               "total": null
             },
             "3M": {
-              "price": -21.01,
+              "price": -23.66,
               "total": null
             },
             "6M": {
-              "price": -14.95,
+              "price": -21.36,
               "total": null
             },
             "YTD": {
-              "price": -8.58,
+              "price": -11.09,
               "total": null
             },
             "1Y": {
-              "price": 55.47,
-              "total": 57.36
+              "price": 46.07,
+              "total": 47.84
             }
           },
           "momentum": {
             "cross": "dead",
-            "days_since_cross": 68,
-            "sma25": 79.78,
-            "sma75": 88.24,
-            "rsi": 42.1,
+            "days_since_cross": 69,
+            "sma25": 79.21,
+            "sma75": 88.11,
+            "rsi": 39.2,
             "rsi_state": "neutral"
           }
         }
