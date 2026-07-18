@@ -30,16 +30,16 @@ export default function SiteHeader({
             {t.navUs}
           </Link>
           <Link
+            href="/dow30"
+            className={"nav-link" + (active === "dow" ? " is-active" : "")}
+          >
+            {t.navDow}
+          </Link>
+          <Link
             href="/global"
             className={"nav-link" + (active === "global" ? " is-active" : "")}
           >
             {t.navGlobal}
-          </Link>
-          <Link
-            href="/jp-sectors"
-            className={"nav-link" + (active === "jp" ? " is-active" : "")}
-          >
-            {t.navJp}
           </Link>
           <Link
             href="/topix17"
@@ -48,10 +48,10 @@ export default function SiteHeader({
             {t.navTopix17}
           </Link>
           <Link
-            href="/dow30"
-            className={"nav-link" + (active === "dow" ? " is-active" : "")}
+            href="/jp-sectors"
+            className={"nav-link" + (active === "jp" ? " is-active" : "")}
           >
-            {t.navDow}
+            {t.navJp}
           </Link>
         </nav>
 
