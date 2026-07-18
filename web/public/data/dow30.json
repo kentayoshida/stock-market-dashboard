@@ -1,0 +1,1387 @@
+{
+  "as_of": "2026-07-17",
+  "generated_at": "2026-07-18T14:41:26+00:00",
+  "data_source": "fixture",
+  "currency": "USD",
+  "market": "US",
+  "periods": [
+    "1D",
+    "1W",
+    "1M",
+    "3M",
+    "6M",
+    "YTD",
+    "1Y"
+  ],
+  "total_return_periods": [
+    "1Y"
+  ],
+  "sort": {
+    "default": "ticker_order"
+  },
+  "coverage": {
+    "ok": 30,
+    "no_data": 0,
+    "total": 30
+  },
+  "disclaimer": "情報提供目的であり投資助言ではありません。",
+  "attribution": "「ダウ・ジョーンズ工業株価平均（Dow Jones Industrial Average）」および関連商標は S&P Dow Jones Indices LLC の知的財産です。本ページは指数そのものではなく、構成30銘柄それぞれの個別株価に基づくパフォーマンスを表示しています。",
+  "source_note": "構成銘柄は手動更新（入れ替えは年に数回）。株価は yfinance。配当込みリターン（1Y）は Adj Close ベースの近似です。",
+  "block": {
+    "id": "dow30",
+    "title": "ダウ工業株30種",
+    "columns": 3,
+    "items": [
+      {
+        "label": "アップル",
+        "ticker": "AAPL",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": -0.53,
+            "total": null
+          },
+          "1W": {
+            "price": -2.82,
+            "total": null
+          },
+          "1M": {
+            "price": -10.32,
+            "total": null
+          },
+          "3M": {
+            "price": -30.0,
+            "total": null
+          },
+          "6M": {
+            "price": -50.68,
+            "total": null
+          },
+          "YTD": {
+            "price": -53.73,
+            "total": null
+          },
+          "1Y": {
+            "price": -76.05,
+            "total": -75.75
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 65.95,
+          "sma75": 76.12,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "アムジェン",
+        "ticker": "AMGN",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": 0.09,
+            "total": null
+          },
+          "1W": {
+            "price": 0.49,
+            "total": null
+          },
+          "1M": {
+            "price": 2.34,
+            "total": null
+          },
+          "3M": {
+            "price": 6.44,
+            "total": null
+          },
+          "6M": {
+            "price": 13.76,
+            "total": null
+          },
+          "YTD": {
+            "price": 15.51,
+            "total": null
+          },
+          "1Y": {
+            "price": 32.79,
+            "total": 34.48
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 475.66,
+          "sma75": 464.27,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "アマゾン",
+        "ticker": "AMZN",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": -0.14,
+            "total": null
+          },
+          "1W": {
+            "price": -0.72,
+            "total": null
+          },
+          "1M": {
+            "price": -3.02,
+            "total": null
+          },
+          "3M": {
+            "price": -7.15,
+            "total": null
+          },
+          "6M": {
+            "price": -13.73,
+            "total": null
+          },
+          "YTD": {
+            "price": -14.94,
+            "total": null
+          },
+          "1Y": {
+            "price": -25.31,
+            "total": -24.36
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 260.73,
+          "sma75": 267.98,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "アメリカン・エキスプレス",
+        "ticker": "AXP",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": -0.02,
+            "total": null
+          },
+          "1W": {
+            "price": -0.01,
+            "total": null
+          },
+          "1M": {
+            "price": 0.28,
+            "total": null
+          },
+          "3M": {
+            "price": 0.03,
+            "total": null
+          },
+          "6M": {
+            "price": 0.08,
+            "total": null
+          },
+          "YTD": {
+            "price": 0.39,
+            "total": null
+          },
+          "1Y": {
+            "price": 0.37,
+            "total": 1.65
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": 7,
+          "sma25": 286.64,
+          "sma75": 286.41,
+          "rsi": 70.6,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "ボーイング",
+        "ticker": "BA",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": -0.15,
+            "total": null
+          },
+          "1W": {
+            "price": -0.63,
+            "total": null
+          },
+          "1M": {
+            "price": -2.42,
+            "total": null
+          },
+          "3M": {
+            "price": -6.43,
+            "total": null
+          },
+          "6M": {
+            "price": -15.4,
+            "total": null
+          },
+          "YTD": {
+            "price": -17.12,
+            "total": null
+          },
+          "1Y": {
+            "price": -40.42,
+            "total": -39.66
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 94.81,
+          "sma75": 96.97,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "キャタピラー",
+        "ticker": "CAT",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": -0.38,
+            "total": null
+          },
+          "1W": {
+            "price": -1.55,
+            "total": null
+          },
+          "1M": {
+            "price": -7.76,
+            "total": null
+          },
+          "3M": {
+            "price": -24.17,
+            "total": null
+          },
+          "6M": {
+            "price": -43.03,
+            "total": null
+          },
+          "YTD": {
+            "price": -46.03,
+            "total": null
+          },
+          "1Y": {
+            "price": -68.17,
+            "total": -67.77
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 73.36,
+          "sma75": 82.52,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "セールスフォース",
+        "ticker": "CRM",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": -0.73,
+            "total": null
+          },
+          "1W": {
+            "price": -3.55,
+            "total": null
+          },
+          "1M": {
+            "price": -13.82,
+            "total": null
+          },
+          "3M": {
+            "price": -37.44,
+            "total": null
+          },
+          "6M": {
+            "price": -57.61,
+            "total": null
+          },
+          "YTD": {
+            "price": -59.9,
+            "total": null
+          },
+          "1Y": {
+            "price": -72.08,
+            "total": -71.73
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 80.16,
+          "sma75": 97.08,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "シスコシステムズ",
+        "ticker": "CSCO",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": -0.0,
+            "total": null
+          },
+          "1W": {
+            "price": -0.05,
+            "total": null
+          },
+          "1M": {
+            "price": 0.01,
+            "total": null
+          },
+          "3M": {
+            "price": 0.95,
+            "total": null
+          },
+          "6M": {
+            "price": 4.66,
+            "total": null
+          },
+          "YTD": {
+            "price": 5.98,
+            "total": null
+          },
+          "1Y": {
+            "price": 27.55,
+            "total": 29.16
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 495.01,
+          "sma75": 492.46,
+          "rsi": 58.6,
+          "rsi_state": "neutral"
+        }
+      },
+      {
+        "label": "シェブロン",
+        "ticker": "CVX",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": 0.02,
+            "total": null
+          },
+          "1W": {
+            "price": 0.1,
+            "total": null
+          },
+          "1M": {
+            "price": 0.54,
+            "total": null
+          },
+          "3M": {
+            "price": 3.05,
+            "total": null
+          },
+          "6M": {
+            "price": 11.32,
+            "total": null
+          },
+          "YTD": {
+            "price": 13.99,
+            "total": null
+          },
+          "1Y": {
+            "price": 63.4,
+            "total": 65.47
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 585.62,
+          "sma75": 578.25,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "ウォルト・ディズニー",
+        "ticker": "DIS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": -0.43,
+            "total": null
+          },
+          "1W": {
+            "price": -2.0,
+            "total": null
+          },
+          "1M": {
+            "price": -7.56,
+            "total": null
+          },
+          "3M": {
+            "price": -23.42,
+            "total": null
+          },
+          "6M": {
+            "price": -39.87,
+            "total": null
+          },
+          "YTD": {
+            "price": -41.99,
+            "total": null
+          },
+          "1Y": {
+            "price": -58.96,
+            "total": -58.44
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 108.43,
+          "sma75": 120.48,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "アルファベット",
+        "ticker": "GOOGL",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": -0.81,
+            "total": null
+          },
+          "1W": {
+            "price": -4.09,
+            "total": null
+          },
+          "1M": {
+            "price": -17.16,
+            "total": null
+          },
+          "3M": {
+            "price": -42.03,
+            "total": null
+          },
+          "6M": {
+            "price": -62.49,
+            "total": null
+          },
+          "YTD": {
+            "price": -64.83,
+            "total": null
+          },
+          "1Y": {
+            "price": -73.91,
+            "total": -73.58
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 124.73,
+          "sma75": 156.67,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "ゴールドマン・サックス",
+        "ticker": "GS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": -1.09,
+            "total": null
+          },
+          "1W": {
+            "price": -4.89,
+            "total": null
+          },
+          "1M": {
+            "price": -19.86,
+            "total": null
+          },
+          "3M": {
+            "price": -49.08,
+            "total": null
+          },
+          "6M": {
+            "price": -70.45,
+            "total": null
+          },
+          "YTD": {
+            "price": -72.67,
+            "total": null
+          },
+          "1Y": {
+            "price": -81.22,
+            "total": -80.98
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 45.01,
+          "sma75": 60.13,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "ホーム・デポ",
+        "ticker": "HD",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": 0.87,
+            "total": null
+          },
+          "1W": {
+            "price": 4.43,
+            "total": null
+          },
+          "1M": {
+            "price": 20.77,
+            "total": null
+          },
+          "3M": {
+            "price": 72.23,
+            "total": null
+          },
+          "6M": {
+            "price": 165.43,
+            "total": null
+          },
+          "YTD": {
+            "price": 181.48,
+            "total": null
+          },
+          "1Y": {
+            "price": 277.96,
+            "total": 282.75
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 699.25,
+          "sma75": 575.56,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "ハネウェル",
+        "ticker": "HON",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": -1.15,
+            "total": null
+          },
+          "1W": {
+            "price": -5.73,
+            "total": null
+          },
+          "1M": {
+            "price": -19.9,
+            "total": null
+          },
+          "3M": {
+            "price": -46.2,
+            "total": null
+          },
+          "6M": {
+            "price": -67.32,
+            "total": null
+          },
+          "YTD": {
+            "price": -69.53,
+            "total": null
+          },
+          "1Y": {
+            "price": -80.28,
+            "total": -80.03
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 60.86,
+          "sma75": 77.81,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "IBM",
+        "ticker": "IBM",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": 1.09,
+            "total": null
+          },
+          "1W": {
+            "price": 5.56,
+            "total": null
+          },
+          "1M": {
+            "price": 26.8,
+            "total": null
+          },
+          "3M": {
+            "price": 96.93,
+            "total": null
+          },
+          "6M": {
+            "price": 238.45,
+            "total": null
+          },
+          "YTD": {
+            "price": 265.74,
+            "total": null
+          },
+          "1Y": {
+            "price": 430.43,
+            "total": 437.15
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 1328.8,
+          "sma75": 1046.18,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "ジョンソン・エンド・ジョンソン",
+        "ticker": "JNJ",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": 0.74,
+            "total": null
+          },
+          "1W": {
+            "price": 3.74,
+            "total": null
+          },
+          "1M": {
+            "price": 17.63,
+            "total": null
+          },
+          "3M": {
+            "price": 60.22,
+            "total": null
+          },
+          "6M": {
+            "price": 144.53,
+            "total": null
+          },
+          "YTD": {
+            "price": 162.54,
+            "total": null
+          },
+          "1Y": {
+            "price": 356.42,
+            "total": 362.19
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 1441.31,
+          "sma75": 1214.64,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "JPモルガン・チェース",
+        "ticker": "JPM",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": -0.02,
+            "total": null
+          },
+          "1W": {
+            "price": -0.1,
+            "total": null
+          },
+          "1M": {
+            "price": -0.29,
+            "total": null
+          },
+          "3M": {
+            "price": -0.21,
+            "total": null
+          },
+          "6M": {
+            "price": -0.37,
+            "total": null
+          },
+          "YTD": {
+            "price": -0.18,
+            "total": null
+          },
+          "1Y": {
+            "price": 0.01,
+            "total": 1.28
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": 18,
+          "sma25": 297.04,
+          "sma75": 296.67,
+          "rsi": 22.1,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "コカ・コーラ",
+        "ticker": "KO",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": 0.03,
+            "total": null
+          },
+          "1W": {
+            "price": 0.12,
+            "total": null
+          },
+          "1M": {
+            "price": 0.72,
+            "total": null
+          },
+          "3M": {
+            "price": 1.65,
+            "total": null
+          },
+          "6M": {
+            "price": 6.01,
+            "total": null
+          },
+          "YTD": {
+            "price": 7.26,
+            "total": null
+          },
+          "1Y": {
+            "price": 28.33,
+            "total": 29.96
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 310.57,
+          "sma75": 308.77,
+          "rsi": 99.4,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "マクドナルド",
+        "ticker": "MCD",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": 1.09,
+            "total": null
+          },
+          "1W": {
+            "price": 5.56,
+            "total": null
+          },
+          "1M": {
+            "price": 26.8,
+            "total": null
+          },
+          "3M": {
+            "price": 96.93,
+            "total": null
+          },
+          "6M": {
+            "price": 238.45,
+            "total": null
+          },
+          "YTD": {
+            "price": 265.74,
+            "total": null
+          },
+          "1Y": {
+            "price": 430.43,
+            "total": 437.15
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 1328.8,
+          "sma75": 1046.18,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "スリーエム",
+        "ticker": "MMM",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": -0.01,
+            "total": null
+          },
+          "1W": {
+            "price": -0.0,
+            "total": null
+          },
+          "1M": {
+            "price": 0.03,
+            "total": null
+          },
+          "3M": {
+            "price": 1.62,
+            "total": null
+          },
+          "6M": {
+            "price": 12.32,
+            "total": null
+          },
+          "YTD": {
+            "price": 16.08,
+            "total": null
+          },
+          "1Y": {
+            "price": 104.13,
+            "total": 106.72
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 828.53,
+          "sma75": 823.53,
+          "rsi": 77.4,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "メルク",
+        "ticker": "MRK",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": -0.72,
+            "total": null
+          },
+          "1W": {
+            "price": -3.65,
+            "total": null
+          },
+          "1M": {
+            "price": -14.7,
+            "total": null
+          },
+          "3M": {
+            "price": -32.5,
+            "total": null
+          },
+          "6M": {
+            "price": -52.27,
+            "total": null
+          },
+          "YTD": {
+            "price": -54.94,
+            "total": null
+          },
+          "1Y": {
+            "price": -70.96,
+            "total": -70.59
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 83.93,
+          "sma75": 97.63,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "マイクロソフト",
+        "ticker": "MSFT",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": 0.02,
+            "total": null
+          },
+          "1W": {
+            "price": 0.13,
+            "total": null
+          },
+          "1M": {
+            "price": 0.26,
+            "total": null
+          },
+          "3M": {
+            "price": 0.18,
+            "total": null
+          },
+          "6M": {
+            "price": 0.18,
+            "total": null
+          },
+          "YTD": {
+            "price": 0.15,
+            "total": null
+          },
+          "1Y": {
+            "price": 0.08,
+            "total": 1.35
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": 20,
+          "sma25": 385.27,
+          "sma75": 385.45,
+          "rsi": 81.6,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "ナイキ",
+        "ticker": "NKE",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": -0.72,
+            "total": null
+          },
+          "1W": {
+            "price": -3.77,
+            "total": null
+          },
+          "1M": {
+            "price": -14.03,
+            "total": null
+          },
+          "3M": {
+            "price": -33.91,
+            "total": null
+          },
+          "6M": {
+            "price": -52.16,
+            "total": null
+          },
+          "YTD": {
+            "price": -54.12,
+            "total": null
+          },
+          "1Y": {
+            "price": -63.3,
+            "total": -62.83
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 115.86,
+          "sma75": 135.84,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "エヌビディア",
+        "ticker": "NVDA",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": -0.71,
+            "total": null
+          },
+          "1W": {
+            "price": -3.48,
+            "total": null
+          },
+          "1M": {
+            "price": -15.81,
+            "total": null
+          },
+          "3M": {
+            "price": -38.56,
+            "total": null
+          },
+          "6M": {
+            "price": -59.05,
+            "total": null
+          },
+          "YTD": {
+            "price": -61.51,
+            "total": null
+          },
+          "1Y": {
+            "price": -72.84,
+            "total": -72.49
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 104.52,
+          "sma75": 127.85,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "P&G",
+        "ticker": "PG",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": 0.47,
+            "total": null
+          },
+          "1W": {
+            "price": 2.39,
+            "total": null
+          },
+          "1M": {
+            "price": 11.02,
+            "total": null
+          },
+          "3M": {
+            "price": 36.36,
+            "total": null
+          },
+          "6M": {
+            "price": 89.71,
+            "total": null
+          },
+          "YTD": {
+            "price": 102.4,
+            "total": null
+          },
+          "1Y": {
+            "price": 305.05,
+            "total": 310.18
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 1155.36,
+          "sma75": 1030.44,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "シャーウィン・ウィリアムズ",
+        "ticker": "SHW",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": -0.27,
+            "total": null
+          },
+          "1W": {
+            "price": -1.34,
+            "total": null
+          },
+          "1M": {
+            "price": -6.5,
+            "total": null
+          },
+          "3M": {
+            "price": -17.16,
+            "total": null
+          },
+          "6M": {
+            "price": -30.23,
+            "total": null
+          },
+          "YTD": {
+            "price": -32.43,
+            "total": null
+          },
+          "1Y": {
+            "price": -45.91,
+            "total": -45.22
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 166.19,
+          "sma75": 179.52,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "トラベラーズ",
+        "ticker": "TRV",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": -0.03,
+            "total": null
+          },
+          "1W": {
+            "price": -0.01,
+            "total": null
+          },
+          "1M": {
+            "price": -0.86,
+            "total": null
+          },
+          "3M": {
+            "price": -5.53,
+            "total": null
+          },
+          "6M": {
+            "price": -14.17,
+            "total": null
+          },
+          "YTD": {
+            "price": -16.3,
+            "total": null
+          },
+          "1Y": {
+            "price": -40.11,
+            "total": -39.35
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 168.0,
+          "sma75": 172.59,
+          "rsi": 3.6,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "ユナイテッドヘルス",
+        "ticker": "UNH",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": 0.08,
+            "total": null
+          },
+          "1W": {
+            "price": 0.37,
+            "total": null
+          },
+          "1M": {
+            "price": 1.54,
+            "total": null
+          },
+          "3M": {
+            "price": 6.52,
+            "total": null
+          },
+          "6M": {
+            "price": 24.67,
+            "total": null
+          },
+          "YTD": {
+            "price": 30.26,
+            "total": null
+          },
+          "1Y": {
+            "price": 166.34,
+            "total": 169.71
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 1196.65,
+          "sma75": 1168.98,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "ビザ",
+        "ticker": "V",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": -0.15,
+            "total": null
+          },
+          "1W": {
+            "price": -0.78,
+            "total": null
+          },
+          "1M": {
+            "price": -2.91,
+            "total": null
+          },
+          "3M": {
+            "price": -12.13,
+            "total": null
+          },
+          "6M": {
+            "price": -20.48,
+            "total": null
+          },
+          "YTD": {
+            "price": -21.52,
+            "total": null
+          },
+          "1Y": {
+            "price": -27.42,
+            "total": -26.5
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 120.91,
+          "sma75": 127.6,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "ウォルマート",
+        "ticker": "WMT",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-07-17",
+        "returns": {
+          "1D": {
+            "price": 0.06,
+            "total": null
+          },
+          "1W": {
+            "price": 0.39,
+            "total": null
+          },
+          "1M": {
+            "price": 0.47,
+            "total": null
+          },
+          "3M": {
+            "price": -2.54,
+            "total": null
+          },
+          "6M": {
+            "price": -12.66,
+            "total": null
+          },
+          "YTD": {
+            "price": -15.75,
+            "total": null
+          },
+          "1Y": {
+            "price": -51.63,
+            "total": -51.01
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 118.0,
+          "sma75": 119.87,
+          "rsi": 58.6,
+          "rsi_state": "neutral"
+        }
+      }
+    ]
+  }
+}

@@ -39,11 +39,14 @@ jobs:
       - name: Generate global.json (世界 Global・地域別)
         run: python pipeline/src/build_global.py --source auto
 
+      - name: Generate dow30.json (ダウ工業株30種・構成銘柄)
+        run: python pipeline/src/build_dow30.py --source auto --config pipeline/dow30.yaml --out web/public/data/dow30.json
+
       - name: Commit if changed
         run: |
           git config user.name  "market-dashboard-bot"
           git config user.email "actions@github.com"
-          git add web/public/data/latest.json web/public/data/global.json
+          git add web/public/data/latest.json web/public/data/global.json web/public/data/dow30.json
           if git diff --staged --quiet; then
             echo "No data change."
           else

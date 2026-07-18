@@ -32,11 +32,21 @@ type Props = {
   items: Item[];
   labelFor: (item: Item) => string;
   keyOf: (item: Item) => string;
+  // 個別株ページ（ダウ30 等）は数え上げ単位を「業種」→「銘柄」に切り替える。
+  stocks?: boolean;
 };
 
-export default function SectorRotationBoard({ items, labelFor, keyOf }: Props) {
+export default function SectorRotationBoard({
+  items,
+  labelFor,
+  keyOf,
+  stocks = false,
+}: Props) {
   const { lang } = useLang();
   const t = ui[lang].rot;
+  const subtitleText = stocks ? t.subtitleStocks : t.subtitle;
+  const countFn = stocks ? t.countStocks : t.count;
+  const excludedFn = stocks ? t.excludedStocks : t.excluded;
 
   const { groups, excluded } = useMemo(() => {
     const g: Record<RotPhaseId, Item[]> = {
@@ -63,7 +73,7 @@ export default function SectorRotationBoard({ items, labelFor, keyOf }: Props) {
   return (
     <section className="block rotation">
       <h2 className="block-title">{t.heading}</h2>
-      <p className="rotation-sub">{t.subtitle}</p>
+      <p className="rotation-sub">{subtitleText}</p>
 
       <div className="rotation-frame">
         <span className="rotation-ylabel">{t.longAxis}</span>
@@ -78,7 +88,7 @@ export default function SectorRotationBoard({ items, labelFor, keyOf }: Props) {
                   <div className="rotation-cell-head">
                     <span className="rotation-phase-name">{phase.name}</span>
                     <span className="rotation-phase-count">
-                      {t.count(cells.length)}
+                      {countFn(cells.length)}
                     </span>
                   </div>
                   <div className="rotation-phase-axis">{phase.axis}</div>
@@ -114,7 +124,7 @@ export default function SectorRotationBoard({ items, labelFor, keyOf }: Props) {
       </div>
 
       <p className="rotation-cycle">{t.cycleNote}</p>
-      {excluded > 0 && <p className="rotation-note">{t.excluded(excluded)}</p>}
+      {excluded > 0 && <p className="rotation-note">{excludedFn(excluded)}</p>}
       <p className="rotation-source">{t.sourceNote}</p>
     </section>
   );

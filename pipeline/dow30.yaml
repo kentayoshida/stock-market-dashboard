@@ -1,0 +1,53 @@
+# ダウ工業株30種（Dow Jones Industrial Average / Dow Jones 30）ダッシュボード（/dow30）。
+# 構成銘柄は米国上場の個別株30銘柄。価格は yfinance（サフィックス無しの素のシンボル）で取得。
+# build_dow30.py が処理して dow30.json を出力する。
+#
+# 銘柄名リンクは Yahoo Finance（https://finance.yahoo.com/quote/<ticker>）。英語社名は
+# web/lib/i18n.ts の DOW30_EN マップ、株時計・モメンタムは価格系列から算出。
+#
+# ★ 構成銘柄の更新は手動運用（入れ替えは年に数回）。ダウ平均の構成銘柄が入れ替わったら、
+#    下の items（ticker と label）を編集して差し替える。並びはティッカー昇順（既定順）。
+#    ※ 将来的には S&P Dow Jones Indices 等の構成銘柄ソースとの差分検知を自動化する余地あり。
+
+source: yfinance
+periods: [1D, 1W, 1M, 3M, 6M, YTD, 1Y]
+total_return_periods: [1Y]   # yfinance Adj Close ベース（配当込み）。表示は price 主軸。
+
+sort:
+  default: ticker_order      # ticker_order（ティッカー順） | return_desc（選択期間リターン降順）
+
+block:
+  id: dow30
+  title: ダウ工業株30種
+  columns: 3                 # UI の表示カラム数
+  items:
+    - { label: アップル,                   ticker: AAPL }
+    - { label: アムジェン,                 ticker: AMGN }
+    - { label: アマゾン,                   ticker: AMZN }
+    - { label: アメリカン・エキスプレス,     ticker: AXP }
+    - { label: ボーイング,                 ticker: BA }
+    - { label: キャタピラー,               ticker: CAT }
+    - { label: セールスフォース,           ticker: CRM }
+    - { label: シスコシステムズ,           ticker: CSCO }
+    - { label: シェブロン,                 ticker: CVX }
+    - { label: ウォルト・ディズニー,         ticker: DIS }
+    - { label: アルファベット,             ticker: GOOGL }
+    - { label: ゴールドマン・サックス,       ticker: GS }
+    - { label: ホーム・デポ,               ticker: HD }
+    - { label: ハネウェル,                 ticker: HON }
+    - { label: IBM,                        ticker: IBM }
+    - { label: ジョンソン・エンド・ジョンソン, ticker: JNJ }
+    - { label: JPモルガン・チェース,         ticker: JPM }
+    - { label: コカ・コーラ,               ticker: KO }
+    - { label: マクドナルド,               ticker: MCD }
+    - { label: スリーエム,                 ticker: MMM }
+    - { label: メルク,                     ticker: MRK }
+    - { label: マイクロソフト,             ticker: MSFT }
+    - { label: ナイキ,                     ticker: NKE }
+    - { label: エヌビディア,               ticker: NVDA }
+    - { label: P&G,                        ticker: PG }
+    - { label: シャーウィン・ウィリアムズ,   ticker: SHW }
+    - { label: トラベラーズ,               ticker: TRV }
+    - { label: ユナイテッドヘルス,         ticker: UNH }
+    - { label: ビザ,                       ticker: V }
+    - { label: ウォルマート,               ticker: WMT }
