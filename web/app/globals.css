@@ -284,11 +284,21 @@ a.nav-link {
 
 .segmented {
   display: inline-flex;
+  flex-wrap: wrap;
+  max-width: 100%;
   background: var(--surface-2);
   border: 1px solid var(--border);
   border-radius: var(--radius-pill);
   padding: 3px;
   gap: 2px;
+  row-gap: 2px;
+}
+
+/* 52 週レンジ指標は長文ラベルのため、狭幅では折返しを許容する。 */
+.segment--metric {
+  white-space: normal;
+  text-align: center;
+  line-height: 1.15;
 }
 
 .segment {

@@ -12,6 +12,13 @@ type Props = {
   onToggleTotalReturn: (v: boolean) => void;
 };
 
+// 52 週レンジ指標のトグル表示名（日英とも同じ表記・ユーザー指定）。
+// 通常の期間キー（1D…1Y）はキーをそのまま表示する。
+const METRIC_LABELS: Record<string, string> = {
+  DD_52WH: "Drawdown from 52-week-high",
+  UP_52WL: "Gain from 52-week-low",
+};
+
 // 期間セグメントトグル（§4.2）。1Y 選択時のみ「配当込み」サブトグルを表示。
 export default function PeriodToggle({
   periods,
@@ -26,17 +33,24 @@ export default function PeriodToggle({
   return (
     <div className="toggle-bar">
       <div className="segmented" role="tablist" aria-label={t.periodAria}>
-        {periods.map((p) => (
-          <button
-            key={p}
-            role="tab"
-            aria-selected={p === value}
-            className={"segment" + (p === value ? " is-active" : "")}
-            onClick={() => onChange(p)}
-          >
-            {p}
-          </button>
-        ))}
+        {periods.map((p) => {
+          const isMetric = p in METRIC_LABELS;
+          return (
+            <button
+              key={p}
+              role="tab"
+              aria-selected={p === value}
+              className={
+                "segment" +
+                (isMetric ? " segment--metric" : "") +
+                (p === value ? " is-active" : "")
+              }
+              onClick={() => onChange(p)}
+            >
+              {METRIC_LABELS[p] ?? p}
+            </button>
+          );
+        })}
       </div>
 
       {showTotalReturn && (

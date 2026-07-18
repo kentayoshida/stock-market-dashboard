@@ -13,7 +13,8 @@ total_return: false          # 配当込みは Premium のため無効。Premium
 sort:
   default: code_order        # code_order（業種コード順） | return_desc（選択期間のリターン降順）
 
-periods: [1D, 1W, 1M, 3M, 6M, YTD, 1Y]
+# 末尾 2 キーは期間リターンではなく 52 週レンジ指標（トグル右端に表示）。
+periods: [1D, 1W, 1M, 3M, 6M, YTD, 1Y, DD_52WH, UP_52WL]
 
 block:
   id: jp_sectors_33

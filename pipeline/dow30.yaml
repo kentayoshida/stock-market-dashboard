@@ -10,7 +10,8 @@
 #    ※ 将来的には S&P Dow Jones Indices 等の構成銘柄ソースとの差分検知を自動化する余地あり。
 
 source: yfinance
-periods: [1D, 1W, 1M, 3M, 6M, YTD, 1Y]
+# 末尾 2 キーは期間リターンではなく 52 週レンジ指標（トグル右端に表示）。
+periods: [1D, 1W, 1M, 3M, 6M, YTD, 1Y, DD_52WH, UP_52WL]
 total_return_periods: [1Y]   # yfinance Adj Close ベース（配当込み）。表示は price 主軸。
 
 sort:
