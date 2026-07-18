@@ -50,6 +50,7 @@ type UIDict = {
   totalReturnTitle: string;
   sortAria: string;
   sortByCode: string;
+  sortDefault: string;
   sortByReturn: string;
   sortByReturnTitle: string;
   // rows / badges
@@ -124,6 +125,7 @@ export const ui: Record<Lang, UIDict> = {
     totalReturnTitle: "配当込み（トータルリターン, Adj Close）",
     sortAria: "並び替え",
     sortByCode: "業種コード順",
+    sortDefault: "既定順",
     sortByReturn: "リターン降順",
     sortByReturnTitle: "選択中の期間のリターンが高い順",
     noData: "データなし",
@@ -235,6 +237,7 @@ export const ui: Record<Lang, UIDict> = {
     totalReturnTitle: "Total return (dividends reinvested, Adj Close)",
     sortAria: "Sort",
     sortByCode: "Sector code",
+    sortDefault: "Default",
     sortByReturn: "By return",
     sortByReturnTitle: "Highest return for the selected period first",
     noData: "No data",

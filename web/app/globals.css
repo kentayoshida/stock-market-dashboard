@@ -371,6 +371,34 @@ a.nav-link {
   letter-spacing: 0.01em;
 }
 
+/* タイトルとブロック内ソートトグルを1行に配置（区切り線はヘッダーが担う）。 */
+.block-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  margin: 0 0 var(--sp-2);
+  padding-bottom: var(--sp-2);
+  border-bottom: 1px solid var(--border);
+}
+
+.block-head .block-title {
+  margin: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* ブロック内トグルはコンパクトに。 */
+.sort-toggle--block {
+  flex: none;
+  padding: 2px;
+}
+
+.sort-toggle--block .segment {
+  font-size: var(--fs-micro);
+  padding: 4px 10px;
+}
+
 /* 各ブロック内は1カラムの行リスト（ブロック自体がカラムになる）。 */
 .block-rows {
   display: flex;

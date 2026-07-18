@@ -74,6 +74,7 @@ export default function Dashboard({
               block={block}
               period={period}
               totalReturn={effectiveTR}
+              sortable={block.id === "sectors"}
             />
           ))}
         </div>
