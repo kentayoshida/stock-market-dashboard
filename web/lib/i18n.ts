@@ -70,6 +70,10 @@ type UIDict = {
   rsiOverbought: string;
   rsiOversold: string;
   rsiNeutral: string;
+  bearMarket: string;
+  bearMarketTitle: (dd: number) => string;
+  correction: string;
+  correctionTitle: (dd: number) => string;
   // hero titles per page
   heroUs: string;
   heroGlobal: string;
@@ -151,6 +155,12 @@ export const ui: Record<Lang, UIDict> = {
     rsiOverbought: "・買われすぎ",
     rsiOversold: "・売られすぎ",
     rsiNeutral: "・中立",
+    bearMarket: "弱気相場",
+    bearMarketTitle: (dd) =>
+      `52週高値から ${dd.toFixed(2)}% 下落（20%以上の下落＝弱気相場 / Bear market）`,
+    correction: "調整局面",
+    correctionTitle: (dd) =>
+      `52週高値から ${dd.toFixed(2)}% 下落（10%以上の下落＝調整局面 / Market correction）`,
     heroUs: "主要米国株価指数",
     heroGlobal: "世界の株式",
     heroJp: "東証33業種",
@@ -276,6 +286,12 @@ export const ui: Record<Lang, UIDict> = {
     rsiOverbought: " · overbought",
     rsiOversold: " · oversold",
     rsiNeutral: " · neutral",
+    bearMarket: "Bear market",
+    bearMarketTitle: (dd) =>
+      `${dd.toFixed(2)}% from 52-week high (a drop of 20% or more = bear market)`,
+    correction: "Market correction",
+    correctionTitle: (dd) =>
+      `${dd.toFixed(2)}% from 52-week high (a drop of 10% or more = market correction)`,
     heroUs: "U.S. Equity Markets",
     heroGlobal: "Global Equities",
     heroJp: "TSE 33 Sectors",

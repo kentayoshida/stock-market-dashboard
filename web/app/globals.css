@@ -537,6 +537,21 @@ a.nav-link {
   color: var(--ink-muted);
 }
 
+/* ---- 市場局面バッジ（52週高値ドローダウン基準・ETF名の右） ----
+   弱気相場（DD ≤ −20%）= 濃い損失色、調整局面（DD ≤ −10%）= 警戒色。 */
+.badge--regime {
+  flex: none;
+}
+.badge--regime.is-bear {
+  background: color-mix(in srgb, var(--loss) 18%, var(--surface));
+  color: var(--loss-strong);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--loss) 45%, transparent);
+}
+.badge--regime.is-correction {
+  background: color-mix(in srgb, var(--fg-fear) 16%, var(--surface));
+  color: var(--fg-fear);
+}
+
 /* 中心0%の diverging バー。中心に軸線、プラス=右/緑・マイナス=左/赤。 */
 .row-bar {
   position: relative;

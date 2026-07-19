@@ -2,6 +2,7 @@
 
 import type { Item } from "@/lib/types";
 import MomentumBadge from "./MomentumBadge";
+import DrawdownBadge from "./DrawdownBadge";
 import { useLang } from "./LangProvider";
 import { ui } from "@/lib/i18n";
 
@@ -92,6 +93,7 @@ export default function PerfRow({
           </span>
         )}
         {withMomentum && <MomentumBadge m={item.momentum} />}
+        <DrawdownBadge item={item} />
       </span>
       <span className={"row-value " + (pos ? "is-gain" : "is-loss")}>
         {fmtPct(value)}
