@@ -665,17 +665,14 @@ a.nav-link {
   font-weight: var(--fw-semibold);
 }
 
-/* 地域列: 左→右に Americas→Europe→MEA→Asia Pacific。上下ティアで縦に揃える。 */
+/* 地域列: 左→右に Americas→Europe→MEA→Asia Pacific。上下ティアで縦に揃える。
+   市場局面バッジ（弱気相場/調整局面）で行が横に伸びるため、銘柄名が潰れない
+   よう既定を 2 カラムに広げる（4→2）。地域は 2×2 で並び、ティア間の縦揃えは維持。 */
 .region-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--sp-4);
   align-items: start;
-}
-@media (max-width: 1180px) {
-  .region-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 @media (max-width: 640px) {
   .region-grid {

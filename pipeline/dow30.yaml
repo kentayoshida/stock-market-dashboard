@@ -20,7 +20,7 @@ sort:
 block:
   id: dow30
   title: ダウ工業株30種
-  columns: 3                 # UI の表示カラム数
+  columns: 2                 # UI の表示カラム数（局面バッジで行が伸びるため 3→2 に拡幅）
   items:
     - { label: アップル,                   ticker: AAPL }
     - { label: アムジェン,                 ticker: AMGN }
