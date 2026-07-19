@@ -1,6 +1,6 @@
 {
   "as_of": "2026-07-17",
-  "generated_at": "2026-07-17T09:42:57+00:00",
+  "generated_at": "2026-07-19T00:11:43+00:00",
   "data_source": "jquants",
   "currency": "JPY",
   "market": "JP",
@@ -12,7 +12,9 @@
     "3M",
     "6M",
     "YTD",
-    "1Y"
+    "1Y",
+    "DD_52WH",
+    "UP_52WL"
   ],
   "total_return": false,
   "sort": {
@@ -65,6 +67,14 @@
           "1Y": {
             "price": 30.31,
             "total": null
+          },
+          "DD_52WH": {
+            "price": -12.96,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 30.94,
+            "total": null
           }
         }
       },
@@ -102,6 +112,14 @@
           },
           "1Y": {
             "price": 64.94,
+            "total": null
+          },
+          "DD_52WH": {
+            "price": -30.47,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 65.48,
             "total": null
           }
         }
@@ -141,6 +159,14 @@
           "1Y": {
             "price": 30.75,
             "total": null
+          },
+          "DD_52WH": {
+            "price": -20.7,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 31.43,
+            "total": null
           }
         }
       },
@@ -178,6 +204,14 @@
           },
           "1Y": {
             "price": 24.24,
+            "total": null
+          },
+          "DD_52WH": {
+            "price": -1.93,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 24.61,
             "total": null
           }
         }
@@ -217,6 +251,14 @@
           "1Y": {
             "price": 19.88,
             "total": null
+          },
+          "DD_52WH": {
+            "price": -11.12,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 20.72,
+            "total": null
           }
         }
       },
@@ -255,6 +297,14 @@
           "1Y": {
             "price": 23.71,
             "total": null
+          },
+          "DD_52WH": {
+            "price": -8.27,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 25.3,
+            "total": null
           }
         }
       },
@@ -291,6 +341,14 @@
             "total": null
           },
           "1Y": {
+            "price": 35.84,
+            "total": null
+          },
+          "DD_52WH": {
+            "price": -4.26,
+            "total": null
+          },
+          "UP_52WL": {
             "price": 35.84,
             "total": null
           }
@@ -331,6 +389,14 @@
           "1Y": {
             "price": 15.65,
             "total": null
+          },
+          "DD_52WH": {
+            "price": -12.43,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 18.73,
+            "total": null
           }
         }
       },
@@ -367,6 +433,14 @@
             "total": null
           },
           "1Y": {
+            "price": 53.93,
+            "total": null
+          },
+          "DD_52WH": {
+            "price": -19.49,
+            "total": null
+          },
+          "UP_52WL": {
             "price": 53.93,
             "total": null
           }
@@ -407,6 +481,14 @@
           "1Y": {
             "price": 30.36,
             "total": null
+          },
+          "DD_52WH": {
+            "price": -4.87,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 31.1,
+            "total": null
           }
         }
       },
@@ -444,6 +526,14 @@
           },
           "1Y": {
             "price": 68.68,
+            "total": null
+          },
+          "DD_52WH": {
+            "price": -17.62,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 68.85,
             "total": null
           }
         }
@@ -483,6 +573,14 @@
           "1Y": {
             "price": 12.46,
             "total": null
+          },
+          "DD_52WH": {
+            "price": -15.05,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 13.77,
+            "total": null
           }
         }
       },
@@ -519,6 +617,14 @@
             "total": null
           },
           "1Y": {
+            "price": 181.4,
+            "total": null
+          },
+          "DD_52WH": {
+            "price": -36.53,
+            "total": null
+          },
+          "UP_52WL": {
             "price": 181.4,
             "total": null
           }
@@ -559,6 +665,14 @@
           "1Y": {
             "price": 39.46,
             "total": null
+          },
+          "DD_52WH": {
+            "price": -11.04,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 41.19,
+            "total": null
           }
         }
       },
@@ -596,6 +710,14 @@
           },
           "1Y": {
             "price": 32.37,
+            "total": null
+          },
+          "DD_52WH": {
+            "price": -13.82,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 33.68,
             "total": null
           }
         }
@@ -635,6 +757,14 @@
           "1Y": {
             "price": 61.38,
             "total": null
+          },
+          "DD_52WH": {
+            "price": -15.22,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 62.35,
+            "total": null
           }
         }
       },
@@ -672,6 +802,14 @@
           },
           "1Y": {
             "price": 12.52,
+            "total": null
+          },
+          "DD_52WH": {
+            "price": -19.24,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 13.42,
             "total": null
           }
         }
@@ -711,6 +849,14 @@
           "1Y": {
             "price": 29.01,
             "total": null
+          },
+          "DD_52WH": {
+            "price": -5.99,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 32.1,
+            "total": null
           }
         }
       },
@@ -749,6 +895,14 @@
           "1Y": {
             "price": -19.69,
             "total": null
+          },
+          "DD_52WH": {
+            "price": -28.62,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 7.31,
+            "total": null
           }
         }
       },
@@ -785,6 +939,14 @@
             "total": null
           },
           "1Y": {
+            "price": 30.67,
+            "total": null
+          },
+          "DD_52WH": {
+            "price": -14.37,
+            "total": null
+          },
+          "UP_52WL": {
             "price": 30.67,
             "total": null
           }
@@ -825,6 +987,14 @@
           "1Y": {
             "price": 11.81,
             "total": null
+          },
+          "DD_52WH": {
+            "price": -6.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 12.22,
+            "total": null
           }
         }
       },
@@ -862,6 +1032,14 @@
           },
           "1Y": {
             "price": 18.15,
+            "total": null
+          },
+          "DD_52WH": {
+            "price": -12.39,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 23.84,
             "total": null
           }
         }
@@ -901,6 +1079,14 @@
           "1Y": {
             "price": 0.01,
             "total": null
+          },
+          "DD_52WH": {
+            "price": -10.6,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 17.23,
+            "total": null
           }
         }
       },
@@ -938,6 +1124,14 @@
           },
           "1Y": {
             "price": 20.39,
+            "total": null
+          },
+          "DD_52WH": {
+            "price": -3.04,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 21.64,
             "total": null
           }
         }
@@ -977,6 +1171,14 @@
           "1Y": {
             "price": 13.63,
             "total": null
+          },
+          "DD_52WH": {
+            "price": -13.72,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 14.87,
+            "total": null
           }
         }
       },
@@ -1014,6 +1216,14 @@
           },
           "1Y": {
             "price": 44.36,
+            "total": null
+          },
+          "DD_52WH": {
+            "price": -16.02,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 44.76,
             "total": null
           }
         }
@@ -1053,6 +1263,14 @@
           "1Y": {
             "price": 16.82,
             "total": null
+          },
+          "DD_52WH": {
+            "price": -3.55,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 17.56,
+            "total": null
           }
         }
       },
@@ -1089,6 +1307,14 @@
             "total": null
           },
           "1Y": {
+            "price": 82.2,
+            "total": null
+          },
+          "DD_52WH": {
+            "price": -6.43,
+            "total": null
+          },
+          "UP_52WL": {
             "price": 82.2,
             "total": null
           }
@@ -1129,6 +1355,14 @@
           "1Y": {
             "price": 41.21,
             "total": null
+          },
+          "DD_52WH": {
+            "price": -5.37,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 41.21,
+            "total": null
           }
         }
       },
@@ -1166,6 +1400,14 @@
           },
           "1Y": {
             "price": 39.08,
+            "total": null
+          },
+          "DD_52WH": {
+            "price": -3.04,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 40.0,
             "total": null
           }
         }
@@ -1205,6 +1447,14 @@
           "1Y": {
             "price": 52.54,
             "total": null
+          },
+          "DD_52WH": {
+            "price": -4.41,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 53.31,
+            "total": null
           }
         }
       },
@@ -1243,6 +1493,14 @@
           "1Y": {
             "price": 25.12,
             "total": null
+          },
+          "DD_52WH": {
+            "price": -21.14,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 27.32,
+            "total": null
           }
         }
       },
@@ -1280,6 +1538,14 @@
           },
           "1Y": {
             "price": 27.19,
+            "total": null
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 42.53,
             "total": null
           }
         }

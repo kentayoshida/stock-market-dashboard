@@ -1,6 +1,6 @@
 {
   "as_of": "2026-07-17",
-  "generated_at": "2026-07-17T09:43:00+00:00",
+  "generated_at": "2026-07-19T00:11:45+00:00",
   "data_source": "yfinance",
   "currency": "JPY",
   "market": "JP",
@@ -11,7 +11,9 @@
     "3M",
     "6M",
     "YTD",
-    "1Y"
+    "1Y",
+    "DD_52WH",
+    "UP_52WL"
   ],
   "total_return_periods": [
     "1Y"
@@ -67,6 +69,14 @@
           "1Y": {
             "price": 24.1,
             "total": 26.9
+          },
+          "DD_52WH": {
+            "price": -4.34,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 24.56,
+            "total": null
           }
         },
         "momentum": {
@@ -113,6 +123,14 @@
           "1Y": {
             "price": 57.72,
             "total": 61.46
+          },
+          "DD_52WH": {
+            "price": -23.76,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 57.99,
+            "total": null
           }
         },
         "momentum": {
@@ -159,6 +177,14 @@
           "1Y": {
             "price": 40.43,
             "total": 42.82
+          },
+          "DD_52WH": {
+            "price": -12.48,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 41.32,
+            "total": null
           }
         },
         "momentum": {
@@ -205,6 +231,14 @@
           "1Y": {
             "price": 36.76,
             "total": 38.75
+          },
+          "DD_52WH": {
+            "price": -4.46,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 36.76,
+            "total": null
           }
         },
         "momentum": {
@@ -251,6 +285,14 @@
           "1Y": {
             "price": 15.68,
             "total": 18.51
+          },
+          "DD_52WH": {
+            "price": -13.5,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 18.44,
+            "total": null
           }
         },
         "momentum": {
@@ -297,6 +339,14 @@
           "1Y": {
             "price": 15.31,
             "total": 17.35
+          },
+          "DD_52WH": {
+            "price": -20.57,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 15.87,
+            "total": null
           }
         },
         "momentum": {
@@ -343,6 +393,14 @@
           "1Y": {
             "price": 109.27,
             "total": 111.17
+          },
+          "DD_52WH": {
+            "price": -33.8,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 109.42,
+            "total": null
           }
         },
         "momentum": {
@@ -389,6 +447,14 @@
           "1Y": {
             "price": 30.39,
             "total": 31.53
+          },
+          "DD_52WH": {
+            "price": -15.79,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 31.62,
+            "total": null
           }
         },
         "momentum": {
@@ -435,6 +501,14 @@
           "1Y": {
             "price": 59.92,
             "total": 60.65
+          },
+          "DD_52WH": {
+            "price": -14.23,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 61.54,
+            "total": null
           }
         },
         "momentum": {
@@ -481,6 +555,14 @@
           "1Y": {
             "price": 10.08,
             "total": 11.35
+          },
+          "DD_52WH": {
+            "price": -5.17,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 17.74,
+            "total": null
           }
         },
         "momentum": {
@@ -527,6 +609,14 @@
           "1Y": {
             "price": 29.15,
             "total": 31.1
+          },
+          "DD_52WH": {
+            "price": -16.19,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 29.15,
+            "total": null
           }
         },
         "momentum": {
@@ -573,6 +663,14 @@
           "1Y": {
             "price": 11.63,
             "total": 15.23
+          },
+          "DD_52WH": {
+            "price": -6.02,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 12.02,
+            "total": null
           }
         },
         "momentum": {
@@ -619,6 +717,14 @@
           "1Y": {
             "price": 47.43,
             "total": 48.87
+          },
+          "DD_52WH": {
+            "price": -16.06,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 45534.78,
+            "total": null
           }
         },
         "momentum": {
@@ -665,6 +771,14 @@
           "1Y": {
             "price": 16.52,
             "total": 18.23
+          },
+          "DD_52WH": {
+            "price": -4.66,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 17.35,
+            "total": null
           }
         },
         "momentum": {
@@ -711,6 +825,14 @@
           "1Y": {
             "price": 83.97,
             "total": 87.51
+          },
+          "DD_52WH": {
+            "price": -6.35,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 83.97,
+            "total": null
           }
         },
         "momentum": {
@@ -757,6 +879,14 @@
           "1Y": {
             "price": 42.04,
             "total": 45.88
+          },
+          "DD_52WH": {
+            "price": -7.71,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 42.65,
+            "total": null
           }
         },
         "momentum": {
@@ -803,6 +933,14 @@
           "1Y": {
             "price": 25.94,
             "total": 27.8
+          },
+          "DD_52WH": {
+            "price": -21.5,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 28.07,
+            "total": null
           }
         },
         "momentum": {
