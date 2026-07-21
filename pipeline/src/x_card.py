@@ -81,9 +81,15 @@ def build_panels(variant: str) -> tuple[list[dict], str]:
         panels = []
         idx = data.get("indices")
         if idx and idx.get("items"):
+            items = idx["items"]
+            # X画像は厳選指数（x_order）のみ・指定順。無ければ全件。
+            x_order = idx.get("x_order")
+            if x_order:
+                by_key = {it.get("ticker"): it for it in items}
+                items = [by_key[k] for k in x_order if k in by_key]
             # 主要指数は固定順（並び替えしない）
             panels.append({"title": idx.get("title", "主要指数"),
-                           "rows": _rows_from_items(idx["items"], sort=False)})
+                           "rows": _rows_from_items(items, sort=False)})
         panels.append({"title": "TOPIX-17 業種別",
                        "rows": _rows_from_items(data["block"]["items"], sort=True)})
         return panels, as_of

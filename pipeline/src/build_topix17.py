@@ -126,6 +126,8 @@ def build_indices(cfg_idx: dict, source: str, periods: list[str],
     return {
         "id": cfg_idx["id"], "title": cfg_idx["title"],
         "columns": cfg_idx.get("columns", 2), "items": out_items,
+        # 日次X画像の左パネルで使う厳選指数の並び（ticker/コード）。無ければ X は全件。
+        "x_order": cfg_idx.get("x_card_indices"),
         "coverage": {"ok": n_ok, "no_data": n_missing, "total": n_ok + n_missing},
         "as_of": max(item_dates).isoformat() if item_dates else None,
     }

@@ -24,9 +24,10 @@ sort:
 #   - JPX 系のうち市場区分指数（プライム/スタンダード/グロース）は ETF が無いため J-Quants。
 #     ⚠ index_code 0500/0501/0502 は暫定。初回 CI 実データで取得可否を確認し、no_data なら修正。
 #   - TOPIX は J-Quants 0000（既知・33業種 0040〜と同系統）。
-#   - JPX日経400 / グロース250 / 東証REIT は対応 NEXT FUNDS ETF を yfinance で取得（本ページの
-#     17業種と同じ ETF プロキシ方針）。日経225・日本VI は yfinance の指数シンボル。
+#   - 日経225・日本VI は yfinance の指数シンボル（^N225 / ^NKVI.OS）。それ以外は J-Quants。
 # 表示は固定順（並び替えしない）。全行とも「％変化」で単位統一（日本VI も％）。
+# x_card_indices: 日次X画像の左パネルで使う「厳選指数」を指定順（ticker/コード）で列挙。
+#   ページ（全16件）とは別に、X ではこの並びの指数のみ表示する。
 indices:
   id: jp_indices
   title: 主要指数
@@ -46,11 +47,13 @@ indices:
     - { label: 東証プライム,     source: jquants,  index_code: "0500", en: "TSE Prime" }
     - { label: 東証スタンダード,  source: jquants,  index_code: "0501", en: "TSE Standard" }
     - { label: 東証グロース,     source: jquants,  index_code: "0502", en: "TSE Growth" }
-    - { label: JPX日経400,      source: yfinance, symbol: "1592.T",   en: "JPX-Nikkei 400" }  # コード未提示→ETF継続
+    - { label: JPX日経400,      source: jquants,  index_code: "B507", en: "JPX-Nikkei 400" }
     - { label: グロース250,      source: jquants,  index_code: "0070", en: "Growth 250" }
     - { label: JASDAQ INDEX,   source: jquants,  index_code: "0091", en: "JASDAQ Index" }
     - { label: 東証REIT,        source: jquants,  index_code: "0075", en: "TSE REIT" }
     - { label: 日本VI,         source: yfinance, symbol: "^NKVI.OS", en: "Nikkei VI" }
+  # 日次X画像の左パネル＝厳選9指数（指定順・ticker/コードで参照）。
+  x_card_indices: ["^N225", "0000", "0028", "B507", "0070", "8100", "8200", "0075", "^NKVI.OS"]
 
 block:
   id: topix17
