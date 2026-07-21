@@ -44,7 +44,7 @@ _CRED_KEYS = ("X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_SECRET")
 _PAGE_PATH = {"topix17": "topix17", "us": ""}
 # variant → 本文の見出し
 _TWEET_HEAD = {
-    "topix17": "TOPIX-17 業種別・1D",
+    "topix17": "日本株 1D（主要指数・TOPIX-17業種）",
     "us": "米国株 1D（指数ETF・S&P500セクターETF）",
 }
 _HASHTAGS = {
@@ -74,7 +74,10 @@ def _movers(panels: list[dict]) -> tuple[dict | None, dict | None]:
 def build_tweet_text(variant: str, panels: list[dict], as_of: str, site_url: str) -> str:
     """投稿本文を組み立てる（280 の重み付き文字数に収める）。"""
     short = x_card._short_date(as_of) if hasattr(x_card, "_short_date") else as_of
-    top, bottom = _movers(panels)
+    # topix17 は主要指数パネルに単位の異なる日本VI 等が混じるため、代表騰落は
+    # 最終パネル（TOPIX-17 業種）から採る。us は全パネルが同単位のため全体から。
+    mover_panels = panels[-1:] if variant == "topix17" else panels
+    top, bottom = _movers(mover_panels)
     lines = [f"【{_TWEET_HEAD[variant]}】{short}時点"]
     if top and bottom:
         lines.append(f"🔺{top['label']} {_fmt(top['value'])}")

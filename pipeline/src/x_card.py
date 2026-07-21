@@ -54,8 +54,11 @@ def _load(name: str) -> dict:
     return json.loads((DATA_DIR / name).read_text(encoding="utf-8"))
 
 
-def _rows_from_items(items: list[dict], period: str = "1D") -> list[dict]:
-    """status=ok かつ当該期間 price が数値のアイテムを price 降順で返す。"""
+def _rows_from_items(items: list[dict], period: str = "1D", sort: bool = True) -> list[dict]:
+    """status=ok かつ当該期間 price が数値のアイテムを行に変換。
+
+    sort=True: price 降順。sort=False: config 順のまま（主要指数パネル用）。
+    """
     rows = []
     for it in items:
         if it.get("status") != "ok":
@@ -65,17 +68,25 @@ def _rows_from_items(items: list[dict], period: str = "1D") -> list[dict]:
         if v is None:
             continue
         rows.append({"label": it.get("label", it.get("ticker", "")), "value": float(v)})
-    rows.sort(key=lambda x: x["value"], reverse=True)
+    if sort:
+        rows.sort(key=lambda x: x["value"], reverse=True)
     return rows
 
 
 def build_panels(variant: str) -> tuple[list[dict], str]:
-    """variant → (panels, as_of)。panel = {title, sub, rows}。"""
+    """variant → (panels, as_of)。panel = {title, rows}。"""
     if variant == "topix17":
         data = _load("topix17.json")
         as_of = data.get("as_of", "")
-        rows = _rows_from_items(data["block"]["items"])
-        return [{"title": "TOPIX-17 業種別", "rows": rows}], as_of
+        panels = []
+        idx = data.get("indices")
+        if idx and idx.get("items"):
+            # 主要指数は固定順（並び替えしない）
+            panels.append({"title": idx.get("title", "主要指数"),
+                           "rows": _rows_from_items(idx["items"], sort=False)})
+        panels.append({"title": "TOPIX-17 業種別",
+                       "rows": _rows_from_items(data["block"]["items"], sort=True)})
+        return panels, as_of
 
     if variant == "us":
         data = _load("latest.json")
@@ -150,7 +161,7 @@ def build_html(panels: list[dict], as_of: str, heading: str) -> str:
     multi = len(panels) > 1
     panels_html = "".join(_panel_html(p, show_title=multi) for p in panels)
     grid = "two" if multi else "one"
-    subtitle = f"{as_of} 時点 ・ 1Dリターン降順"
+    subtitle = f"{as_of} 時点"
     C = COL
     return f"""<!DOCTYPE html>
 <html lang="ja"><head><meta charset="utf-8"><style>
@@ -236,7 +247,7 @@ def _render(html_str: str, out_path: str) -> str:
 
 
 _HEADINGS = {
-    "topix17": "TOPIX-17 業種別 1Dパフォーマンス",
+    "topix17": "日本株 1Dパフォーマンス",
     "us": "米国 1Dパフォーマンス",
     "us_index": "主要米国株価指数 ETF 1Dパフォーマンス",
     "sectors": "S&P500 セクター ETF 1Dパフォーマンス",

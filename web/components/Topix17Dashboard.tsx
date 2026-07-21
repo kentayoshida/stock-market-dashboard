@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { Topix17Dataset, Topix17Item } from "@/lib/types";
+import type { Item, Topix17Dataset, Topix17Item } from "@/lib/types";
 import PeriodToggle from "./PeriodToggle";
 import PerfRow from "./PerfRow";
 import SiteHeader from "./SiteHeader";
@@ -16,7 +16,7 @@ import {
   moneyBuUrl,
 } from "@/lib/i18n";
 
-function returnFor(item: Topix17Item, period: string): number | null {
+function returnFor(item: Item, period: string): number | null {
   if (item.status !== "ok") return null;
   const r = item.returns[period];
   return r ? r.price : null;
@@ -42,6 +42,17 @@ export default function Topix17Dashboard({ data }: { data: Topix17Dataset }) {
     }
     return m;
   }, [block.items, period]);
+
+  // 主要指数（業種の上部・固定順）。バー正規化は指数パネル内で独立に行う。
+  const indices = data.indices;
+  const indicesMaxAbs = useMemo(() => {
+    let m = 0;
+    for (const it of indices?.items ?? []) {
+      const v = returnFor(it, period);
+      if (v !== null) m = Math.max(m, Math.abs(v));
+    }
+    return m;
+  }, [indices, period]);
 
   const items = useMemo(() => {
     if (!sortDesc) return block.items; // コード順（config 順）
@@ -105,6 +116,26 @@ export default function Topix17Dashboard({ data }: { data: Topix17Dataset }) {
             </button>
           </div>
         </div>
+
+        {indices && indices.items.length > 0 && (
+          <section className="block">
+            <h2 className="block-title">{t.majorIndices}</h2>
+            {/* 主要指数は固定順（config 順）。日本VI も他指数と同じ%表示。 */}
+            <div className="jp-grid" style={{ columnCount: indices.columns }}>
+              {indices.items.map((item) => (
+                <PerfRow
+                  key={item.ticker}
+                  item={item}
+                  period={period}
+                  totalReturn={false}
+                  maxAbs={indicesMaxAbs}
+                  displayLabel={lang === "en" && item.en ? item.en : item.label}
+                  showMomentum={false}
+                />
+              ))}
+            </div>
+          </section>
+        )}
 
         <section className="block">
           <h2 className="block-title">

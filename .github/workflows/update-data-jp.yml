@@ -32,7 +32,9 @@ jobs:
         env:
           JQUANTS_API_KEY: ${{ secrets.JQUANTS_API_KEY }}
         run: python pipeline/src/build_jp.py --source jquants
-      - name: Generate topix17.json (TOPIX-17・NEXT FUNDS ETF, yfinance → stooq)
+      - name: Generate topix17.json (TOPIX-17＋主要指数, yfinance/J-Quants)
+        env:
+          JQUANTS_API_KEY: ${{ secrets.JQUANTS_API_KEY }}   # 主要指数のうち市場区分指数・TOPIX の取得に使用
         run: python pipeline/src/build_topix17.py --source auto
       - name: Commit if changed
         run: |

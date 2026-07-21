@@ -80,6 +80,7 @@ type UIDict = {
   heroJp: string;
   heroTopix17: string;
   heroDow: string;
+  majorIndices: string;
   // footer
   disclaimer: string;
   jpAttribution: string;
@@ -165,6 +166,7 @@ export const ui: Record<Lang, UIDict> = {
     heroGlobal: "世界の株式",
     heroJp: "東証33業種",
     heroTopix17: "TOPIX-17（17業種）",
+    majorIndices: "主要指数",
     heroDow: "ダウ工業株30種",
     disclaimer: "情報提供目的であり投資助言ではありません。",
     jpAttribution:
@@ -296,6 +298,7 @@ export const ui: Record<Lang, UIDict> = {
     heroGlobal: "Global Equities",
     heroJp: "TSE 33 Sectors",
     heroTopix17: "TOPIX-17 (17 Sectors)",
+    majorIndices: "Major Indices",
     heroDow: "Dow Jones 30",
     disclaimer: "For informational purposes only; not investment advice.",
     jpAttribution:

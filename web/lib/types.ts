@@ -67,6 +67,19 @@ export type Topix17Block = {
   items: Topix17Item[];
 };
 
+// 主要指数（業種の上部・日本市況概況）。ticker=シンボル/指数コード、en=英語表示名、
+// source=取得元（yfinance | jquants）。全行とも価格リターン（%）。
+export type JpIndexItem = Item & { en?: string; source?: string };
+
+export type JpIndicesBlock = {
+  id: string;
+  title: string;
+  columns: number;
+  items: JpIndexItem[];
+  coverage?: { ok: number; no_data: number; total: number };
+  as_of?: string | null;
+};
+
 export type Topix17Dataset = {
   as_of: string | null;
   generated_at: string;
@@ -80,6 +93,7 @@ export type Topix17Dataset = {
   disclaimer: string;
   attribution: string;
   source_note: string;
+  indices?: JpIndicesBlock | null;
   block: Topix17Block;
 };
 

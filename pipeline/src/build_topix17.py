@@ -18,10 +18,12 @@ import sys
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
+import pandas as pd
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from fetch import fetch_prices  # noqa: E402
+from fetch import fetch_fixture, fetch_prices  # noqa: E402
+from jquants import JQuantsClient  # noqa: E402
 from momentum import compute_momentum  # noqa: E402
 from returns import compute_returns, latest_date  # noqa: E402
 
@@ -63,6 +65,72 @@ def _process(item: dict, price_map: dict, periods: list[str], tr_periods: list[s
             "returns": rets, "momentum": compute_momentum(df["close"])}, True
 
 
+def build_indices(cfg_idx: dict, source: str, periods: list[str],
+                  client: JQuantsClient | None, start: date, end: date) -> dict:
+    """主要指数ブロックを生成（固定順・全行%変化）。
+
+    取得元は item ごと: source=yfinance → symbol（yfinance）/ source=jquants → index_code（J-Quants）。
+    fixture 時は全 item を合成系列で代替（UI 検証用）。
+    """
+    items = cfg_idx.get("items", [])
+    from_date, to_date = start.isoformat(), end.isoformat()
+
+    # yfinance 取得（fixture 時は全キーを合成）
+    if source == "fixture":
+        keys = [it.get("symbol") or it.get("index_code") for it in items]
+        price_map = fetch_fixture(keys, start, end)
+    else:
+        yf_symbols = [it["symbol"] for it in items
+                      if it.get("source", "yfinance") == "yfinance"]
+        price_map, _ = fetch_prices(yf_symbols, start, end, source=source)
+
+    out_items: list[dict] = []
+    item_dates: list[date] = []
+    n_ok = n_missing = 0
+    for it in items:
+        src = it.get("source", "yfinance")
+        key = it.get("symbol") if src == "yfinance" else it.get("index_code")
+        base = {"label": it["label"], "ticker": key, "en": it.get("en"),
+                "source": src, "review": False}
+
+        series = None
+        if source == "fixture":
+            df = price_map.get(key)
+            series = df["close"] if df is not None else None
+        elif src == "jquants":
+            if client is not None:
+                try:
+                    series = client.index_close(it["index_code"], from_date, to_date)
+                except Exception as e:  # noqa: BLE001
+                    print(f"[build_topix17] index {key} ({it['label']}) failed: {e}",
+                          file=sys.stderr)
+        else:
+            df = price_map.get(key)
+            series = df["close"].dropna() if df is not None else None
+
+        if series is None or series.dropna().empty:
+            n_missing += 1
+            out_items.append({**base, "status": "no_data", "as_of": None, "momentum": None,
+                              "returns": {p: {"price": None, "total": None} for p in periods}})
+            continue
+        dfp = pd.DataFrame({"close": series.astype(float), "adj_close": pd.NA})
+        rets = compute_returns(dfp, periods, [])  # 価格リターンのみ
+        d = latest_date(dfp)
+        if d:
+            item_dates.append(d)
+        n_ok += 1
+        out_items.append({**base, "status": "ok",
+                          "as_of": d.isoformat() if d else None,
+                          "returns": rets, "momentum": None})
+
+    return {
+        "id": cfg_idx["id"], "title": cfg_idx["title"],
+        "columns": cfg_idx.get("columns", 2), "items": out_items,
+        "coverage": {"ok": n_ok, "no_data": n_missing, "total": n_ok + n_missing},
+        "as_of": max(item_dates).isoformat() if item_dates else None,
+    }
+
+
 def build(cfg: dict, source: str, lookback_days: int) -> dict:
     periods: list[str] = cfg.get("periods", ["1D", "1M", "1Y"])
     tr_periods: list[str] = cfg.get("total_return_periods", [])
@@ -86,6 +154,22 @@ def build(cfg: dict, source: str, lookback_days: int) -> dict:
         else:
             n_missing += 1
 
+    # ---- 主要指数（業種の上部に表示・日本市況概況）----
+    indices = None
+    cfg_idx = cfg.get("indices")
+    if cfg_idx:
+        client = None
+        if source != "fixture" and any(
+            it.get("source") == "jquants" for it in cfg_idx.get("items", [])
+        ):
+            client = JQuantsClient()
+            if not client.is_configured():
+                print("[build_topix17] JQUANTS_API_KEY 未設定（主要指数の一部は no_data）。",
+                      file=sys.stderr)
+        indices = build_indices(cfg_idx, source, periods, client, start, end)
+        if indices.get("as_of"):
+            item_dates.append(date.fromisoformat(indices["as_of"]))
+
     global_as_of = max(item_dates) if item_dates else None
     return {
         "as_of": global_as_of.isoformat() if global_as_of else None,
@@ -100,6 +184,7 @@ def build(cfg: dict, source: str, lookback_days: int) -> dict:
         "disclaimer": "情報提供目的であり投資助言ではありません。",
         "attribution": ATTRIBUTION,
         "source_note": SOURCE_NOTE,
+        "indices": indices,
         "block": {"id": block["id"], "title": block["title"],
                   "columns": block.get("columns", 3), "items": out_items},
     }
