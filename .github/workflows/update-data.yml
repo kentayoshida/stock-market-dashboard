@@ -53,3 +53,34 @@ jobs:
             git commit -m "chore(data): refresh market performance $(date -u +%F)"
             git push
           fi
+
+      # ---- X（Twitter）自動投稿: 米国 1D パフォーマンス（指数ETF＋S&P500セクターETF） ----
+      # データ更新直後に latest.json から 1D 降順のランキング画像を作って投稿する。
+      # 認証情報（Secrets）未設定なら投稿はスキップされ、バッチは失敗しない。
+      - name: 日本語フォント（X投稿画像の日本語描画用）
+        run: sudo apt-get update && sudo apt-get install -y fonts-noto-cjk
+      - name: Playwright chromium
+        run: python -m playwright install --with-deps chromium
+      - name: X（Twitter）へ米国1Dパフォーマンスを投稿
+        continue-on-error: true
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          SITE_URL: ${{ vars.SITE_URL || 'https://dashboard.markets-lab.com/' }}
+        run: python pipeline/src/post_to_x.py --variant us --layout 2panel
+      - name: Commit X post state (米国)
+        run: |
+          git config user.name  "market-dashboard-bot"
+          git config user.email "actions@github.com"
+          git add web/public/data/x_last_posted.json
+          if git diff --staged --quiet; then
+            echo "No X post-state change."
+          else
+            git commit -m "chore(x): record US 1D post state $(date -u +%F)"
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin main && git push && break
+              echo "push retry $i"; sleep 3
+            done
+          fi

@@ -3,3 +3,6 @@ yfinance>=0.2.40
 PyYAML>=6.0
 python-dateutil>=2.8
 requests>=2.31
+# X（Twitter）自動投稿: 1Dパフォーマンス画像の描画(playwright)と投稿(tweepy)。
+tweepy>=4.14
+playwright>=1.44
