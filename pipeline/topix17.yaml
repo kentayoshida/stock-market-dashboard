@@ -30,17 +30,27 @@ sort:
 indices:
   id: jp_indices
   title: 主要指数
-  columns: 2                 # UI の表示カラム数
+  columns: 2                 # UI の表示カラム数（CSS 多段: 先頭8件=左列 / 次8件=右列）
+  # 並び順＝画面の左列8件→右列8件。index_code はユーザー提示の JPX 配信対象コード。
   items:
-    - { label: 日経225,         source: yfinance, symbol: "^N225",    en: "Nikkei 225" }
-    - { label: TOPIX,           source: jquants,  index_code: "0000", en: "TOPIX" }
-    - { label: JPX日経400,       source: yfinance, symbol: "1592.T",   en: "JPX-Nikkei 400" }
-    - { label: グロース250,       source: yfinance, symbol: "2516.T",   en: "Growth 250" }
-    - { label: 東証プライム市場指数,   source: jquants, index_code: "0500", en: "TSE Prime" }
-    - { label: 東証スタンダード市場指数, source: jquants, index_code: "0501", en: "TSE Standard" }
-    - { label: 東証グロース市場指数,   source: jquants, index_code: "0502", en: "TSE Growth" }
-    - { label: 東証REIT指数,      source: yfinance, symbol: "1343.T",   en: "TSE REIT" }
-    - { label: 日本VI,          source: yfinance, symbol: "^NKVI.OS", en: "Nikkei VI" }
+    # --- 左列 ---
+    - { label: 日経225,        source: yfinance, symbol: "^N225",    en: "Nikkei 225" }
+    - { label: TOPIX,          source: jquants,  index_code: "0000", en: "TOPIX" }
+    - { label: TOPIX Core30,   source: jquants,  index_code: "0028", en: "TOPIX Core30" }
+    - { label: TOPIX Large70,  source: jquants,  index_code: "0029", en: "TOPIX Large 70" }  # コード未指定→標準0029（CI確認）
+    - { label: TOPIX Mid400,   source: jquants,  index_code: "002B", en: "TOPIX Mid400" }
+    - { label: TOPIX Small500, source: jquants,  index_code: "002F", en: "TOPIX Small500" }
+    - { label: TOPIX バリュー,   source: jquants,  index_code: "8100", en: "TOPIX Value" }
+    - { label: TOPIX グロース,   source: jquants,  index_code: "8200", en: "TOPIX Growth" }
+    # --- 右列 ---
+    - { label: 東証プライム,     source: jquants,  index_code: "0500", en: "TSE Prime" }
+    - { label: 東証スタンダード,  source: jquants,  index_code: "0501", en: "TSE Standard" }
+    - { label: 東証グロース,     source: jquants,  index_code: "0502", en: "TSE Growth" }
+    - { label: JPX日経400,      source: yfinance, symbol: "1592.T",   en: "JPX-Nikkei 400" }  # コード未提示→ETF継続
+    - { label: グロース250,      source: jquants,  index_code: "0070", en: "Growth 250" }
+    - { label: JASDAQ INDEX,   source: jquants,  index_code: "0091", en: "JASDAQ Index" }
+    - { label: 東証REIT,        source: jquants,  index_code: "0075", en: "TSE REIT" }
+    - { label: 日本VI,         source: yfinance, symbol: "^NKVI.OS", en: "Nikkei VI" }
 
 block:
   id: topix17
