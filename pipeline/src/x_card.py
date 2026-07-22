@@ -103,8 +103,18 @@ def build_panels(variant: str) -> tuple[list[dict], str]:
             b = by_id.get(bid)
             if not b:
                 continue
-            panels.append({"title": b.get("title", bid),
-                           "rows": _rows_from_items(b["items"])})
+            items = b["items"]
+            if bid == "us_index":
+                # 主要指数（左）は厳選（x_order）のみ・指定順（固定）。無ければ全件。
+                x_order = b.get("x_order")
+                if x_order:
+                    by_key = {it.get("ticker"): it for it in items}
+                    items = [by_key[k] for k in x_order if k in by_key]
+                rows = _rows_from_items(items, sort=False)
+            else:
+                # セクター（右）は従来どおり 1D 降順。
+                rows = _rows_from_items(items, sort=True)
+            panels.append({"title": b.get("title", bid), "rows": rows})
         return panels, as_of
 
     raise ValueError(f"unknown variant: {variant}")
@@ -167,7 +177,7 @@ def build_html(panels: list[dict], as_of: str, heading: str) -> str:
     multi = len(panels) > 1
     panels_html = "".join(_panel_html(p, show_title=multi) for p in panels)
     grid = "two" if multi else "one"
-    subtitle = f"{as_of} 時点"
+    subtitle = f"{as_of} Close分"
     C = COL
     return f"""<!DOCTYPE html>
 <html lang="ja"><head><meta charset="utf-8"><style>

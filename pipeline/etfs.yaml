@@ -13,6 +13,9 @@ blocks:
   # ---- §2.1 主要米国株価指数 ETF ----
   - id: us_index
     title: 主要米国株価指数 ETF
+    # 日次X画像の左パネルで使う「厳選指数」を指定順（ticker）で列挙。
+    # ページ（/）は下の items 全件を表示するが、X ではこの並びの指数のみ・固定順で出す。
+    x_card_tickers: [SPY, QQQ, DIA, IWM, RSP, IVW, IVE, MTUM, USMV]
     items:
       - { label: ダウ平均,          ticker: DIA }
       - { label: S&P500,            ticker: SPY }

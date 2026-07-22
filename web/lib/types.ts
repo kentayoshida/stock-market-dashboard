@@ -29,6 +29,8 @@ export type Block = {
   id: string;
   title: string;
   items: Item[];
+  // 日次X画像の厳選・固定順（ticker）。ページ表示には使わない任意メタ。
+  x_order?: string[];
 };
 
 // ---- 日本業種別（/jp-sectors）----

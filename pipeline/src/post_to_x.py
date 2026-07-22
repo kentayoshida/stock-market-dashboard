@@ -78,7 +78,7 @@ def build_tweet_text(variant: str, panels: list[dict], as_of: str, site_url: str
     # 最終パネル（TOPIX-17 業種）から採る。us は全パネルが同単位のため全体から。
     mover_panels = panels[-1:] if variant == "topix17" else panels
     top, bottom = _movers(mover_panels)
-    lines = [f"【{_TWEET_HEAD[variant]}】{short}時点"]
+    lines = [f"【{_TWEET_HEAD[variant]}】{short} Close分"]
     if top and bottom:
         lines.append(f"🔺{top['label']} {_fmt(top['value'])}")
         lines.append(f"🔻{bottom['label']} {_fmt(bottom['value'])}")

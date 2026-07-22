@@ -97,7 +97,11 @@ def build(cfg: dict, source: str, lookback_days: int) -> dict:
                 "status": "ok", "as_of": item_as_of.isoformat() if item_as_of else None,
                 "stale": stale, "returns": rets, "momentum": momentum,
             })
-        out_blocks.append({"id": block["id"], "title": block["title"], "items": items})
+        block_out = {"id": block["id"], "title": block["title"], "items": items}
+        # X画像の厳選・固定順（config の x_card_tickers）を JSON に透過（あれば）。
+        if block.get("x_card_tickers"):
+            block_out["x_order"] = block["x_card_tickers"]
+        out_blocks.append(block_out)
 
     return {
         "as_of": global_as_of.isoformat() if global_as_of else None,
