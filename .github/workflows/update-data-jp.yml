@@ -1,14 +1,16 @@
 name: Update JP sector data
 
 # 日本業種別の日次バッチ（jp-sector-dashboard-spec.md §6）。東証33業種＋TOPIX-17。
-# J-Quants は当日大引け後 16:30 JST 頃にデータ更新（公式情報）。
-# その約30分後、当日 17:00 JST に実行する。米国版（米国引け後の早朝）とは別タイミング。
+# データ源の確定時刻（JST）: 東証大引け 15:30 → yfinance（日経225/VI/ETF）〜16:00-16:30 →
+# J-Quants（JPX公式API・指数/業種）〜16:30 頃更新（公式情報）。律速は J-Quants の 16:30。
 # TOPIX-17 は対応 ETF（NEXT FUNDS）を yfinance で取得（東証引け後で確定済み）。
 on:
   schedule:
-    # 08:00 UTC = 当日 17:00 JST（J-Quants 16:30 更新の約30分後）。
-    # 東証の立会日（月〜金）に合わせて Mon-Fri。JST と UTC の曜日は同日（08:00 UTC）。
-    - cron: "0 8 * * 1-5"
+    # 07:52 UTC = 当日 16:52 JST（J-Quants 16:30 更新の約22分後・安全マージン）。
+    # 分を「00」から外すのは、毎時00分がスケジュール混雑で大幅遅延しやすいため
+    # （実測で +1.7〜2.6h の遅延）。off-peak 分にして本来時刻付近で発火させる。
+    # 東証の立会日（月〜金）に合わせて Mon-Fri。JST と UTC の曜日は同日（07:52 UTC）。
+    - cron: "52 7 * * 1-5"
   workflow_dispatch: {}
 
 permissions:
