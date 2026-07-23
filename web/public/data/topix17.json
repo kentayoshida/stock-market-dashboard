@@ -659,54 +659,6 @@
         "momentum": null
       },
       {
-        "label": "JASDAQ INDEX",
-        "ticker": "0091",
-        "en": "JASDAQ Index",
-        "source": "jquants",
-        "review": false,
-        "status": "no_data",
-        "as_of": null,
-        "momentum": null,
-        "returns": {
-          "1D": {
-            "price": null,
-            "total": null
-          },
-          "1W": {
-            "price": null,
-            "total": null
-          },
-          "1M": {
-            "price": null,
-            "total": null
-          },
-          "3M": {
-            "price": null,
-            "total": null
-          },
-          "6M": {
-            "price": null,
-            "total": null
-          },
-          "YTD": {
-            "price": null,
-            "total": null
-          },
-          "1Y": {
-            "price": null,
-            "total": null
-          },
-          "DD_52WH": {
-            "price": null,
-            "total": null
-          },
-          "UP_52WL": {
-            "price": null,
-            "total": null
-          }
-        }
-      },
-      {
         "label": "東証REIT",
         "ticker": "0075",
         "en": "TSE REIT",
@@ -816,8 +768,8 @@
     ],
     "coverage": {
       "ok": 15,
-      "no_data": 1,
-      "total": 16
+      "no_data": 0,
+      "total": 15
     },
     "as_of": "2026-07-22"
   },

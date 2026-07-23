@@ -49,7 +49,6 @@ indices:
     - { label: 東証グロース,     source: jquants,  index_code: "0502", en: "TSE Growth" }
     - { label: JPX日経400,      source: jquants,  index_code: "B507", en: "JPX-Nikkei 400" }
     - { label: グロース250,      source: jquants,  index_code: "0070", en: "Growth 250" }
-    - { label: JASDAQ INDEX,   source: jquants,  index_code: "0091", en: "JASDAQ Index" }
     - { label: 東証REIT,        source: jquants,  index_code: "0075", en: "TSE REIT" }
     - { label: 日本VI,         source: yfinance, symbol: "^NKVI.OS", en: "Nikkei VI" }
   # 日次X画像の左パネル＝厳選9指数（指定順・ticker/コードで参照）。
