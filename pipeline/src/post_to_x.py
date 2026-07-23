@@ -84,10 +84,10 @@ def build_tweet_text(variant: str, panels: list[dict], as_of: str, site_url: str
         lines.append(f"🔻{bottom['label']} {_fmt(bottom['value'])}")
     page = site_url.rstrip("/") + ("/" + _PAGE_PATH[variant] if _PAGE_PATH[variant] else "/")
     lines += ["", f"詳しく見る → {page}"]
-    tail = f"\n\n※情報提供目的（投資助言ではありません）\n{_HASHTAGS[variant]}"
-    text = "\n".join(lines) + tail
+    # 免責は画像フッターに記載済みのため本文からは省略（冗長回避）。
+    text = "\n".join(lines) + f"\n\n{_HASHTAGS[variant]}"
     if _weighted_len(text) > 280:  # 収まらなければハッシュタグ行を落とす
-        text = "\n".join(lines) + "\n\n※情報提供目的（投資助言ではありません）"
+        text = "\n".join(lines)
     return text
 
 
