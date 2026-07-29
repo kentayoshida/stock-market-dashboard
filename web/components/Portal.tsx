@@ -5,6 +5,7 @@ import { ui } from "@/lib/i18n";
 
 const DASH_URL = "https://dashboard.markets-lab.com/";
 const JFGI_URL = "https://jfgi.markets-lab.com/";
+const HEATMAP3D_URL = "https://3dheatmap.markets-lab.com/";
 const NAMAE_URL = "https://www.namae-lab.com/";
 const DEVIL_URL = "https://www.devil-fruit-maker.com/";
 const MANSION_URL = "https://mansion-poem-maker.vercel.app/";
@@ -75,6 +76,22 @@ export default function Portal() {
             <span className="portal-card-body">
               <span className="portal-card-title">{p.jfgiTitle}</span>
               <span className="portal-card-desc">{p.jfgiDesc}</span>
+              <span className="portal-card-cta">{p.visit}</span>
+            </span>
+          </a>
+
+          <a
+            className="portal-card"
+            href={HEATMAP3D_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="portal-card-emoji" aria-hidden="true">
+              🗾
+            </span>
+            <span className="portal-card-body">
+              <span className="portal-card-title">{p.heatmap3dTitle}</span>
+              <span className="portal-card-desc">{p.heatmap3dDesc}</span>
               <span className="portal-card-cta">{p.visit}</span>
             </span>
           </a>

@@ -100,6 +100,8 @@ type UIDict = {
     dashDesc: string;
     jfgiTitle: string;
     jfgiDesc: string;
+    heatmap3dTitle: string;
+    heatmap3dDesc: string;
     visit: string;
     funHeading: string;
     funNote: string;
@@ -231,6 +233,9 @@ export const ui: Record<Lang, UIDict> = {
         "米国・世界（地域別）・東証33業種の期間別パフォーマンスを、ヒートマップと株時計で表示。",
       jfgiTitle: "日本版 Fear & Greed 指数",
       jfgiDesc: "日本市場の投資家心理（恐怖と貪欲）を1つの指数で可視化。",
+      heatmap3dTitle: "日経平均 3D ヒートマップ",
+      heatmap3dDesc:
+        "株価指数のヒートマップに高さ（第3の次元）を加え、ドラッグで360度回転できるインタラクティブな3Dヒートマップ。まずは日経平均225が対象。",
       visit: "開く →",
       funHeading: "おまけ（趣味の個人開発）",
       funNote:
@@ -365,6 +370,9 @@ export const ui: Record<Lang, UIDict> = {
       jfgiTitle: "Japan Fear & Greed Index",
       jfgiDesc:
         "Investor sentiment (fear vs. greed) for the Japanese market in a single index.",
+      heatmap3dTitle: "Nikkei 225 · 3D Heatmap",
+      heatmap3dDesc:
+        "A stock-index heatmap with height as a third dimension — an interactive 3D heatmap you can rotate 360° by dragging. Starting with the Nikkei 225.",
       visit: "Open →",
       funHeading: "Just for fun (side projects)",
       funNote:
