@@ -20,6 +20,7 @@ v2 認証（1段階・トークン交換不要）:
 from __future__ import annotations
 
 import os
+import sys
 from datetime import datetime, timedelta, timezone
 
 import pandas as pd
@@ -115,27 +116,64 @@ class JQuantsClient:
         return s
 
     def equity_close(self, code: str, from_date: str | None = None,
-                     to_date: str | None = None) -> pd.Series:
-        """個別株の日次終値系列（TOPIX Core30 構成銘柄）。/equities/bars/daily から取得。
+                     to_date: str | None = None, debug: bool = False) -> pd.Series:
+        """個別株の日次「分割調整後」終値系列（TOPIX Core30 構成銘柄）。/equities/bars/daily。
 
-        code は J-Quants の5桁銘柄コード（例 トヨタ 7203 → "72030"）。分割の影響を除くため
-        AdjustmentClose（分割調整後終値）を優先し、無ければ Close/C を使う。Date と終値列を
-        頑健に検出して昇順の Series を返す（index_close と同じ様式）。
+        code は J-Quants の5桁銘柄コード（例 トヨタ 7203 → "72030"）。
+
+        分割調整の取り扱い（重要）: 52週高値・1年リターン等が分割で壊れないよう、必ず
+        「調整後終値」を返す。J-Quants のレスポンス形が環境で異なりうるため、次の優先順で解決:
+          1) AdjustmentFactor（日次の調整係数）があり、窓内に係数≠1（コーポレートアクション）が
+             ある場合 → 生 Close から自前で後方調整して算出（最も確実。API 提供の AdjustmentClose が
+             未調整でも正しく直せる）。
+          2) AdjustmentClose 列があればそれを採用。
+          3) いずれも無ければ生 Close（＝窓内に分割が無ければ調整後と一致）。ただし調整の手掛かりが
+             一切無い場合は stderr に警告を出す（生値を無自覚に使う silent fallback を避ける）。
+
+        `debug=True` で解決に使った列・分割検知を stderr に出す（CI 診断用）。
         """
         rows = self._get("/equities/bars/daily", {"code": code, "from": from_date, "to": to_date})
         if not rows:
             raise JQuantsError(f"equity_close: no data for code={code}")
         df = pd.DataFrame(rows)
         date_col = self._find_col(df.columns, "Date")
-        close_col = self._find_col(df.columns, "AdjustmentClose", "Close", "C")
-        if not date_col or not close_col:
+        raw_col = self._find_col(df.columns, "Close", "C")
+        adjclose_col = self._find_col(df.columns, "AdjustmentClose", "AdjClose", "AdjustedClose")
+        factor_col = self._find_col(df.columns, "AdjustmentFactor", "AdjFactor")
+        if not date_col or not (raw_col or adjclose_col):
             raise JQuantsError(
                 f"equity_close: Date/Close 列が見つからない columns={list(df.columns)}"
             )
-        s = pd.Series(
-            pd.to_numeric(df[close_col], errors="coerce").values,
-            index=pd.to_datetime(df[date_col]),
-        ).dropna().sort_index()
+
+        df = df.assign(_d=pd.to_datetime(df[date_col])).sort_values("_d")
+
+        source = None
+        if factor_col is not None and raw_col is not None:
+            factor = pd.to_numeric(df[factor_col], errors="coerce").fillna(1.0)
+            if (factor.round(9) != 1.0).any():
+                close = pd.to_numeric(df[raw_col], errors="coerce")
+                # 後方調整: 調整後[t] = 終値[t] × （t より後の日の調整係数の総積）。
+                # 例: 3分割の除権日に係数 1/3 が付き、それ以前の価格が 1/3 に補正される。
+                rev_incl = factor.iloc[::-1].cumprod().iloc[::-1]      # ∏_{j>=t}
+                cum_future = rev_incl.shift(-1).fillna(1.0)            # ∏_{j>t}
+                vals = (close * cum_future).values
+                source = "self-adjust(AdjustmentFactor)"
+        if source is None and adjclose_col is not None:
+            vals = pd.to_numeric(df[adjclose_col], errors="coerce").values
+            source = "AdjustmentClose"
+        if source is None:
+            vals = pd.to_numeric(df[raw_col], errors="coerce").values
+            source = "raw Close"
+            if factor_col is None and adjclose_col is None:
+                print(f"[jquants] equity_close({code}): 調整列なし（columns={list(df.columns)}）。"
+                      "生 Close を使用（窓内に分割があれば誤差）。", file=sys.stderr)
+
+        if debug:
+            print(f"[jquants] equity_close({code}): source={source} "
+                  f"cols(date={date_col},raw={raw_col},adjclose={adjclose_col},factor={factor_col})",
+                  file=sys.stderr)
+
+        s = pd.Series(vals, index=df["_d"]).dropna().sort_index()
         s.index = s.index.tz_localize(None).normalize()
         return s
 
