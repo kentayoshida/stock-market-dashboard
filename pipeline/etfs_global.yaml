@@ -4,9 +4,17 @@
 # 上下ティアで同じ地域列が縦に揃うため、地域横断で先進国↔新興国を対比できる。
 # すべて米国上場・ドル建て。build_global.py が処理して global.json を出力。
 #
+# 【先進国／新興国の分類は FTSE Russell の国別分類に準拠】
+#   各ティアの旗艦ETF（全世界=VT / 先進国=VEA / 新興国=VWO・いずれも Vanguard）が FTSE 基準のため、
+#   国のティア付けも FTSE に揃えて「掲載ETFの中身」と整合させる。2026年時点の主な帰結:
+#     - 韓国(EWY)・ポーランド(EPOL) は FTSE=Developed のため先進国に置く（MSCI では新興国だが FTSE 準拠）。
+#     - アルゼンチン(ARGT) は FTSE の標準指数で未分類（実質 Standalone/Frontier）のため対象外（掲載しない）。
+#     - ベトナム(VNM) は FTSE が 2026/9/21 に Frontier→Secondary Emerging へ昇格したため新興国に置く。
+#
 # lead = ティア全体のブロードETF（先進国=VEA / 新興国=VWO・いずれも Vanguard）。
 # 一部は流動性の薄いフロンティア系（KWT 等）を含む。取得不可なら「データなし」表示。
 # ※ NGE(ナイジェリア)・PAK(パキスタン) は 2025 年に上場廃止・償還されたため除外。
+# ※ ARGT(アルゼンチン) は FTSE で未分類のため除外（上記 FTSE 準拠の方針による）。
 
 # 末尾 2 キーは期間リターンではなく 52 週レンジ指標（トグル右端に表示）。
 periods: [1D, 1W, 1M, 3M, 6M, YTD, 1Y, DD_52WH, UP_52WL]
@@ -52,10 +60,12 @@ tiers:
         - { label: デンマーク, ticker: EDEN }
         - { label: オーストリア, ticker: EWO }
         - { label: アイルランド, ticker: EIRL }
+        - { label: ポーランド, ticker: EPOL }   # FTSE=Developed（2018〜）
       mea:
         - { label: イスラエル, ticker: EIS }
       apac:
         - { label: 日本, ticker: EWJ }
+        - { label: 韓国, ticker: EWY }   # FTSE=Developed
         - { label: 香港, ticker: EWH }
         - { label: シンガポール, ticker: EWS }
         - { label: 豪州, ticker: EWA }
@@ -70,11 +80,9 @@ tiers:
         - { label: メキシコ, ticker: EWW }
         - { label: ラテンアメリカ, ticker: ILF }
         - { label: ブラジル, ticker: EWZ }
-        - { label: アルゼンチン, ticker: ARGT }
         - { label: チリ, ticker: ECH }
         - { label: ペルー, ticker: EPU }
       europe:
-        - { label: ポーランド, ticker: EPOL }
         - { label: トルコ, ticker: TUR }
       mea:
         - { label: UAE, ticker: UAE }
@@ -84,7 +92,6 @@ tiers:
         - { label: 南アフリカ, ticker: EZA }
       apac:
         - { label: アジア新興国, ticker: EEMA }
-        - { label: 韓国, ticker: EWY }
         - { label: 台湾, ticker: EWT }
         - { label: 中国, ticker: MCHI }
         - { label: 中国（大型株）, ticker: FXI }

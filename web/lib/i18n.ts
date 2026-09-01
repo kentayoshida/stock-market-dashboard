@@ -99,6 +99,7 @@ type UIDict = {
   coreSourceNote: string;
   niftyAttribution: string;
   niftySourceNote: string;
+  classificationNote: string;
   updatedAt: string;
   source: string;
   homeAria: string;
@@ -209,6 +210,8 @@ export const ui: Record<Lang, UIDict> = {
       "「NIFTY 50」等の指数・商標は NSE Indices Ltd. の知的財産です。本ページは指数そのものではなく、構成50銘柄それぞれの個別株価に基づきます。",
     niftySourceNote:
       "構成銘柄は手動更新（NIFTY 50 は定期的に入れ替えあり）。株価は Yahoo Finance（NSE上場・INR）。配当込みリターン（1Y）は調整後終値（Adj Close）由来の近似です。構成銘柄情報は 3D ヒートマップ・プロジェクトに準拠。",
+    classificationNote:
+      "国の先進国／新興国の分類は FTSE Russell の国別分類に準拠しています。",
     updatedAt: "データ更新",
     source: "出所",
     homeAria: "市場パフォーマンス ホーム",
@@ -360,6 +363,8 @@ export const ui: Record<Lang, UIDict> = {
       "“NIFTY 50” and related index values/trademarks are the intellectual property of NSE Indices Ltd. This page is based on the individual share prices of the 50 constituents, not the index itself.",
     niftySourceNote:
       "Constituents are updated manually (NIFTY 50 is periodically rebalanced). Prices via Yahoo Finance (NSE-listed, INR); total return (1Y) is an approximation derived from adjusted close (Adj Close). Constituent list follows the 3D heatmap project.",
+    classificationNote:
+      "Developed / emerging market classification follows FTSE Russell's country classification.",
     updatedAt: "Updated",
     source: "Source",
     homeAria: "Market Performance home",
@@ -519,7 +524,6 @@ const EQUITY_EN: Record<string, string> = {
   EWW: "Mexico",
   ILF: "Latin America",
   EWZ: "Brazil",
-  ARGT: "Argentina",
   ECH: "Chile",
   EPU: "Peru",
   EPOL: "Poland",

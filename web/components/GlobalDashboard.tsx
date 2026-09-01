@@ -136,6 +136,7 @@ export default function GlobalDashboard({ data }: { data: GlobalDataset }) {
 
       <footer className="site-footer">
         <p>{t.disclaimer}</p>
+        <p className="footer-note">{t.classificationNote}</p>
         <p className="footer-meta">
           {t.updatedAt}: {fmtDateTime(lang, data.generated_at)}／{t.source}:{" "}
           {data.data_source}
