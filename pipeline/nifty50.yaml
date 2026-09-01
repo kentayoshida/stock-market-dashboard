@@ -1,0 +1,77 @@
+# NIFTY 50（インド NSE の主要50銘柄・時価総額加重指数）ダッシュボード（/nifty50）。
+# 構成銘柄は NSE 上場の個別株50銘柄。価格は Yahoo Finance（yfinance・".NS" サフィックス）で取得。
+# build_nifty50.py が処理して nifty50.json を出力する。
+#
+# 構成銘柄・英語社名・ティッカー形式・データ源は 3D ヒートマップ・プロジェクト
+#   https://github.com/kentayoshida/3d_heatmap_ni225  （public/data/nifty50.js）
+# に準拠（NIFTY 50 = NSE Nifty 50・50銘柄・時価総額加重・Yahoo Finance・指数 ^NSEI）。
+#
+# 銘柄名は英語社名（参照元に日本語名が無いため ja/en 共通で英語表記）。銘柄名リンクは
+# Yahoo Finance（https://finance.yahoo.com/quote/<ticker>）。株時計・モメンタムは価格系列から算出。
+#
+# ★ 構成銘柄の更新は手動運用（NIFTY 50 は定期的に入れ替えあり。ダウ30・TOPIX Core30 と同様）。
+#    構成銘柄が入れ替わったら下の items（label と ticker）を編集して差し替える。並びはティッカー昇順。
+
+source: yfinance
+# 末尾 2 キーは期間リターンではなく 52 週レンジ指標（トグル右端に表示）。
+periods: [1D, 1W, 1M, 3M, 6M, YTD, 1Y, DD_52WH, UP_52WL]
+total_return_periods: [1Y]   # yfinance Adj Close ベース（配当込み近似）。表示は price 主軸。
+
+sort:
+  default: ticker_order      # ticker_order（ティッカー順） | return_desc（選択期間リターン降順）
+
+block:
+  id: nifty50
+  title: NIFTY 50
+  columns: 2                 # UI の表示カラム数（局面バッジで行が伸びるため 2）
+  items:
+    - { label: "Adani Enterprises",              ticker: "ADANIENT.NS" }
+    - { label: "Adani Ports",                    ticker: "ADANIPORTS.NS" }
+    - { label: "Apollo Hospitals",               ticker: "APOLLOHOSP.NS" }
+    - { label: "Asian Paints",                   ticker: "ASIANPAINT.NS" }
+    - { label: "Axis Bank",                      ticker: "AXISBANK.NS" }
+    - { label: "Bajaj Auto",                     ticker: "BAJAJ-AUTO.NS" }
+    - { label: "Bajaj Finserv",                  ticker: "BAJAJFINSV.NS" }
+    - { label: "Bajaj Finance",                  ticker: "BAJFINANCE.NS" }
+    - { label: "Bharat Electronics",             ticker: "BEL.NS" }
+    - { label: "Bharti Airtel",                  ticker: "BHARTIARTL.NS" }
+    - { label: "Cipla",                          ticker: "CIPLA.NS" }
+    - { label: "Coal India",                     ticker: "COALINDIA.NS" }
+    - { label: "Dr. Reddy's Laboratories",       ticker: "DRREDDY.NS" }
+    - { label: "Eicher Motors",                  ticker: "EICHERMOT.NS" }
+    - { label: "Eternal",                        ticker: "ETERNAL.NS" }
+    - { label: "Grasim Industries",              ticker: "GRASIM.NS" }
+    - { label: "HCL Technologies",               ticker: "HCLTECH.NS" }
+    - { label: "HDFC Bank",                      ticker: "HDFCBANK.NS" }
+    - { label: "HDFC Life Insurance",            ticker: "HDFCLIFE.NS" }
+    - { label: "Hindalco Industries",            ticker: "HINDALCO.NS" }
+    - { label: "Hindustan Unilever",             ticker: "HINDUNILVR.NS" }
+    - { label: "ICICI Bank",                     ticker: "ICICIBANK.NS" }
+    - { label: "InterGlobe Aviation",            ticker: "INDIGO.NS" }
+    - { label: "Infosys",                        ticker: "INFY.NS" }
+    - { label: "ITC",                            ticker: "ITC.NS" }
+    - { label: "Jio Financial Services",         ticker: "JIOFIN.NS" }
+    - { label: "JSW Steel",                      ticker: "JSWSTEEL.NS" }
+    - { label: "Kotak Mahindra Bank",            ticker: "KOTAKBANK.NS" }
+    - { label: "Larsen & Toubro",                ticker: "LT.NS" }
+    - { label: "Mahindra & Mahindra",            ticker: "M&M.NS" }
+    - { label: "Maruti Suzuki",                  ticker: "MARUTI.NS" }
+    - { label: "Max Healthcare",                 ticker: "MAXHEALTH.NS" }
+    - { label: "Nestle India",                   ticker: "NESTLEIND.NS" }
+    - { label: "NTPC",                           ticker: "NTPC.NS" }
+    - { label: "ONGC",                           ticker: "ONGC.NS" }
+    - { label: "Power Grid",                     ticker: "POWERGRID.NS" }
+    - { label: "Reliance Industries",            ticker: "RELIANCE.NS" }
+    - { label: "SBI Life Insurance",             ticker: "SBILIFE.NS" }
+    - { label: "State Bank of India",            ticker: "SBIN.NS" }
+    - { label: "Shriram Finance",                ticker: "SHRIRAMFIN.NS" }
+    - { label: "Sun Pharmaceutical",             ticker: "SUNPHARMA.NS" }
+    - { label: "Tata Consumer Products",         ticker: "TATACONSUM.NS" }
+    - { label: "Tata Steel",                     ticker: "TATASTEEL.NS" }
+    - { label: "Tata Consultancy Services",      ticker: "TCS.NS" }
+    - { label: "Tech Mahindra",                  ticker: "TECHM.NS" }
+    - { label: "Titan Company",                  ticker: "TITAN.NS" }
+    - { label: "Tata Motors Passenger Vehicles", ticker: "TMPV.NS" }
+    - { label: "Trent",                          ticker: "TRENT.NS" }
+    - { label: "UltraTech Cement",               ticker: "ULTRACEMCO.NS" }
+    - { label: "Wipro",                          ticker: "WIPRO.NS" }

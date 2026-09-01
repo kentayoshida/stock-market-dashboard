@@ -1,0 +1,2689 @@
+{
+  "as_of": "2026-09-01",
+  "generated_at": "2026-09-01T06:20:24+00:00",
+  "data_source": "fixture",
+  "currency": "INR",
+  "market": "IN",
+  "periods": [
+    "1D",
+    "1W",
+    "1M",
+    "3M",
+    "6M",
+    "YTD",
+    "1Y",
+    "DD_52WH",
+    "UP_52WL"
+  ],
+  "total_return_periods": [
+    "1Y"
+  ],
+  "sort": {
+    "default": "ticker_order"
+  },
+  "coverage": {
+    "ok": 50,
+    "no_data": 0,
+    "total": 50
+  },
+  "disclaimer": "情報提供目的であり投資助言ではありません。",
+  "attribution": "「NIFTY 50」等の指数・商標は NSE Indices Ltd. の知的財産です。本ページは指数そのものではなく、構成50銘柄それぞれの個別株価に基づくパフォーマンスを表示しています。",
+  "source_note": "構成銘柄は手動更新（NIFTY 50 は定期的に入れ替えあり）。株価は Yahoo Finance（NSE 上場・INR）。配当込みリターン（1Y）は調整後終値（Adj Close）由来の近似です。構成銘柄情報は 3D ヒートマップ・プロジェクト（3d_heatmap_ni225）に準拠。",
+  "block": {
+    "id": "nifty50",
+    "title": "NIFTY 50",
+    "columns": 2,
+    "items": [
+      {
+        "label": "Adani Enterprises",
+        "ticker": "ADANIENT.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.16,
+            "total": null
+          },
+          "1W": {
+            "price": 0.82,
+            "total": null
+          },
+          "1M": {
+            "price": 3.54,
+            "total": null
+          },
+          "3M": {
+            "price": 10.26,
+            "total": null
+          },
+          "6M": {
+            "price": 20.19,
+            "total": null
+          },
+          "YTD": {
+            "price": 25.66,
+            "total": null
+          },
+          "1Y": {
+            "price": 35.51,
+            "total": 37.24
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 35.51,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 601.83,
+          "sma75": 580.87,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Adani Ports",
+        "ticker": "ADANIPORTS.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.0,
+            "total": null
+          },
+          "1W": {
+            "price": -0.02,
+            "total": null
+          },
+          "1M": {
+            "price": 0.16,
+            "total": null
+          },
+          "3M": {
+            "price": 1.71,
+            "total": null
+          },
+          "6M": {
+            "price": 13.2,
+            "total": null
+          },
+          "YTD": {
+            "price": 29.85,
+            "total": null
+          },
+          "1Y": {
+            "price": 105.21,
+            "total": 107.82
+          },
+          "DD_52WH": {
+            "price": -0.02,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 105.21,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 593.57,
+          "sma75": 590.06,
+          "rsi": 88.1,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Apollo Hospitals",
+        "ticker": "APOLLOHOSP.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.01,
+            "total": null
+          },
+          "1W": {
+            "price": -0.05,
+            "total": null
+          },
+          "1M": {
+            "price": 0.1,
+            "total": null
+          },
+          "3M": {
+            "price": 2.8,
+            "total": null
+          },
+          "6M": {
+            "price": 22.64,
+            "total": null
+          },
+          "YTD": {
+            "price": 54.4,
+            "total": null
+          },
+          "1Y": {
+            "price": 230.62,
+            "total": 234.83
+          },
+          "DD_52WH": {
+            "price": -0.05,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 230.62,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 1230.89,
+          "sma75": 1218.35,
+          "rsi": 79.1,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Asian Paints",
+        "ticker": "ASIANPAINT.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.16,
+            "total": null
+          },
+          "1W": {
+            "price": 0.79,
+            "total": null
+          },
+          "1M": {
+            "price": 3.22,
+            "total": null
+          },
+          "3M": {
+            "price": 10.44,
+            "total": null
+          },
+          "6M": {
+            "price": 28.53,
+            "total": null
+          },
+          "YTD": {
+            "price": 47.34,
+            "total": null
+          },
+          "1Y": {
+            "price": 116.56,
+            "total": 119.32
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 116.56,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 554.37,
+          "sma75": 535.31,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Axis Bank",
+        "ticker": "AXISBANK.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -1.81,
+            "total": null
+          },
+          "1W": {
+            "price": -7.46,
+            "total": null
+          },
+          "1M": {
+            "price": -12.23,
+            "total": null
+          },
+          "3M": {
+            "price": -38.74,
+            "total": null
+          },
+          "6M": {
+            "price": -57.24,
+            "total": null
+          },
+          "YTD": {
+            "price": -64.86,
+            "total": null
+          },
+          "1Y": {
+            "price": -70.46,
+            "total": -70.08
+          },
+          "DD_52WH": {
+            "price": -70.66,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 0.0,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 16.17,
+          "sma75": 18.9,
+          "rsi": 3.6,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "Bajaj Auto",
+        "ticker": "BAJAJ-AUTO.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.11,
+            "total": null
+          },
+          "1W": {
+            "price": -0.07,
+            "total": null
+          },
+          "1M": {
+            "price": 2.99,
+            "total": null
+          },
+          "3M": {
+            "price": -4.0,
+            "total": null
+          },
+          "6M": {
+            "price": -16.12,
+            "total": null
+          },
+          "YTD": {
+            "price": -31.62,
+            "total": null
+          },
+          "1Y": {
+            "price": -60.98,
+            "total": -60.48
+          },
+          "DD_52WH": {
+            "price": -60.98,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 4.15,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 43.08,
+          "sma75": 43.46,
+          "rsi": 71.1,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Bajaj Finserv",
+        "ticker": "BAJAJFINSV.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.67,
+            "total": null
+          },
+          "1W": {
+            "price": -3.23,
+            "total": null
+          },
+          "1M": {
+            "price": -15.51,
+            "total": null
+          },
+          "3M": {
+            "price": -38.0,
+            "total": null
+          },
+          "6M": {
+            "price": -58.63,
+            "total": null
+          },
+          "YTD": {
+            "price": -65.57,
+            "total": null
+          },
+          "1Y": {
+            "price": -72.69,
+            "total": -72.34
+          },
+          "DD_52WH": {
+            "price": -72.69,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 0.0,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 55.3,
+          "sma75": 67.63,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "Bajaj Finance",
+        "ticker": "BAJFINANCE.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.16,
+            "total": null
+          },
+          "1W": {
+            "price": 0.85,
+            "total": null
+          },
+          "1M": {
+            "price": 5.01,
+            "total": null
+          },
+          "3M": {
+            "price": 14.41,
+            "total": null
+          },
+          "6M": {
+            "price": 27.88,
+            "total": null
+          },
+          "YTD": {
+            "price": 33.65,
+            "total": null
+          },
+          "1Y": {
+            "price": 40.83,
+            "total": 42.62
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 40.83,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 231.31,
+          "sma75": 219.15,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Bharat Electronics",
+        "ticker": "BEL.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.61,
+            "total": null
+          },
+          "1W": {
+            "price": 3.17,
+            "total": null
+          },
+          "1M": {
+            "price": 14.55,
+            "total": null
+          },
+          "3M": {
+            "price": 50.48,
+            "total": null
+          },
+          "6M": {
+            "price": 106.54,
+            "total": null
+          },
+          "YTD": {
+            "price": 139.62,
+            "total": null
+          },
+          "1Y": {
+            "price": 168.59,
+            "total": 171.99
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 168.59,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 191.04,
+          "sma75": 164.72,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Bharti Airtel",
+        "ticker": "BHARTIARTL.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.0,
+            "total": null
+          },
+          "1W": {
+            "price": -0.02,
+            "total": null
+          },
+          "1M": {
+            "price": 0.16,
+            "total": null
+          },
+          "3M": {
+            "price": 1.71,
+            "total": null
+          },
+          "6M": {
+            "price": 13.2,
+            "total": null
+          },
+          "YTD": {
+            "price": 29.85,
+            "total": null
+          },
+          "1Y": {
+            "price": 105.21,
+            "total": 107.82
+          },
+          "DD_52WH": {
+            "price": -0.02,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 105.21,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 593.57,
+          "sma75": 590.06,
+          "rsi": 88.1,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Cipla",
+        "ticker": "CIPLA.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.08,
+            "total": null
+          },
+          "1W": {
+            "price": 0.39,
+            "total": null
+          },
+          "1M": {
+            "price": 2.27,
+            "total": null
+          },
+          "3M": {
+            "price": 6.34,
+            "total": null
+          },
+          "6M": {
+            "price": 14.05,
+            "total": null
+          },
+          "YTD": {
+            "price": 19.15,
+            "total": null
+          },
+          "1Y": {
+            "price": 33.18,
+            "total": 34.87
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 33.18,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 317.11,
+          "sma75": 309.28,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Coal India",
+        "ticker": "COALINDIA.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.14,
+            "total": null
+          },
+          "1W": {
+            "price": -0.57,
+            "total": null
+          },
+          "1M": {
+            "price": 0.02,
+            "total": null
+          },
+          "3M": {
+            "price": -1.7,
+            "total": null
+          },
+          "6M": {
+            "price": -4.91,
+            "total": null
+          },
+          "YTD": {
+            "price": -9.45,
+            "total": null
+          },
+          "1Y": {
+            "price": -20.66,
+            "total": -19.65
+          },
+          "DD_52WH": {
+            "price": -20.66,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 1.03,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": 1,
+          "sma25": 80.47,
+          "sma75": 80.41,
+          "rsi": 35.9,
+          "rsi_state": "neutral"
+        }
+      },
+      {
+        "label": "Dr. Reddy's Laboratories",
+        "ticker": "DRREDDY.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.02,
+            "total": null
+          },
+          "1W": {
+            "price": 0.14,
+            "total": null
+          },
+          "1M": {
+            "price": 0.77,
+            "total": null
+          },
+          "3M": {
+            "price": 3.54,
+            "total": null
+          },
+          "6M": {
+            "price": 16.27,
+            "total": null
+          },
+          "YTD": {
+            "price": 33.46,
+            "total": null
+          },
+          "1Y": {
+            "price": 107.66,
+            "total": 110.3
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 107.66,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 1085.06,
+          "sma75": 1071.3,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Eicher Motors",
+        "ticker": "EICHERMOT.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.63,
+            "total": null
+          },
+          "1W": {
+            "price": -3.37,
+            "total": null
+          },
+          "1M": {
+            "price": -15.94,
+            "total": null
+          },
+          "3M": {
+            "price": -38.88,
+            "total": null
+          },
+          "6M": {
+            "price": -59.45,
+            "total": null
+          },
+          "YTD": {
+            "price": -66.32,
+            "total": null
+          },
+          "1Y": {
+            "price": -73.02,
+            "total": -72.68
+          },
+          "DD_52WH": {
+            "price": -73.02,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 0.0,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 39.86,
+          "sma75": 49.19,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "Eternal",
+        "ticker": "ETERNAL.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.01,
+            "total": null
+          },
+          "1W": {
+            "price": -0.02,
+            "total": null
+          },
+          "1M": {
+            "price": 0.26,
+            "total": null
+          },
+          "3M": {
+            "price": 1.16,
+            "total": null
+          },
+          "6M": {
+            "price": 8.69,
+            "total": null
+          },
+          "YTD": {
+            "price": 18.97,
+            "total": null
+          },
+          "1Y": {
+            "price": 61.93,
+            "total": 63.98
+          },
+          "DD_52WH": {
+            "price": -0.02,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 61.93,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 776.67,
+          "sma75": 773.28,
+          "rsi": 88.1,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Grasim Industries",
+        "ticker": "GRASIM.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.59,
+            "total": null
+          },
+          "1W": {
+            "price": -2.82,
+            "total": null
+          },
+          "1M": {
+            "price": -12.3,
+            "total": null
+          },
+          "3M": {
+            "price": -33.31,
+            "total": null
+          },
+          "6M": {
+            "price": -51.83,
+            "total": null
+          },
+          "YTD": {
+            "price": -58.23,
+            "total": null
+          },
+          "1Y": {
+            "price": -63.13,
+            "total": -62.66
+          },
+          "DD_52WH": {
+            "price": -63.13,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 0.0,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 126.74,
+          "sma75": 149.92,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "HCL Technologies",
+        "ticker": "HCLTECH.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.01,
+            "total": null
+          },
+          "1W": {
+            "price": -0.02,
+            "total": null
+          },
+          "1M": {
+            "price": -0.16,
+            "total": null
+          },
+          "3M": {
+            "price": -1.42,
+            "total": null
+          },
+          "6M": {
+            "price": -5.37,
+            "total": null
+          },
+          "YTD": {
+            "price": -9.77,
+            "total": null
+          },
+          "1Y": {
+            "price": -21.86,
+            "total": -20.87
+          },
+          "DD_52WH": {
+            "price": -21.86,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 0.03,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 271.33,
+          "sma75": 273.14,
+          "rsi": 17.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "HDFC Bank",
+        "ticker": "HDFCBANK.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.03,
+            "total": null
+          },
+          "1W": {
+            "price": -0.11,
+            "total": null
+          },
+          "1M": {
+            "price": -0.77,
+            "total": null
+          },
+          "3M": {
+            "price": -3.02,
+            "total": null
+          },
+          "6M": {
+            "price": -7.77,
+            "total": null
+          },
+          "YTD": {
+            "price": -12.04,
+            "total": null
+          },
+          "1Y": {
+            "price": -22.79,
+            "total": -21.8
+          },
+          "DD_52WH": {
+            "price": -22.79,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 0.0,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 311.67,
+          "sma75": 315.72,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "HDFC Life Insurance",
+        "ticker": "HDFCLIFE.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.86,
+            "total": null
+          },
+          "1W": {
+            "price": 4.38,
+            "total": null
+          },
+          "1M": {
+            "price": 20.72,
+            "total": null
+          },
+          "3M": {
+            "price": 72.57,
+            "total": null
+          },
+          "6M": {
+            "price": 166.07,
+            "total": null
+          },
+          "YTD": {
+            "price": 219.69,
+            "total": null
+          },
+          "1Y": {
+            "price": 277.16,
+            "total": 281.96
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 277.16,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 1523.67,
+          "sma75": 1255.89,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Hindalco Industries",
+        "ticker": "HINDALCO.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -1.81,
+            "total": null
+          },
+          "1W": {
+            "price": -7.46,
+            "total": null
+          },
+          "1M": {
+            "price": -12.23,
+            "total": null
+          },
+          "3M": {
+            "price": -38.74,
+            "total": null
+          },
+          "6M": {
+            "price": -57.24,
+            "total": null
+          },
+          "YTD": {
+            "price": -64.86,
+            "total": null
+          },
+          "1Y": {
+            "price": -70.46,
+            "total": -70.08
+          },
+          "DD_52WH": {
+            "price": -70.66,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 0.0,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 16.17,
+          "sma75": 18.9,
+          "rsi": 3.6,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "Hindustan Unilever",
+        "ticker": "HINDUNILVR.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.22,
+            "total": null
+          },
+          "1W": {
+            "price": 0.94,
+            "total": null
+          },
+          "1M": {
+            "price": 3.65,
+            "total": null
+          },
+          "3M": {
+            "price": -11.79,
+            "total": null
+          },
+          "6M": {
+            "price": -26.67,
+            "total": null
+          },
+          "YTD": {
+            "price": -41.73,
+            "total": null
+          },
+          "1Y": {
+            "price": -63.48,
+            "total": -63.01
+          },
+          "DD_52WH": {
+            "price": -63.48,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 4.19,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 13.62,
+          "sma75": 14.6,
+          "rsi": 60.7,
+          "rsi_state": "neutral"
+        }
+      },
+      {
+        "label": "ICICI Bank",
+        "ticker": "ICICIBANK.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.28,
+            "total": null
+          },
+          "1W": {
+            "price": 1.34,
+            "total": null
+          },
+          "1M": {
+            "price": 6.57,
+            "total": null
+          },
+          "3M": {
+            "price": 20.81,
+            "total": null
+          },
+          "6M": {
+            "price": 43.6,
+            "total": null
+          },
+          "YTD": {
+            "price": 57.51,
+            "total": null
+          },
+          "1Y": {
+            "price": 84.18,
+            "total": 86.52
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 84.18,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 218.0,
+          "sma75": 202.83,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "InterGlobe Aviation",
+        "ticker": "INDIGO.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.92,
+            "total": null
+          },
+          "1W": {
+            "price": -4.12,
+            "total": null
+          },
+          "1M": {
+            "price": -18.05,
+            "total": null
+          },
+          "3M": {
+            "price": -45.66,
+            "total": null
+          },
+          "6M": {
+            "price": -67.34,
+            "total": null
+          },
+          "YTD": {
+            "price": -74.15,
+            "total": null
+          },
+          "1Y": {
+            "price": -80.18,
+            "total": -79.93
+          },
+          "DD_52WH": {
+            "price": -80.18,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 0.0,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 66.36,
+          "sma75": 85.89,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "Infosys",
+        "ticker": "INFY.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.63,
+            "total": null
+          },
+          "1W": {
+            "price": -2.99,
+            "total": null
+          },
+          "1M": {
+            "price": -13.37,
+            "total": null
+          },
+          "3M": {
+            "price": -32.28,
+            "total": null
+          },
+          "6M": {
+            "price": -52.29,
+            "total": null
+          },
+          "YTD": {
+            "price": -60.14,
+            "total": null
+          },
+          "1Y": {
+            "price": -70.7,
+            "total": -70.34
+          },
+          "DD_52WH": {
+            "price": -70.7,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 0.0,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 52.67,
+          "sma75": 61.4,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "ITC",
+        "ticker": "ITC.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.12,
+            "total": null
+          },
+          "1W": {
+            "price": -0.42,
+            "total": null
+          },
+          "1M": {
+            "price": -1.29,
+            "total": null
+          },
+          "3M": {
+            "price": -6.56,
+            "total": null
+          },
+          "6M": {
+            "price": -12.77,
+            "total": null
+          },
+          "YTD": {
+            "price": -17.27,
+            "total": null
+          },
+          "1Y": {
+            "price": -24.35,
+            "total": -23.39
+          },
+          "DD_52WH": {
+            "price": -24.35,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 0.0,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 76.17,
+          "sma75": 78.34,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "Jio Financial Services",
+        "ticker": "JIOFIN.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.01,
+            "total": null
+          },
+          "1W": {
+            "price": 0.05,
+            "total": null
+          },
+          "1M": {
+            "price": 0.32,
+            "total": null
+          },
+          "3M": {
+            "price": 1.82,
+            "total": null
+          },
+          "6M": {
+            "price": 13.35,
+            "total": null
+          },
+          "YTD": {
+            "price": 29.89,
+            "total": null
+          },
+          "1Y": {
+            "price": 105.25,
+            "total": 107.87
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 105.25,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 909.74,
+          "sma75": 904.6,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "JSW Steel",
+        "ticker": "JSWSTEEL.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.9,
+            "total": null
+          },
+          "1W": {
+            "price": -2.98,
+            "total": null
+          },
+          "1M": {
+            "price": -5.91,
+            "total": null
+          },
+          "3M": {
+            "price": -29.3,
+            "total": null
+          },
+          "6M": {
+            "price": -49.77,
+            "total": null
+          },
+          "YTD": {
+            "price": -60.79,
+            "total": null
+          },
+          "1Y": {
+            "price": -74.95,
+            "total": -74.62
+          },
+          "DD_52WH": {
+            "price": -74.95,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 0.0,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 21.86,
+          "sma75": 24.83,
+          "rsi": 2.7,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "Kotak Mahindra Bank",
+        "ticker": "KOTAKBANK.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.06,
+            "total": null
+          },
+          "1W": {
+            "price": 0.25,
+            "total": null
+          },
+          "1M": {
+            "price": 0.32,
+            "total": null
+          },
+          "3M": {
+            "price": 0.36,
+            "total": null
+          },
+          "6M": {
+            "price": 0.45,
+            "total": null
+          },
+          "YTD": {
+            "price": 0.21,
+            "total": null
+          },
+          "1Y": {
+            "price": -0.2,
+            "total": 1.07
+          },
+          "DD_52WH": {
+            "price": -0.43,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 0.49,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": 15,
+          "sma25": 145.95,
+          "sma75": 146.27,
+          "rsi": 74.2,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Larsen & Toubro",
+        "ticker": "LT.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.22,
+            "total": null
+          },
+          "1W": {
+            "price": 1.12,
+            "total": null
+          },
+          "1M": {
+            "price": 5.09,
+            "total": null
+          },
+          "3M": {
+            "price": 17.62,
+            "total": null
+          },
+          "6M": {
+            "price": 51.15,
+            "total": null
+          },
+          "YTD": {
+            "price": 90.22,
+            "total": null
+          },
+          "1Y": {
+            "price": 262.96,
+            "total": 267.58
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 262.96,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 2341.76,
+          "sma75": 2206.53,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Mahindra & Mahindra",
+        "ticker": "M&M.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.69,
+            "total": null
+          },
+          "1W": {
+            "price": 3.49,
+            "total": null
+          },
+          "1M": {
+            "price": 16.08,
+            "total": null
+          },
+          "3M": {
+            "price": 57.48,
+            "total": null
+          },
+          "6M": {
+            "price": 137.02,
+            "total": null
+          },
+          "YTD": {
+            "price": 201.34,
+            "total": null
+          },
+          "1Y": {
+            "price": 342.86,
+            "total": 348.52
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 342.86,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 381.08,
+          "sma75": 323.77,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Maruti Suzuki",
+        "ticker": "MARUTI.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.28,
+            "total": null
+          },
+          "1W": {
+            "price": 1.4,
+            "total": null
+          },
+          "1M": {
+            "price": 6.45,
+            "total": null
+          },
+          "3M": {
+            "price": 22.29,
+            "total": null
+          },
+          "6M": {
+            "price": 60.56,
+            "total": null
+          },
+          "YTD": {
+            "price": 102.36,
+            "total": null
+          },
+          "1Y": {
+            "price": 273.39,
+            "total": 278.14
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 273.39,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 1836.84,
+          "sma75": 1705.4,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Max Healthcare",
+        "ticker": "MAXHEALTH.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.22,
+            "total": null
+          },
+          "1W": {
+            "price": -1.07,
+            "total": null
+          },
+          "1M": {
+            "price": -3.82,
+            "total": null
+          },
+          "3M": {
+            "price": -12.64,
+            "total": null
+          },
+          "6M": {
+            "price": -21.31,
+            "total": null
+          },
+          "YTD": {
+            "price": -25.3,
+            "total": null
+          },
+          "1Y": {
+            "price": -27.92,
+            "total": -27.0
+          },
+          "DD_52WH": {
+            "price": -27.92,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 0.0,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 114.71,
+          "sma75": 121.08,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "Nestle India",
+        "ticker": "NESTLEIND.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.22,
+            "total": null
+          },
+          "1W": {
+            "price": -0.93,
+            "total": null
+          },
+          "1M": {
+            "price": -2.74,
+            "total": null
+          },
+          "3M": {
+            "price": -9.27,
+            "total": null
+          },
+          "6M": {
+            "price": -16.44,
+            "total": null
+          },
+          "YTD": {
+            "price": -20.45,
+            "total": null
+          },
+          "1Y": {
+            "price": -25.53,
+            "total": -24.58
+          },
+          "DD_52WH": {
+            "price": -25.53,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 0.0,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 121.95,
+          "sma75": 126.17,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "NTPC",
+        "ticker": "NTPC.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.01,
+            "total": null
+          },
+          "1W": {
+            "price": 0.04,
+            "total": null
+          },
+          "1M": {
+            "price": 0.05,
+            "total": null
+          },
+          "3M": {
+            "price": 2.91,
+            "total": null
+          },
+          "6M": {
+            "price": 22.67,
+            "total": null
+          },
+          "YTD": {
+            "price": 54.65,
+            "total": null
+          },
+          "1Y": {
+            "price": 228.41,
+            "total": 232.58
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 228.41,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 1071.96,
+          "sma75": 1061.99,
+          "rsi": 97.8,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "ONGC",
+        "ticker": "ONGC.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.0,
+            "total": null
+          },
+          "1W": {
+            "price": -0.02,
+            "total": null
+          },
+          "1M": {
+            "price": -0.13,
+            "total": null
+          },
+          "3M": {
+            "price": 1.61,
+            "total": null
+          },
+          "6M": {
+            "price": 12.84,
+            "total": null
+          },
+          "YTD": {
+            "price": 29.82,
+            "total": null
+          },
+          "1Y": {
+            "price": 104.57,
+            "total": 107.17
+          },
+          "DD_52WH": {
+            "price": -0.14,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 104.57,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 511.33,
+          "sma75": 508.17,
+          "rsi": 51.6,
+          "rsi_state": "neutral"
+        }
+      },
+      {
+        "label": "Power Grid",
+        "ticker": "POWERGRID.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.85,
+            "total": null
+          },
+          "1W": {
+            "price": 4.31,
+            "total": null
+          },
+          "1M": {
+            "price": 20.33,
+            "total": null
+          },
+          "3M": {
+            "price": 72.32,
+            "total": null
+          },
+          "6M": {
+            "price": 164.6,
+            "total": null
+          },
+          "YTD": {
+            "price": 220.06,
+            "total": null
+          },
+          "1Y": {
+            "price": 275.86,
+            "total": 280.64
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 275.86,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 629.81,
+          "sma75": 518.87,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Reliance Industries",
+        "ticker": "RELIANCE.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.01,
+            "total": null
+          },
+          "1W": {
+            "price": -0.16,
+            "total": null
+          },
+          "1M": {
+            "price": -0.78,
+            "total": null
+          },
+          "3M": {
+            "price": 1.32,
+            "total": null
+          },
+          "6M": {
+            "price": 12.26,
+            "total": null
+          },
+          "YTD": {
+            "price": 29.85,
+            "total": null
+          },
+          "1Y": {
+            "price": 103.31,
+            "total": 105.89
+          },
+          "DD_52WH": {
+            "price": -0.79,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 103.31,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 196.36,
+          "sma75": 195.13,
+          "rsi": 23.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "SBI Life Insurance",
+        "ticker": "SBILIFE.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.1,
+            "total": null
+          },
+          "1W": {
+            "price": 0.48,
+            "total": null
+          },
+          "1M": {
+            "price": 2.34,
+            "total": null
+          },
+          "3M": {
+            "price": 7.34,
+            "total": null
+          },
+          "6M": {
+            "price": 15.39,
+            "total": null
+          },
+          "YTD": {
+            "price": 20.94,
+            "total": null
+          },
+          "1Y": {
+            "price": 33.48,
+            "total": 35.18
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 33.48,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 558.98,
+          "sma75": 543.38,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "State Bank of India",
+        "ticker": "SBIN.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.13,
+            "total": null
+          },
+          "1W": {
+            "price": 0.61,
+            "total": null
+          },
+          "1M": {
+            "price": 2.8,
+            "total": null
+          },
+          "3M": {
+            "price": 9.44,
+            "total": null
+          },
+          "6M": {
+            "price": 18.78,
+            "total": null
+          },
+          "YTD": {
+            "price": 24.73,
+            "total": null
+          },
+          "1Y": {
+            "price": 34.55,
+            "total": 36.27
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 34.55,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 267.99,
+          "sma75": 259.04,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Shriram Finance",
+        "ticker": "SHRIRAMFIN.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.07,
+            "total": null
+          },
+          "1W": {
+            "price": 1.0,
+            "total": null
+          },
+          "1M": {
+            "price": 5.98,
+            "total": null
+          },
+          "3M": {
+            "price": 1.07,
+            "total": null
+          },
+          "6M": {
+            "price": -0.32,
+            "total": null
+          },
+          "YTD": {
+            "price": -8.56,
+            "total": null
+          },
+          "1Y": {
+            "price": -17.79,
+            "total": -16.76
+          },
+          "DD_52WH": {
+            "price": -17.79,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 6.15,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": 33,
+          "sma25": 39.45,
+          "sma75": 39.6,
+          "rsi": 88.8,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Sun Pharmaceutical",
+        "ticker": "SUNPHARMA.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.93,
+            "total": null
+          },
+          "1W": {
+            "price": 4.72,
+            "total": null
+          },
+          "1M": {
+            "price": 22.39,
+            "total": null
+          },
+          "3M": {
+            "price": 81.46,
+            "total": null
+          },
+          "6M": {
+            "price": 196.17,
+            "total": null
+          },
+          "YTD": {
+            "price": 275.13,
+            "total": null
+          },
+          "1Y": {
+            "price": 392.63,
+            "total": 398.92
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 392.63,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 877.94,
+          "sma75": 711.43,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Tata Consumer Products",
+        "ticker": "TATACONSUM.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.03,
+            "total": null
+          },
+          "1W": {
+            "price": 0.22,
+            "total": null
+          },
+          "1M": {
+            "price": 1.78,
+            "total": null
+          },
+          "3M": {
+            "price": 6.17,
+            "total": null
+          },
+          "6M": {
+            "price": 17.24,
+            "total": null
+          },
+          "YTD": {
+            "price": 28.75,
+            "total": null
+          },
+          "1Y": {
+            "price": 69.23,
+            "total": 71.39
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 69.23,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 132.34,
+          "sma75": 128.7,
+          "rsi": 99.9,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Tata Steel",
+        "ticker": "TATASTEEL.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.1,
+            "total": null
+          },
+          "1W": {
+            "price": -0.47,
+            "total": null
+          },
+          "1M": {
+            "price": -1.92,
+            "total": null
+          },
+          "3M": {
+            "price": -3.81,
+            "total": null
+          },
+          "6M": {
+            "price": -8.9,
+            "total": null
+          },
+          "YTD": {
+            "price": -12.4,
+            "total": null
+          },
+          "1Y": {
+            "price": -22.97,
+            "total": -21.99
+          },
+          "DD_52WH": {
+            "price": -22.97,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 0.0,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 127.51,
+          "sma75": 128.66,
+          "rsi": 4.1,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "Tata Consultancy Services",
+        "ticker": "TCS.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.22,
+            "total": null
+          },
+          "1W": {
+            "price": -1.2,
+            "total": null
+          },
+          "1M": {
+            "price": -8.55,
+            "total": null
+          },
+          "3M": {
+            "price": -5.49,
+            "total": null
+          },
+          "6M": {
+            "price": -24.37,
+            "total": null
+          },
+          "YTD": {
+            "price": -36.83,
+            "total": null
+          },
+          "1Y": {
+            "price": -71.69,
+            "total": -71.33
+          },
+          "DD_52WH": {
+            "price": -71.69,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 0.0,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": 4,
+          "sma25": 24.17,
+          "sma75": 24.39,
+          "rsi": 9.7,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "Tech Mahindra",
+        "ticker": "TECHM.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.19,
+            "total": null
+          },
+          "1W": {
+            "price": -1.02,
+            "total": null
+          },
+          "1M": {
+            "price": -4.39,
+            "total": null
+          },
+          "3M": {
+            "price": -12.83,
+            "total": null
+          },
+          "6M": {
+            "price": -21.66,
+            "total": null
+          },
+          "YTD": {
+            "price": -25.38,
+            "total": null
+          },
+          "1Y": {
+            "price": -28.26,
+            "total": -27.35
+          },
+          "DD_52WH": {
+            "price": -28.26,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 0.0,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 198.11,
+          "sma75": 209.13,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "Titan Company",
+        "ticker": "TITAN.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.56,
+            "total": null
+          },
+          "1W": {
+            "price": 2.83,
+            "total": null
+          },
+          "1M": {
+            "price": 13.13,
+            "total": null
+          },
+          "3M": {
+            "price": 43.87,
+            "total": null
+          },
+          "6M": {
+            "price": 100.51,
+            "total": null
+          },
+          "YTD": {
+            "price": 140.94,
+            "total": null
+          },
+          "1Y": {
+            "price": 232.42,
+            "total": 236.65
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 232.42,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 1029.85,
+          "sma75": 902.34,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Tata Motors Passenger Vehicles",
+        "ticker": "TMPV.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.58,
+            "total": null
+          },
+          "1W": {
+            "price": 2.94,
+            "total": null
+          },
+          "1M": {
+            "price": 13.56,
+            "total": null
+          },
+          "3M": {
+            "price": 44.57,
+            "total": null
+          },
+          "6M": {
+            "price": 95.61,
+            "total": null
+          },
+          "YTD": {
+            "price": 124.45,
+            "total": null
+          },
+          "1Y": {
+            "price": 163.67,
+            "total": 167.03
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 163.67,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 589.49,
+          "sma75": 515.51,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Trent",
+        "ticker": "TRENT.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": -0.18,
+            "total": null
+          },
+          "1W": {
+            "price": -1.02,
+            "total": null
+          },
+          "1M": {
+            "price": -4.76,
+            "total": null
+          },
+          "3M": {
+            "price": -11.86,
+            "total": null
+          },
+          "6M": {
+            "price": -25.48,
+            "total": null
+          },
+          "YTD": {
+            "price": -34.77,
+            "total": null
+          },
+          "1Y": {
+            "price": -55.08,
+            "total": -54.51
+          },
+          "DD_52WH": {
+            "price": -55.08,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 0.0,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": null,
+          "sma25": 111.06,
+          "sma75": 116.25,
+          "rsi": 0.0,
+          "rsi_state": "oversold"
+        }
+      },
+      {
+        "label": "UltraTech Cement",
+        "ticker": "ULTRACEMCO.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.83,
+            "total": null
+          },
+          "1W": {
+            "price": 4.3,
+            "total": null
+          },
+          "1M": {
+            "price": 21.76,
+            "total": null
+          },
+          "3M": {
+            "price": 72.9,
+            "total": null
+          },
+          "6M": {
+            "price": 169.35,
+            "total": null
+          },
+          "YTD": {
+            "price": 218.41,
+            "total": null
+          },
+          "1Y": {
+            "price": 287.59,
+            "total": 292.53
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 287.72,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 206.64,
+          "sma75": 169.81,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      },
+      {
+        "label": "Wipro",
+        "ticker": "WIPRO.NS",
+        "review": false,
+        "status": "ok",
+        "as_of": "2026-09-01",
+        "returns": {
+          "1D": {
+            "price": 0.44,
+            "total": null
+          },
+          "1W": {
+            "price": 2.25,
+            "total": null
+          },
+          "1M": {
+            "price": 10.1,
+            "total": null
+          },
+          "3M": {
+            "price": 33.37,
+            "total": null
+          },
+          "6M": {
+            "price": 72.07,
+            "total": null
+          },
+          "YTD": {
+            "price": 98.08,
+            "total": null
+          },
+          "1Y": {
+            "price": 147.58,
+            "total": 150.72
+          },
+          "DD_52WH": {
+            "price": 0.0,
+            "total": null
+          },
+          "UP_52WL": {
+            "price": 147.58,
+            "total": null
+          }
+        },
+        "momentum": {
+          "cross": "golden",
+          "days_since_cross": null,
+          "sma25": 797.46,
+          "sma75": 717.87,
+          "rsi": 100.0,
+          "rsi_state": "overbought"
+        }
+      }
+    ]
+  }
+}

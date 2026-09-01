@@ -149,6 +149,31 @@ export type TopixCore30Dataset = {
   block: TopixCore30Block;
 };
 
+// ---- NIFTY 50（/nifty50・NSE 上場の構成50銘柄・個別株ベース）----
+// 銘柄は ticker（".NS" 付き NSE シンボル）で識別するため、基底 Item をそのまま使う。
+export type Nifty50Block = {
+  id: string;
+  title: string;
+  columns: number;
+  items: Item[];
+};
+
+export type Nifty50Dataset = {
+  as_of: string | null;
+  generated_at: string;
+  data_source: string;
+  currency: string;
+  market: string;
+  periods: string[];
+  total_return_periods: string[];
+  sort: { default: string };
+  coverage: { ok: number; no_data: number; total: number };
+  disclaimer: string;
+  attribution: string;
+  source_note: string;
+  block: Nifty50Block;
+};
+
 // ---- 世界 Global（/global・地域別ネスト構造）----
 export type GlobalGroup = {
   region: string;
