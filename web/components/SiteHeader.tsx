@@ -36,6 +36,24 @@ export default function SiteHeader({
             {t.navDow}
           </Link>
           <Link
+            href="/topix-core30"
+            className={"nav-link" + (active === "core30" ? " is-active" : "")}
+          >
+            {t.navTopixCore30}
+          </Link>
+          <Link
+            href="/topix17"
+            className={"nav-link" + (active === "topix17" ? " is-active" : "")}
+          >
+            {t.navTopix17}
+          </Link>
+          <Link
+            href="/jp-sectors"
+            className={"nav-link" + (active === "jp" ? " is-active" : "")}
+          >
+            {t.navJp}
+          </Link>
+          <Link
             href="/nifty50"
             className={"nav-link" + (active === "nifty50" ? " is-active" : "")}
           >
@@ -46,24 +64,6 @@ export default function SiteHeader({
             className={"nav-link" + (active === "global" ? " is-active" : "")}
           >
             {t.navGlobal}
-          </Link>
-          <Link
-            href="/topix17"
-            className={"nav-link" + (active === "topix17" ? " is-active" : "")}
-          >
-            {t.navTopix17}
-          </Link>
-          <Link
-            href="/topix-core30"
-            className={"nav-link" + (active === "core30" ? " is-active" : "")}
-          >
-            {t.navTopixCore30}
-          </Link>
-          <Link
-            href="/jp-sectors"
-            className={"nav-link" + (active === "jp" ? " is-active" : "")}
-          >
-            {t.navJp}
           </Link>
         </nav>
 
