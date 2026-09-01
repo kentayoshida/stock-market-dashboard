@@ -639,7 +639,6 @@ const CORE30_EN: Record<string, string> = {
   "8306": "Mitsubishi UFJ Financial Group",
   "8316": "Sumitomo Mitsui Financial Group",
   "8411": "Mizuho Financial Group",
-  "8729": "Sony Financial Group",
   "8766": "Tokio Marine Holdings",
   "9432": "NTT",
   "9433": "KDDI",

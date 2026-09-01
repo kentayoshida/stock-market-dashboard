@@ -1,6 +1,6 @@
 {
   "as_of": "2026-09-01",
-  "generated_at": "2026-09-01T03:15:02+00:00",
+  "generated_at": "2026-09-01T04:45:19+00:00",
   "data_source": "fixture",
   "currency": "JPY",
   "market": "JP",
@@ -20,9 +20,9 @@
     "default": "ticker_order"
   },
   "coverage": {
-    "ok": 31,
+    "ok": 30,
     "no_data": 0,
-    "total": 31
+    "total": 30
   },
   "disclaimer": "情報提供目的であり投資助言ではありません。",
   "attribution": "「TOPIX Core30」等の指数値・商標は株式会社JPX総研またはその関連会社の知的財産です。本ページは指数そのものではなく、構成銘柄それぞれの個別株価（J-Quants・JPX公式API）に基づくパフォーマンスを表示しています。",
@@ -1325,60 +1325,6 @@
           "sma25": 1720.52,
           "sma75": 1822.55,
           "rsi": 70.6,
-          "rsi_state": "overbought"
-        }
-      },
-      {
-        "label": "ソニーフィナンシャルグループ",
-        "ticker": "8729",
-        "code": "8729",
-        "review": false,
-        "status": "ok",
-        "as_of": "2026-09-01",
-        "returns": {
-          "1D": {
-            "price": 0.61,
-            "total": null
-          },
-          "1W": {
-            "price": 2.88,
-            "total": null
-          },
-          "1M": {
-            "price": 6.32,
-            "total": null
-          },
-          "3M": {
-            "price": 0.06,
-            "total": null
-          },
-          "6M": {
-            "price": 7.46,
-            "total": null
-          },
-          "YTD": {
-            "price": 21.87,
-            "total": null
-          },
-          "1Y": {
-            "price": 34.74,
-            "total": null
-          },
-          "DD_52WH": {
-            "price": -0.46,
-            "total": null
-          },
-          "UP_52WL": {
-            "price": 34.74,
-            "total": null
-          }
-        },
-        "momentum": {
-          "cross": "dead",
-          "days_since_cross": 21,
-          "sma25": 2394.27,
-          "sma75": 2436.06,
-          "rsi": 90.5,
           "rsi_state": "overbought"
         }
       },
