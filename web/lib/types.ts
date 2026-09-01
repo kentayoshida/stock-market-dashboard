@@ -124,6 +124,31 @@ export type Dow30Dataset = {
   block: Dow30Block;
 };
 
+// ---- TOPIX Core 30（/topix-core30・構成銘柄の個別株ベース・J-Quants）----
+// 銘柄は ticker（4桁の東証コード）で識別するため、基底 Item をそのまま使う。
+export type TopixCore30Block = {
+  id: string;
+  title: string;
+  columns: number;
+  items: Item[];
+};
+
+export type TopixCore30Dataset = {
+  as_of: string | null;
+  generated_at: string;
+  data_source: string;
+  currency: string;
+  market: string;
+  periods: string[];
+  total_return_periods: string[];
+  sort: { default: string };
+  coverage: { ok: number; no_data: number; total: number };
+  disclaimer: string;
+  attribution: string;
+  source_note: string;
+  block: TopixCore30Block;
+};
+
 // ---- 世界 Global（/global・地域別ネスト構造）----
 export type GlobalGroup = {
   region: string;

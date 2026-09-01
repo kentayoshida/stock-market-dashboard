@@ -1,0 +1,55 @@
+# TOPIX Core 30（時価総額・流動性で選ばれる主力30銘柄）ダッシュボード（/topix-core30）。
+# 構成銘柄は東証上場の個別株30銘柄。価格は J-Quants（JPX公式API v2・/equities/bars/daily、
+# 分割調整後終値）で取得する。build_topix_core30.py が処理して topix_core30.json を出力する。
+#
+# 銘柄名リンクは Yahoo!ファイナンス（日本）（https://finance.yahoo.co.jp/quote/<code>.T）。
+# 英語社名は web/lib/i18n.ts の CORE30_EN マップ、株時計・モメンタムは価格系列から算出。
+#
+# ★ 構成銘柄の更新は手動運用（TOPIX Core30 は定期的に入れ替えあり。ダウ30と同様）。
+#    構成銘柄が入れ替わったら下の items（code と label）を編集して差し替える。
+#    並びは銘柄コード昇順（既定順）。
+
+source: jquants
+# 末尾 2 キーは期間リターンではなく 52 週レンジ指標（トグル右端に表示）。
+periods: [1D, 1W, 1M, 3M, 6M, YTD, 1Y, DD_52WH, UP_52WL]
+total_return_periods: []      # J-Quants は配当込み終値が無いため価格リターンのみ。
+
+sort:
+  default: ticker_order        # ticker_order（コード順） | return_desc（選択期間リターン降順）
+
+block:
+  id: topix_core30
+  title: TOPIX Core30
+  columns: 2                   # UI の表示カラム数（局面バッジで行が伸びるため 2 に）
+  items:
+    - { label: 日本たばこ産業,                 code: "2914" }
+    - { label: セブン&アイ・ホールディングス,   code: "3382" }
+    - { label: 信越化学工業,                   code: "4063" }
+    - { label: 武田薬品工業,                   code: "4502" }
+    - { label: 第一三共,                       code: "4568" }
+    - { label: リクルートホールディングス,      code: "6098" }
+    - { label: ダイキン工業,                   code: "6367" }
+    - { label: 日立製作所,                     code: "6501" }
+    - { label: 三菱電機,                       code: "6503" }
+    - { label: ソニーグループ,                 code: "6758" }
+    - { label: アドバンテスト,                 code: "6857" }
+    - { label: キーエンス,                     code: "6861" }
+    - { label: 三菱重工業,                     code: "7011" }
+    - { label: トヨタ自動車,                   code: "7203" }
+    - { label: 本田技研工業,                   code: "7267" }
+    - { label: HOYA,                           code: "7741" }
+    - { label: 任天堂,                         code: "7974" }
+    - { label: 伊藤忠商事,                     code: "8001" }
+    - { label: 三井物産,                       code: "8031" }
+    - { label: 東京エレクトロン,               code: "8035" }
+    - { label: 三菱商事,                       code: "8058" }
+    - { label: 三菱UFJフィナンシャル・グループ, code: "8306" }
+    - { label: 三井住友フィナンシャルグループ,  code: "8316" }
+    - { label: みずほフィナンシャルグループ,    code: "8411" }
+    - { label: ソニーフィナンシャルグループ,    code: "8729" }
+    - { label: 東京海上ホールディングス,        code: "8766" }
+    - { label: NTT,                            code: "9432" }
+    - { label: KDDI,                           code: "9433" }
+    - { label: ソフトバンク,                   code: "9434" }
+    - { label: ファーストリテイリング,          code: "9983" }
+    - { label: ソフトバンクグループ,            code: "9984" }

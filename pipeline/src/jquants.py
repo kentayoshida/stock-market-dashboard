@@ -11,6 +11,11 @@ v2 認証（1段階・トークン交換不要）:
 業種別TOPIX の指数値取得（分岐A）:
   - GET /indices/bars/daily?code=<index_code>&from=&to=
   - レスポンス {"data": [...], "pagination_key": "..."}、Date + Close(あるいは C) 列。
+
+個別株の日次終値取得（TOPIX Core30 構成銘柄用）:
+  - GET /equities/bars/daily?code=<5桁コード>&from=&to=
+  - 分割調整後終値（AdjustmentClose）を優先。無ければ Close/C。
+  - 銘柄コードは5桁（4桁＋末尾0。例 7203→"72030"）。
 """
 from __future__ import annotations
 
@@ -101,6 +106,31 @@ class JQuantsClient:
         if not date_col or not close_col:
             raise JQuantsError(
                 f"index_close: Date/Close 列が見つからない columns={list(df.columns)}"
+            )
+        s = pd.Series(
+            pd.to_numeric(df[close_col], errors="coerce").values,
+            index=pd.to_datetime(df[date_col]),
+        ).dropna().sort_index()
+        s.index = s.index.tz_localize(None).normalize()
+        return s
+
+    def equity_close(self, code: str, from_date: str | None = None,
+                     to_date: str | None = None) -> pd.Series:
+        """個別株の日次終値系列（TOPIX Core30 構成銘柄）。/equities/bars/daily から取得。
+
+        code は J-Quants の5桁銘柄コード（例 トヨタ 7203 → "72030"）。分割の影響を除くため
+        AdjustmentClose（分割調整後終値）を優先し、無ければ Close/C を使う。Date と終値列を
+        頑健に検出して昇順の Series を返す（index_close と同じ様式）。
+        """
+        rows = self._get("/equities/bars/daily", {"code": code, "from": from_date, "to": to_date})
+        if not rows:
+            raise JQuantsError(f"equity_close: no data for code={code}")
+        df = pd.DataFrame(rows)
+        date_col = self._find_col(df.columns, "Date")
+        close_col = self._find_col(df.columns, "AdjustmentClose", "Close", "C")
+        if not date_col or not close_col:
+            raise JQuantsError(
+                f"equity_close: Date/Close 列が見つからない columns={list(df.columns)}"
             )
         s = pd.Series(
             pd.to_numeric(df[close_col], errors="coerce").values,

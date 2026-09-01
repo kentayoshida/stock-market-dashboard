@@ -38,11 +38,15 @@ jobs:
         env:
           JQUANTS_API_KEY: ${{ secrets.JQUANTS_API_KEY }}   # 主要指数のうち市場区分指数・TOPIX の取得に使用
         run: python pipeline/src/build_topix17.py --source auto
+      - name: Generate topix_core30.json (TOPIX Core30 構成銘柄, J-Quants)
+        env:
+          JQUANTS_API_KEY: ${{ secrets.JQUANTS_API_KEY }}   # 構成30銘柄の個別株価（/equities/bars/daily）取得に使用
+        run: python pipeline/src/build_topix_core30.py --source jquants
       - name: Commit if changed
         run: |
           git config user.name  "market-dashboard-bot"
           git config user.email "actions@github.com"
-          git add web/public/data/jp_sectors.json web/public/data/topix17.json
+          git add web/public/data/jp_sectors.json web/public/data/topix17.json web/public/data/topix_core30.json
           if git diff --staged --quiet; then
             echo "No data change."
           else

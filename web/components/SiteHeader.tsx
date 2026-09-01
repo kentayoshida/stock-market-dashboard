@@ -9,7 +9,7 @@ import { ui } from "@/lib/i18n";
 export default function SiteHeader({
   active,
 }: {
-  active: "us" | "global" | "jp" | "topix17" | "dow";
+  active: "us" | "global" | "jp" | "topix17" | "dow" | "core30";
 }) {
   const { lang, setLang } = useLang();
   const t = ui[lang];
@@ -46,6 +46,12 @@ export default function SiteHeader({
             className={"nav-link" + (active === "topix17" ? " is-active" : "")}
           >
             {t.navTopix17}
+          </Link>
+          <Link
+            href="/topix-core30"
+            className={"nav-link" + (active === "core30" ? " is-active" : "")}
+          >
+            {t.navTopixCore30}
           </Link>
           <Link
             href="/jp-sectors"
