@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+import time
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
@@ -45,6 +46,72 @@ def load_config(path: Path) -> dict:
         return yaml.safe_load(f)
 
 
+# --------------------------------------------------------------------------- #
+# 鮮度ガード（個別株の最新バー遅延対策）
+# --------------------------------------------------------------------------- #
+# 症状: 同一バッチ内で ETF（latest.json/global.json）は最新営業日まで取れている
+# のに、個別株で構成する dow30 だけ最新バーが 1 営業日古い日が間欠的に発生する。
+# ETF 取得の数秒後に個別株を取得しても古い、という観測から、データ未公開ではなく
+# yfinance 側の取りこぼし（スロットリング/キャッシュ応答）が原因と判断。
+# 対策: ダウ30連動 ETF "DIA"（同一プロバイダ）の最新バー日を鮮度の基準にして、
+# 個別株の最新日が基準より古ければ短い間隔で再取得し鮮度を揃える。基準が取れない
+# /何度試しても届かない場合は、取得済みの最良データでそのまま出力する
+# （best-effort。バッチは失敗させず、1 日古いデータでも欠落より優先する）。
+REFERENCE_TICKER = "DIA"       # 鮮度判定専用。出力(block.items)には含めない。
+FRESHNESS_RETRIES = 3          # 再取得の最大回数
+FRESHNESS_WAIT_SEC = 20        # 再取得前の待機秒（試行ごとに ×回数 で延長）
+
+
+def _max_as_of(price_map: dict, tickers: list[str]) -> date | None:
+    """price_map 内 tickers の最新バー日の最大値（無ければ None）。"""
+    dates = [d for d in (latest_date(price_map[t]) for t in tickers if t in price_map) if d]
+    return max(dates) if dates else None
+
+
+def _fetch_with_freshness_guard(
+    tickers: list[str], start: date, end: date, source: str
+) -> tuple[dict, str]:
+    """個別株を取得し、基準 ETF(DIA) より最新日が古ければ再取得して鮮度を揃える。
+
+    live ソース（auto/yfinance）のみ対象。fixture/stooq はそのまま返す。
+    """
+    price_map, label = fetch_prices(tickers, start, end, source=source)
+    if source not in ("auto", "yfinance"):
+        return price_map, label
+
+    ref_map, _ = fetch_prices([REFERENCE_TICKER], start, end, source=source)
+    target = _max_as_of(ref_map, [REFERENCE_TICKER])
+    if target is None:
+        return price_map, label  # 基準が取れなければ従来どおり（ガード無効）
+
+    for attempt in range(1, FRESHNESS_RETRIES + 1):
+        cur = _max_as_of(price_map, tickers)
+        if cur is not None and cur >= target:
+            return price_map, label
+        wait = FRESHNESS_WAIT_SEC * attempt
+        print(f"[build_dow30] individual-stock data stale "
+              f"(as_of={cur} < {REFERENCE_TICKER}={target}); "
+              f"re-fetch {attempt}/{FRESHNESS_RETRIES} after {wait}s", file=sys.stderr)
+        time.sleep(wait)
+        retry_map, _ = fetch_prices(tickers, start, end, source=source)
+        # ティッカー単位で「より新しい系列」を採用（部分的な遅れにも対応）。
+        for t, df in retry_map.items():
+            nd = latest_date(df)
+            if nd is None:
+                continue
+            prev = price_map.get(t)
+            pd_ = latest_date(prev) if prev is not None else None
+            if pd_ is None or nd > pd_:
+                price_map[t] = df
+
+    cur = _max_as_of(price_map, tickers)
+    if cur is None or cur < target:
+        print(f"[build_dow30] still behind {REFERENCE_TICKER} after "
+              f"{FRESHNESS_RETRIES} retries (as_of={cur}, reference={target}); "
+              f"proceeding with best available data", file=sys.stderr)
+    return price_map, label
+
+
 def _process(item: dict, price_map: dict, periods: list[str], tr_periods: list[str]) -> tuple[dict, bool]:
     """1 銘柄を返り値 dict（returns＋momentum＋status）に変換。"""
     ticker, label = item["ticker"], item["label"]
@@ -67,7 +134,7 @@ def build(cfg: dict, source: str, lookback_days: int) -> dict:
     tickers = [it["ticker"] for it in block["items"]]
     end = date.today()
     start = end - timedelta(days=lookback_days)
-    price_map, source_label = fetch_prices(tickers, start, end, source=source)
+    price_map, source_label = _fetch_with_freshness_guard(tickers, start, end, source)
 
     out_items = []
     item_dates: list[date] = []
