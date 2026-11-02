@@ -1,7 +1,7 @@
 {
-  "as_of": "2026-10-30",
-  "generated_at": "2026-10-30T14:36:24+00:00",
-  "data_source": "yfinance+stooq",
+  "as_of": "2026-11-02",
+  "generated_at": "2026-11-02T17:28:57+00:00",
+  "data_source": "yfinance",
   "currency": "JPY",
   "market": "JP",
   "periods": [
@@ -22,8 +22,8 @@
     "default": "code_order"
   },
   "coverage": {
-    "ok": 16,
-    "no_data": 1,
+    "ok": 17,
+    "no_data": 0,
     "total": 17
   },
   "disclaimer": "情報提供目的であり投資助言ではありません。",
@@ -89,42 +89,42 @@
         "source": "jquants",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": -0.95,
+            "price": -0.88,
             "total": null
           },
           "1W": {
-            "price": -0.02,
+            "price": -1.07,
             "total": null
           },
           "1M": {
-            "price": -3.49,
+            "price": -3.93,
             "total": null
           },
           "3M": {
-            "price": 0.32,
+            "price": -1.82,
             "total": null
           },
           "6M": {
-            "price": 6.38,
+            "price": 5.41,
             "total": null
           },
           "YTD": {
-            "price": 16.31,
+            "price": 15.29,
             "total": null
           },
           "1Y": {
-            "price": 20.12,
+            "price": 17.96,
             "total": null
           },
           "DD_52WH": {
-            "price": -5.53,
+            "price": -6.36,
             "total": null
           },
           "UP_52WL": {
-            "price": 22.17,
+            "price": 21.1,
             "total": null
           }
         },
@@ -137,42 +137,42 @@
         "source": "jquants",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": -1.13,
+            "price": -1.0,
             "total": null
           },
           "1W": {
-            "price": -0.11,
+            "price": -1.05,
             "total": null
           },
           "1M": {
-            "price": -3.06,
+            "price": -3.13,
             "total": null
           },
           "3M": {
-            "price": 2.02,
+            "price": -0.5,
             "total": null
           },
           "6M": {
-            "price": 9.53,
+            "price": 8.03,
             "total": null
           },
           "YTD": {
-            "price": 18.56,
+            "price": 17.38,
             "total": null
           },
           "1Y": {
-            "price": 19.0,
+            "price": 16.23,
             "total": null
           },
           "DD_52WH": {
-            "price": -4.51,
+            "price": -5.47,
             "total": null
           },
           "UP_52WL": {
-            "price": 23.42,
+            "price": 22.19,
             "total": null
           }
         },
@@ -185,42 +185,42 @@
         "source": "jquants",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
             "price": -1.04,
             "total": null
           },
           "1W": {
-            "price": -0.49,
+            "price": -1.93,
             "total": null
           },
           "1M": {
-            "price": -3.75,
+            "price": -4.7,
             "total": null
           },
           "3M": {
-            "price": -1.4,
+            "price": -3.64,
             "total": null
           },
           "6M": {
-            "price": 5.3,
+            "price": 4.25,
             "total": null
           },
           "YTD": {
-            "price": 16.44,
+            "price": 15.23,
             "total": null
           },
           "1Y": {
-            "price": 23.08,
+            "price": 21.28,
             "total": null
           },
           "DD_52WH": {
-            "price": -7.13,
+            "price": -8.09,
             "total": null
           },
           "UP_52WL": {
-            "price": 24.06,
+            "price": 22.78,
             "total": null
           }
         },
@@ -233,42 +233,42 @@
         "source": "jquants",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": -0.57,
+            "price": -0.48,
             "total": null
           },
           "1W": {
-            "price": 0.67,
+            "price": -0.16,
             "total": null
           },
           "1M": {
-            "price": -3.55,
+            "price": -4.1,
             "total": null
           },
           "3M": {
-            "price": -0.96,
+            "price": -2.38,
             "total": null
           },
           "6M": {
-            "price": 3.08,
+            "price": 2.96,
             "total": null
           },
           "YTD": {
-            "price": 13.19,
+            "price": 12.64,
             "total": null
           },
           "1Y": {
-            "price": 18.91,
+            "price": 17.28,
             "total": null
           },
           "DD_52WH": {
-            "price": -7.21,
+            "price": -7.66,
             "total": null
           },
           "UP_52WL": {
-            "price": 18.91,
+            "price": 18.3,
             "total": null
           }
         },
@@ -281,42 +281,42 @@
         "source": "jquants",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": -0.95,
+            "price": -0.86,
             "total": null
           },
           "1W": {
-            "price": 0.17,
+            "price": -0.91,
             "total": null
           },
           "1M": {
-            "price": -4.71,
+            "price": -5.1,
             "total": null
           },
           "3M": {
-            "price": 0.81,
+            "price": -1.22,
             "total": null
           },
           "6M": {
-            "price": 2.74,
+            "price": 2.17,
             "total": null
           },
           "YTD": {
-            "price": 13.9,
+            "price": 12.92,
             "total": null
           },
           "1Y": {
-            "price": 20.93,
+            "price": 19.65,
             "total": null
           },
           "DD_52WH": {
-            "price": -6.15,
+            "price": -6.96,
             "total": null
           },
           "UP_52WL": {
-            "price": 21.81,
+            "price": 20.76,
             "total": null
           }
         },
@@ -329,42 +329,42 @@
         "source": "jquants",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": -0.43,
+            "price": -0.62,
             "total": null
           },
           "1W": {
-            "price": 1.48,
+            "price": 0.23,
             "total": null
           },
           "1M": {
-            "price": -4.14,
+            "price": -3.23,
             "total": null
           },
           "3M": {
-            "price": -0.5,
+            "price": -2.17,
             "total": null
           },
           "6M": {
-            "price": 7.12,
+            "price": 6.37,
             "total": null
           },
           "YTD": {
-            "price": 18.22,
+            "price": 17.49,
             "total": null
           },
           "1Y": {
-            "price": 26.91,
+            "price": 25.92,
             "total": null
           },
           "DD_52WH": {
-            "price": -6.08,
+            "price": -6.66,
             "total": null
           },
           "UP_52WL": {
-            "price": 28.65,
+            "price": 27.86,
             "total": null
           }
         },
@@ -377,42 +377,42 @@
         "source": "jquants",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": -1.47,
+            "price": -1.14,
             "total": null
           },
           "1W": {
-            "price": -1.57,
+            "price": -2.41,
             "total": null
           },
           "1M": {
-            "price": -2.72,
+            "price": -4.62,
             "total": null
           },
           "3M": {
-            "price": 1.29,
+            "price": -1.36,
             "total": null
           },
           "6M": {
-            "price": 5.61,
+            "price": 4.42,
             "total": null
           },
           "YTD": {
-            "price": 14.31,
+            "price": 13.0,
             "total": null
           },
           "1Y": {
-            "price": 13.41,
+            "price": 10.23,
             "total": null
           },
           "DD_52WH": {
-            "price": -6.24,
+            "price": -7.31,
             "total": null
           },
           "UP_52WL": {
-            "price": 16.77,
+            "price": 15.43,
             "total": null
           }
         },
@@ -425,42 +425,42 @@
         "source": "jquants",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": -0.96,
+            "price": -0.88,
             "total": null
           },
           "1W": {
-            "price": 0.0,
+            "price": -1.06,
             "total": null
           },
           "1M": {
-            "price": -3.55,
+            "price": -3.96,
             "total": null
           },
           "3M": {
-            "price": 0.26,
+            "price": -1.89,
             "total": null
           },
           "6M": {
-            "price": 6.36,
+            "price": 5.38,
             "total": null
           },
           "YTD": {
-            "price": 16.38,
+            "price": 15.36,
             "total": null
           },
           "1Y": {
-            "price": 20.26,
+            "price": 18.09,
             "total": null
           },
           "DD_52WH": {
-            "price": -5.59,
+            "price": -6.42,
             "total": null
           },
           "UP_52WL": {
-            "price": 22.28,
+            "price": 21.2,
             "total": null
           }
         },
@@ -473,42 +473,42 @@
         "source": "jquants",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": -0.56,
+            "price": -0.72,
             "total": null
           },
           "1W": {
-            "price": 0.11,
+            "price": -1.13,
             "total": null
           },
           "1M": {
-            "price": -5.08,
+            "price": -5.53,
             "total": null
           },
           "3M": {
-            "price": 2.39,
+            "price": 0.04,
             "total": null
           },
           "6M": {
-            "price": -1.44,
+            "price": -2.19,
             "total": null
           },
           "YTD": {
-            "price": 6.7,
+            "price": 5.94,
             "total": null
           },
           "1Y": {
-            "price": 10.66,
+            "price": 9.74,
             "total": null
           },
           "DD_52WH": {
-            "price": -7.01,
+            "price": -7.68,
             "total": null
           },
           "UP_52WL": {
-            "price": 12.24,
+            "price": 11.44,
             "total": null
           }
         },
@@ -521,42 +521,42 @@
         "source": "jquants",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": -1.32,
+            "price": -0.94,
             "total": null
           },
           "1W": {
-            "price": 2.93,
+            "price": 0.87,
             "total": null
           },
           "1M": {
-            "price": -3.29,
+            "price": -3.88,
             "total": null
           },
           "3M": {
-            "price": 14.58,
+            "price": 10.61,
             "total": null
           },
           "6M": {
-            "price": -0.44,
+            "price": -1.77,
             "total": null
           },
           "YTD": {
-            "price": 11.8,
+            "price": 10.75,
             "total": null
           },
           "1Y": {
-            "price": 7.24,
+            "price": 5.27,
             "total": null
           },
           "DD_52WH": {
-            "price": -8.43,
+            "price": -9.29,
             "total": null
           },
           "UP_52WL": {
-            "price": 16.44,
+            "price": 15.35,
             "total": null
           }
         },
@@ -569,42 +569,42 @@
         "source": "jquants",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": -0.87,
+            "price": -0.67,
             "total": null
           },
           "1W": {
-            "price": -0.37,
+            "price": -1.29,
             "total": null
           },
           "1M": {
-            "price": -2.36,
+            "price": -2.8,
             "total": null
           },
           "3M": {
-            "price": 1.54,
+            "price": -0.64,
             "total": null
           },
           "6M": {
-            "price": 6.83,
+            "price": 6.09,
             "total": null
           },
           "YTD": {
-            "price": 19.32,
+            "price": 18.52,
             "total": null
           },
           "1Y": {
-            "price": 23.1,
+            "price": 21.06,
             "total": null
           },
           "DD_52WH": {
-            "price": -4.48,
+            "price": -5.12,
             "total": null
           },
           "UP_52WL": {
-            "price": 25.45,
+            "price": 24.61,
             "total": null
           }
         },
@@ -617,42 +617,42 @@
         "source": "jquants",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": -1.33,
+            "price": -0.88,
             "total": null
           },
           "1W": {
-            "price": 3.44,
+            "price": 1.34,
             "total": null
           },
           "1M": {
-            "price": -2.46,
+            "price": -3.07,
             "total": null
           },
           "3M": {
-            "price": 17.03,
+            "price": 12.79,
             "total": null
           },
           "6M": {
-            "price": 1.81,
+            "price": 0.32,
             "total": null
           },
           "YTD": {
-            "price": 15.6,
+            "price": 14.59,
             "total": null
           },
           "1Y": {
-            "price": 10.33,
+            "price": 8.26,
             "total": null
           },
           "DD_52WH": {
-            "price": -7.45,
+            "price": -8.26,
             "total": null
           },
           "UP_52WL": {
-            "price": 20.9,
+            "price": 19.85,
             "total": null
           }
         },
@@ -665,42 +665,42 @@
         "source": "jquants",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": 0.1,
+            "price": 0.17,
             "total": null
           },
           "1W": {
-            "price": -1.3,
+            "price": -2.5,
             "total": null
           },
           "1M": {
-            "price": -3.41,
+            "price": -1.33,
             "total": null
           },
           "3M": {
-            "price": -12.83,
+            "price": -10.8,
             "total": null
           },
           "6M": {
-            "price": -12.31,
+            "price": -11.89,
             "total": null
           },
           "YTD": {
-            "price": -18.11,
+            "price": -17.97,
             "total": null
           },
           "1Y": {
-            "price": -16.15,
+            "price": -15.83,
             "total": null
           },
           "DD_52WH": {
-            "price": -20.26,
+            "price": -20.13,
             "total": null
           },
           "UP_52WL": {
-            "price": 0.19,
+            "price": 0.36,
             "total": null
           }
         },
@@ -771,7 +771,7 @@
       "no_data": 0,
       "total": 15
     },
-    "as_of": "2026-10-30"
+    "as_of": "2026-11-02"
   },
   "block": {
     "id": "topix17",
@@ -784,51 +784,51 @@
         "ticker": "1617",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": 2.13,
+            "price": 0.44,
             "total": null
           },
           "1W": {
-            "price": -0.54,
+            "price": -1.13,
             "total": null
           },
           "1M": {
-            "price": 4.29,
+            "price": 5.66,
             "total": null
           },
           "3M": {
-            "price": 3.13,
+            "price": 4.47,
             "total": null
           },
           "6M": {
-            "price": 11.09,
+            "price": 12.69,
             "total": null
           },
           "YTD": {
-            "price": 20.45,
+            "price": 20.98,
             "total": null
           },
           "1Y": {
-            "price": 26.22,
-            "total": 29.06
+            "price": 23.67,
+            "total": 26.45
           },
           "DD_52WH": {
-            "price": -1.56,
+            "price": -1.13,
             "total": null
           },
           "UP_52WL": {
-            "price": 26.22,
+            "price": 24.22,
             "total": null
           }
         },
         "momentum": {
           "cross": "golden",
-          "days_since_cross": 6,
-          "sma25": 48826.0,
-          "sma75": 48348.13,
-          "rsi": 56.6,
+          "days_since_cross": 7,
+          "sma25": 48914.4,
+          "sma75": 48375.73,
+          "rsi": 58.3,
           "rsi_state": "neutral"
         }
       },
@@ -838,51 +838,51 @@
         "ticker": "1618",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": 0.27,
+            "price": -1.68,
             "total": null
           },
           "1W": {
-            "price": 2.35,
+            "price": -2.52,
             "total": null
           },
           "1M": {
-            "price": 4.62,
+            "price": 3.55,
             "total": null
           },
           "3M": {
-            "price": 11.31,
+            "price": 9.3,
             "total": null
           },
           "6M": {
-            "price": 3.57,
+            "price": 0.93,
             "total": null
           },
           "YTD": {
-            "price": 26.14,
+            "price": 24.01,
             "total": null
           },
           "1Y": {
-            "price": 42.88,
-            "total": 46.28
+            "price": 40.56,
+            "total": 43.89
           },
           "DD_52WH": {
-            "price": -9.97,
+            "price": -11.48,
             "total": null
           },
           "UP_52WL": {
-            "price": 43.57,
+            "price": 41.15,
             "total": null
           }
         },
         "momentum": {
           "cross": "golden",
-          "days_since_cross": 47,
-          "sma25": 36138.0,
-          "sma75": 35184.67,
-          "rsi": 58.6,
+          "days_since_cross": 48,
+          "sma25": 36126.4,
+          "sma75": 35240.4,
+          "rsi": 53.0,
           "rsi_state": "neutral"
         }
       },
@@ -892,51 +892,51 @@
         "ticker": "1619",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": -1.55,
+            "price": 0.07,
             "total": null
           },
           "1W": {
-            "price": -0.49,
+            "price": -0.79,
             "total": null
           },
           "1M": {
-            "price": -5.28,
+            "price": -4.77,
             "total": null
           },
           "3M": {
-            "price": -5.74,
+            "price": -7.13,
             "total": null
           },
           "6M": {
-            "price": -12.23,
+            "price": -10.06,
             "total": null
           },
           "YTD": {
-            "price": -1.36,
+            "price": -1.29,
             "total": null
           },
           "1Y": {
-            "price": 9.41,
-            "total": 11.27
+            "price": 9.71,
+            "total": 11.58
           },
           "DD_52WH": {
-            "price": -19.67,
+            "price": -19.61,
             "total": null
           },
           "UP_52WL": {
-            "price": 9.63,
+            "price": 9.09,
             "total": null
           }
         },
         "momentum": {
           "cross": "dead",
-          "days_since_cross": 59,
-          "sma25": 43974.0,
-          "sma75": 45209.6,
-          "rsi": 38.7,
+          "days_since_cross": 60,
+          "sma25": 43889.2,
+          "sma75": 45115.33,
+          "rsi": 39.1,
           "rsi_state": "neutral"
         }
       },
@@ -946,51 +946,51 @@
         "ticker": "1620",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": -0.3,
+            "price": -0.35,
             "total": null
           },
           "1W": {
-            "price": 0.49,
+            "price": 0.46,
             "total": null
           },
           "1M": {
-            "price": -0.67,
+            "price": -0.78,
             "total": null
           },
           "3M": {
-            "price": 2.32,
+            "price": 1.13,
             "total": null
           },
           "6M": {
-            "price": 2.98,
+            "price": 3.25,
             "total": null
           },
           "YTD": {
-            "price": 18.38,
+            "price": 17.96,
             "total": null
           },
           "1Y": {
-            "price": 22.38,
-            "total": 24.16
+            "price": 22.43,
+            "total": 24.22
           },
           "DD_52WH": {
-            "price": -7.3,
+            "price": -7.62,
             "total": null
           },
           "UP_52WL": {
-            "price": 25.73,
+            "price": 25.28,
             "total": null
           }
         },
         "momentum": {
           "cross": "golden",
-          "days_since_cross": 2,
-          "sma25": 37358.0,
-          "sma75": 37272.93,
-          "rsi": 47.1,
+          "days_since_cross": 3,
+          "sma25": 37356.4,
+          "sma75": 37248.53,
+          "rsi": 45.4,
           "rsi_state": "neutral"
         }
       },
@@ -1000,51 +1000,51 @@
         "ticker": "1621",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": 1.54,
+            "price": 0.84,
             "total": null
           },
           "1W": {
-            "price": 0.72,
+            "price": -0.09,
             "total": null
           },
           "1M": {
-            "price": 6.74,
+            "price": 10.48,
             "total": null
           },
           "3M": {
-            "price": 6.46,
+            "price": 11.58,
             "total": null
           },
           "6M": {
-            "price": 6.25,
+            "price": 7.14,
             "total": null
           },
           "YTD": {
-            "price": 9.21,
+            "price": 10.13,
             "total": null
           },
           "1Y": {
-            "price": 20.07,
-            "total": 23.01
+            "price": 21.85,
+            "total": 24.83
           },
           "DD_52WH": {
-            "price": -5.22,
+            "price": -4.43,
             "total": null
           },
           "UP_52WL": {
-            "price": 22.33,
+            "price": 23.35,
             "total": null
           }
         },
         "momentum": {
           "cross": "golden",
-          "days_since_cross": 8,
-          "sma25": 30779.6,
-          "sma75": 30317.2,
-          "rsi": 63.0,
+          "days_since_cross": 9,
+          "sma25": 30857.6,
+          "sma75": 30350.8,
+          "rsi": 65.0,
           "rsi_state": "neutral"
         }
       },
@@ -1054,51 +1054,51 @@
         "ticker": "1622",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": 0.95,
+            "price": -1.53,
             "total": null
           },
           "1W": {
-            "price": 0.66,
+            "price": -1.98,
             "total": null
           },
           "1M": {
-            "price": 3.25,
+            "price": 3.74,
             "total": null
           },
           "3M": {
-            "price": -1.78,
+            "price": -0.63,
             "total": null
           },
           "6M": {
-            "price": 6.02,
+            "price": 4.55,
             "total": null
           },
           "YTD": {
-            "price": -2.36,
+            "price": -3.85,
             "total": null
           },
           "1Y": {
-            "price": 1.12,
-            "total": 2.91
+            "price": 0.58,
+            "total": 2.36
           },
           "DD_52WH": {
-            "price": -15.94,
+            "price": -17.23,
             "total": null
           },
           "UP_52WL": {
-            "price": 11.24,
+            "price": 9.54,
             "total": null
           }
         },
         "momentum": {
           "cross": "golden",
-          "days_since_cross": 4,
-          "sma25": 34631.6,
-          "sma75": 34575.6,
-          "rsi": 55.4,
+          "days_since_cross": 5,
+          "sma25": 34644.4,
+          "sma75": 34601.2,
+          "rsi": 48.6,
           "rsi_state": "neutral"
         }
       },
@@ -1108,51 +1108,51 @@
         "ticker": "1623",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": -5.21,
+            "price": -1.38,
             "total": null
           },
           "1W": {
-            "price": -1.83,
+            "price": -2.02,
             "total": null
           },
           "1M": {
-            "price": -17.25,
+            "price": -21.42,
             "total": null
           },
           "3M": {
-            "price": -3.55,
+            "price": -12.01,
             "total": null
           },
           "6M": {
-            "price": -24.5,
+            "price": -24.41,
             "total": null
           },
           "YTD": {
-            "price": 20.31,
+            "price": 18.64,
             "total": null
           },
           "1Y": {
-            "price": 25.23,
-            "total": 26.37
+            "price": 21.57,
+            "total": 22.67
           },
           "DD_52WH": {
-            "price": -39.2,
+            "price": -40.05,
             "total": null
           },
           "UP_52WL": {
-            "price": 30.93,
+            "price": 29.12,
             "total": null
           }
         },
         "momentum": {
           "cross": "dead",
-          "days_since_cross": 75,
-          "sma25": 61044.4,
-          "sma75": 62690.0,
-          "rsi": 32.7,
+          "days_since_cross": 76,
+          "sma25": 60623.2,
+          "sma75": 62535.33,
+          "rsi": 31.4,
           "rsi_state": "neutral"
         }
       },
@@ -1161,46 +1161,53 @@
         "code": "1624",
         "ticker": "1624",
         "review": false,
-        "status": "no_data",
-        "as_of": null,
-        "momentum": null,
+        "status": "ok",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": null,
+            "price": -0.8,
             "total": null
           },
           "1W": {
-            "price": null,
+            "price": -1.29,
             "total": null
           },
           "1M": {
-            "price": null,
+            "price": -10.89,
             "total": null
           },
           "3M": {
-            "price": null,
+            "price": -10.46,
             "total": null
           },
           "6M": {
-            "price": null,
+            "price": -16.53,
             "total": null
           },
           "YTD": {
-            "price": null,
+            "price": 3.63,
             "total": null
           },
           "1Y": {
-            "price": null,
-            "total": null
+            "price": -0.84,
+            "total": 0.03
           },
           "DD_52WH": {
-            "price": null,
+            "price": -22.59,
             "total": null
           },
           "UP_52WL": {
-            "price": null,
+            "price": 6.86,
             "total": null
           }
+        },
+        "momentum": {
+          "cross": "dead",
+          "days_since_cross": 64,
+          "sma25": 81626.0,
+          "sma75": 83915.87,
+          "rsi": 32.6,
+          "rsi_state": "neutral"
         }
       },
       {
@@ -1209,51 +1216,51 @@
         "ticker": "1625",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": -2.8,
+            "price": -0.85,
             "total": null
           },
           "1W": {
-            "price": -2.91,
+            "price": -1.81,
             "total": null
           },
           "1M": {
-            "price": -8.87,
+            "price": -11.92,
             "total": null
           },
           "3M": {
-            "price": -0.27,
+            "price": -6.9,
             "total": null
           },
           "6M": {
-            "price": 6.49,
+            "price": 5.14,
             "total": null
           },
           "YTD": {
-            "price": 22.59,
+            "price": 21.55,
             "total": null
           },
           "1Y": {
-            "price": 22.29,
-            "total": 22.84
+            "price": 18.24,
+            "total": 18.77
           },
           "DD_52WH": {
-            "price": -17.46,
+            "price": -18.17,
             "total": null
           },
           "UP_52WL": {
-            "price": 29.02,
+            "price": 27.92,
             "total": null
           }
         },
         "momentum": {
           "cross": "golden",
-          "days_since_cross": 7,
-          "sma25": 65064.0,
-          "sma75": 64385.2,
-          "rsi": 37.4,
+          "days_since_cross": 8,
+          "sma25": 64830.4,
+          "sma75": 64271.73,
+          "rsi": 36.2,
           "rsi_state": "neutral"
         }
       },
@@ -1263,51 +1270,51 @@
         "ticker": "1626",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": 0.68,
+            "price": -1.83,
             "total": null
           },
           "1W": {
-            "price": 0.12,
+            "price": -1.89,
             "total": null
           },
           "1M": {
-            "price": -0.26,
+            "price": -1.09,
             "total": null
           },
           "3M": {
-            "price": 9.87,
+            "price": 8.8,
             "total": null
           },
           "6M": {
-            "price": 23.77,
+            "price": 21.11,
             "total": null
           },
           "YTD": {
-            "price": 16.13,
+            "price": 14.0,
             "total": null
           },
           "1Y": {
-            "price": 9.23,
-            "total": 10.49
+            "price": 5.84,
+            "total": 7.06
           },
           "DD_52WH": {
-            "price": -2.19,
+            "price": -3.98,
             "total": null
           },
           "UP_52WL": {
-            "price": 32.35,
+            "price": 29.92,
             "total": null
           }
         },
         "momentum": {
           "cross": "golden",
-          "days_since_cross": 120,
-          "sma25": 49157.2,
-          "sma75": 47616.4,
-          "rsi": 50.8,
+          "days_since_cross": 121,
+          "sma25": 49122.8,
+          "sma75": 47662.0,
+          "rsi": 43.1,
           "rsi_state": "neutral"
         }
       },
@@ -1317,51 +1324,51 @@
         "ticker": "1627",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": -3.06,
+            "price": 1.25,
             "total": null
           },
           "1W": {
-            "price": -0.62,
+            "price": -2.37,
             "total": null
           },
           "1M": {
-            "price": -2.71,
+            "price": 0.7,
             "total": null
           },
           "3M": {
-            "price": 4.52,
+            "price": 5.32,
             "total": null
           },
           "6M": {
-            "price": 0.59,
+            "price": 3.53,
             "total": null
           },
           "YTD": {
-            "price": 5.76,
+            "price": 7.08,
             "total": null
           },
           "1Y": {
-            "price": 16.75,
-            "total": 18.51
+            "price": 13.84,
+            "total": 15.56
           },
           "DD_52WH": {
-            "price": -9.0,
+            "price": -7.87,
             "total": null
           },
           "UP_52WL": {
-            "price": 16.75,
+            "price": 13.52,
             "total": null
           }
         },
         "momentum": {
           "cross": "golden",
-          "days_since_cross": 45,
-          "sma25": 12129.8,
-          "sma75": 12004.33,
-          "rsi": 46.3,
+          "days_since_cross": 46,
+          "sma25": 12122.4,
+          "sma75": 12013.87,
+          "rsi": 49.7,
           "rsi_state": "neutral"
         }
       },
@@ -1371,51 +1378,51 @@
         "ticker": "1628",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": 2.76,
+            "price": 0.04,
             "total": null
           },
           "1W": {
-            "price": 2.0,
+            "price": -0.2,
             "total": null
           },
           "1M": {
-            "price": 3.42,
+            "price": 5.24,
             "total": null
           },
           "3M": {
-            "price": 3.09,
+            "price": 4.53,
             "total": null
           },
           "6M": {
-            "price": 9.61,
+            "price": 9.03,
             "total": null
           },
           "YTD": {
-            "price": 7.02,
+            "price": 7.07,
             "total": null
           },
           "1Y": {
-            "price": 12.96,
-            "total": 16.6
+            "price": 11.87,
+            "total": 15.48
           },
           "DD_52WH": {
-            "price": -0.24,
+            "price": -0.2,
             "total": null
           },
           "UP_52WL": {
-            "price": 13.41,
+            "price": 13.46,
             "total": null
           }
         },
         "momentum": {
           "cross": "golden",
-          "days_since_cross": 63,
-          "sma25": 22063.6,
-          "sma75": 21841.4,
-          "rsi": 58.9,
+          "days_since_cross": 64,
+          "sma25": 22078.6,
+          "sma75": 21862.53,
+          "rsi": 59.0,
           "rsi_state": "neutral"
         }
       },
@@ -1425,51 +1432,51 @@
         "ticker": "1629",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": -1.71,
+            "price": -1.59,
             "total": null
           },
           "1W": {
-            "price": 0.11,
+            "price": -4.06,
             "total": null
           },
           "1M": {
-            "price": 0.44,
+            "price": 0.59,
             "total": null
           },
           "3M": {
-            "price": 5.22,
+            "price": 3.35,
             "total": null
           },
           "6M": {
-            "price": 1.88,
+            "price": -3.03,
             "total": null
           },
           "YTD": {
-            "price": 20.82,
+            "price": 18.9,
             "total": null
           },
           "1Y": {
-            "price": 31.46,
-            "total": 32.75
+            "price": 29.92,
+            "total": 31.19
           },
           "DD_52WH": {
-            "price": -7.59,
+            "price": -9.07,
             "total": null
           },
           "UP_52WL": {
-            "price": 50136.45,
+            "price": 49336.16,
             "total": null
           }
         },
         "momentum": {
           "cross": "golden",
-          "days_since_cross": 46,
-          "sma25": 275.33,
-          "sma75": 270.11,
-          "rsi": 49.6,
+          "days_since_cross": 47,
+          "sma25": 275.16,
+          "sma75": 270.41,
+          "rsi": 44.4,
           "rsi_state": "neutral"
         }
       },
@@ -1479,51 +1486,51 @@
         "ticker": "1630",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": 2.15,
+            "price": 0.86,
             "total": null
           },
           "1W": {
-            "price": 0.6,
+            "price": -0.15,
             "total": null
           },
           "1M": {
-            "price": 5.65,
+            "price": 6.97,
             "total": null
           },
           "3M": {
-            "price": -2.14,
+            "price": 1.52,
             "total": null
           },
           "6M": {
-            "price": 7.12,
+            "price": 8.01,
             "total": null
           },
           "YTD": {
-            "price": 3.58,
+            "price": 4.47,
             "total": null
           },
           "1Y": {
-            "price": 9.13,
-            "total": 10.73
+            "price": 8.19,
+            "total": 9.78
           },
           "DD_52WH": {
-            "price": -3.97,
+            "price": -3.14,
             "total": null
           },
           "UP_52WL": {
-            "price": 9.13,
+            "price": 9.63,
             "total": null
           }
         },
         "momentum": {
           "cross": "dead",
-          "days_since_cross": 30,
-          "sma25": 37314.4,
-          "sma75": 37641.2,
-          "rsi": 58.5,
+          "days_since_cross": 31,
+          "sma25": 37413.6,
+          "sma75": 37650.93,
+          "rsi": 60.9,
           "rsi_state": "neutral"
         }
       },
@@ -1533,51 +1540,51 @@
         "ticker": "1631",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": -0.97,
+            "price": -1.94,
             "total": null
           },
           "1W": {
-            "price": 4.06,
+            "price": 1.64,
             "total": null
           },
           "1M": {
-            "price": -10.36,
+            "price": -8.67,
             "total": null
           },
           "3M": {
-            "price": -0.9,
+            "price": -4.7,
             "total": null
           },
           "6M": {
-            "price": 16.59,
+            "price": 14.39,
             "total": null
           },
           "YTD": {
-            "price": 36.78,
+            "price": 34.12,
             "total": null
           },
           "1Y": {
-            "price": 54.45,
-            "total": 57.43
+            "price": 50.86,
+            "total": 53.76
           },
           "DD_52WH": {
-            "price": -10.36,
+            "price": -12.1,
             "total": null
           },
           "UP_52WL": {
-            "price": 55.57,
+            "price": 52.56,
             "total": null
           }
         },
         "momentum": {
           "cross": "dead",
-          "days_since_cross": 4,
-          "sma25": 40190.4,
-          "sma75": 40671.6,
-          "rsi": 44.2,
+          "days_since_cross": 5,
+          "sma25": 40022.8,
+          "sma75": 40638.0,
+          "rsi": 40.7,
           "rsi_state": "neutral"
         }
       },
@@ -1587,51 +1594,51 @@
         "ticker": "1632",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": 0.53,
+            "price": -0.57,
             "total": null
           },
           "1W": {
-            "price": 0.81,
+            "price": -1.18,
             "total": null
           },
           "1M": {
-            "price": 0.34,
+            "price": 3.58,
             "total": null
           },
           "3M": {
-            "price": 0.23,
+            "price": -0.25,
             "total": null
           },
           "6M": {
-            "price": 15.94,
+            "price": 16.23,
             "total": null
           },
           "YTD": {
-            "price": 28.38,
+            "price": 27.65,
             "total": null
           },
           "1Y": {
-            "price": 41.81,
-            "total": 45.65
+            "price": 40.77,
+            "total": 44.59
           },
           "DD_52WH": {
-            "price": -2.0,
+            "price": -2.56,
             "total": null
           },
           "UP_52WL": {
-            "price": 42.74,
+            "price": 41.92,
             "total": null
           }
         },
         "momentum": {
           "cross": "golden",
           "days_since_cross": null,
-          "sma25": 42973.2,
-          "sma75": 42937.07,
-          "rsi": 54.1,
+          "sma25": 42998.4,
+          "sma75": 42946.67,
+          "rsi": 52.1,
           "rsi_state": "neutral"
         }
       },
@@ -1641,51 +1648,51 @@
         "ticker": "1633",
         "review": false,
         "status": "ok",
-        "as_of": "2026-10-30",
+        "as_of": "2026-11-02",
         "returns": {
           "1D": {
-            "price": 1.24,
+            "price": 1.08,
             "total": null
           },
           "1W": {
-            "price": -1.71,
+            "price": -1.72,
             "total": null
           },
           "1M": {
-            "price": 3.31,
+            "price": 7.26,
             "total": null
           },
           "3M": {
-            "price": -5.03,
+            "price": -0.88,
             "total": null
           },
           "6M": {
-            "price": -11.56,
+            "price": -9.72,
             "total": null
           },
           "YTD": {
-            "price": -5.53,
+            "price": -4.51,
             "total": null
           },
           "1Y": {
-            "price": 6.22,
-            "total": 7.79
+            "price": 7.35,
+            "total": 8.94
           },
           "DD_52WH": {
-            "price": -23.86,
+            "price": -23.04,
             "total": null
           },
           "UP_52WL": {
-            "price": 6.99,
+            "price": 8.15,
             "total": null
           }
         },
         "momentum": {
           "cross": "dead",
-          "days_since_cross": 132,
-          "sma25": 48359.6,
-          "sma75": 49391.33,
-          "rsi": 56.3,
+          "days_since_cross": 133,
+          "sma25": 48429.2,
+          "sma75": 49372.4,
+          "rsi": 59.1,
           "rsi_state": "neutral"
         }
       }
